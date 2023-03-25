@@ -1,0 +1,6 @@
+// defines a section of related content within a page
+.s-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+}

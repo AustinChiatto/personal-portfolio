@@ -1,0 +1,50 @@
+@use "u-variables" as *;
+
+// Theme
+// ===========================
+@mixin theme-dark {
+    background: $color-primary--dark;
+    color: $color-primary;
+}
+
+@mixin theme-light {
+    background: $color-primary;
+    color: $color-primary--dark;
+}
+
+/* Media Queries */
+/* ===========================  */
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 670px;
+$breakpoint-desktop: 1060px;
+$breakpoint-desktop-large: 1440px;
+
+@mixin min-width($breakpoint) {
+    @if ($breakpoint == mobile) {
+      @media (min-width: $breakpoint-mobile) {
+        @content;
+      }
+    } @else if ($breakpoint == tablet) {
+      @media (min-width: $breakpoint-tablet) {
+        @content;
+      }
+    } @else if ($breakpoint == laptop) {
+      @media (min-width: $breakpoint-laptop) {
+        @content;
+      }
+    } @else if ($breakpoint == desktop) {
+      @media (min-width: $breakpoint-desktop) {
+        @content;
+      }
+    } @else {
+      @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+    }
+  }
+
+// @include m.min-width(tablet) {
+//     grid-column: 2 / span 6;
+// }
+
+// @include m.min-width(desktop) {
+//     grid-column: 2 / span 5;
+// }

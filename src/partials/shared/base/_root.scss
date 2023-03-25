@@ -1,0 +1,7 @@
+@use "../utility/u-variables" as *;
+
+:root {
+    font-family: $font-primary;
+    background: $color-primary;
+    color: $color-primary--dark;
+}

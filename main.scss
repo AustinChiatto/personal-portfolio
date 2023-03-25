@@ -1,30 +1,37 @@
 // Base
 // ===========================
+@use "src/partials/shared/base/root";
 @use "src/partials/shared/base/typography";
+@use "src/partials/shared/base/footer/o-footer";
+@use "src/partials/shared/base/header/o-header";
 
 // Utility
 // ===========================
-@use "src/partials/shared/utility/variables";
-@use "src/partials/shared/utility/mixins";
-@use "src/partials/shared/utility/helpers";
+@use "src/partials/shared/utility/u-variables";
+@use "src/partials/shared/utility/u-mixins";
+@use "src/partials/shared/utility/u-helpers";
 
 // Structure
 // ===========================
-@use "src/partials/shared/structure/site-wrapper";
-@use "src/partials/shared/structure/section";
+@use "src/partials/shared/structure/s-section-wrapper";
+@use "src/partials/shared/structure/s-section";
 
 // Atoms
 // ===========================
-@use "src/partials/shared/atoms/buttons";
-@use "src/partials/shared/atoms/cards";
-@use "src/partials/shared/atoms/headings";
+@use "src/partials/shared/atoms/a-buttons";
+@use "src/partials/shared/atoms/a-cards";
+@use "src/partials/shared/atoms/a-headings";
 
 // Molecules
 // ===========================
+@use "src/partials/shared/molecule/m-section-cta";
+@use "src/partials/shared/molecule/m-section-intro";
+@use "src/partials/shared/molecule/m-project-list";
 
-
-
-
+// Home Page
+// ===========================
+@use "src/partials/home/o-home-hero";
+@use "src/partials/home/o-mission";
 
 
 
@@ -47,9 +54,9 @@
     
 // molecule
 //------
-    // m-section-intro, m-section-intro--vh100
+    // m-section-intro
         // 
-    // m-section-cta, m-section-cta--vh100
+    // m-section-cta
     // m-link-list
     // m-project-card
 
@@ -71,3 +78,13 @@
         // m-internal-cta
     // m-section-headline
     // 
+
+
+// ============================================
+    // @include m.min-width(tablet) {
+    //     grid-column: 2 / span 6;
+    // }
+
+    // @include m.min-width(desktop) {
+    //     grid-column: 2 / span 5;
+    // }

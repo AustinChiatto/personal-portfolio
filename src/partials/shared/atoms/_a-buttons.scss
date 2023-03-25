@@ -1,0 +1,40 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.a-button {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    @include m.theme-light;
+    border: 1px solid $color-primary--dark;
+    border-radius: 5rem;
+    transition-property: background, border, color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    margin-inline: auto;
+    max-width: fit-content;
+
+    @include m.min-width(desktop) {
+        padding: 0.75rem 1.25rem;
+        font-size: 1.25rem;
+    }
+
+    &:hover{
+        @extend .a-button;
+        @include m.theme-dark;
+        border-color: $color-primary;
+    }
+
+    &--invert {
+        @extend .a-button;
+        @include m.theme-dark;
+        border-color: $color-primary;
+
+        &:hover {
+            @extend .a-button;
+            @include m.theme-light;
+            border-color: $color-primary--dark;
+        }
+    }
+}

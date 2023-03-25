@@ -1,0 +1,29 @@
+.o-footer {
+    padding: 2rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+.o-footer__link-list {
+    padding-block: 4rem;
+}
+
+.o-footer__link {
+    font-size: 1.25rem;
+}
+
+.o-footer__link + * {
+    margin-top: 1rem;
+}
+
+.o-footer__link--email {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.o-footer__copyright {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}

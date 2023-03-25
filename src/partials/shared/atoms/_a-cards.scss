@@ -1,0 +1,13 @@
+@use "../utility/u-variables" as *;
+
+.a-project-card {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    border-radius: $border-radius;
+    background: $color-secondary--dark;
+    overflow: hidden;
+}
+
+.a-project-card img {
+    max-width: 100%;
+}

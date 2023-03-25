@@ -1,4 +1,4 @@
-@use "../utility/variables" as *;
+@use "../utility/u-variables" as *;
 
 // Headings
 // ===========================
@@ -8,6 +8,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: $font-primary;
     font-weight: $font-medium;
     font-size: 2rem;
     line-height: 1.2;
