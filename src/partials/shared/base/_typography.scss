@@ -1,0 +1,30 @@
+@use "../utility/variables" as *;
+
+// Headings
+// ===========================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-medium;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+// Copy
+// ===========================
+p {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+// Links
+// ===========================
+a {
+    text-decoration: none;
+    color: $color-primary--dark;
+}

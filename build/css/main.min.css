@@ -1,0 +1,1 @@
+h1,h2,h3,h4,h5,h6{font-weight:500;font-size:2rem;line-height:1.2}p{display:block;font-size:1.25rem;line-height:1.5;margin-top:2rem}a{text-decoration:none;color:#0f0f0f}.grid{display:grid;grid-template-columns:repeat(12, 1fr);gap:1.25rem}.flex{display:flex;align-items:center}.vh100{min-height:100vh}/*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,18 @@
+// Helper Classes
+
+// Structure & Layout
+// ===========================
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.vh100 {
+    min-height: 100vh;
+}

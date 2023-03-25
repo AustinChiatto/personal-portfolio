@@ -1,0 +1,27 @@
+// Typography
+// ===========================
+// font family
+$font-primary: 'Roboto', sans-serif;
+$font-primary--condensed: 'Roboto Condensed', sans-serif;
+// font weight
+$font-regular: 400;
+$font-medium: 500;
+$font-heavy: 700;
+
+// Color 
+// ===========================
+$color-primary:#eef0f2;
+$color-primary--dark:#0f0f0f;
+$color-secondary:#6E6E73;
+$color-secondary--dark:#1a1a1d;
+
+// Border
+// ===========================
+$border-radius: 0.5rem;
+
+// Breakpoints
+// ===========================
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 670px;
+$breakpoint-desktop: 1060px;
+$breakpoint-desktop-large: 1440px;
