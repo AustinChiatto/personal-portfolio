@@ -1,3 +1,6 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
 .m-project-card {
     width: 100%;
     overflow: hidden;
@@ -9,6 +12,26 @@
     display: block;
     height: 100%;
     width: 100%;
+    margin-block: 1rem;
+}
+
+.m-project-card__title,
+.m-project-card__label {
+    font-size: 1rem;
+    font-weight: $font-regular;
+    text-align: center;
+
+    @include m.min-width(tablet) {
+        font-size: 1.15rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 1.25rem;
+    }
+
+    @include m.min-width(desktop-large) {
+        font-size: 1.5rem;
+    }
 }
 
 .m-project-card img {

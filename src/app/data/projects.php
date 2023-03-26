@@ -10,7 +10,7 @@ require_once(__DIR__ . "/../init.php");
 $project_one = new Project([
     "link" => "interplanetary.php",
     "name" => "Interplanetary",
-    "type" => "Web App",
+    "type" => "API Integrated Launch Tracker",
     "image_url" => "interplanetary-mockup__01.png",
     "image_alt" => "A product mockup displaying a web page that gathers and provides a list of upcoming rocket launches.",
     "featured" => true
@@ -19,7 +19,7 @@ $project_one = new Project([
 $project_two = new Project([
     "link" => "asteroid-run.php",
     "name" => "Asteroid Run",
-    "type" => "JS Game",
+    "type" => "Vanilla JS Browser Game",
     "image_url" => "asteroid-run-desktop-mockup.png",
     "image_alt" => "A product mockup showing the desktop version of a video game, the player controls a triangle ship and their goal is to dodge oncoming asteroids.",
     "featured" => true

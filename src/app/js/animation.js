@@ -20,7 +20,7 @@ gsap.to(".word", {
 const projectList = document.querySelector(".js-projects-list");
 const projectHeadline = document.querySelector(".js-project-headline");
 const projectListHeading = document.querySelector(".js-project-headline h2");
-const projectListBtn = document.querySelector(".js-projects-headline .a-button");
+const projectListBtn = document.querySelector(".js-project-headline .a-button");
 const projectListItem = document.querySelectorAll(".js-projects-list__item");
 const projectCard = document.querySelectorAll(".js-project-card");
 
@@ -33,30 +33,21 @@ let stickyProjectHeading = ScrollTrigger.create({
     end: "bottom top"
 });
 
-// let headingChange = ScrollTrigger.create({
-//     trigger: projectList,
-//     start: "bottom bottom",
-//     end: "bottom bottom",
-// });
-
-
-projectCard.forEach((element, index) => {
-  ScrollTrigger.create({
-    trigger: element,
-    start: "top center",
-    end: "center center",
+let headingChange = ScrollTrigger.create({
+    trigger: projectList,
+    start: "bottom bottom",
+    end: "bottom bottom",
 
     onLeave: function() { 
-      console.log(((0 === index) ? "First Item" : projectCard[index - 1]));
-      console.log(((projectCard.length - 1 === index) ? "Last Item" : projectCard[index + 1]));
-
-    },
-    onLeaveBack: function() { 
-      projectListHeading.textContent = projectCard[index - 1].querySelector(".js-project-card__title").textContent;
-      // projectListHeading.innerHTML = 'My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects';
-      // projectListBtn.classList.add("u-visually-hidden");
-    }
-  })
+        console.log('End');
+        projectListHeading.textContent = 'See more of what I enjoy doing'
+        projectListBtn.classList.remove("u-visually-hidden");
+      },
+      onLeaveBack: function() { 
+        console.log('Start')
+        projectListHeading.innerHTML = 'My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects';
+        projectListBtn.classList.add("u-visually-hidden");
+      }
 });
 
 // get each card

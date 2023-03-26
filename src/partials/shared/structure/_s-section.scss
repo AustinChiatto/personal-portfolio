@@ -12,7 +12,15 @@
 
     &--pad-large {
         @extend .s-section;
-        padding-block: 25vh;
+        padding-block: 15vh;
+
+        @include m.min-width(tablet) {
+            padding-block: 20vh;
+        }
+
+        @include m.min-width(desktop) {
+            padding-block: 25vh;
+        }
     }
 
     &--full-height {
@@ -48,7 +56,7 @@
         }
 
         @include m.min-width(desktop) {
-            grid-column: 1 / span 7;
+            grid-column: 2 / span 8;
         }
 
         @include m.min-width(desktop-large) {
