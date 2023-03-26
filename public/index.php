@@ -7,72 +7,55 @@ require(get_path("data/projects.php"));
 ?>
 
 <body>
-    <header></header>
+    <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
         <div class="s-section-wrapper">
-            <section class="o-home-hero">
-                <!-- hero -->
-                <h1>Building Things for Humans on The Web</h1>
+            <section class="s-section--full-height js-home-hero js-hero-pin">
+                <h1 class="js-home-hero-text">Building Things for Humans on The Web</h1>
             </section>
-            <section class="s-section">
-                <!-- mission -->
-                <div class="o-mission">
-                    <h2 class="a-h2--large">Inspired by <br>
+        </div>
+        <div class="s-section-wrapper--theme-dark">
+            <section class="s-section--full-height">
+                <h2>Building Things for Humans on The Web</h2>
+            </section>
+        </div>
+        <div class="s-section-wrapper">
+            <section class="s-section--pad-large js-o-mission">
+                <div class="s-section__content--left-align">
+                    <h2 class="a-heading--large">Inspired by <br>
                         Compassion <br>
                         Dedicated to <br>
                         Imagination
                     </h2>
                 </div>
-                <div class="m-section-cta">
-                    <h3>I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
-                    <a class="a-button--invert m-section-cta__button" href="<?php get_public_url("about.php"); ?>">👉 More about me</a>
+                <div class="s-section__content--left-align">
+                    <h3 class="u-pad-bottom">I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
+                    <a class="a-button--invert" href="<?php get_public_url("about.php"); ?>">👉 More about me</a>
                 </div>
             </section>
         </div>
         <div class="s-section-wrapper--theme-dark">
-            <section class="s-section">
-                <!-- featured projects -->
-                <div class="m-section-intro">
-                    <h2>Explore my latest <span class="a-h2--highlight">imposter syndrome inducing</span> projects</h2>
+            <section class="s-section--full-height js-project-headline">
+                <div class="js-pin-headline">
+                    <h2 class="u-pad-bottom">My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects</h2>
+                    <a class="a-button u-visually-hidden" href="<?php get_public_url("about.php"); ?>">🎉 View All Projects</a>
                 </div>
-                <ul class="m-project-list">
+            </section>
+            <section class="s-section">
+                <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : 
                         if (h($project->featured) == true) : ?>
-                        <li class="m-project-list__item">
+                        <li class="o-projects-list__item js-project-list-item">
                             <?php include("../src/partials/shared/molecule/project-card.php"); ?>
                         </li>
                     <?php
                         endif;
                     endforeach; ?>
                 </ul>
-                <div class="m-section-cta">
-                    <h3>See more of that I like to do</h3>
-                    <a class="a-button m-section-cta__button" href="<?php get_public_url("about.php"); ?>">🎉 View All Projects</a>
-                </div>
             </section>
         </div>
     </main>
-    <footer class="o-footer">
-        <h2 class="a-h2--large">Reach out or see what else I'm up to on the internet</h2>
-        <ul class="o-footer__link-list">
-            <li class="o-footer__link--email">
-                <a href="#">hello@austinchiatto.com</a>
-            </li>
-            <li class="o-footer__link">
-                <a href="#">GitHub</a>
-            </li>
-            <li class="o-footer__link">
-                <a href="#">LinkedIn</a>
-            </li>
-            <li class="o-footer__link">
-                <a href="#">Codepen</a>
-            </li>
-            <li class="o-footer__link">
-                <a href="#">Spotify</a>
-            </li>
-        </ul>
-        <p class="o-footer__copyright">&copy; 2023</p>
-    </footer>
+    <?php require("../src/partials/shared/base/footer/footer.php"); ?>
 </body>
 </html>

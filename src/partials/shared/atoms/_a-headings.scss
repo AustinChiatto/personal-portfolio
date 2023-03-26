@@ -1,20 +1,46 @@
 @use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
 
-.a-h2 {
-    font-family: $font-primary;
+.a-heading {
     font-weight: $font-medium;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.2;
+
+    &--highlight {
+        @extend .a-heading;
+        color: $color-secondary;
+    }
 
     &--large {
         font-family: $font-primary--condensed;
-        font-size: 3rem;
         font-weight: $font-heavy;
+        font-size: 3rem;
+        line-height: 1.2;
         text-transform: uppercase;
-        line-height: 1.1;
+
+        @include m.min-width(tablet) {
+            font-size: 4.5rem;
+        }
+    
+        @include m.min-width(desktop) {
+            font-size: 5rem;
+        }
+    
+        @include m.min-width(desktop-large) {
+            font-size: 6rem;
+        }
     }
 
-    &--highlight {
-        color: $color-secondary;
+    @include m.min-width(tablet) {
+        font-size: 2rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 2.5rem;
+        line-height: 1.33;
+    }
+
+    @include m.min-width(desktop-large) {
+        font-size: 3rem;
     }
 }

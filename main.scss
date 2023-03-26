@@ -2,6 +2,7 @@
 // ===========================
 @use "src/partials/shared/base/root";
 @use "src/partials/shared/base/typography";
+@use "src/partials/shared/base/images";
 @use "src/partials/shared/base/footer/o-footer";
 @use "src/partials/shared/base/header/o-header";
 
@@ -19,19 +20,20 @@
 // Atoms
 // ===========================
 @use "src/partials/shared/atoms/a-buttons";
-@use "src/partials/shared/atoms/a-cards";
 @use "src/partials/shared/atoms/a-headings";
 
 // Molecules
 // ===========================
-@use "src/partials/shared/molecule/m-section-cta";
-@use "src/partials/shared/molecule/m-section-intro";
+@use "src/partials/shared/molecule/m-project-card";
 @use "src/partials/shared/molecule/m-project-list";
 
 // Home Page
 // ===========================
-@use "src/partials/home/o-home-hero";
-@use "src/partials/home/o-mission";
+
+// About Page
+// ===========================
+@use "src/partials/about/o-about-hero";
+@use "src/partials/about/o-about-bio";
 
 
 

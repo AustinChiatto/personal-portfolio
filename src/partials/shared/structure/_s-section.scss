@@ -1,6 +1,71 @@
-// defines a section of related content within a page
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+// Section
+// ===========================
+// responsible for vertical spacing & layout
 .s-section {
+    padding-block: 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1.25rem;
+
+    &--pad-large {
+        @extend .s-section;
+        padding-block: 25vh;
+    }
+
+    &--full-height {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// dictates grid item behavior
+.s-section__content {
+    grid-column: 1 / span 12;
+
+    @include m.min-width(tablet) {
+        grid-column: 2 / span 10;
+    }
+
+    @include m.min-width(desktop) {
+        grid-column: 3 / span 8;
+    }
+
+    @include m.min-width(desktop-large) {
+        grid-column: 4 / span 6;
+    }
+
+    &--left-align {
+        @extend .s-section__content;
+
+        @include m.min-width(tablet) {
+            grid-column: 1 / span 8;
+        }
+
+        @include m.min-width(desktop) {
+            grid-column: 1 / span 7;
+        }
+
+        @include m.min-width(desktop-large) {
+            grid-column: 2 / span 6;
+        }
+    }
+}
+
+// adds spacing between section__content tags if they are siblings to one another
+.s-section__content + .s-section__content {
+    margin-top: 4rem;
+
+    @include m.min-width(tablet) {
+        margin-top: 6rem;
+    }
+
+    @include m.min-width(desktop-large) {
+        margin-top: 8rem;
+    }
 }

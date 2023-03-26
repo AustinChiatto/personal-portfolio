@@ -1,0 +1,39 @@
+@use "../../utility/u-variables" as *;
+
+.o-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.o-header__menu {
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    padding-inline: 0.25rem;
+    margin: 0 auto;
+    background: #2A2A2E50;
+    backdrop-filter: blur(1rem);
+}
+
+.o-header__menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.o-header__menu-item {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    &:hover {
+        background: #eef0f225;
+    }
+}
+
+.o-header__menu-item a {
+    color: $color-primary;
+}

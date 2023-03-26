@@ -1,0 +1,16 @@
+.m-project-card {
+    width: 100%;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.m-project-card__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.m-project-card img {
+    max-width: 100%;
+}

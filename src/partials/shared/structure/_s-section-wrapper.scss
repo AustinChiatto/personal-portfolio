@@ -1,13 +1,19 @@
 @use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
 
+// Section Wrapper
+// ===========================
+// wraps a group of related sections - responsible for horizontal spacing
 .s-section-wrapper {
-    max-width: 1512;
-    margin: 0 auto;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
+    @include m.theme-light();
+
+    @include m.min-width(tablet) {
+        padding-inline: 1rem;
+    }
 
     &--theme-dark {
         @extend .s-section-wrapper;
-        background: $color-primary--dark;
-        color: $color-primary;
+        @include m.theme-dark();
     }
 }
