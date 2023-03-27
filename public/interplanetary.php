@@ -8,11 +8,11 @@ require("../src/partials/shared/base/head.php");
 <body data-barba="wrapper">
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main data-barba="container" data-barba-namespace="project-page">
-        <div class="s-section-wrapper">
+        <!-- <div class="s-section-wrapper">
             <section class="s-section--full-height js-home-hero js-hero-pin">
                 <h1 class="js-home-hero-text">Witness Humanity Touch The Stars</h1>
             </section>
-        </div>
+        </div> -->
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
                 <div class="s-section__content--left-align">

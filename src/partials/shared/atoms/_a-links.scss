@@ -13,6 +13,11 @@
         @extend .a-link-primary;
         color: $color-primary--dark;
     }
+
+    &--highlight {
+        @extend .a-link-primary;
+        color: $color-secondary;
+    }
 }
 
 .a-link-email {
