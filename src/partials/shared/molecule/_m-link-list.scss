@@ -1,0 +1,10 @@
+.m-link-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-block: 6rem;
+}
+
+.m-link-list > * + * {
+    margin-left: 0.5rem;
+}

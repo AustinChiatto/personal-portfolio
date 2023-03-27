@@ -6,14 +6,23 @@ require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
 
-<body>
+<body data-barba="wrapper">
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-    <main>
-        <div class="s-section-wrapper">
+
+    <!-- <div class="m-barba-transition">
+        <h2 class="m-barba-transition__headline js-home-hero-text">Building Things for Humans on The Web</h2>
+        <ul class="m-barba-transition__list">
+            <li class="m-barba-transition__block"></li>
+            <li class="m-barba-transition__block"></li>
+        </ul>
+    </div> -->
+
+    <main data-barba="container" data-barba-namespace="home">
+        <!-- <div class="s-section-wrapper">
             <section class="s-section--full-height js-home-hero js-hero-pin">
                 <h1 class="js-home-hero-text">Building Things for Humans on The Web</h1>
             </section>
-        </div>
+        </div> -->
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height">
                 <h2>Building Things for Humans on The Web</h2>
@@ -57,5 +66,7 @@ require(get_path("data/projects.php"));
         </div>
     </main>
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <script src="../src/app/js/homeAnimations.js"></script>
+    <script src="../src/app/js/projectListAnimation.js"></script>
 </body>
 </html>

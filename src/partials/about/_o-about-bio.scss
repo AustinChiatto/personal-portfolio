@@ -1,24 +1,5 @@
 @use "../shared/utility/u-mixins" as m;
 
-.o-about-bio {
-    grid-column: auto / span 12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-block: 6rem;
-    // min-height: 100vh;
-
-
-    @include m.min-width(tablet) {
-        grid-column: 1 / span 8;
-    }
-
-    @include m.min-width(desktop) {
-        grid-column: 2 / span 6;
-    }
-
-    @include m.min-width(desktop-large) {
-        grid-column: 2 / span 4;
-    }
+.o-about-bio__copy + .o-about-bio__copy {
+    padding-top: 2rem;
 }

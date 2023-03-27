@@ -35,6 +35,7 @@
 // dictates grid item behavior
 .s-section__content {
     grid-column: 1 / span 12;
+    position: relative;
 
     @include m.min-width(tablet) {
         grid-column: 2 / span 10;

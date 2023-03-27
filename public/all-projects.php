@@ -5,19 +5,20 @@ $title_tag = "Austin Chiatto | All Projects";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
-<body>
+<body data-barba="wrapper">
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-    <main>
+    <main data-barba="container" data-barba-namespace="all-projects">
         <div class="s-section-wrapper--theme-dark">
-            <section class="s-section">
-                <!-- all projects -->
-                <div class="m-section-intro--vh100">
-                    <h2>Discover the work <span class="a-h2--highlight">and the caffeine addiction</span> behind the projects I'm most proud of</h2>
+            <section class="s-section--full-height js-project-headline">
+                <div class="js-pin-headline">
+                    <h1 class="a-heading-wrap">Discover the work <span class="a-heading--highlight">and the caffeine addiction</span> behind the projects I'm most proud of</h1>
                 </div>
-                <ul class="m-project-list">
+            </section>
+            <section class="s-section">
+                <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : ?>
-                        <li class="m-project-list__item">
+                        <li class="o-projects-list__item">
                             <?php include("../src/partials/shared/molecule/project-card.php"); ?>
                         </li>
                     <?php endforeach; ?>
@@ -26,5 +27,6 @@ require(get_path("data/projects.php"));
         </div>
     </main>
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <script src="../src/app/js/projectListAnimation.js"></script>
 </body>
 </html>

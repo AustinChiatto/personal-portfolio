@@ -1,57 +1,78 @@
-// Home
+// Barba Page Transitions
 // ===========================
+// const loadingScreen = document.querySelector('.m-barba-transition')
 
-// hero
-const homeHero = document.querySelector('.js-home-hero');
-const homeHeroText = new SplitType('.js-home-hero-text');
+// function pageTransitionIn() {
+//   return gsap
+//     .to(loadingScreen, { duration: .5, scaleY: 1, transformOrigin: 'bottom left'})
+// }
+// function pageTransitionOut(container) {
+//   return gsap
+//     .timeline({ delay: 1 })
+//     .add('start')
+//     .to(loadingScreen, {
+//       duration: 0.5,
+//       scaleY: 0,
+//       skewX: 0,
+//       transformOrigin: 'top left',
+//       ease: 'power1.out'
+//     }, 'start')
+//     .call(contentAnimation, [container], 'start')
+// }
 
-gsap.to(".word", {
-    y:0,
-    opacity: 1,
-    stagger: 0.05,
-    delay: 0.1,
-    duration: 0.02
-});
+// function contentAnimation(container) {
+//   $(container.querySelector('.green-heading-bg')).addClass('show')
+//   return gsap
+//     .timeline()
+//     .from(container.querySelector('.is-animated'), {
+//       duration: 0.5,
+//       translateY: 10,
+//       opacity: 0,
+//       stagger: 0.4
+//     })
+//     .from(mainNavigation, { duration: .5, translateY: -10, opacity: 0})
+// }
+  // barba.init({
 
-// Project-List
-// ===========================
+  //   transitions: [{
 
-// global variables
-const projectList = document.querySelector(".js-projects-list");
-const projectHeadline = document.querySelector(".js-project-headline");
-const projectListHeading = document.querySelector(".js-project-headline h2");
-const projectListBtn = document.querySelector(".js-project-headline .a-button");
-const projectListItem = document.querySelectorAll(".js-projects-list__item");
-const projectCard = document.querySelectorAll(".js-project-card");
+  //     async leave(data) {
 
-// GSAP scroll trigger
-let stickyProjectHeading = ScrollTrigger.create({
-    trigger: projectHeadline,
-    start: "top top",
-    pin: ".js-pin-headline",
-    endTrigger: projectList,
-    end: "bottom top"
-});
+  //       pageTransitionIn()
 
-let headingChange = ScrollTrigger.create({
-    trigger: projectList,
-    start: "bottom bottom",
-    end: "bottom bottom",
+  //     },
 
-    onLeave: function() { 
-        console.log('End');
-        projectListHeading.textContent = 'See more of what I enjoy doing'
-        projectListBtn.classList.remove("u-visually-hidden");
-      },
-      onLeaveBack: function() { 
-        console.log('Start')
-        projectListHeading.innerHTML = 'My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects';
-        projectListBtn.classList.add("u-visually-hidden");
-      }
-});
+  //     async enter(data) {
+  //       pageTransitionOut()
+  //     },
+
+  //     // async once(data) {
+  //     //   contentAnimation();
+  //     // }
+  //   }]
+  // });
+
+
+
+
 
 // get each card
 // loop through card array
 // check when current card is in middle of screen
 // change text based on card
+
+// Project Page
+// ===========================
+
+// let projectAnimTrigger = ScrollTrigger.create({
+//   trigger: ".js-project-anim",
+//   start: "top top",
+//   pin: true,
+//   end: "+=1000"
+// });
+
+
+
+
+
 

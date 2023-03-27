@@ -1,0 +1,38 @@
+@use "../shared/utility/u-variables" as *;
+
+.o-project-anim {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.o-project-anim__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;
+    position: absolute;
+    border: 1px solid $color-primary;
+    height: 40vmin;
+    aspect-ratio: 2/1;
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: -1;
+}
+
+.o-project-anim__item {
+    border: 1px solid #9fa3a7;
+}
+
+.o-project-anim__item:first-child {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.o-project-anim__item:last-child {
+    border-radius: 0 1rem 1rem 0;
+}

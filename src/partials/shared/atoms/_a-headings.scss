@@ -44,3 +44,19 @@
         font-size: 3rem;
     }
 }
+
+.a-heading-wrap {
+    max-width: 100%;
+
+    @include m.min-width(tablet) {
+        max-width: 75%;
+    }
+
+    @include m.min-width(desktop) {
+        max-width: 60%;
+    }
+
+    @include m.min-width(desktop-large) {
+        max-width: 50%;
+    }
+}

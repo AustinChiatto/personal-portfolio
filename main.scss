@@ -27,14 +27,19 @@
 // ===========================
 @use "src/partials/shared/molecule/m-project-card";
 @use "src/partials/shared/molecule/m-project-list";
-
-// Home Page
-// ===========================
+@use "src/partials/shared/molecule/m-link-list";
+@use "src/partials/shared/molecule/m-barba-transition";
 
 // About Page
 // ===========================
 @use "src/partials/about/o-about-hero";
 @use "src/partials/about/o-about-bio";
+
+// Project Page
+// ===========================
+@use "src/partials/project-pages/o-project-gallery";
+@use "src/partials/project-pages/o-project-anim";
+@use "src/partials/project-pages/o-milestones";
 
 
 
