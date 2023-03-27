@@ -16,9 +16,9 @@ require("../src/partials/shared/base/head.php");
             <section class="s-section">
                 <div class="o-about__content">
                     <ul class="o-about-hero__link-list">
-                        <li><a href="" class="a-button">Email</a></li>
-                        <li><a href="" class="a-button">LinkedIn</a></li>
-                        <li><a href="" class="a-button">GitHub</a></li>
+                        <li><a class="a-button" href="mailto:chiattoaustin@gmail.com">Email</a></li>
+                        <li><a class="a-button" href="https://www.linkedin.com/in/austin-chiatto/" target="_blank">LinkedIn</a></li>
+                        <li><a class="a-button" href="https://github.com/AustinChiatto" target="_blank">GitHub</a></li>
                     </ul>
                     <div class="o-about-hero__gallery">
                         <img class="o-about-hero__image" src="../src/assets/images/about-section__image-01.jpg" alt="">

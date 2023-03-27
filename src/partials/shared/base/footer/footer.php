@@ -17,9 +17,9 @@
                         <h4 class="o-footer__recap-heading">Vancouver, Canada</h4>
                     </div>
                     <ul class="o-footer__link-list">
-                        <li><a class="a-link-primary" href="#">GitHub</a></li>
-                        <li><a class="a-link-primary" href="#">LinkedIn</a></li>
-                        <li><a class="a-link-primary" href="#">Codepen</a></li>
+                        <li><a class="a-link-primary js-link" href="https://github.com/AustinChiatto">GitHub</a></li>
+                        <li><a class="a-link-primary js-link" href="https://www.linkedin.com/in/austin-chiatto/">LinkedIn</a></li>
+                        <li><a class="a-link-primary js-link" href="https://codepen.io/austinchiatto">Codepen</a></li>
                     </ul>
                 </div>
                 <p class="o-footer__copyright o-footer__recap-heading">&copy; 2023</p>
@@ -31,3 +31,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/@barba/core"></script>
 <script src="https://unpkg.com/split-type"></script>
+<script src="../src/app/js/linkAnimation.js"></script>

@@ -18,6 +18,20 @@ require("../src/partials/shared/base/head.php");
                 <div class="s-section__content--left-align">
                     <h2 class="a-heading--large u-pad-bottom">Interplanetary</h2>
                     <p>Explore our solar system and track the upcoming launches that are moving humanity towards becoming interplanetary.</p>
+                    <ul class="m-project-stats">
+                        <li class="m-project-stats__item">
+                            <h3 class="m-project-stats__label">Status</h3>
+                            <p class="m-project-stats__stat">WIP</p>
+                        </li>
+                        <li class="m-project-stats__item">
+                            <h3 class="m-project-stats__label">Role</h3>
+                            <p class="m-project-stats__stat">Designer & Developer</p>
+                        </li>
+                        <li class="m-project-stats__item">
+                            <h3 class="m-project-stats__label">Technology</h3>
+                            <p class="m-project-stats__stat">API, JS, PHP, SCSS</p>
+                        </li>
+                    </ul>
                     <ul class="m-link-list">
                         <li><a class="a-button" href="#">👀 Live site</a></li>
                         <li><a class="a-button" href="#">📂 Source Code</a></li>
@@ -76,20 +90,20 @@ require("../src/partials/shared/base/head.php");
             <div class="o-milestones js-project-milestones">
                 <section class="o-milestones__section">
                     <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">API Integration</h2>
-                        <p>API integration was an integral feature for the website. It allows the collection of live data on rocket launches, including schedules, providers, launch vehicle, and more. Which is then displayed on the frontend in a user-friendly format.</p>
+                        <h2 class="a-heading--large u-pad-bottom">Upcoming Launches</h2>
+                        <p>The first milestone of the project was integrating the <a class="a-link--grey" href="https://www.rocketlaunch.live/api" target="_blank">rocketlaunch.live</a> API to get collect the live data for upcoming rocket launches. This enabled the display of information in a user friendly format.</p>
                     </div>
                 </section>
                 <section class="o-milestones__section">
                     <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">API Integration</h2>
-                        <p>API integration was an integral feature for the website. It allows the collection of live data on rocket launches, including schedules, providers, launch vehicle, and more. Which is then displayed on the frontend in a user-friendly format.</p>
+                        <h2 class="a-heading--large u-pad-bottom">Previous Launches</h2>
+                        <p>Using the same API to collect and parse data from previous launches allowed the site to become a catalogue of all rocket launches throughout space flight history. This milestone enabled search functionality, putting access to specific launch information in the hands of the user.</p>
                     </div>
                 </section>
                 <section class="o-milestones__section">
                     <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">API Integration</h2>
-                        <p>API integration was an integral feature for the website. It allows the collection of live data on rocket launches, including schedules, providers, launch vehicle, and more. Which is then displayed on the frontend in a user-friendly format.</p>
+                        <h2 class="a-heading--large u-pad-bottom u-font-highlight">Live Solar Map</h2>
+                        <p class="u-font-highlight">This milestone is a work in progress, but when complete, it will provide users with a full and accurate map of our solar system. This would include planet data, live orbits and positions, and will give the user a sense of the immense scale of our solar system.</p>
                     </div>
                 </section>
             </div>

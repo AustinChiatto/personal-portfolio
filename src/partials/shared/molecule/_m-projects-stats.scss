@@ -1,0 +1,23 @@
+@use "../utility/u-variables" as *;
+
+.m-project-stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: 4rem;
+    // border-top: 1px solid $color-primary;
+}
+
+.m-project-stats__item + .m-project-stats__item {
+    margin-left: 4rem;
+}
+
+.m-project-stats__label {
+    font-size: 1.25rem;
+    color: $color-secondary;
+}
+
+.m-project-stats__stat {
+    font-size: 1.5rem;
+}

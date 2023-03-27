@@ -39,7 +39,7 @@ require(get_path("data/projects.php"));
                 </div>
                 <div class="s-section__content--left-align">
                     <h3 class="u-pad-bottom">I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
-                    <a class="a-button--invert" href="<?php get_public_url("about.php"); ?>">👉 More about me</a>
+                    <a class="a-button--invert" href="about.php">👉 More about me</a>
                 </div>
             </section>
         </div>
@@ -47,7 +47,7 @@ require(get_path("data/projects.php"));
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
                     <h2 class="u-pad-bottom">My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects</h2>
-                    <a class="a-button u-visually-hidden" href="<?php get_public_url("about.php"); ?>">🎉 View All Projects</a>
+                    <a class="a-button u-visually-hidden" href="all-projects.php">🎉 View All Projects</a>
                 </div>
             </section>
             <section class="s-section">

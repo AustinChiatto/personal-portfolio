@@ -1,9 +1,15 @@
+@use "u-variables" as *;
+
 // Helper Classes
 
 // Structure & Layout
 // ===========================
 .u-pad-bottom {
     padding-bottom: 4rem;
+}
+
+.u-font-highlight {
+    color: $color-secondary;
 }
 
 .js-pin-headline {
