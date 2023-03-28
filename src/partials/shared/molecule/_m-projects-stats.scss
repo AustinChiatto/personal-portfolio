@@ -1,23 +1,49 @@
 @use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
 
 .m-project-stats {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 1rem;
-    margin-top: 4rem;
-    // border-top: 1px solid $color-primary;
+    margin-top: 2rem;
+
+    @include m.min-width(tablet) {
+        margin-top: 4rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
 
 .m-project-stats__item + .m-project-stats__item {
-    margin-left: 4rem;
+    margin-top: 1.5rem;
+    margin-left: 0;
+
+    @include m.min-width(tablet) {
+        margin-top: unset;
+        margin-left: 4rem;
+    }
 }
 
 .m-project-stats__label {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: $color-secondary;
+
+    @include m.min-width(tablet) {
+        font-size: 1.15rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 1.25rem;
+    }
 }
 
 .m-project-stats__stat {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+
+    @include m.min-width(tablet) {
+        font-size: 1.5rem;
+    }
 }
