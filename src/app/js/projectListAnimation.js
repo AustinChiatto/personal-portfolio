@@ -32,3 +32,7 @@ let headingChange = ScrollTrigger.create({
         projectListBtn.classList.add("u-visually-hidden");
       }
 });
+
+// get array of project cards
+// check if last item in array is in the middle of the screen
+// cycle text

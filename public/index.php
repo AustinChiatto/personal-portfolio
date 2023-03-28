@@ -7,22 +7,10 @@ require(get_path("data/projects.php"));
 ?>
 
 <body data-barba="wrapper">
+    <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-
-    <!-- <div class="m-barba-transition">
-        <h2 class="m-barba-transition__headline js-home-hero-text">Building Things for Humans on The Web</h2>
-        <ul class="m-barba-transition__list">
-            <li class="m-barba-transition__block"></li>
-            <li class="m-barba-transition__block"></li>
-        </ul>
-    </div> -->
-
     <main data-barba="container" data-barba-namespace="home">
-        <!-- <div class="s-section-wrapper">
-            <section class="s-section--full-height js-home-hero js-hero-pin">
-                <h1 class="js-home-hero-text">Building Things for Humans on The Web</h1>
-            </section>
-        </div> -->
+        <!-- Hero Section -->
         <div class="s-section-wrapper--theme-dark">
             <section class="o-home-hero js-home-hero">
                 <div class="o-home-hero__wrapper">
@@ -40,6 +28,7 @@ require(get_path("data/projects.php"));
                 </div>
             </section>
         </div>
+        <!-- Mission Statement -->
         <div class="s-section-wrapper">
             <section class="s-section--pad-large js-o-mission">
                 <div class="s-section__content--left-align">
@@ -49,12 +38,14 @@ require(get_path("data/projects.php"));
                         Imagination
                     </h2>
                 </div>
+                <!-- About CTA section -->
                 <div class="s-section__content--left-align">
                     <h3 class="u-pad-bottom">I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
                     <a class="a-button--invert" href="about.php">👉 More about me</a>
                 </div>
             </section>
         </div>
+        <!-- Featured Project List -->
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
@@ -63,6 +54,7 @@ require(get_path("data/projects.php"));
                 </div>
             </section>
             <section class="s-section">
+                <!-- Project card loop -->
                 <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : 
@@ -77,7 +69,9 @@ require(get_path("data/projects.php"));
             </section>
         </div>
     </main>
+    <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <!-- Scripts -->
     <script src="../src/app/js/homeAnimations.js"></script>
     <script src="../src/app/js/projectListAnimation.js"></script>
 </body>
