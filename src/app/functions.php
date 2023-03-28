@@ -25,8 +25,8 @@ function get_path($path = "/") {
 }
 
 // redirects to A given URL via the get_url function
-function redirect($path) {
-    header('Location: ' . get_public_url($path) );
+function redirect() {
+    header('Location: /public/');
 }
 
 // Return special characters as HTML entities

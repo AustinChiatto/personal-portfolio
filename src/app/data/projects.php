@@ -11,34 +11,34 @@ $project_one = new Project([
     "link" => "interplanetary.php",
     "name" => "Interplanetary",
     "type" => "API Integrated Launch Tracker",
-    "image_url" => "interplanetary-mockup__01.png",
+    "image_url" => "project-img__00.png",
     "image_alt" => "A product mockup displaying a web page that gathers and provides a list of upcoming rocket launches.",
     "featured" => true
 ]);
 
 $project_two = new Project([
-    "link" => "asteroid-run.php",
+    "link" => "interplanetary.php",
     "name" => "Asteroid Run",
     "type" => "Vanilla JS Browser Game",
-    "image_url" => "asteroid-run-desktop-mockup.png",
+    "image_url" => "project-img__01.png",
     "image_alt" => "A product mockup showing the desktop version of a video game, the player controls a triangle ship and their goal is to dodge oncoming asteroids.",
     "featured" => true
 ]);
 
 $project_three = new Project([
-    "link" => "heppells.php",
+    "link" => "interplanetary.php",
     "name" => "The Heppells",
     "type" => "Static Wedding RSVP Website",
-    "image_url" => "heppells-desktop-mockup.png",
+    "image_url" => "project-img__03.png",
     "image_alt" => "a product mockup for a website for an upcoming wedding. The site displays the homepage with the title 'Sabrina & Neil' and an image of the bride and groom.",
     "featured" => false
 ]);
 
 $project_four = new Project([
-    "link" => "audio-player.php",
-    "name" => "Audio Player",
+    "link" => "interplanetary.php",
+    "name" => "CSS Grid Tool",
     "type" => "GSAP Animation",
-    "image_url" => "interplanetary-desktop-mockup.png",
+    "image_url" => "project-img__02.png",
     "image_alt" => "A mockup of an audio player that is currently playing a song buy Mac Miller.",
     "featured" => false
 ]);

@@ -24,8 +24,20 @@ require(get_path("data/projects.php"));
             </section>
         </div> -->
         <div class="s-section-wrapper--theme-dark">
-            <section class="s-section--full-height">
-                <h2>Building Things for Humans on The Web</h2>
+            <section class="o-home-hero js-home-hero">
+                <div class="o-home-hero__wrapper">
+                    <div class="o-home-hero__text">
+                        <h1 class="js-home-hero__text-top">Building Things</h1>
+                    </div>
+                    <div class="o-home-hero__text">
+                        <h2 class="js-home-hero__text-bottom">For Humans</h2>
+                    </div>
+                    <div class="o-home-hero__circe js-circle"></div>
+                </div>
+                <div class="o-home-hero__quick-content">
+                    <p class="o-home-hero__scroll">Front End Developer</p>
+                    <p class="o-home-hero__scroll">Scroll</p>
+                </div>
             </section>
         </div>
         <div class="s-section-wrapper">

@@ -27,7 +27,7 @@
     }
 
     @include m.min-width(desktop) {
-        grid-column: auto / span 3;
+        grid-column: auto / span 6;
     }
 }
 

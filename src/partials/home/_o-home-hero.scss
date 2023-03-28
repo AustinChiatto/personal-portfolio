@@ -1,0 +1,51 @@
+@use "../shared/utility/u-variables" as *;
+
+.o-home-hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.o-home-hero__wrapper {
+    width: 30vmax;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.o-home-hero__text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-home-hero__circe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    background: $color-primary;
+}
+
+.o-home-hero__quick-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.o-home-hero__scroll {
+    grid-column: 2 / span 2;
+    font-size: 1.5rem;
+}

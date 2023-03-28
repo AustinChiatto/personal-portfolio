@@ -31,6 +31,10 @@
 @use "src/partials/shared/molecule/m-barba-transition";
 @use "src/partials/shared/molecule/m-projects-stats";
 
+// Home Page
+// ===========================
+@use "src/partials/home/o-home-hero";
+
 // About Page
 // ===========================
 @use "src/partials/about/o-about-hero";

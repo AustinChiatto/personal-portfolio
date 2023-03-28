@@ -44,27 +44,19 @@ require("../src/partials/shared/base/head.php");
                 <div class="o-project-gallery">
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
-                    </picture>
-                    <picture class="o-project-gallery__mockup-small">
-                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
-                    </picture>
-                    <picture class="o-project-gallery__mockup-small">
-                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
-                    </picture>
-                    <picture class="o-project-gallery__mockup-small">
-                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
-                    </picture>
-                    <picture class="o-project-gallery__mockup-small">
-                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
+                        <img src="../src/assets/images/interplanetary-mockup__tablet-01.png" alt="">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__01.png" alt="">
+                        <img src="../src/assets/images/interplanetary-mockup__mobile-02.png" alt="">
+                    </picture>
+                    <picture class="o-project-gallery__mockup-large">
+                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
+                        <img src="../src/assets/images/interplanetary-mockup__tablet-02.png" alt="">
+                    </picture>
+                    <picture class="o-project-gallery__mockup-large">
+                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
+                        <img src="../src/assets/images/interplanetary-mockup__tablet-03.png" alt="">
                     </picture>
                 </div>
             </section>
