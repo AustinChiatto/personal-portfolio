@@ -21,6 +21,8 @@ let homeCircle = gsap.timeline({
         if(currentRotation >= 180){
             console.log("half way");
             textTop.textContent = "On The Web";
+            // document.querySelector(".js-home-scroll-fade").style.color = "#6E6E73";
+            // document.querySelector(".js-home-scroll-hide").style.opacity = 0;
         } else {
             textTop.textContent = "Building Things";
         }
@@ -29,6 +31,7 @@ let homeCircle = gsap.timeline({
   });
   
   homeCircle.to(jsCircle, {rotateZ: 360});
+  homeCircle.to(".js-home-scroll-hide", {opacity: 0} ,"<");
 
   
 

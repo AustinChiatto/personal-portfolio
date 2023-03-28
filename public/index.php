@@ -35,8 +35,8 @@ require(get_path("data/projects.php"));
                     <div class="o-home-hero__circe js-circle"></div>
                 </div>
                 <div class="o-home-hero__quick-content">
-                    <p class="o-home-hero__scroll">Front End Developer</p>
-                    <p class="o-home-hero__scroll">Scroll</p>
+                    <p class="o-home-hero__label js-home-scroll-fade">Front End Developer</p>
+                    <p class="o-home-hero__label js-home-scroll-hide">Scroll</p>
                 </div>
             </section>
         </div>
