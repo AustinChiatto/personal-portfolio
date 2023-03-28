@@ -8,18 +8,15 @@ const textBot = document.querySelector(".js-home-hero__text-bottom");
 let homeCircle = gsap.timeline({
     scrollTrigger: {
       trigger: ".js-home-hero",
-      pin: true,   // pin the trigger element while active
-      start: "top top", // when the top of the trigger hits the top of the viewport
+      pin: true,
+      start: "top top",
       scrub: true,
-      end: "+=2000", // end after scrolling 500px beyond the start
+      end: "+=2000",
       
       onUpdate(){
-        console.log(gsap.getProperty(jsCircle, "rotateZ"));
-
         currentRotation = gsap.getProperty(jsCircle, "rotateZ");
 
         if(currentRotation >= 180){
-            console.log("half way");
             textTop.textContent = "On The Web";
             // document.querySelector(".js-home-scroll-fade").style.color = "#6E6E73";
             // document.querySelector(".js-home-scroll-hide").style.opacity = 0;
@@ -30,15 +27,8 @@ let homeCircle = gsap.timeline({
     }
   });
   
-  homeCircle.to(jsCircle, {rotateZ: 360});
-  homeCircle.to(".js-home-scroll-hide", {opacity: 0} ,"<");
-
-  
-
-
-
-
-
+homeCircle.to(jsCircle, {rotateZ: 360});
+homeCircle.to(".js-home-scroll-hide", {opacity: 0} ,"<");
 
 
 // Home

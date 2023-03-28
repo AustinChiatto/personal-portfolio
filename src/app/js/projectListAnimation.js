@@ -24,12 +24,10 @@ let headingChange = ScrollTrigger.create({
     end: "bottom bottom",
 
     onLeave: function() { 
-        console.log('End');
         projectListHeading.textContent = 'See more of what I enjoy doing'
         projectListBtn.classList.remove("u-visually-hidden");
       },
       onLeaveBack: function() { 
-        console.log('Start')
         projectListHeading.innerHTML = 'My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects';
         projectListBtn.classList.add("u-visually-hidden");
       }

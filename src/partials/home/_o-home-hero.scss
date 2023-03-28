@@ -1,4 +1,5 @@
 @use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
 
 .o-home-hero {
     min-height: 100vh;
@@ -46,5 +47,13 @@
 }
 
 .o-home-hero__label {
-    font-size: 1.5rem;
+    font-size: 1rem;
+
+    @include m.min-width(tablet) {
+        font-size: 1.25rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 1.5rem;
+    }
 }
