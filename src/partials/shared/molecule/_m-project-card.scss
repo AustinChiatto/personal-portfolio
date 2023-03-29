@@ -32,6 +32,14 @@
     @include m.min-width(desktop-large) {
         font-size: 1.5rem;
     }
+
+    &--small {
+        @extend .m-project-card__label;
+        font-size: 1.15rem;
+        color: $color-secondary;
+    }
+
+    
 }
 
 .m-project-card img {

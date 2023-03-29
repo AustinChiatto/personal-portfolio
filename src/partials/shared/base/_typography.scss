@@ -32,6 +32,7 @@ h6 {
 p {
     font-size: 1.15rem;
     line-height: 1.5;
+    word-wrap: normal;
 
     @include m.min-width(tablet) {
         font-size: 1.25rem;

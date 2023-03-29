@@ -17,9 +17,9 @@
                         <h4 class="o-footer__recap-heading">Vancouver, Canada</h4>
                     </div>
                     <ul class="o-footer__link-list">
-                        <li><a class="a-link-primary js-link" href="https://github.com/AustinChiatto">GitHub</a></li>
-                        <li><a class="a-link-primary js-link" href="https://www.linkedin.com/in/austin-chiatto/">LinkedIn</a></li>
-                        <li><a class="a-link-primary js-link" href="https://codepen.io/austinchiatto">Codepen</a></li>
+                        <li><a class="a-link-primary--highlight js-link" href="https://github.com/AustinChiatto">GitHub</a></li>
+                        <li><a class="a-link-primary--highlight js-link" href="https://www.linkedin.com/in/austin-chiatto/">LinkedIn</a></li>
+                        <li><a class="a-link-primary--highlight js-link" href="https://codepen.io/austinchiatto">Codepen</a></li>
                     </ul>
                 </div>
                 <p class="o-footer__copyright o-footer__recap-heading">&copy; 2023</p>
@@ -27,8 +27,15 @@
         </section>
     </div>
 </footer>
+<!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<!-- GSAP Scroll Trigger Plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<!-- Lazy Load -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<!-- Barba.js -->
 <script src="https://unpkg.com/@barba/core"></script>
+<!-- SplitType.js -->
 <script src="https://unpkg.com/split-type"></script>
+<!-- Animations for links - site wide -->
 <script src="../src/app/js/linkAnimation.js"></script>

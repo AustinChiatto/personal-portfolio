@@ -12,7 +12,7 @@ require("../src/partials/shared/base/head.php");
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
                 <div class="s-section__content">
-                    <h1 class="u-text-center"><span class="a-heading--highlight">My friends call me bald but <br> most</span> Call me Austin</h1>
+                    <h1 class="u-text-center"><span class="a-heading--highlight">My friends call me bald but <br> most</span> call me Austin</h1>
                 </div>
             </section>
             <section class="s-section">

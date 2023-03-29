@@ -55,6 +55,7 @@ require(get_path("data/projects.php"));
             </section>
             <section class="s-section">
                 <!-- Project card loop -->
+                <div class="a-cursor-follower"><p>View</p></div>
                 <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : 
@@ -73,6 +74,7 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="../src/app/js/homeAnimations.js"></script>
+    <script src="../src/app/js/cursorInteractions.js"></script>
     <script src="../src/app/js/projectListAnimation.js"></script>
 </body>
 </html>

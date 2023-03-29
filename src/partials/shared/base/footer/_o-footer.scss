@@ -38,6 +38,7 @@
 .o-footer__recap-heading {
     font-size: 1.15rem;
     font-weight: $font-regular;
+    color: $color-secondary;
 
     @include m.min-width(tablet) {
         font-size: 1.25rem;

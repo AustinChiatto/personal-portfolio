@@ -17,6 +17,10 @@
     &--highlight {
         @extend .a-link-primary;
         color: $color-secondary;
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
 

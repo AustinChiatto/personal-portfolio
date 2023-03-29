@@ -1,4 +1,20 @@
 @use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-about-bio {
+    padding-top: 1rem;
+
+    @include m.min-width(tablet) {
+        padding-top: 2rem;
+    }
+
+    @include m.min-width(desktop) {
+        padding-top: 5rem;
+    }
+
+    @include m.min-width(desktop-large) {
+    }
+}
 
 .o-about-bio__copy {
     color: $color-secondary;
