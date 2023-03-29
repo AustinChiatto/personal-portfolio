@@ -1,4 +1,8 @@
-@use "../shared/utility/u-mixins" as m;
+@use "../shared/utility/u-variables" as *;
+
+.o-about-bio__copy {
+    color: $color-secondary;
+}
 
 .o-about-bio__copy + .o-about-bio__copy {
     padding-top: 2rem;

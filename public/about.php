@@ -32,7 +32,7 @@ require("../src/partials/shared/base/head.php");
                 </div>
             </section>
             <!-- Bio Section -->
-            <section class="s-section--pad-large">
+            <section class="s-section">
                 <div class="s-section__content--left-align o-about-bio">
                     <h2 class="a-heading o-about-bio__copy">I'm a Front-End Developer with an insatiable craving to "figure it all out".</h2>
                     <p class="a-heading o-about-bio__copy">As a developer, I am constantly amazed by the power coding provides to turn ideas into reality. With it, I love to create immersive user experiences using modern languages and frameworks.</p>
@@ -63,5 +63,6 @@ require("../src/partials/shared/base/head.php");
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <script src="../src/app/js/aboutAnimation.js"></script>
 </body>
 </html>
