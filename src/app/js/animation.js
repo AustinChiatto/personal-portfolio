@@ -20,6 +20,7 @@
 //     .call(contentAnimation, [container], 'start')
 // }
 
+
 // function contentAnimation(container) {
 //   $(container.querySelector('.green-heading-bg')).addClass('show')
 //   return gsap

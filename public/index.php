@@ -49,7 +49,7 @@ require(get_path("data/projects.php"));
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
-                    <h2 class="u-pad-bottom">My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects</h2>
+                    <h2 class="u-pad-bottom js-project-heading">My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects</h2>
                     <a class="a-button u-visually-hidden" href="all-projects.php">🎉 View All Projects</a>
                 </div>
             </section>

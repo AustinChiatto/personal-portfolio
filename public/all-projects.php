@@ -13,7 +13,7 @@ require(get_path("data/projects.php"));
             <!-- Project Page Heading -->
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
-                    <h1 class="a-heading-wrap">Discover the work <span class="a-heading--highlight">and the caffeine addiction</span> behind the projects I'm most proud of</h1>
+                    <h1 class="a-heading-wrap js-project-heading">Discover the work <span class="a-heading--highlight">and the caffeine addiction</span> behind the projects I'm most proud of</h1>
                 </div>
             </section>
             <section class="s-section">

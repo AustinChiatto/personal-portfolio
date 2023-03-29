@@ -10,9 +10,21 @@
 }
 
 .o-home-hero__wrapper {
-    width: 30vmax;
+    width: 40vmax;
     aspect-ratio: 1/1;
     position: relative;
+
+    @include m.min-width(tablet) {
+        width: 40vmax;
+    }
+
+    @include m.min-width(desktop) {
+        width: 40vmax;
+    }
+
+    @include m.min-width(desktop-large) {
+        width: 35vmax;
+    }
 }
 
 .o-home-hero__text {
