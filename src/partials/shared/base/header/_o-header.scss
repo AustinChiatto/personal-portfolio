@@ -12,9 +12,9 @@
 .o-header__menu {
     max-width: 25rem;
     border-radius: 0.5rem;
-    padding-inline: 0.25rem;
     margin: 0 auto;
     background: #2A2A2E50;
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
 }
 
@@ -22,18 +22,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0.5rem;
 }
 
 .o-header__menu-item {
     display: block;
     padding: 1rem;
     border-radius: 0.25rem;
+    color: $color-primary;
+    transition-property: background, border, color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 
     &:hover {
         background: #eef0f225;
     }
-}
-
-.o-header__menu-item a {
-    color: $color-primary;
 }
