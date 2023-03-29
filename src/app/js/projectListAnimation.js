@@ -1,20 +1,17 @@
-// Project-List
+// Global Variables
 // ===========================
+const projectList = document.querySelector(".js-projects-list"),
+      projectHeadline = document.querySelector(".js-project-headline"),
+      projectListHeading = document.querySelector(".js-project-heading"),
+      projectListBtn = document.querySelector(".js-project-headline .a-button"),
+      projectListItem = document.querySelectorAll(".js-projects-list__item"),
+      projectCard = document.querySelectorAll(".js-project-card"),
+      lastCard = projectCard[projectCard.length - 1],
+      firstCard = projectCard[0],
+      currentLocation = window.location.pathname;
 
-// global variables
-const projectList = document.querySelector(".js-projects-list");
-const projectHeadline = document.querySelector(".js-project-headline");
-const projectListHeading = document.querySelector(".js-project-heading");
-const projectListBtn = document.querySelector(".js-project-headline .a-button");
-const projectListItem = document.querySelectorAll(".js-projects-list__item");
-const projectCard = document.querySelectorAll(".js-project-card");
-const lastCard = projectCard[projectCard.length - 1];
-const firstCard = projectCard[0];
-const currentLocation = window.location.pathname;
-
-
-
-// GSAP scroll trigger
+// Pinned Heading
+// ===========================
 let stickyProjectHeading = ScrollTrigger.create({
     trigger: projectHeadline,
     start: "top top",
@@ -23,39 +20,42 @@ let stickyProjectHeading = ScrollTrigger.create({
     end: "bottom top",
 });
 
-// headline fade out
+// heading fade out
 // ===========================
 let fadeOut = gsap.timeline({
   scrollTrigger: {
     trigger: firstCard,
     start: "top 75%",
-    // markers: true,
     scrub: true,
     end: "top 30%"
   }
 });
 
+// fadeOut timeline
 fadeOut.from(projectListHeading, {opacity: 1, y: 0});
 fadeOut.to(projectListHeading, {opacity: 0, y: 10});
-fadeOut.to(projectListHeading, {y: -10});
+fadeOut.to(projectListHeading, {y: -10, color: "#6E6E73"});
 
 // headline fade In
 // ===========================
 let fadeIn = gsap.timeline({
   scrollTrigger: {
     trigger: lastCard,
-    start: "bottom 45%",
-    // markers: true,
+    start: "bottom 30%",
     scrub: true,
-    end: "bottom 20%"
+    end: "bottom -30%"
   }
 });
 
-fadeIn.to(projectListHeading, {opacity: 1, y: 0}, "<");
+// fadeIn timeline
+fadeIn.to(projectListHeading, {opacity: 1, y: 0});
+fadeIn.to(projectListHeading, {color: "#eef0f2"}, "<");
 fadeIn.from(projectListBtn, {opacity: 0, y: -10}, "<");
-fadeIn.to(projectListBtn, {opacity: 1, y: 0}, "<");
+fadeIn.to(projectListBtn, {opacity: 1, y: 0});
 
 
+// Change text content of heading
+// ===========================
 let headingChange = ScrollTrigger.create({
   trigger: lastCard,
   start: "center center",
@@ -81,3 +81,5 @@ let headingChange = ScrollTrigger.create({
     }
 });
 
+// Card
+// ===========================
