@@ -33,8 +33,8 @@ let fadeOut = gsap.timeline({
 
 // fadeOut timeline
 fadeOut.from(projectListHeading, {opacity: 1, y: 0});
-fadeOut.to(projectListHeading, {opacity: 0, y: 10});
-fadeOut.to(projectListHeading, {y: -10, color: "#6E6E73"});
+fadeOut.to(projectListHeading, {opacity: 0, scale: 0.9});
+fadeOut.to(projectListHeading, {scale: 0.9, color: "#6E6E73"});
 
 // headline fade In
 // ===========================
@@ -48,10 +48,10 @@ let fadeIn = gsap.timeline({
 });
 
 // fadeIn timeline
-fadeIn.to(projectListHeading, {opacity: 1, y: 0});
+fadeIn.to(projectListHeading, {opacity: 1, scale: 1});
 fadeIn.to(projectListHeading, {color: "#eef0f2"}, "<");
-fadeIn.from(projectListBtn, {opacity: 0, y: -10}, "<");
-fadeIn.to(projectListBtn, {opacity: 1, y: 0});
+fadeIn.from(projectListBtn, {opacity: 0, scale: 0.9}, "<");
+fadeIn.to(projectListBtn, {opacity: 1, scale: 1});
 
 
 // Change text content of heading
