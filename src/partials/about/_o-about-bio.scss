@@ -11,9 +11,6 @@
     @include m.min-width(desktop) {
         padding-top: 5rem;
     }
-
-    @include m.min-width(desktop-large) {
-    }
 }
 
 .o-about-bio__copy {
