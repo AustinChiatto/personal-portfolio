@@ -18,7 +18,7 @@ require(get_path("data/projects.php"));
             </section>
             <section class="s-section">
                 <!-- Project card loop -->
-                <div class="a-cursor-follower">View</div>
+                <!-- <div class="a-cursor-follower">View</div> -->
                 <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : ?>
