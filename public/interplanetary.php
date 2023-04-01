@@ -86,28 +86,25 @@ require("../src/partials/shared/base/head.php");
         </div>
         <div class="s-section-wrapper--theme-dark">
             <!-- Project Milestones -->
-            <div class="o-milestones js-project-milestones">
-                <!-- Milestone One -->
-                <section class="o-milestones__section">
-                    <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">Upcoming Launches</h2>
-                        <p>The first milestone of the project was integrating the <a class="a-link--grey" href="https://www.rocketlaunch.live/api" target="_blank">rocketlaunch.live</a> API to collect the live data for upcoming rocket launches. This enabled the display of information in a user friendly format.</p>
+            <div class="o-project-details">
+                <div class="o-project-details__scroller">
+                    <div class="o-project-details__grid">
+                        <div class="o-project-details__card">1</div>
+                        <div class="o-project-details__card">2</div>
+                        <div class="o-project-details__card">3</div>
+                        <div class="o-project-details__card">4</div>
+                        <div class="o-project-details__card">5</div>
+                        <div class="o-project-details__card">6</div>
+                        <div class="o-project-details__card">7</div>
+                        <div class="o-project-details__card">8</div>
+                        <div class="o-project-details__card">9</div>
+                        <div class="o-project-details__card">10</div>
+                        <div class="o-project-details__card">11</div>
+                        <div class="o-project-details__card">12</div>
+                        <div class="o-project-details__card">13</div>
+                        <div class="o-project-details__card">14</div>
                     </div>
-                </section>
-                <!-- Milestone Two -->
-                <section class="o-milestones__section">
-                    <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">Previous Launches</h2>
-                        <p>Using the same API to collect and parse data from previous launches allowed the site to become a catalogue of all rocket launches throughout space flight history. This milestone enabled search functionality, putting access to specific launch information in the hands of the user.</p>
-                    </div>
-                </section>
-                <!-- Milestone Three -->
-                <section class="o-milestones__section">
-                    <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom u-font-highlight">Live Solar Map</h2>
-                        <p class="u-font-highlight">This milestone is a work in progress, but when complete, it will provide users with a full and accurate map of our solar system. This would include planet data, live orbits and positions, and will give the user a sense of the immense scale of our solar system.</p>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>
@@ -115,5 +112,6 @@ require("../src/partials/shared/base/head.php");
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="../src/app/js/projectPageAnimation.js"></script>
+    <script src="../src/app/js/projectDetails.js"></script>
 </body>
 </html>
