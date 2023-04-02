@@ -1,0 +1,73 @@
+@use "../../shared/utility/u-variables" as *;
+
+.m-launch-card {
+    width: 80%;
+    border-radius: 1rem;
+    position: relative;
+    aspect-ratio: 3/1;
+    color: black;
+    cursor: pointer;
+}
+
+.m-launch-card__details,
+.m-launch-card__picture {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.m-launch-card__details {
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 0.1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.m-launch-card__mission {
+    font-size: 1.3rem;
+    padding-bottom: 0.25rem;
+}
+
+.m-launch-card__provider {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: white;
+
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    width: fit-content;
+    transition: all 250ms ease;
+
+    &:hover {
+        background: black;
+        border: 1px solid black;
+        color: white;
+    }
+}
+
+.m-launch-card__date {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: white;
+}
+
+.m-launch-card__picture {
+    display: block;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.m-launch-card__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}

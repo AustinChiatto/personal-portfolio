@@ -3,33 +3,71 @@
 
 
 .o-project-details {
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: yellow;
-}
-
-.o-project-details__scroller {
-    height: 100%;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    min-width: fit-content;
+    padding-block: 12rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .o-project-details__grid {
-    background: green;
-    min-width: fit-content;
+    grid-column: 1 / span 12;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 5vw);
-    grid-auto-columns: fit-content(5vw);
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-flow: column;
-    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+
+    @include m.min-width(tablet) {
+        grid-column: 2 / span 10;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
 }
 
 .o-project-details__card {
     grid-column: auto / span 1;
     grid-row: auto / span 1;
     aspect-ratio: 1/1;
-    background: red;
+    background: $color-secondary--dark;
+    border-radius: 1rem;
+    border: 1px solid $border-color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @include m.min-width(tablet) {
+        border-radius: 2rem;
+    }
+
+    &--1x2 {
+        @extend .o-project-details__card;
+        grid-column: auto / span 1;
+        grid-row: auto / span 2;
+        aspect-ratio: unset;
+    }
+    
+    &--2x2 {
+        @extend .o-project-details__card;
+        grid-column: auto / span 2;
+        grid-row: auto / span 2;
+    }
+
+    &--2x1 {
+        @extend .o-project-details__card;
+        grid-column: auto / span 2;
+        grid-row: auto / span 1;
+        aspect-ratio: unset;
+    }
+}
+
+.o-project-details__heading {
+    font-size: 1.5rem;
+    color: $color-primary;
+    text-align: center;
+
+    &--sub {
+        @extend .o-project-details__heading;
+        font-size: 1.25rem;
+        color: $color-secondary;
+    }
 }

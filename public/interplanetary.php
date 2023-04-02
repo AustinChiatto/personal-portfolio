@@ -87,24 +87,47 @@ require("../src/partials/shared/base/head.php");
         <div class="s-section-wrapper--theme-dark">
             <!-- Project Milestones -->
             <div class="o-project-details">
-                <div class="o-project-details__scroller">
-                    <div class="o-project-details__grid">
-                        <div class="o-project-details__card">1</div>
-                        <div class="o-project-details__card">2</div>
-                        <div class="o-project-details__card">3</div>
-                        <div class="o-project-details__card">4</div>
-                        <div class="o-project-details__card">5</div>
-                        <div class="o-project-details__card">6</div>
-                        <div class="o-project-details__card">7</div>
-                        <div class="o-project-details__card">8</div>
-                        <div class="o-project-details__card">9</div>
-                        <div class="o-project-details__card">10</div>
-                        <div class="o-project-details__card">11</div>
-                        <div class="o-project-details__card">12</div>
-                        <div class="o-project-details__card">13</div>
-                        <div class="o-project-details__card">14</div>
-                    </div>
-                </div>
+                <ul class="o-project-details__grid">
+                    <li class="o-project-details__card--2x2">
+                        development process
+                    </li>
+                    <li class="o-project-details__card--2x1">
+                        <article class="m-launch-card">
+                            <div class="m-launch-card__details">
+                                <div class="m-launch-card__mission">Starlink Group 2-5</div>
+                                <div class="m-launch-card__vehicle">Faclon 9 Block 5</div>
+                                <div class="m-launch-card__provider">SpaceX</div>
+                                <div class="m-launch-card__date">Mar 12</div>
+                            </div>
+                            <picture class="m-launch-card__picture">
+                                <img class="m-launch-card__img" src="../src/assets/images/rocket.jpg" alt="A white, frost covered, falcon 9 rocket that carries starlink satellites, launching from earth during dusk." />
+                            </picture>
+                        </article>
+                    </li>
+                    <li class="o-project-details__card">
+                        <div class="m-launch-control">
+                            <h3 class="o-project-details__heading">Launch Controls</h3>
+                            <h4 class="o-project-details__heading--sub">Get a New Mission</h4>
+                            <ul class="m-launch-control__btns">
+                                <li class="m-launch-control__btn"><img src="../src/assets/icons/arrowtriangle-left-fill.svg" alt=""></li>
+                                <li class="m-launch-control__btn"><img src="../src/assets/icons/arrowtriangle-right-fill.svg" alt=""></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="o-project-details__card--1x2">
+                        previous code
+                    </li>
+                    <li class="o-project-details__card">
+                        <div class="m-details-mockup">
+                            <picture class="m-details-mockup__container">
+                                <img class="m-details-mockup__img" src="../src/assets/images/interplanetary-mockup__mobile-01.png" alt="A white, frost covered, falcon 9 rocket that carries starlink satellites, launching from earth during dusk." />
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="o-project-details__card--2x1">
+                        upcoming code
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
