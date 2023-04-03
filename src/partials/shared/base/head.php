@@ -13,5 +13,6 @@ $title_tag = $title_tag ?? "";
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../build/css/reset.min.css">
+        <link rel="stylesheet" href="../build/css/github-dark.min.css">
         <link rel="stylesheet" href="../build/css/main.min.css">
     </head>

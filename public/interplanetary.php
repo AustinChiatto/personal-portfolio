@@ -57,12 +57,17 @@ require("../src/partials/shared/base/head.php");
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
+                        <img src="../src/assets/images/interplanetary-mockup__mobile-01.png" alt="">
+                    </picture>
+                    <picture class="o-project-gallery__mockup-large">
+                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
                         <img src="../src/assets/images/interplanetary-mockup__tablet-02.png" alt="">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
                         <img src="../src/assets/images/interplanetary-mockup__tablet-03.png" alt="">
                     </picture>
+                    
                 </div>
             </section>
         </div>
@@ -86,10 +91,19 @@ require("../src/partials/shared/base/head.php");
         </div>
         <div class="s-section-wrapper--theme-dark">
             <!-- Project Milestones -->
-            <div class="o-project-details">
+            <section class="o-project-details">
                 <ul class="o-project-details__grid">
                     <li class="o-project-details__card--2x2">
-                        development process
+                        <div class="o-process">
+                            <ul class="o-process__tab-list">
+                                <li class="o-process__tab"><a class="a-button">🔬 Research</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert">🗓️ Planning</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert">🖥️ Design</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert">⌨️ Development</a></li>
+                            </ul>
+                            <h2 class="o-process__heading">Research</h2>
+                            <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                        </div>
                     </li>
                     <li class="o-project-details__card--2x1">
                         <article class="m-launch-card">
@@ -115,7 +129,53 @@ require("../src/partials/shared/base/head.php");
                         </div>
                     </li>
                     <li class="o-project-details__card--1x2">
-                        previous code
+                        <div class="o-project-code">
+                            <pre class="o-project-code__pre--vert">
+                                <code class="language-javascript">
+// Fetch Previous Launches
+
+fetch(previousLaunchesURI)
+    .then(
+        // this extracts the json from the response
+        (response) => response.json()
+    )
+    .then((data) => {
+
+        // get last page returned from data set
+        lastPage = data.last_page + pageCount;
+        // create a new URI to include the last page
+        let searchURI = previousLaunchesURI + "&page=" + lastPage;
+        // fetch data from new URI
+
+        fetch(searchURI)
+            .then(
+                // this extracts the json from the response
+                (response) => response.json()
+            )
+            .then((data) => {
+                // runs function that adds cards to container
+                addToPrevious(data);
+                // if lastePage > 0 minus one from the result
+                if (lastPage > 0){
+                    pageCount--;
+                } else {
+                    loadMoreBtn.style.display = "none";
+                }
+            })
+            .catch((error) => {
+                console.error("Error", error);
+            })
+            .finally();
+
+    })
+    .catch((error) => {
+        // normally handle the error, here we'll just log it
+        console.error("Error", error);
+    })
+    .finally();
+                                </code>
+                            </pre>
+                        </div>
                     </li>
                     <li class="o-project-details__card">
                         <div class="m-details-mockup">
@@ -125,15 +185,64 @@ require("../src/partials/shared/base/head.php");
                         </div>
                     </li>
                     <li class="o-project-details__card--2x1">
-                        upcoming code
+                        <div class="o-project-code">
+                            <pre class="o-project-code__pre">
+                                <code class="language-javascript">
+// Fetch Upcoming Launches
+
+function fetchUpcomingLaunches() {
+    // fetch with base uri returns the next 25 entries
+    fetch(baseURI)
+        .then(
+            // function to extract json from the response 
+            // argument
+            (response) => response.json()
+        )
+        .then((data) => {
+            // pass response data to function that creates
+            // a card for each entry
+            addToUpcoming(data);
+        })
+        .catch((error) => {
+            // log error if error occurs
+            console.error("Error", error);
+        })
+        .finally();
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li class="o-project-details__card--2x1">
+                    
+                    </li>
+                    
+                    <li class="o-project-details__card--2x2">
+                        <div class="o-process">
+                            <ul class="o-process__tab-list">
+                                <li class="o-process__tab"><a class="a-button">🔬 Challenges</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert">🗓️ Solutions</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert">🖥️ What I learned</a></li>
+                            </ul>
+                            <h2 class="o-process__heading">Challenges</h2>
+                            <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                        </div>
+                    </li>
+                    <li class="o-project-details__card">
+                    
+                    </li>
+                    <li class="o-project-details__card">
+                    
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
+    <script src="../src/app/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="../src/app/js/projectPageAnimation.js"></script>
     <script src="../src/app/js/projectDetails.js"></script>
 </body>

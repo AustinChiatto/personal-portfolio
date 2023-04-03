@@ -1,0 +1,18 @@
+.o-process {
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.o-process__tab-list {
+    display: flex;
+    align-items: center;
+}
+
+.o-process__tab + .o-process__tab {
+    margin-left: 0.5rem;
+}
+
+.o-process__heading {
+    padding-block: 4rem 3rem;
+}
