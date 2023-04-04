@@ -34,8 +34,6 @@
 <!-- Lazy Load -->
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
 <!-- Barba.js -->
-<script src="https://unpkg.com/@barba/core"></script>
-<!-- SplitType.js -->
-<script src="https://unpkg.com/split-type"></script>
+<!-- <script src="https://unpkg.com/@barba/core"></script> -->
 <!-- Animations for links - site wide -->
 <script src="../src/app/js/linkAnimation.js"></script>

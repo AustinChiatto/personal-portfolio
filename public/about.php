@@ -63,6 +63,9 @@ require("../src/partials/shared/base/head.php");
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <!-- SplitType.js -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- animation.js file -->
     <script src="../src/app/js/aboutAnimation.js"></script>
 </body>
 </html>
