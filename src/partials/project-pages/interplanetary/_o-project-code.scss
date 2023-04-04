@@ -1,4 +1,5 @@
 @use "../../shared/utility/u-variables" as *;
+@use "../../shared/utility/u-mixins" as m;
 
 .o-project-code {
     position: relative;
@@ -15,10 +16,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -25%);
     transition: top .15s ease-in-out;
-    
     overflow: hidden;
+
+    @include m.min-width(tablet) {
+        transform: translate(-50%, 0);
+    }
 
     &--vert {
         @extend .o-project-code__pre;

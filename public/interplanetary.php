@@ -96,13 +96,27 @@ require("../src/partials/shared/base/head.php");
                     <li class="o-project-details__card--2x2">
                         <div class="o-process">
                             <ul class="o-process__tab-list">
-                                <li class="o-process__tab"><a class="a-button">🔬 Research</a></li>
-                                <li class="o-process__tab"><a class="a-button--invert">🗓️ Planning</a></li>
-                                <li class="o-process__tab"><a class="a-button--invert">🖥️ Design</a></li>
-                                <li class="o-process__tab"><a class="a-button--invert">⌨️ Development</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Research</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Planning</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Design</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Development</a></li>
                             </ul>
-                            <h2 class="o-process__heading">Research</h2>
-                            <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Research</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Planning</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Design</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Development</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="o-project-details__card--2x1">
@@ -219,13 +233,23 @@ function fetchUpcomingLaunches() {
                     
                     <li class="o-project-details__card--2x2">
                         <div class="o-process">
-                            <ul class="o-process__tab-list">
-                                <li class="o-process__tab"><a class="a-button">🔬 Challenges</a></li>
-                                <li class="o-process__tab"><a class="a-button--invert">🗓️ Solutions</a></li>
-                                <li class="o-process__tab"><a class="a-button--invert">🖥️ What I learned</a></li>
+                        <ul class="o-process__tab-list">
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Challenges</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">Solutions</a></li>
+                                <li class="o-process__tab"><a class="a-button--invert js-process-btn">What I learned</a></li>
                             </ul>
-                            <h2 class="o-process__heading">Challenges</h2>
-                            <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Research</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Planning</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
+                            <div class="o-process-container js-process-container">
+                                <h2 class="o-process__heading">Design</h2>
+                                <p class="u-font-highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati non vero, voluptate quod, et ab minus ducimus nesciunt, blanditiis maxime vel error pariatur laudantium.</p>
+                            </div>
                         </div>
                     </li>
                     <li class="o-project-details__card">

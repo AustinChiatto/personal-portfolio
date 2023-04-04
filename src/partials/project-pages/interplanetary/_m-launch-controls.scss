@@ -1,12 +1,23 @@
+@use "../../shared/utility/u-variables" as *;
+@use "../../shared/utility/u-mixins" as m;
+
 .m-launch-control__btns {
-    margin-top: 3rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include m.min-width(tablet) {
+        margin-top: 2rem;
+    }
+
+    @include m.min-width(desktop) {
+        margin-top: 3rem;
+    }
 }
 
 .m-launch-control__btn {
-    padding: 2.5rem;
+    padding: 1rem;
     background: #e7e8ed;
     border-radius: 0.5rem;
     position: relative;
@@ -14,6 +25,14 @@
     box-shadow: 0 0.25rem 0 0 #a5aab3;
     -webkit-box-shadow: 0 0.25rem 0 0 #a5aab3;
     cursor: pointer;
+
+    @include m.min-width(tablet) {
+        padding: 2rem;
+    }
+
+    @include m.min-width(desktop) {
+        padding: 2.5rem;
+    }
 
     &:hover {
         transform: translateY(0.25rem);

@@ -1,13 +1,18 @@
 @use "../../shared/utility/u-variables" as *;
+@use "../../shared/utility/u-mixins" as m;
 
 .m-launch-card {
-    width: 80%;
+    width: 90%;
     border-radius: 1rem;
     position: relative;
     aspect-ratio: 3/1;
     color: black;
     cursor: pointer;
     perspective: 1000px;
+
+    @include m.min-width(tablet) {
+        width: 80%;
+    }
 }
 
 .m-launch-card__details,
@@ -20,13 +25,17 @@
 }
 
 .m-launch-card__details {
-    padding: 1rem;
+    padding: 0.75rem;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 0.1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
     z-index: 1;
+
+    @include m.min-width(tablet) {
+        padding: 1rem;
+    }
 }
 
 .m-launch-card__mission {
@@ -36,15 +45,19 @@
 
 .m-launch-card__provider {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 0.75rem;
+    top: 0.75rem;
     color: white;
-
     padding: 0.5rem;
     border: 1px solid white;
     border-radius: 0.5rem;
     width: fit-content;
     transition: all 250ms ease;
+
+    @include m.min-width(tablet) {
+        right: 1rem;
+        top: 1rem;
+    }
 
     &:hover {
         background: black;

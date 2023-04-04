@@ -3,9 +3,17 @@
 
 
 .o-project-details {
-    padding-block: 32vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-block: 15vh;
+
+        @include m.min-width(tablet) {
+            padding-block: 20vh;
+        }
+
+        @include m.min-width(desktop) {
+            padding-block: 25vh;
+        }
 }
 
 .o-project-details__grid {
@@ -17,6 +25,9 @@
 
     @include m.min-width(tablet) {
         grid-column: 2 / span 10;
+    }
+
+    @include m.min-width(desktop) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
         gap: 1.25rem;
@@ -81,3 +92,26 @@
     }
 }
 
+.js-active {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    @include m.theme-light;
+    border: 1px solid $color-primary--dark;
+    border-radius: 5rem;
+    transition-property: background, border, color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    max-width: fit-content;
+
+    &:hover{
+        @include m.theme-light;
+        border: 1px solid $color-primary--dark;
+    }
+
+    @include m.min-width(desktop) {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+    }
+}
