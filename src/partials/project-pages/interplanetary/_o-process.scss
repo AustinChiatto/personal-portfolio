@@ -30,14 +30,23 @@
 }
 
 .o-process__heading {
-    padding-block: 1.5rem .5rem;
+    padding-block: 1.5rem 1rem;
 
     @include m.min-width(tablet) {
         padding-block: 2rem 1rem;
     }
 
     @include m.min-width(desktop) {
-        padding-block: 4rem 3rem;
+        padding-block: 3rem 2rem;
+    }
+}
+
+.o-process__copy {
+    font-size: 1.25rem;
+    line-height: 1.33;
+
+    @include m.min-width(tablet) {
+        font-size: 1.5rem;
     }
 }
 
