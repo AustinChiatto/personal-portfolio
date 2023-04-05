@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Interplanetary";
+$title_tag = "Austin Chiatto | Grid Tool";
 require("../src/partials/shared/base/head.php");
 ?>
 
@@ -18,13 +18,13 @@ require("../src/partials/shared/base/head.php");
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
                 <div class="s-section__content--left-align">
-                    <h2 class="a-heading--large u-pad-bottom">Interplanetary</h2>
-                    <p>Explore our solar system and track the upcoming launches that are moving humanity towards becoming interplanetary.</p>
+                    <h2 class="a-heading--large u-pad-bottom">Grid Tool</h2>
+                    <p>A groovy tool to help new developers create responsive CSS grid layouts</p>
                     <!-- Project Stats -->
                     <ul class="m-project-stats">
                         <li class="m-project-stats__item">
                             <h3 class="m-project-stats__label">Status</h3>
-                            <p class="m-project-stats__stat">WIP</p>
+                            <p class="m-project-stats__stat">Live</p>
                         </li>
                         <li class="m-project-stats__item">
                             <h3 class="m-project-stats__label">Role</h3>
@@ -32,13 +32,13 @@ require("../src/partials/shared/base/head.php");
                         </li>
                         <li class="m-project-stats__item">
                             <h3 class="m-project-stats__label">Technology</h3>
-                            <p class="m-project-stats__stat">API, JS, PHP, SCSS</p>
+                            <p class="m-project-stats__stat">JS & SCSS</p>
                         </li>
                     </ul>
                     <!-- Project External Links -->
                     <ul class="m-link-list">
-                        <li><a class="a-button" href="#">👀 Live site</a></li>
-                        <li><a class="a-button" href="#">📂 Source Code</a></li>
+                        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/">👀 Live site</a></li>
+                        <li><a class="a-button" href="https://github.com/AustinChiatto/grid-tool">📂 Source Code</a></li>
                     </ul>
                 </div>
             </section>
@@ -49,23 +49,19 @@ require("../src/partials/shared/base/head.php");
             <div class="o-project-gallery">
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__tablet-01.png" alt="">
+                        <img src="../src/assets/images/grid-tool-mockup__tablet-02.png" alt="">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__mobile-02.png" alt="">
+                        <img src="../src/assets/images/grid-tool-mockup__desktop-01.png" alt="">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__mobile-01.png" alt="">
+                        <img src="../src/assets/images/grid-tool-mockup__mobile-01.png" alt="">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__tablet-02.png" alt="">
-                    </picture>
-                    <picture class="o-project-gallery__mockup-large">
-                        <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/interplanetary-mockup__tablet-03.png" alt="">
+                        <img src="../src/assets/images/grid-tool-mockup__tablet-01.png" alt="">
                     </picture>
                 </div>
             </section>
@@ -94,22 +90,15 @@ require("../src/partials/shared/base/head.php");
                 <!-- Milestone One -->
                 <section class="o-milestones__section">
                     <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">Upcoming Launches</h2>
-                        <p>The first milestone of the project was integrating the <a class="a-link--grey" href="https://www.rocketlaunch.live/api" target="_blank">rocketlaunch.live</a> API to collect the live data for upcoming rocket launches. This enabled the display of information in a user friendly format.</p>
+                        <h2 class="a-heading--large u-pad-bottom">Visualization</h2>
+                        <p>By seeing a visual representation of the grid, new developers can better visualize how the grid lines and tracks are created and how they can be manipulated to create different layouts. This can help them avoid common mistakes and make it easier to troubleshoot issues when working with CSS grid. Additionally, seeing a visual representation of the grid can make it easier for new developers to experiment with different grid layouts and gain a deeper understanding of how CSS grid works.</p>
                     </div>
                 </section>
                 <!-- Milestone Two -->
                 <section class="o-milestones__section">
-                    <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom">Previous Launches</h2>
-                        <p>Using the same API to collect and parse data from previous launches allowed the site to become a catalogue of all rocket launches throughout space flight history. This milestone enabled search functionality, putting access to specific launch information in the hands of the user.</p>
-                    </div>
-                </section>
-                <!-- Milestone Three -->
-                <section class="o-milestones__section">
-                    <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom u-font-highlight">Live Solar Map</h2>
-                        <p class="u-font-highlight">This milestone is a work in progress, but when complete, it will provide users with a full and accurate map of our solar system. This would include planet data, live orbits and positions, and will give the user a sense of the immense scale of our solar system.</p>
+                    <div class="s-section__content--left-align"> 
+                        <h2 class="a-heading--large u-pad-bottom">Copy Code</h2>
+                        <p>Being able to see the output code of the grid being created can help developers new to CSS grid get a sense of the relationship between the columns, row, and gaps. Being able to copy the code will also save them time by quickly trying out different solutions and layouts.</p>
                     </div>
                 </section>
             </div>

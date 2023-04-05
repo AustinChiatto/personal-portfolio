@@ -22,7 +22,7 @@ $project_two = new Project([
     "type" => "Vanilla JS Browser Game",
     "image_url" => "project-img__01.png",
     "image_alt" => "A product mockup showing the desktop version of a video game, the player controls a triangle ship and their goal is to dodge oncoming asteroids.",
-    "featured" => true
+    "featured" => false
 ]);
 
 $project_three = new Project([
@@ -35,12 +35,12 @@ $project_three = new Project([
 ]);
 
 $project_four = new Project([
-    "link" => "interplanetary.php",
+    "link" => "grid-tool.php",
     "name" => "CSS Grid Tool",
     "type" => "GSAP Animation",
     "image_url" => "project-img__02.png",
-    "image_alt" => "A mockup of an audio player that is currently playing a song buy Mac Miller.",
-    "featured" => false
+    "image_alt" => "Tablet mockup of the grid tool interface which has a colorful retro inspired theme",
+    "featured" => true
 ]);
 
 $projects = [
