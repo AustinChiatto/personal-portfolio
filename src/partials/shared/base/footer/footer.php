@@ -33,8 +33,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <!-- Lazy Load -->
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<script src="../src/app/js/vanilla-tilt.min.js"></script>
 <!-- Barba.js -->
-<script src="https://unpkg.com/@barba/core"></script>
+<!-- <script src="https://unpkg.com/@barba/core"></script> -->
 <!-- SplitType.js -->
 <script src="https://unpkg.com/split-type"></script>
 <!-- Animations for links - site wide -->

@@ -120,7 +120,7 @@ require("../src/partials/shared/base/head.php");
                         </div>
                     </li>
                     <li class="o-project-details__card--2x1">
-                        <article class="m-launch-card">
+                        <article class="m-launch-card" data-tilt data-tilt-max="15" data-tilt-perspective="2000">
                             <div class="m-launch-card__details">
                                 <div class="m-launch-card__mission">Starlink Group 2</div>
                                 <div class="m-launch-card__vehicle">Faclon 9</div>
@@ -226,7 +226,7 @@ function fetchUpcomingLaunches() {
                         </div>
                     </li>
                     <li class="o-project-details__card--2x1">
-                        <article class="m-launch-card">
+                        <article class="m-launch-card" data-tilt data-tilt-max="15" data-tilt-perspective="2000">
                             <div class="m-launch-card__details">
                                 <div class="m-launch-card__mission">OFT Test Launch</div>
                                 <div class="m-launch-card__vehicle">Starship</div>
