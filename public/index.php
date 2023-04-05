@@ -9,10 +9,10 @@ require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
 
-<body data-barba="wrapper">
+<body>
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-    <main data-barba="container" data-barba-namespace="home">
+    <main>
         <!-- Hero Section -->
         <div class="s-section-wrapper--theme-dark">
             <section class="o-home-hero js-home-hero">

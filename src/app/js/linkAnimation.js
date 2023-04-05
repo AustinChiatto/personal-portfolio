@@ -1,4 +1,4 @@
-// // link hover
+// const lazyLoadInstance = new LazyLoad({ });
 
 // const linkArray = document.querySelectorAll('.js-link');
 // const linkText = new SplitType('.js-link', { types: 'chars' });

@@ -40,8 +40,8 @@ require("../src/partials/shared/base/head.php");
                     </ul>
                     <!-- Project External Links -->
                     <ul class="m-link-list">
-                        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/">👀 Live site</a></li>
-                        <li><a class="a-button" href="https://github.com/AustinChiatto/grid-tool">📂 Source Code</a></li>
+                        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" target="_blank" title="take a look at the live site">👀 Live site</a></li>
+                        <li><a class="a-button" href="https://github.com/AustinChiatto/grid-tool" target="_blank" title="view the code behind the project">📂 Source Code</a></li>
                     </ul>
                 </div>
             </section>
@@ -52,19 +52,19 @@ require("../src/partials/shared/base/head.php");
             <div class="o-project-gallery">
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/grid-tool-mockup__tablet-02.png" alt="">
+                        <img loading="lazy" src="../src/assets/images/grid-tool-mockup__tablet-02.png" alt="tablet mockup of grid tool main ui">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/grid-tool-mockup__desktop-01.png" alt="">
+                        <img loading="lazy" src="../src/assets/images/grid-tool-mockup__desktop-01.png" alt="desktop mockup of grid tool main ui">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/grid-tool-mockup__mobile-01.png" alt="">
+                        <img loading="lazy" src="../src/assets/images/grid-tool-mockup__mobile-01.png" alt="mobile mockup of grid tool main ui">
                     </picture>
                     <picture class="o-project-gallery__mockup-large">
                         <!-- <source media="(min-width: 670px)" srcset="" /> -->
-                        <img src="../src/assets/images/grid-tool-mockup__tablet-01.png" alt="">
+                        <img loading="lazy" src="../src/assets/images/grid-tool-mockup__tablet-01.png" alt="tablet mockup of grid tool main ui">
                     </picture>
                 </div>
             </section>

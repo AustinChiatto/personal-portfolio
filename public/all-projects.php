@@ -8,10 +8,10 @@ $og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
-<body data-barba="wrapper">
+<body>
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-    <main data-barba="container" data-barba-namespace="all-projects">
+    <main>
         <div class="s-section-wrapper--theme-dark">
             <!-- Project Page Heading -->
             <section class="s-section--full-height js-project-headline">

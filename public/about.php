@@ -7,10 +7,10 @@ $og_url = "https://austinchiatto.com/public/about.php";
 $og_image = "../src/assets/images/about-section__image-00.jpg";
 require("../src/partials/shared/base/head.php");
 ?>
-<body data-barba="wrapper">
+<body>
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
-    <main data-barba="container" data-barba-namespace="about">
+    <main>
         <!-- About Hero -->
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
@@ -22,15 +22,15 @@ require("../src/partials/shared/base/head.php");
                 <!-- About External Links -->
                 <div class="o-about__content">
                     <ul class="o-about-hero__link-list">
-                        <li><a class="a-button" href="mailto:chiattoaustin@gmail.com">Email</a></li>
-                        <li><a class="a-button" href="https://www.linkedin.com/in/austin-chiatto/" target="_blank">LinkedIn</a></li>
-                        <li><a class="a-button" href="https://github.com/AustinChiatto" target="_blank">GitHub</a></li>
+                        <li><a class="a-button" href="mailto:chiattoaustin@gmail.com" title="Send me an email">Email</a></li>
+                        <li><a class="a-button" href="https://www.linkedin.com/in/austin-chiatto/" target="_blank" title="View my LinkedIn profile">LinkedIn</a></li>
+                        <li><a class="a-button" href="https://github.com/AustinChiatto" target="_blank" title="View my GitHub profile">GitHub</a></li>
                     </ul>
                     <!-- Personal Images -->
                     <div class="o-about-hero__gallery">
-                        <img class="o-about-hero__image" src="../src/assets/images/about-section__image-01.jpg" alt="">
-                        <img class="o-about-hero__image--primary" src="../src/assets/images/about-section__image-00.jpg" alt="">
-                        <img class="o-about-hero__image" src="../src/assets/images/about-section__image-02.jpg" alt="">
+                        <img loading="lazy" class="o-about-hero__image" src="../src/assets/images/about-section__image-01.jpg" alt="myself and my partner tasha">
+                        <img loading="lazy" class="o-about-hero__image--primary" src="../src/assets/images/about-section__image-00.jpg" alt="myself in a green sweater on the lake">
+                        <img loading="lazy" class="o-about-hero__image" src="../src/assets/images/about-section__image-02.jpg" alt="a headshot of myself with a blurred background">
                     </div>
                 </div>
             </section>
