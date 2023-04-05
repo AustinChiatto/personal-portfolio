@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Grid Tool";
+$title_tag = "Austin Chiatto | Grid Tool for new CSS grid";
+$meta_desc = "Create CSS grids with ease using our development project! Perfect for new developers, our tool provides a user-friendly interface to generate customizable CSS grids quickly and efficiently. Start building your responsive layouts today.";
 require("../src/partials/shared/base/head.php");
 ?>
 

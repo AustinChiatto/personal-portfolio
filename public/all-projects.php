@@ -2,6 +2,7 @@
 <?php
 require("../src/app/init.php");
 $title_tag = "Austin Chiatto | All Projects";
+$meta_desc = "Explore my portfolio of web development projects! From front-end to back-end development, my portfolio showcases a range of web applications, websites, and tools that highlight my skills and expertise. Browse through my projects and see how I can help bring your ideas to life with clean, efficient code.";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>

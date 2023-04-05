@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Interplanetary";
+$title_tag = "Austin Chiatto | Interplanetary Launch Tracker";
+$meta_desc = "Stay up-to-date on the latest rocket launches with our comprehensive tracking tool! Our project provides real-time updates on upcoming launches, including launch dates, times, and locations. Never miss a rocket launch again - start tracking today.";
 require("../src/partials/shared/base/head.php");
 ?>
 

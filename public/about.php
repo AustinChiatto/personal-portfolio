@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | About Me";
+$title_tag = "Austin Chiatto | More about me";
+$meta_desc = "I'm a developer, fascinated and inspired by the ability to bring ideas to life with code.";
 require("../src/partials/shared/base/head.php");
 ?>
 <body data-barba="wrapper">

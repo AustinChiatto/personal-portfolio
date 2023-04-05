@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Front End Developer Portfolio";
+$title_tag = "Austin Chiatto | Front End Developer";
+$meta_desc = "I am a Front End Developer passionate about bringing ideas to life within a browser. I specialize in creating intuitive, responsive websites using modern languages and frameworks.";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
