@@ -17,7 +17,7 @@ $project_one = new Project([
 ]);
 
 $project_two = new Project([
-    "link" => "interplanetary.php",
+    "link" => "asteroid-run.php",
     "name" => "Asteroid Run",
     "type" => "Vanilla JS Browser Game",
     "image_url" => "project-img__01.png",
@@ -26,7 +26,7 @@ $project_two = new Project([
 ]);
 
 $project_three = new Project([
-    "link" => "interplanetary.php",
+    "link" => "neil-and-sab.php",
     "name" => "The Heppells",
     "type" => "Static Wedding RSVP Website",
     "image_url" => "project-img__03.png",
@@ -37,7 +37,7 @@ $project_three = new Project([
 $project_four = new Project([
     "link" => "grid-tool.php",
     "name" => "CSS Grid Tool",
-    "type" => "GSAP Animation",
+    "type" => "CSS grid tool",
     "image_url" => "project-img__02.png",
     "image_alt" => "Tablet mockup of the grid tool interface which has a colorful retro inspired theme",
     "featured" => true
