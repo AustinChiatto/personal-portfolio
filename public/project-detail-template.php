@@ -39,7 +39,10 @@ require("../src/partials/shared/base/head.php");
             </section>
             <section class="s-section">
                 <div class="s-section__content">
-                    Documentation
+                    <div class="o-doc-callout">
+                        <a class="o-doc-callout__heading">GitHub</a>
+                        <p class="o-doc-callout__caption">For a more detailed look at this projects documentation</p>
+                    </div>
                 </div>
             </section>
             <section class="s-section--pad-large">

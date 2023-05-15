@@ -1,0 +1,20 @@
+@use "../../partials/shared/utility/u-variables" as *;
+@use "../../partials/shared/utility/u-mixins" as m;
+
+.o-doc-callout__heading {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    word-wrap: normal;
+
+    @include m.min-width(tablet) {
+        font-size: 1.25rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 1.5rem;
+    }
+
+    @include m.min-width(desktop-large) {
+        font-size: 2rem;
+    }
+}
