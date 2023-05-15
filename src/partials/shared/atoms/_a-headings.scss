@@ -31,6 +31,12 @@
         }
     }
 
+    &--sub {
+        font-weight: $font-medium;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
     @include m.min-width(tablet) {
         font-size: 2rem;
         line-height: 1.4;
