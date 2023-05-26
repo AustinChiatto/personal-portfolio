@@ -24,12 +24,22 @@ require("../src/partials/shared/base/head.php");
             </section>
             <section class="s-section--pad-large">
                 <div class="s-section__content">
-                <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the Modern-Day</span> Space Race</h2>
+                <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the <br> Modern-Day</span> Space Race</h2>
                 </div>
             </section>
             <section class="s-section">
                 <div class="s-section__content">
-                    grid
+                    <section class="o-project-grid">
+                        <div class="o-project-grid__column">
+                            <div class="o-project-grid__item--tall">team/role</div>
+                            <div class="o-project-grid__item">github</div>
+                        </div>
+                        <div class="o-project-grid__column">
+                            <div class="o-project-grid__item">live site</div>
+                            <div class="o-project-grid__item--tall">dev time/info</div>
+                        </div>
+                        <div class="o-project-grid__item--wide">technology</div>
+                    </section>
                 </div>
             </section>
             <section class="s-section--full-height">

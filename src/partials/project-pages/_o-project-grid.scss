@@ -1,0 +1,40 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.o-project-grid__column {
+    grid-column: auto / span 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+
+    @include m.min-width(tablet) {
+        grid-column: auto / span 1;
+    }
+}
+
+.o-project-grid__item {
+    grid-column: auto / span 6;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    background: $color-card-bg;
+    border: 1px solid $color-card-border;
+    border-radius: $border-radius;
+
+    &--tall {
+        @extend .o-project-grid__item;
+        grid-column: auto / span 6;
+        aspect-ratio: 1/1.5;
+    }
+
+    &--wide {
+        @extend .o-project-grid__item;
+        grid-column: auto / span 2;
+        aspect-ratio: unset;
+    }
+}
