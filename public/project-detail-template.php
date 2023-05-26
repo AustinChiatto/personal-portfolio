@@ -25,6 +25,11 @@ require("../src/partials/shared/base/head.php");
             <section class="s-section--pad-large">
                 <div class="s-section__content">
                 <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the <br> Modern-Day</span> Space Race</h2>
+                <ul class="o-about-hero__link-list">
+                    <!-- DON'T FORGET TO ADD PROJECT NAME PHP STUFF -->
+                    <li><a class="a-button" href="#" title="Explore the live version of PROJECT NAME">Live Website</a></li>
+                    <li><a class="a-button" href="#" title="See the documentation & code behind PROJECT NAME">Source Code</a></li>
+                </ul>
                 </div>
             </section>
             <section class="s-section">

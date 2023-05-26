@@ -3,37 +3,67 @@
 
 .a-button {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     font-weight: 400;
     font-size: 1rem;
-    @include m.theme-light;
-    border: 1px solid $color-primary--dark;
-    border-radius: 5rem;
-    transition-property: background, border, color;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
+    background: $color-primary;
+    border: 1px solid $color-secondary;
+    color: $color-primary--dark;
+    border-radius: 0.625rem;
     max-width: fit-content;
+    box-shadow:0px 3px 0px 0px $color-secondary;
+    -webkit-box-shadow:0px 3px 0px 0px $color-secondary;
+    -moz-box-shadow:0px 3px 0px 0px $color-secondary;
+    transition: all 50ms ease-in-out;
 
     @include m.min-width(desktop) {
-        padding: 0.5rem 1rem;
         font-size: 1.25rem;
     }
 
     &:hover{
         @extend .a-button;
-        @include m.theme-dark;
-        border-color: $color-primary;
-    }
-
-    &--invert {
-        @extend .a-button;
-        @include m.theme-dark;
-        border-color: $color-primary;
-
-        &:hover {
-            @extend .a-button;
-            @include m.theme-light;
-            border-color: $color-primary--dark;
-        }
+        transform: translateY(3px);
+        box-shadow:0px 0px 0px 0px $color-secondary;
+        -webkit-box-shadow:0px 0px 0px 0px $color-secondary;
+        -moz-box-shadow:0px 0px 0px 0px $color-secondary;
     }
 }
+
+
+
+// .a-button--depricated {
+//     display: block;
+//     padding: 0.5rem 1rem;
+//     font-weight: 400;
+//     font-size: 1rem;
+//     @include m.theme-light;
+//     border: 1px solid $color-primary--dark;
+//     border-radius: 5rem;
+//     transition-property: background, border, color;
+//     transition-duration: 200ms;
+//     transition-timing-function: linear;
+//     max-width: fit-content;
+
+//     @include m.min-width(desktop) {
+//         padding: 0.5rem 1rem;
+//         font-size: 1.25rem;
+//     }
+
+//     &:hover{
+//         @extend .a-button--depricated;
+//         @include m.theme-dark;
+//         border-color: $color-primary;
+//     }
+
+//     &--invert {
+//         @extend .a-button--depricated;
+//         @include m.theme-dark;
+//         border-color: $color-primary;
+
+//         &:hover {
+//             @extend .a-button--depricated;
+//             @include m.theme-light;
+//             border-color: $color-primary--dark;
+//         }
+//     }
+// }
