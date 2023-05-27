@@ -1,39 +1,54 @@
-let projectAnimTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".js-project-anim",
-      pin: true,   // pin the trigger element while active
-      start: "top top", // when the top of the trigger hits the top of the viewport
-      scrub: true,
-      end: "+=2000", // end after scrolling 500px beyond the start
-    }
-  });
-  
-  projectAnimTimeline.to(".js-project-anim__container", {opacity: 1});
-  projectAnimTimeline.to(".js-project-anim__container", {rotate: 90, borderColor: "#9fa3a7"});
-  projectAnimTimeline.to(".js-project-anim__item", {opacity: 0}, "<");
-  projectAnimTimeline.to(".js-project-anim__container", {aspectRatio: "1.5/1"});
-  projectAnimTimeline.to(".js-project-anim__container", {rotate: 180});
-  projectAnimTimeline.to(".js-project-anim__container", {opacity: 0, duration: 1});
+// Project Challenges - Scroll Animation
+// ===========================
 
-// milestone side scroller
-// let projectMilestoneTrigger = ScrollTrigger.create({
-//     trigger: ".js-project-milestones",
-//     start: "top top",
-//     pin: true,
-//     end: "+=1000"
-//   });
-  
-//   let horizontalSection = gsap.utils.toArray(".o-milestones__section");
-  
-//   gsap.to(horizontalSection, {
-//     xPercent: -100 * (horizontalSection.length - 1),
-//     ease: "none",
-//     scrollTrigger: {
-//       trigger: ".o-milestones",
-//       pin: true,
-//       scrub: 1,
-//     //   snap: 1 / (horizontalSection.length - 1),
-//       // ! get width of window and multiply it by number of sections and then enter that value below instead of this fixed value
-//       end: "+=3500",
-//     }
-//   });
+const chalHeaderCont = document.querySelector('.js-chalHeaderCont'),
+      chalHeader = document.querySelector('.js-chalHeader'),
+      chalImgCont = document.querySelector(".js-chalImgCont"),
+      chalImg = document.querySelector(".js-chalImg"),
+      chalCopyCont = document.querySelector(".js-chalCopyCont"),
+      chalCopy = document.querySelector(".js-chalCopy"),
+      chalCopyTrig = document.querySelector(".js-chalCopyTrig");
+
+// header pin
+let pinChalHeader = ScrollTrigger.create({
+  trigger: chalHeaderCont,
+  start: "top top",
+  pin: chalHeader,
+  endTrigger: chalImgCont,
+  end: "bottom top",
+  scrub: true
+});
+
+// img pin
+let pinChalImg = ScrollTrigger.create({
+  trigger: chalImgCont,
+  start: "center center",
+  pin: chalImgCont,
+  endTrigger: chalCopyCont,
+  end: "bottom bottom",
+  scrub: true,
+  pinSpacing: false,
+
+  onEnter: function() { 
+      chalHeader.classList.add("u-visibly-hidden");
+    },
+  onLeaveBack: function() {
+    chalHeader.classList.remove("u-visibly-hidden");
+  }
+});
+
+// slide in and out animations
+let slideOutChalImg = gsap.to(
+  chalImg,
+  {
+  scrollTrigger: {
+    trigger: chalImg,
+    start: "center center",
+    endTrigger: chalCopyCont,
+    end: "top 30%",
+    scrub: true,
+  },
+  x: '-60%'
+});
+
+

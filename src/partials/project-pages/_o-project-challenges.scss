@@ -1,0 +1,32 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-challenge__content {
+    grid-column: 1 / span 12;
+    position: relative;
+
+    @include m.min-width(tablet) {
+        grid-column: 2 / span 10;
+    }
+
+    @include m.min-width(desktop-large) {
+        grid-column: 3 / span 8;
+    }
+}
+
+.o-challenge__img {
+    z-index: 99;
+}
+
+.o-challenge__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.o-challenge__copy {
+    grid-column: 8 / span 5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}

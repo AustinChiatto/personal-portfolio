@@ -80,6 +80,3 @@ let headingChange = ScrollTrigger.create({
       }
     }
 });
-
-// Card
-// ===========================

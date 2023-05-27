@@ -34,7 +34,7 @@ require("../src/partials/shared/base/head.php");
             </section>
             <section class="s-section">
                 <div class="s-section__content">
-                    <section class="o-project-grid">
+                    <div class="o-project-grid">
                         <div class="o-project-grid__column">
                             <div class="o-project-grid__item--tall"><p class="p--small">team/role</p></div>
                             <div class="o-project-grid__item">github</div>
@@ -44,21 +44,42 @@ require("../src/partials/shared/base/head.php");
                             <div class="o-project-grid__item--tall">dev time/info</div>
                         </div>
                         <div class="o-project-grid__item--wide">technology</div>
-                    </section>
+                    </div>
                 </div>
             </section>
-            <section class="s-section--full-height">
-                <div class="s-section__content">
-                    <section class="o-project-challenges">
-                        
-                    </section>
-                </div>
-            </section>
+            <div class="o-challenge">
+                <section class="s-section--full-height js-chalHeaderCont">
+                    <div class="o-challenge__header js-chalHeader">
+                        <h2 class="u-text-center">Challenges Overcome <span class="u-font-highlight">in the <br></span> Development <span class="u-font-highlight">of [project name]</span></h2>
+                    </div>
+                </section>
+                <section class="s-section js-chalImgCont">
+                    <div class="s-section__content--wide o-challenge__img js-chalImg">
+                        <img src="../src/assets/images/proj-view__mobile-mockup.png" alt="">
+                    </div>
+                </section>
+                <section class="s-section js-chalCopyCont">
+                    <div class="s-section__content--wide o-challenge__grid">
+                        <div class="o-challenge__copy">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                        </div>
+                        <div class="o-challenge__copy">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                        </div>
+                        <div class="o-challenge__copy">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                        </div>
+                        <div class="o-challenge__copy js-chalCopyTrig">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <section class="s-section">
-                <div class="s-section__content">
+                <div class="s-section__content--wide">
                     <a class="o-doc-callout" href="#">
-                        <h2 class="a-heading--sub o-doc-callout__label">GitHub</h2>
-                        <p class="p--small u-font-highlight o-doc-callout__copy">For a more detailed look at this projects documentation & code.</p>
+                        <h2 class="a-heading--sub o-doc-callout__label">GitHub Readme</h2>
+                        <p class="p--small u-font-highlight o-doc-callout__copy">More on my methods and reasoning behind the development of [PROJECT NAME].</p>
                     </a>
                 </div>
             </section>
