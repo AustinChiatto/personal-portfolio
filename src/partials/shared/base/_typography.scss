@@ -47,6 +47,24 @@ p {
     }
 }
 
+.p--small {
+    @extend p;
+    font-size: 1rem;
+    line-height: 1.33;
+
+    @include m.min-width(tablet) {
+        font-size: 1.15rem;
+    }
+
+    @include m.min-width(desktop) {
+        font-size: 1.25rem;
+    }
+
+    @include m.min-width(desktop-large) {
+        font-size: 1.33rem;
+    }
+}
+
 // Links
 // ===========================
 a {

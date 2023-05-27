@@ -36,7 +36,7 @@ require("../src/partials/shared/base/head.php");
                 <div class="s-section__content">
                     <section class="o-project-grid">
                         <div class="o-project-grid__column">
-                            <div class="o-project-grid__item--tall">team/role</div>
+                            <div class="o-project-grid__item--tall"><p class="p--small">team/role</p></div>
                             <div class="o-project-grid__item">github</div>
                         </div>
                         <div class="o-project-grid__column">
@@ -49,15 +49,17 @@ require("../src/partials/shared/base/head.php");
             </section>
             <section class="s-section--full-height">
                 <div class="s-section__content">
-                    Challenges
+                    <section class="o-project-challenges">
+                        
+                    </section>
                 </div>
             </section>
             <section class="s-section">
                 <div class="s-section__content">
-                    <div class="o-doc-callout">
-                        <a class="o-doc-callout__heading">GitHub</a>
-                        <p class="o-doc-callout__caption">For a more detailed look at this projects documentation</p>
-                    </div>
+                    <a class="o-doc-callout" href="#">
+                        <h2 class="a-heading--sub o-doc-callout__label">GitHub</h2>
+                        <p class="p--small u-font-highlight o-doc-callout__copy">For a more detailed look at this projects documentation & code.</p>
+                    </a>
                 </div>
             </section>
             <section class="s-section--pad-large">

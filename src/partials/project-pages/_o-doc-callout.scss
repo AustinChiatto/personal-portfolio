@@ -1,20 +1,28 @@
 @use "../../partials/shared/utility/u-variables" as *;
 @use "../../partials/shared/utility/u-mixins" as m;
 
-.o-doc-callout__heading {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    word-wrap: normal;
+.o-doc-callout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background: $color-card-bg;
+    border: 1px solid $color-card-border;
+    border-radius: 5rem;
+    color: $color-primary;
 
     @include m.min-width(tablet) {
-        font-size: 1.25rem;
+        padding: 0.5rem 2rem 0.5rem 0.5rem;
     }
+}
 
-    @include m.min-width(desktop) {
-        font-size: 1.5rem;
-    }
+.o-doc-callout__label {
+    background: #252525;
+    padding: 0.5rem 2rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
 
-    @include m.min-width(desktop-large) {
-        font-size: 2rem;
+    @include m.min-width(tablet) {
+        padding: 0.75rem 2.5rem;
     }
 }
