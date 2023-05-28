@@ -22,14 +22,13 @@
 @use "src/partials/shared/atoms/a-buttons";
 @use "src/partials/shared/atoms/a-headings";
 @use "src/partials/shared/atoms/a-links";
-@use "src/partials/shared/atoms/a-cursor-follower";
+@use "src/partials/shared/atoms/a-badges";
 
 // Molecules
 // ===========================
 @use "src/partials/shared/molecule/m-project-card";
 @use "src/partials/shared/molecule/m-project-list";
 @use "src/partials/shared/molecule/m-link-list";
-@use "src/partials/shared/molecule/m-barba-transition";
 @use "src/partials/shared/molecule/m-projects-stats";
 
 // Home Page

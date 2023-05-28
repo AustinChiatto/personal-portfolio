@@ -1,0 +1,47 @@
+@use "../utility/u-variables" as *;
+
+.a-badge {
+    border: 1px solid $color-secondary;
+    color: $color-primary;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.a-badge,
+.a-badge__indicator {
+    border-radius: 5rem;
+}
+
+.a-badge__indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: $color-green;
+    margin-right: 0.5rem;
+
+    &--yellow {
+        @extend .a-badge__indicator;
+        background: $color-yellow;
+    }
+
+    &--red {
+        @extend .a-badge__indicator;
+        background: $color-red;
+    }
+
+    &--purple {
+        @extend .a-badge__indicator;
+        background: $color-purple;
+    }
+
+    &--blue {
+        @extend .a-badge__indicator;
+        background: $color-blue;
+    }
+}
+
+.a-badge__label {
+    font-size: 0.75rem;
+    font-weight: $font-regular;
+}

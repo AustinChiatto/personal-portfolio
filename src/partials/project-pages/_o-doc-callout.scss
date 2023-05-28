@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
-    background: $color-card-bg;
+    background: $color-secondary;
     border: 1px solid $color-card-border;
     border-radius: 5rem;
     color: $color-primary;
@@ -16,8 +16,13 @@
     }
 }
 
+.o-doc-callout__copy {
+    color: $color-primary--dark;
+}
+
 .o-doc-callout__label {
-    background: #252525;
+    background: $color-primary--dark;
+    color: $color-primary;
     padding: 0.5rem 2rem;
     border-radius: 5rem;
     margin-right: 1rem;

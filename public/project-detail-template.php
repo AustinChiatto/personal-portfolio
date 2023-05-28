@@ -35,14 +35,66 @@ require("../src/partials/shared/base/head.php");
                 </div>
             </section>
             <section class="s-section">
+                scrolling ui show case?
+            </section>
+            <section class="s-section">
                 <div class="s-section__content">
                     <div class="o-project-grid">
                         <div class="o-project-grid__column">
-                            <div class="o-project-grid__item--tall"><p class="p--small">team/role</p></div>
-                            <div class="o-project-grid__item">github</div>
+                            <div class="o-project-grid__item--tall">
+                                <h3 class="p--small">Meet The Team!</h3>
+                                <p class="o-project-grid__team-intro p--small u-font-highlight">The humans who brought <br> [PROJECT NAME] to life.</p>
+                                <div class="o-project-grid__team">
+                                    <div class="o-project-grid__team-member">
+                                        <img class="o-project-grid__profile-img" src="../src/assets/images/profile-test-icon.png" alt="">
+                                        <div class="o-project-grid__member-bio">
+                                            <h4 class="p--xs">Name</h4>
+                                            <h5 class="p--xs u-font-highlight">Career Title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="o-project-grid__team-member">
+                                        <img class="o-project-grid__profile-img" src="../src/assets/images/profile-test-icon.png" alt="">
+                                        <div class="o-project-grid__member-bio">
+                                            <h4 class="p--xs">Name</h4>
+                                            <h5 class="p--xs u-font-highlight">Career Title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="o-project-grid__team-member">
+                                        <img class="o-project-grid__profile-img" src="../src/assets/images/profile-test-icon.png" alt="">
+                                        <div class="o-project-grid__member-bio">
+                                            <h4 class="p--xs">Name</h4>
+                                            <h5 class="p--xs u-font-highlight">Career Title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="o-project-grid__team-member">
+                                        <img class="o-project-grid__profile-img" src="../src/assets/images/profile-test-icon.png" alt="">
+                                        <div class="o-project-grid__member-bio">
+                                            <h4 class="p--xs">Name</h4>
+                                            <h5 class="p--xs u-font-highlight">Career Title</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="o-project-grid__item o-project-grid__repo">
+                                <div class="o-project-grid__repo-cont">
+                                    <h4 class="p--xs u-font-highlight">Last Commit</h4>
+                                    <p class="a-heading">June 3, 2023</p>
+                                    <div class="a-badge">
+                                        <div class="a-badge__indicator--blue"></div>
+                                        <p class="a-badge__label">Phase: Deployed</p>
+                                    </div>
+                                </div>
+                                <img src="../src/assets/images/proj-view__mobile-mockup.png" alt="">
+                            </div>
                         </div>
                         <div class="o-project-grid__column">
-                            <div class="o-project-grid__item">live site</div>
+                            <div class="o-project-grid__item">
+                                mockup
+                                <div class="a-badge">
+                                    <div class="a-badge__indicator"></div>
+                                    <p class="a-badge__label">Status: Live</p>
+                                </div>
+                            </div>
                             <div class="o-project-grid__item--tall">dev time/info</div>
                         </div>
                         <div class="o-project-grid__item--wide">technology</div>

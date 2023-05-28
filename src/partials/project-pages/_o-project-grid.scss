@@ -1,18 +1,20 @@
 @use "../shared/utility/u-variables" as *;
 @use "../shared/utility/u-mixins" as m;
 
-.o-project-grid {
+.o-project-grid,
+.o-project-grid__column {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
+
+.o-project-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .o-project-grid__column {
     grid-column: auto / span 2;
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-
+    
     @include m.min-width(tablet) {
         grid-column: auto / span 1;
     }
@@ -37,4 +39,49 @@
         grid-column: auto / span 2;
         aspect-ratio: unset;
     }
+}
+
+// cards
+// ===========================
+
+// tall cards
+.o-project-grid__team-intro {
+    padding-block: 0.5rem 2rem;
+}
+
+.o-project-grid__team-member {
+    display: flex;
+    background: #252525;
+    padding: 0.75rem;
+    margin-block: 0.5rem;
+    border-radius: 0.75rem;
+}
+
+.o-project-grid__profile-img {
+    aspect-ratio: 1/1;
+}
+
+.o-project-grid__member-bio {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+// square cards
+.o-project-grid__repo,
+.o-project-grid__repo-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.o-project-grid__repo-cont {
+    justify-content: center;
+}
+
+.o-project-grid__repo-cont > .a-badge {
+    margin-top: 1rem;
 }
