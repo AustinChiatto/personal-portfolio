@@ -13,23 +13,25 @@ require("../src/partials/shared/base/head.php");
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
         <div class="s-section-wrapper--theme-dark">
-            <section class="s-section--full-height">
-                <h1 class="a-heading--large">Project Name</h1>
-                <h2 class="a-heading--sub u-font-highlight">Project Caption / Sub heading</h2>
-            </section>
-            <section class="s-section">
-                <div class="s-section__content">
-                    Hero img
+            <!-- hero title -->
+            <section class="s-section--flex o-proj-hero js-projHero">
+                <div class="u-text-center o-proj-hero__headings js-projHeadings">
+                    <h1 class="a-heading--large">Interplanetary</h1>
+                    <h2 class="a-heading--sub">Past & Future Launch Tracking</h2>
+                </div>
+                <div class="o-proj-hero__img-cont">
+                    <img class="o-proj-hero__img js-projHeroImg" src="../src/assets/images/testDisplay.png" alt="">
                 </div>
             </section>
-            <section class="s-section--pad-large">
-                <div class="s-section__content">
-                <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the <br> Modern-Day</span> Space Race</h2>
-                <ul class="o-about-hero__link-list">
-                    <!-- DON'T FORGET TO ADD PROJECT NAME PHP STUFF -->
-                    <li><a class="a-button" href="#" title="Explore the live version of PROJECT NAME">Live Website</a></li>
-                    <li><a class="a-button" href="#" title="See the documentation & code behind PROJECT NAME">Source Code</a></li>
-                </ul>
+            <!-- external CTA section -->
+            <section class="s-section js-externalCTA">
+                <div class="s-section__content o-external-cta">
+                    <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the <br> Modern-Day</span> Space Race</h2>
+                    <ul class="o-about-hero__link-list">
+                        <!-- DON'T FORGET TO ADD PROJECT NAME PHP STUFF &&&&& the about hero link list above -->
+                        <li><a class="a-button" href="#" title="Explore the live version of PROJECT NAME">Live Website</a></li>
+                        <li><a class="a-button" href="#" title="See the documentation & code behind PROJECT NAME">Source Code</a></li>
+                    </ul>
                 </div>
             </section>
             <section class="s-section">

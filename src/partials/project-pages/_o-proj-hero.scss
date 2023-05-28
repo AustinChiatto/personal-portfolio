@@ -1,0 +1,31 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-proj-hero {
+    position: relative;
+    min-height: 95vh;
+}
+
+.o-proj-hero__headings {
+    z-index: 2;
+    position: relative;
+    top: 2.5vh;
+}
+
+.o-proj-hero__img-cont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+.o-proj-hero__img {
+    position: relative;
+    max-width: none;
+}
