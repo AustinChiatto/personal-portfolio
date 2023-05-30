@@ -1,0 +1,43 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-proj-selection {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.o-proj-selection__row {
+    grid-column: 1 / span 12;
+    border-radius: 0rem;
+    transition: all 50ms ease;
+
+    &:hover {
+        border-top: unset;
+        transform: scale(1.05);
+        border: 1px solid $color-secondary;
+        border-radius: 0.5rem;
+        padding-inline: 0.5rem;
+        background: $color-card-bg;
+    }
+}
+
+.o-proj-selection__row + .o-proj-selection__row {
+    border-top: 1px solid $color-secondary;
+}
+
+.o-proj-selection__wrapper {
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $color-primary;
+
+    @include m.min-width(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

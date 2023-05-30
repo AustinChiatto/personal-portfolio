@@ -1,5 +1,3 @@
-// Project Hero - Scroll Animation
-// ===========================
 window.addEventListener('load', function() {
   handleHeroImg();
 });
@@ -8,10 +6,13 @@ window.addEventListener('resize', function() {
   handleHeroImg();
 });
 
+// Project Hero - Scroll Animation
+// ===========================
 const projHero = document.querySelector(".js-projHero"),
       projHeroImg = document.querySelector(".js-projHeroImg"),
       projHeroHeadings = document.querySelector(".js-projHeadings"),
-      externalCTA = document.querySelector(".js-externalCTA");
+      externalCTA = document.querySelector(".js-externalCTA"),
+      clientW = window.innerWidth; // get width of window
 
 function handleHeroImg() {
   const clientH = window.innerHeight, // get height of window
@@ -35,7 +36,7 @@ let animProjHero = gsap.fromTo(
     y: '-2.75%',
   },
   {
-    scale: 0.33,
+    scale: (clientW < 670) ? 0.2 : 0.33,
     opacity: 1,
     y: '-12.25%',
     scrollTrigger: {
@@ -77,6 +78,8 @@ const chalHeaderCont = document.querySelector('.js-chalHeaderCont'), // containe
       chalImg = document.querySelector(".js-chalImg"), // challenge section image
       chalCopyCont = document.querySelector(".js-chalCopyCont"); // container for all of the challenge section written content
 
+
+
 // pin section heading
 let pinChalHeader = ScrollTrigger.create({
   trigger: chalHeaderCont,
@@ -116,7 +119,8 @@ let pinChalImg = ScrollTrigger.create({
 let chalImgSlideIn = gsap.fromTo(
   chalImg,
   {
-    x: '-60%',
+    // x: '-60%',
+    x: (clientW < 670) ? '-80%' : '-60%'
   },
   {
     x: 0,
@@ -143,7 +147,7 @@ let chalImgSlideOut = gsap.fromTo(
     x: 0
   },
   {
-    x: '-60%',
+    x: (clientW < 670) ? '-80%' : '-60%',
     scrollTrigger: {
       trigger: chalCopyCont,
       start: "top 80%",

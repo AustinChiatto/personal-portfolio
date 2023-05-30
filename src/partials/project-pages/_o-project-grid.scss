@@ -39,8 +39,15 @@
         grid-column: auto / span 2;
         aspect-ratio: unset;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include m.min-width(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
@@ -99,6 +106,11 @@
 
 .o-project-grid__tech {
     flex-direction: row;
+    margin-top: 1rem;
+
+    @include m.min-width(tablet) {
+        margin-top: unset;
+    }
 }
 
 .o-project-grid__tech-icon {

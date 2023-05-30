@@ -6,6 +6,7 @@ $meta_desc = "Stay up-to-date on the latest rocket launches with our comprehensi
 $og_url = "https://austinchiatto.com/public/interplanetary.php";
 $og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
 require("../src/partials/shared/base/head.php");
+require(get_path("data/projects.php"));
 ?>
 
 <body>
@@ -123,19 +124,19 @@ require("../src/partials/shared/base/head.php");
                 <section class="s-section js-chalCopyCont">
                     <div class="s-section__content--wide o-challenge__grid">
                         <div class="o-challenge__copy">
-                            <h3>Challenge Heading</h3>
+                            <h3>Challenge</h3>
                             <p class="u-font-highlight">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <h3>Solution Heading</h3>
+                            <h3>Solution</h3>
                             <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <h3>Challenge Heading</h3>
+                            <h3>Challenge</h3>
                             <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy js-chalCopyTrig">
-                            <h3>Solution Heading</h3>
+                            <h3>Solution</h3>
                             <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                     </div>
@@ -153,6 +154,17 @@ require("../src/partials/shared/base/head.php");
                 <div class="s-section__content">
                     <h2 class="u-text-center">Liked [Project Name]? <span class="u-font-highlight">Take a <br> Look at</span> Another Project</h2>
                 </div>
+                <ul class="s-section__content o-proj-selection">
+                    <?php
+                    foreach ($projects as $project) : ?>
+                        <li class="o-proj-selection__row">
+                            <a class="o-proj-selection__wrapper" href="<?php echo h($project->link) ?>">
+                                <h3 class="p"><?php echo h($project->name)?></h3>
+                                <p class="u-font-highlight"><?php echo h($project->type)?></p>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </section>
         </div>
     </main>

@@ -2,7 +2,11 @@
 @use "../shared/utility/u-mixins" as m;
 
 .o-challenge {
-    padding-bottom: 100vh;
+    padding-bottom: 75vh;
+
+    @include m.min-width(tablet) {
+        padding-bottom: 100vh;
+    }
 }
 
 .o-challenge__content {
@@ -28,11 +32,15 @@
 }
 
 .o-challenge__copy {
-    grid-column: 8 / span 5;
+    grid-column: 5 / span 9;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include m.min-width(tablet) {
+        grid-column: 8 / span 5;
+    }
 }
 
 .o-challenge__copy > * + * {
