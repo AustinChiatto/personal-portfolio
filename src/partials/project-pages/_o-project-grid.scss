@@ -38,6 +38,9 @@
         @extend .o-project-grid__item;
         grid-column: auto / span 2;
         aspect-ratio: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -71,17 +74,55 @@
 
 // square cards
 .o-project-grid__repo,
-.o-project-grid__repo-cont {
+.o-project-grid__repo-cont,
+.o-project-grid__tech,
+.o-project-grid__tech-icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 .o-project-grid__repo-cont {
     justify-content: center;
+    flex-grow: 1;
 }
 
 .o-project-grid__repo-cont > .a-badge {
     margin-top: 1rem;
+}
+
+.o-project-grid__tech {
+    flex-direction: row;
+}
+
+.o-project-grid__tech-icon {
+    justify-content: center;
+    // min-width: 5rem;
+    aspect-ratio: 1/1;
+    padding: 0.75rem;
+    background: $color-primary--dark;
+    border-radius: 0.5rem;
+}
+
+.o-project-grid__tech-icon + .o-project-grid__tech-icon {
+    margin-left: 0.5rem;
+}
+
+.o-project-grid__tech-icon svg {
+    min-width: 1.5rem;
+    aspect-ratio: 1/1;
+
+    @include m.min-width(tablet) {
+        min-width: 2rem;
+    }
+
+    @include m.min-width(desktop) {
+        min-width: 3rem;
+    }
+}
+
+.o-project-grid__tech-heading {
+    flex-grow: 1;
 }

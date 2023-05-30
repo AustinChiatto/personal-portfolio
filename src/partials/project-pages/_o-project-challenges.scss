@@ -1,6 +1,10 @@
 @use "../shared/utility/u-variables" as *;
 @use "../shared/utility/u-mixins" as m;
 
+.o-challenge {
+    padding-bottom: 100vh;
+}
+
 .o-challenge__content {
     grid-column: 1 / span 12;
     position: relative;
@@ -21,7 +25,6 @@
 .o-challenge__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
 }
 
 .o-challenge__copy {

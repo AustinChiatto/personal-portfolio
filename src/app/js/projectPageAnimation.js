@@ -1,6 +1,5 @@
 // Project Hero - Scroll Animation
 // ===========================
-
 window.addEventListener('load', function() {
   handleHeroImg();
 });
@@ -28,20 +27,6 @@ function handleHeroImg() {
   console.log("width: " + heroImgW);
 }
 
-// let projHeroAnim = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: projHero,
-//     start: "top top",
-//     pin: projHero,
-//     endTrigger: externalCTA,
-//     end: "top 30%",
-//     scrub: true
-//   }
-// })
-
-// projHeroAnim.from(projHeroImg, {scale: 1, y: '-2.75%'})
-// projHeroAnim.to(projHeroImg, {scale: 0.33, y: '-12.25%'})
-
 let animProjHero = gsap.fromTo(
   projHeroImg,
   {
@@ -64,18 +49,21 @@ let animProjHero = gsap.fromTo(
   }
 );
 
+// fade out hero headings on scroll
 let fadeHeadings = gsap.fromTo(
   projHeroHeadings,
   {
     opacity: 1,
+    y: 0
   },
   {
     opacity: 0,
+    y: '-15%',
     scrollTrigger: {
-      trigger: projHeroImg,
-      start: "center 45%",
-      endTrigger: projHeroImg,
-      end: "center 30%",
+      trigger: projHeroHeadings,
+      start: "center center",
+      endTrigger: projHeroHeadings,
+      end: "center 40%",
       scrub: true,
     }
 });
@@ -83,16 +71,13 @@ let fadeHeadings = gsap.fromTo(
 
 // Project Challenges - Scroll Animation
 // ===========================
+const chalHeaderCont = document.querySelector('.js-chalHeaderCont'), // container for the section header
+      chalHeader = document.querySelector('.js-chalHeader'), // section header
+      chalImgCont = document.querySelector(".js-chalImgCont"), // container for the challenge section image
+      chalImg = document.querySelector(".js-chalImg"), // challenge section image
+      chalCopyCont = document.querySelector(".js-chalCopyCont"); // container for all of the challenge section written content
 
-const chalHeaderCont = document.querySelector('.js-chalHeaderCont'),
-      chalHeader = document.querySelector('.js-chalHeader'),
-      chalImgCont = document.querySelector(".js-chalImgCont"),
-      chalImg = document.querySelector(".js-chalImg"),
-      chalCopyCont = document.querySelector(".js-chalCopyCont"),
-      chalCopy = document.querySelector(".js-chalCopy"),
-      chalCopyTrig = document.querySelector(".js-chalCopyTrig");
-
-// header pin
+// pin section heading
 let pinChalHeader = ScrollTrigger.create({
   trigger: chalHeaderCont,
   start: "top top",
@@ -102,36 +87,69 @@ let pinChalHeader = ScrollTrigger.create({
   scrub: true
 });
 
-// img pin
+// pin image and handle hiding the heading
 let pinChalImg = ScrollTrigger.create({
   trigger: chalImgCont,
   start: "center center",
   pin: chalImgCont,
   endTrigger: chalCopyCont,
-  end: "bottom bottom",
+  end: "bottom top",
   scrub: true,
   pinSpacing: false,
 
-  onEnter: function() { 
-      chalHeader.classList.add("u-visibly-hidden");
-    },
-  onLeaveBack: function() {
+  onEnter: () => { 
+    chalHeader.classList.add("u-visibly-hidden");
+  },
+
+  onLeaveBack: () => {
     chalHeader.classList.remove("u-visibly-hidden");
-  }
+  },
+
+  // ! need to write a refresh method as the heading stays hidden if the browser
+  // ! is refreshed midway through the animation. - it makes leaveBack not work.
+  // onRefresh() {
+  //   chalHeader.classList.remove("u-visibly-hidden");
+  // }
 });
 
-// slide in and out animations
-let slideOutChalImg = gsap.to(
+// handle image slide in when scrolling out of the challenge section
+let chalImgSlideIn = gsap.fromTo(
   chalImg,
   {
-  scrollTrigger: {
-    trigger: chalImg,
-    start: "center center",
-    endTrigger: chalCopyCont,
-    end: "top 30%",
-    scrub: true,
+    x: '-60%',
   },
-  x: '-60%'
-});
+  {
+    x: 0,
+    scrollTrigger: {
+      trigger: chalCopyCont,
+      start: "bottom center",
+      endTrigger: chalCopyCont,
+      end: "bottom top",
+      scrub: true,
+    },
 
+    // ? solution for a bug causing the image to get stuck in slide out position if reloaded inside of the section.
+    // reset to original position if refreshed inside of animation.
+    onRefresh() {
+      gsap.to(chalImg, {x: 0})
+    }
+  }
+);
 
+// handle image slide out when scrolling into the challenge section
+let chalImgSlideOut = gsap.fromTo(
+  chalImg,
+  {
+    x: 0
+  },
+  {
+    x: '-60%',
+    scrollTrigger: {
+      trigger: chalCopyCont,
+      start: "top 80%",
+      endTrigger: chalCopyCont,
+      end: "top top",
+      scrub: true,
+    }
+  }
+);

@@ -6,18 +6,23 @@
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
-    background: $color-secondary;
+    background: $color-card-bg;
     border: 1px solid $color-card-border;
     border-radius: 5rem;
     color: $color-primary;
+    transition: background 100ms ease-in-out;
 
     @include m.min-width(tablet) {
         padding: 0.5rem 2rem 0.5rem 0.5rem;
     }
+
+    &:hover {
+        background: #181818;
+    }
 }
 
 .o-doc-callout__copy {
-    color: $color-primary--dark;
+    color: $color-secondary;
 }
 
 .o-doc-callout__label {
@@ -26,6 +31,7 @@
     padding: 0.5rem 2rem;
     border-radius: 5rem;
     margin-right: 1rem;
+    white-space: nowrap;
 
     @include m.min-width(tablet) {
         padding: 0.75rem 2.5rem;
