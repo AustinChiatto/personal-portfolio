@@ -156,7 +156,7 @@ let chalImgSlideOut = gsap.fromTo(
     x: (clientW < 670) ? '-80%' : '-60%',
     scrollTrigger: {
       trigger: chalCopyCont,
-      start: "top 80%",
+      start: "top 65%",
       endTrigger: chalCopyCont,
       end: "top top",
       scrub: true,

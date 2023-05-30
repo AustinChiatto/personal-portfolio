@@ -117,7 +117,7 @@ require(get_path("data/projects.php"));
                     </div>
                 </section>
                 <section class="s-section js-chalImgCont">
-                    <div class="s-section__content--wide o-challenge__img-cont js-chalImg">
+                    <div class="s-section__content o-challenge__img-cont js-chalImg">
                         <img class="o-challenge__img" src="../src/assets/images/test-challenge-mockup.png" alt="">
                     </div>
                 </section>
