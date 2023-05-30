@@ -24,7 +24,10 @@
 
 .o-challenge__img-cont {
     z-index: 99;
-    text-align: right;
+}
+
+.o-challenge__img {
+    margin-inline: auto;
 }
 
 .o-challenge__grid {
