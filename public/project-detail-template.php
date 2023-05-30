@@ -24,7 +24,7 @@ require(get_path("data/projects.php"));
                         <path d="M16.001 27.7051V1.5" stroke="#EEF0F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="o-proj-hero__img-cont">
+                <div class="o-proj-hero__img-cont js-projHeroImgCont">
                     <img class="o-proj-hero__img js-projHeroImg" src="../src/assets/images/testDisplay.png" alt="">
                 </div>
             </section>

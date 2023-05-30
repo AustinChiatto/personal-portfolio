@@ -3,13 +3,28 @@
 
 .o-proj-hero {
     position: relative;
-    min-height: 95vh;
+
+    @include m.min-width(tablet) {
+        min-height: 95vh;
+    }
 }
 
 .o-proj-hero__headings {
-    z-index: 2;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     top: 2.5vh;
+
+    @include m.min-width(tablet) {
+        min-height: unset;
+        display: unset;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
 }
 
 .o-proj-hero__img-cont {

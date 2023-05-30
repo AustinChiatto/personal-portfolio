@@ -10,45 +10,51 @@ window.addEventListener('resize', function() {
 // ===========================
 const projHero = document.querySelector(".js-projHero"),
       projHeroImg = document.querySelector(".js-projHeroImg"),
+      heroImgCont = document.querySelector(".js-projHeroImgCont"),
       projHeroHeadings = document.querySelector(".js-projHeadings"),
       externalCTA = document.querySelector(".js-externalCTA"),
       clientW = window.innerWidth; // get width of window
 
 function handleHeroImg() {
   const clientH = window.innerHeight, // get height of window
-  percentageIncrease = 54.08,
-  resizedH = clientH + (clientH * (percentageIncrease / 100)), // increase height based on the bezel & stand of the img
-  heroImgH = projHeroImg.offsetHeight, // get height of hero image
-  aspectRatio = projHeroImg.naturalWidth / projHeroImg.naturalHeight, // calculate aspect ratio of image
-  heroImgW = resizedH * aspectRatio; // calculate corresponding width of image
-  
-  projHeroImg.style.height = `${resizedH}px`;
-  projHeroImg.style.width = `${heroImgW}px`;
-  console.log("height: " + heroImgH);
-  console.log("width: " + heroImgW);
+    percentageIncrease = 54.08,
+    resizedH = clientH + (clientH * (percentageIncrease / 100)), // increase height based on the bezel & stand of the img
+    aspectRatio = projHeroImg.naturalWidth / projHeroImg.naturalHeight, // calculate aspect ratio of image
+    heroImgW = resizedH * aspectRatio; // calculate corresponding width of image
+
+  if (clientW > 560) {
+    projHeroImg.style.height = `${resizedH}px`;
+    projHeroImg.style.width = `${heroImgW}px`;
+  } else {
+    projHeroImg.style.height = 'auto';
+    projHeroImg.style.width = '100%';
+    heroImgCont.style.position = 'relative';
+  }
 }
 
-let animProjHero = gsap.fromTo(
-  projHeroImg,
-  {
-    scale: 1,
-    opacity: 0.4,
-    y: '-2.75%',
-  },
-  {
-    scale: (clientW < 670) ? 0.2 : 0.33,
-    opacity: 1,
-    y: '-12.25%',
-    scrollTrigger: {
-      trigger: projHero,
-      start: "top top",
-      pin: projHero,
-      endTrigger: externalCTA,
-      end: "top top",
-      scrub: true
+if (clientW > 560) {
+  let animProjHero = gsap.fromTo(
+    projHeroImg,
+    {
+      scale: 1,
+      opacity: 0.4,
+      y: '-2.75%',
+    },
+    {
+      scale: (clientW < 670) ? 0.2 : 0.33,
+      opacity: 1,
+      y: '-12.25%',
+      scrollTrigger: {
+        trigger: projHero,
+        start: "top top",
+        pin: projHero,
+        endTrigger: externalCTA,
+        end: "top top",
+        scrub: true
+      }
     }
-  }
-);
+  );
+}
 
 // fade out hero headings on scroll
 let fadeHeadings = gsap.fromTo(
