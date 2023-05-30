@@ -74,7 +74,7 @@
 
 // square cards
 .o-project-grid__repo,
-.o-project-grid__repo-cont,
+.o-project-grid__heading-cont,
 .o-project-grid__tech,
 .o-project-grid__tech-icon {
     display: flex;
@@ -84,13 +84,17 @@
     padding-bottom: 0;
 }
 
-.o-project-grid__repo-cont {
+.o-project-grid__heading-cont {
     justify-content: center;
-    flex-grow: 1;
-}
+    padding-top: 1rem;
 
-.o-project-grid__repo-cont > .a-badge {
-    margin-top: 1rem;
+    @include m.min-width(tablet) {
+        min-width: 1.5rem;
+    }
+
+    @include m.min-width(desktop) {
+        min-width: 3rem;
+    }
 }
 
 .o-project-grid__tech {

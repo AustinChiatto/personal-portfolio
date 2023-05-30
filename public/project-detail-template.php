@@ -16,8 +16,12 @@ require("../src/partials/shared/base/head.php");
             <!-- hero title -->
             <section class="s-section--flex o-proj-hero js-projHero">
                 <div class="u-text-center o-proj-hero__headings js-projHeadings">
-                    <h1 class="a-heading--large">Interplanetary</h1>
-                    <h2 class="a-heading--sub">Past & Future Launch Tracking</h2>
+                    <h1 class="a-heading--large">Project Heading</h1>
+                    <h2 class="a-heading--sub">Project Caption / Description</h2>
+                    <svg class="o-proj-hero__scroll-arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 16.577L16 29.5001L30 16.577" stroke="#EEF0F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.001 27.7051V1.5" stroke="#EEF0F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
                 <div class="o-proj-hero__img-cont">
                     <img class="o-proj-hero__img js-projHeroImg" src="../src/assets/images/testDisplay.png" alt="">
@@ -38,13 +42,16 @@ require("../src/partials/shared/base/head.php");
                 <div class="s-section__content">
                     <div class="o-project-grid">
                         <div class="o-project-grid__column">
+                            <!-- team / solo card -->
                             <div class="o-project-grid__item--tall">
-                                <h3 class="p--small">Meet The Team!</h3>
-                                <p class="o-project-grid__team-intro p--small u-font-highlight">The humans who brought <br> [PROJECT NAME] to life.</p>
+                                <div class="o-project-grid__heading-cont">
+                                    <h4 class="p--xs u-font-highlight">My Contributions</h4>
+                                    <p class="a-heading">Solo Project</p>
+                                </div>
                             </div>
                             <!-- last commit card -->
                             <div class="o-project-grid__item o-project-grid__repo">
-                                <div class="o-project-grid__repo-cont">
+                                <div class="o-project-grid__heading-cont">
                                     <h4 class="p--xs u-font-highlight">Last Commit</h4>
                                     <p class="a-heading">June 3, 2023</p>
                                 </div>
@@ -54,13 +61,19 @@ require("../src/partials/shared/base/head.php");
                         <div class="o-project-grid__column">
                             <!-- live site card -->
                             <div class="o-project-grid__item o-project-grid__repo">
-                                <div class="o-project-grid__repo-cont">
+                                <div class="o-project-grid__heading-cont">
                                     <h4 class="p--xs u-font-highlight">Explore The Project</h4>
                                     <p class="a-heading">Live Website</p>
                                 </div>
                                 <img src="../src/assets/images/test-live-site-mockup.png" alt="">
                             </div>
-                            <div class="o-project-grid__item--tall">dev time/info</div>
+                            <!-- development details card -->
+                            <div class="o-project-grid__item--tall">
+                                <div class="o-project-grid__heading-cont">
+                                    <h4 class="p--xs u-font-highlight">Development Track</h4>
+                                    <p class="a-heading">Project Details</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="o-project-grid__item--wide">
                             <h3 class="o-project-grid__tech-heading p--small u-text-center">Made with love <span class="u-font-highlight">and {brackets}</span></h3>
@@ -104,22 +117,26 @@ require("../src/partials/shared/base/head.php");
                 </section>
                 <section class="s-section js-chalImgCont">
                     <div class="s-section__content--wide o-challenge__img js-chalImg">
-                        <img src="../src/assets/images/proj-view__mobile-mockup.png" alt="">
+                        <img src="../src/assets/images/test-challenge-mockup.png" alt="">
                     </div>
                 </section>
                 <section class="s-section js-chalCopyCont">
                     <div class="s-section__content--wide o-challenge__grid">
                         <div class="o-challenge__copy">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                            <h3>Challenge Heading</h3>
+                            <p class="u-font-highlight">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                            <h3>Solution Heading</h3>
+                            <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                            <h3>Challenge Heading</h3>
+                            <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                         <div class="o-challenge__copy js-chalCopyTrig">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
+                            <h3>Solution Heading</h3>
+                            <p class="u-font-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias ad quod fuga error! Rem?</p>
                         </div>
                     </div>
                 </section>
@@ -134,7 +151,7 @@ require("../src/partials/shared/base/head.php");
             </section>
             <section class="s-section--pad-large">
                 <div class="s-section__content">
-                    Project Selection
+                    <h2 class="u-text-center">Liked [Project Name]? <span class="u-font-highlight">Take a <br> Look at</span> Another Project</h2>
                 </div>
             </section>
         </div>
