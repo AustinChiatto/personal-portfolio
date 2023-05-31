@@ -1,0 +1,31 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+@use "../utility/u-functions" as f;
+
+// text styling
+// ===========================
+.a-text {
+    &--base {
+        @include m.font-size("base");
+    }
+
+    &--sm {
+        @include m.font-size("sm");
+    }
+
+    &--md {
+        @include m.font-size("md");
+    }
+
+    &--lg {
+        @include m.font-size("lg");
+    }
+
+    &--xl {
+        @include m.font-size("xl");
+    }
+
+    &--xxl {
+        @include m.font-size("xxl");
+    }
+}

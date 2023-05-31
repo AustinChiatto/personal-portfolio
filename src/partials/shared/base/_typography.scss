@@ -3,82 +3,84 @@
 
 // Headings
 // ===========================
-h1,
+h1 {
+    @include m.font-size("xxl");
+}
+
 h2,
-h3,
-h4,
+h3 {
+    @include m.font-size("lg");
+}
+
+h4 {
+    @include m.font-size("md");
+}
+
 h5,
 h6 {
-    font-weight: $font-medium;
-    font-size: 1.5rem;
-    line-height: 1.2;
-
-    @include m.min-width(tablet) {
-        font-size: 2rem;
-    }
-
-    @include m.min-width(desktop) {
-        font-size: 2.5rem;
-    }
-
-    @include m.min-width(desktop-large) {
-        font-size: 3rem;
-        line-height: 1.33;
-    }
+    @include m.font-size("sm");
 }
 
 // Copy
 // ===========================
 p {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    word-wrap: normal;
-
-    @include m.min-width(tablet) {
-        font-size: 1.25rem;
-    }
-
-    @include m.min-width(desktop) {
-        font-size: 1.5rem;
-    }
-
-    @include m.min-width(desktop-large) {
-        font-size: 2rem;
-    }
+    @include m.font-size("base");
 }
 
-.p {
-    @extend p;
 
-    &--small {
-        @extend .p;
-        font-size: 1rem;
-        line-height: 1.33;
 
-        @include m.min-width(tablet) {
-            font-size: 1.15rem;
-        }
+// Copy
+// ===========================
+// p {
+//     font-size: 1.15rem;
+//     line-height: 1.5;
+//     word-wrap: normal;
 
-        @include m.min-width(desktop) {
-            font-size: 1.25rem;
-        }
+//     @include m.min-width(tablet) {
+//         font-size: 1.25rem;
+//     }
 
-        @include m.min-width(desktop-large) {
-            font-size: 1.33rem;
-        }
-    }
+//     @include m.min-width(desktop) {
+//         font-size: 1.5rem;
+//     }
 
-    &--xs {
-        @extend .p;
-        font-size: 1rem;
-        line-height: 1.33;
-        font-weight: $font-regular;
+//     @include m.min-width(desktop-large) {
+//         font-size: 2rem;
+//     }
+// }
 
-        @include m.min-width(desktop-large) {
-            font-size: 1.15rem;
-        }
-    }
-}
+// .p {
+//     @extend p;
+
+//     &--small {
+//         @extend .p;
+//         font-size: 1rem;
+//         line-height: 1.33;
+
+//         @include m.min-width(tablet) {
+//             font-size: 1.15rem;
+//         }
+
+//         @include m.min-width(desktop) {
+//             font-size: 1.25rem;
+//         }
+
+//         @include m.min-width(desktop-large) {
+//             font-size: 1.33rem;
+//         }
+//     }
+
+//     &--xs {
+//         @extend .p;
+//         font-size: 1rem;
+//         line-height: 1.33;
+//         font-weight: $font-regular;
+
+//         @include m.min-width(desktop-large) {
+//             font-size: 1.15rem;
+//         }
+//     }
+// }
 
 // Links
 // ===========================

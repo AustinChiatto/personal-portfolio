@@ -18,8 +18,6 @@ let homeCircle = gsap.timeline({
 
         if(currentRotation >= 180){
             textTop.textContent = "On The Web";
-            // document.querySelector(".js-home-scroll-fade").style.color = "#6E6E73";
-            // document.querySelector(".js-home-scroll-hide").style.opacity = 0;
         } else {
             textTop.textContent = "Building Things";
         }

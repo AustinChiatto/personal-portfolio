@@ -18,10 +18,10 @@ require(get_path("data/projects.php"));
             <section class="o-home-hero js-home-hero">
                 <div class="o-home-hero__wrapper">
                     <div class="o-home-hero__text">
-                        <h1 class="js-home-hero__text-top">Building Things</h1>
+                        <h1 class="a-text--xl js-home-hero__text-top">Building Things</h1>
                     </div>
                     <div class="o-home-hero__text">
-                        <h2 class="js-home-hero__text-bottom">For Humans</h2>
+                        <h2 class="a-text--xl js-home-hero__text-bottom">For Humans</h2>
                     </div>
                     <div class="o-home-hero__circe js-circle"></div>
                 </div>
@@ -35,7 +35,7 @@ require(get_path("data/projects.php"));
         <div class="s-section-wrapper">
             <section class="s-section--pad-large js-o-mission">
                 <div class="s-section__content--left-align">
-                    <h2 class="a-heading--large">Inspired by <br>
+                    <h2 class="a-text--xxl u-text-upper">Inspired by <br>
                         Compassion <br>
                         Dedicated to <br>
                         Imagination
@@ -52,7 +52,7 @@ require(get_path("data/projects.php"));
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
-                    <h2 class="u-pad-bottom js-project-heading">My latest <span class="a-heading--highlight">imposter <br> syndrome inducing</span> projects</h2>
+                    <h2 class="js-project-heading">My latest <span class="u-font-highlight">imposter syndrome inducing</span> projects</h2>
                     <a class="a-button u-visually-hidden" href="all-projects.php">🎉 View All Projects</a>
                 </div>
             </section>

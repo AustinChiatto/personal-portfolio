@@ -1,4 +1,5 @@
 @use "u-variables" as *;
+@use "u-functions" as f;
 
 // Theme
 // ===========================
@@ -40,3 +41,99 @@ $breakpoint-desktop-large: 1440px;
       @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
     }
   }
+
+// ! ===========================
+// New Mixins!
+// ! ===========================
+
+// Media Queries
+// ===========================
+
+// define breakpoints
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);
+
+// define mixin
+@mixin media-query($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// Responsive Typography
+// ===========================
+
+// define a modular scale
+$font-size--base: 1rem;
+$font-scale: 1.250;
+
+// uses the base font size and the power function to scale the font size.
+$font-size: (
+  "xxl": $font-size--base * f.pow($font-scale, 5),
+  "xl": $font-size--base * f.pow($font-scale, 4),
+  "lg": $font-size--base * f.pow($font-scale, 3),
+  "md": $font-size--base * f.pow($font-scale, 2),
+  "sm": $font-size--base * $font-scale,
+  "base": $font-size--base
+);
+
+// define mixin for responsive typography that makes use of the above, media-query mixin to scale font-sizes further based on device size
+@mixin font-size($font-key, $font-weight: false) {
+  $font-size: map-get($font-size, $font-key);
+  font-size: $font-size;
+  line-height: $font-size * f.pow($font-scale, 2);
+
+  @if $font-key == "xxl" {
+    font-weight: 700;
+  } @else if $font-key == "xl" or $font-key == "lg" {
+    font-weight: 500;
+  } @else {
+    font-weight: 400;
+  }
+
+  // @include media-query("phone-wide", max) {
+  //   font-size: $font-size--base;
+  // }
+
+  @include media-query("tablet-wide") {
+    @if $font-key == "xxl" {
+      font-size: $font-size * f.pow($font-scale, 2);
+      line-height: $font-size * f.pow($font-scale, 3);
+    } @else {
+      font-size: $font-size * f.pow($font-scale, 1);
+      line-height: $font-size * f.pow($font-scale, 2.25);
+    }
+  }
+
+  @include media-query("desktop") {
+    @if $font-key == "xxl" {
+      font-size: $font-size * f.pow($font-scale, 2.5);
+      line-height: $font-size * f.pow($font-scale, 3.5);
+    }
+  }
+}
+
+/* 
+
+EXAMPLE
+
+h1 {
+  @include m.font-size("xxl");
+  font-face: $font-face--bold;
+}
+
+*/

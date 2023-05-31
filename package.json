@@ -7,5 +7,8 @@
     "@prettier/plugin-php": "^0.19.4",
     "prettier": "^2.8.7",
     "sass": "^1.60.0"
+  },
+  "devDependencies": {
+    "sass-math-pow": "^0.2.0"
   }
 }

@@ -17,8 +17,8 @@ require(get_path("data/projects.php"));
             <!-- hero title -->
             <section class="s-section--flex o-proj-hero js-projHero">
                 <div class="u-text-center o-proj-hero__headings js-projHeadings">
-                    <h1 class="a-heading--large">Project Heading</h1>
-                    <h2 class="a-heading--sub">Project Caption / Description</h2>
+                    <h1 class="a-text--xxl">Interplanetary</h1>
+                    <h2 class="a-text--sm">Past & Future Launch Tracking</h2>
                     <svg class="o-proj-hero__scroll-arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 16.577L16 29.5001L30 16.577" stroke="#EEF0F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M16.001 27.7051V1.5" stroke="#EEF0F2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,7 +31,7 @@ require(get_path("data/projects.php"));
             <!-- external CTA section -->
             <section class="s-section js-externalCTA">
                 <div class="s-section__content o-external-cta">
-                    <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the <br> Modern-Day</span> Space Race</h2>
+                    <h2 class="u-text-center">Keep up <span class="u-font-highlight">with the Modern-Day</span> Space Race</h2>
                     <ul class="o-about-hero__link-list">
                         <!-- DON'T FORGET TO ADD PROJECT NAME PHP STUFF &&&&& the about hero link list above -->
                         <li><a class="a-button--new" href="#" title="Explore the live version of PROJECT NAME">Live Website</a></li>
@@ -46,15 +46,15 @@ require(get_path("data/projects.php"));
                             <!-- team / solo card -->
                             <div class="o-project-grid__item--tall">
                                 <div class="o-project-grid__heading-cont">
-                                    <h4 class="p--xs u-font-highlight">My Contributions</h4>
-                                    <p class="a-heading">Solo Project</p>
+                                    <h4 class="a-text--base u-font-highlight">My Contributions</h4>
+                                    <h3>Solo Project</h3>
                                 </div>
                             </div>
                             <!-- last commit card -->
                             <div class="o-project-grid__item o-project-grid__repo">
                                 <div class="o-project-grid__heading-cont">
-                                    <h4 class="p--xs u-font-highlight">Last Commit</h4>
-                                    <p class="a-heading">June 3, 2023</p>
+                                    <h4 class="a-text--base u-font-highlight">Last Commit</h4>
+                                    <h3>June 3, 2023</h3>
                                 </div>
                                 <img src="../src/assets/images/test-laptop-mockup.png" alt="">
                             </div>
@@ -63,21 +63,21 @@ require(get_path("data/projects.php"));
                             <!-- live site card -->
                             <div class="o-project-grid__item o-project-grid__repo">
                                 <div class="o-project-grid__heading-cont">
-                                    <h4 class="p--xs u-font-highlight">Explore The Project</h4>
-                                    <p class="a-heading">Live Website</p>
+                                    <h4 class="a-text--base u-font-highlight">Explore The Project</h4>
+                                    <h3>Live Website</h3>
                                 </div>
                                 <img src="../src/assets/images/test-live-site-mockup.png" alt="">
                             </div>
                             <!-- development details card -->
                             <div class="o-project-grid__item--tall">
                                 <div class="o-project-grid__heading-cont">
-                                    <h4 class="p--xs u-font-highlight">Development Track</h4>
-                                    <p class="a-heading">Project Details</p>
+                                    <h4 class="a-text--base u-font-highlight">Development Track</h4>
+                                    <h3>Project Details</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="o-project-grid__item--wide">
-                            <h3 class="o-project-grid__tech-heading p--small u-text-center">Made with love <span class="u-font-highlight">and {brackets}</span></h3>
+                            <h3 class="o-project-grid__tech-heading a-text--base u-text-center">Made with love <span class="u-font-highlight">and {brackets}</span></h3>
                             <ul class="o-project-grid__tech">
                                 <li class="o-project-grid__tech-icon">
                                     <!-- <img src="../src/assets/images/tech-logo__js.svg" alt=""> -->
@@ -113,7 +113,7 @@ require(get_path("data/projects.php"));
             <div class="o-challenge">
                 <section class="s-section--full-height js-chalHeaderCont">
                     <div class="o-challenge__header js-chalHeader">
-                        <h2 class="u-text-center">Challenges Overcome <span class="u-font-highlight">in the <br></span> Development <span class="u-font-highlight">of [project name]</span></h2>
+                        <h2 class="u-text-center">Challenges Overcome <span class="u-font-highlight">in the</span> Development <span class="u-font-highlight">of [project name]</span></h2>
                     </div>
                 </section>
                 <section class="s-section js-chalImgCont">
@@ -145,21 +145,21 @@ require(get_path("data/projects.php"));
             <section class="s-section">
                 <div class="s-section__content--wide">
                     <a class="o-doc-callout" href="#">
-                        <h2 class="a-heading--sub o-doc-callout__label">GitHub Readme</h2>
-                        <p class="p--small u-font-highlight o-doc-callout__copy">Explore the project documentation for more.</p>
+                        <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
+                        <p class="u-font-highlight o-doc-callout__copy">Explore the project documentation for more.</p>
                     </a>
                 </div>
             </section>
             <section class="s-section--pad-large">
                 <div class="s-section__content">
-                    <h2 class="u-text-center">Liked [Project Name]? <span class="u-font-highlight">Take a <br> Look at</span> Another Project</h2>
+                    <h2 class="u-text-center">Liked [Project Name]? <span class="u-font-highlight">Take a Look at</span> Another Project</h2>
                 </div>
                 <ul class="s-section__content o-proj-selection">
                     <?php
                     foreach ($projects as $project) : ?>
                         <li class="o-proj-selection__row">
                             <a class="o-proj-selection__wrapper" href="<?php echo h($project->link) ?>">
-                                <h3 class="p"><?php echo h($project->name)?></h3>
+                                <h3><?php echo h($project->name)?></h3>
                                 <p class="u-font-highlight"><?php echo h($project->type)?></p>
                             </a>
                         </li>
