@@ -1,6 +1,5 @@
 @use "../utility/u-variables" as *;
 @use "../utility/u-mixins" as m;
-@use "../utility/u-functions" as f;
 
 // text styling
 // ===========================
@@ -27,5 +26,17 @@
 
     &--xxl {
         @include m.font-size("xxl");
+    }
+
+    &--highlight {
+        color: $color-secondary;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+
+    &--center {
+        text-align: center;
     }
 }

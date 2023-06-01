@@ -31,6 +31,7 @@
 @use "src/partials/shared/molecule/m-project-list";
 @use "src/partials/shared/molecule/m-link-list";
 @use "src/partials/shared/molecule/m-projects-stats";
+@use "src/partials/shared/molecule/m-intro-container";
 
 // Home Page
 // ===========================
@@ -48,8 +49,7 @@
 @use "src/partials/project-pages/o-project-anim";
 @use "src/partials/project-pages/o-milestones";
 @use "src/partials/project-pages/o-doc-callout";
-@use "src/partials/project-pages/o-project-grid";
 @use "src/partials/project-pages/o-project-challenges";
-@use "src/partials/project-pages/o-proj-hero";
-@use "src/partials/project-pages/o-external-cta";
 @use "src/partials/project-pages/o-proj-selection";
+@use "src/partials/project-pages/o-project-hero";
+@use "src/partials/project-pages/o-info-grid";

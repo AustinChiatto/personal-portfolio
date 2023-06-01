@@ -1,0 +1,103 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-info-grid {
+    @include m.grid(2, false, $spacing--01);
+    padding-top: 25vh;
+}
+
+.o-info-grid__column {
+    grid-column: auto / span 2;
+    @include m.grid(6, false, $spacing--01);
+    
+    @include m.media-query("tablet") {
+        grid-column: auto / span 1;
+    }
+}
+
+.o-info-grid__card {
+    grid-column: auto / span 6;
+    aspect-ratio: 1/1;
+    padding: $spacing--01;
+    background: $color-card-bg;
+    border: 1px solid $color-card-border;
+    border-radius: $border-radius;
+    transition: background 100ms ease;
+
+    &--tall {
+        @extend .o-info-grid__card;
+        grid-column: auto / span 6;
+        aspect-ratio: 1/1.5;
+    }
+
+    &--wide {
+        @extend .o-info-grid__card;
+        grid-column: auto / span 2;
+        aspect-ratio: unset;
+        @include m.flex(center, flex-start, column);
+
+        @include m.media-query("phone-wide") {
+            @include m.flex(space-between, center, row);
+        }
+    }
+
+    &:hover {
+        background: #181818;
+        cursor: pointer;
+    }
+}
+
+// cards
+// ===========================
+
+// square cards
+.o-info-grid__repo,
+.o-info-grid__heading-cont,
+.o-info-grid__tech,
+.o-info-grid__tech-icon {
+    @include m.flex(space-between, center, column);
+    padding-bottom: 0;
+}
+
+.o-info-grid__heading-cont {
+    justify-content: center;
+    padding-top: $spacing--01;
+}
+
+.o-info-grid__tech {
+    flex-direction: row;
+    margin-top: $spacing--01;
+
+    @include m.media-query("phone-wide") {
+        margin-top: unset;
+    }
+}
+
+.o-info-grid__tech-icon {
+    justify-content: center;
+    aspect-ratio: 1/1;
+    padding: 0.75rem;
+    background: $color-primary--dark;
+    border-radius: $border-radius;
+}
+
+.o-info-grid__tech-icon + .o-info-grid__tech-icon {
+    margin-left: 0.5rem;
+}
+
+.o-info-grid__tech-icon svg {
+    min-width: 1.5rem;
+    aspect-ratio: 1/1;
+
+    @include m.media-query("tablet") {
+        min-width: 2rem;
+    }
+
+    @include m.media-query("tablet-wide") {
+        min-width: 3rem;
+    }
+}
+
+.o-info-grid__tech-heading {
+    flex-grow: 1;
+}

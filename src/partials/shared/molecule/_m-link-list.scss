@@ -1,10 +1,15 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
 .m-link-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-block: 6rem;
+    margin-block: $spacing--02;
+    @include m.flex(center, center);
+
+    @include m.media-query("tablet") {
+        margin-block: $spacing--03;
+    }
 }
 
 .m-link-list > * + * {
-    margin-left: 0.5rem;
+    margin-left: $spacing--half;
 }

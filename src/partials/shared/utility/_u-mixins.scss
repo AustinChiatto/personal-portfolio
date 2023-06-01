@@ -48,7 +48,6 @@ $breakpoint-desktop-large: 1440px;
 
 // Media Queries
 // ===========================
-
 // define breakpoints
 $breakpoints: (
   "phone":        400px,
@@ -76,7 +75,6 @@ $breakpoints: (
 
 // Responsive Typography
 // ===========================
-
 // define a modular scale
 $font-size--base: 1rem;
 $font-scale: 1.250;
@@ -127,13 +125,32 @@ $font-size: (
   }
 }
 
-/* 
-
-EXAMPLE
-
-h1 {
-  @include m.font-size("xxl");
-  font-face: $font-face--bold;
+// Structure
+// ===========================
+// defines grid
+@mixin grid($col, $row: false, $gap: false) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  @if $gap{
+    gap: $gap;
+  }
 }
 
-*/
+// defines flex
+@mixin flex($justify, $align, $direction: false) {
+	display: flex;
+  @if $direction{
+    flex-direction: $direction;
+  }
+	justify-content: $justify;
+	align-items: $align;
+}
+
+// Theme
+// ===========================
+@mixin theme($theme) {
+  @if $theme == "light" {
+    background-color: $color-primary;
+    color: $color-primary--dark;
+  }
+}

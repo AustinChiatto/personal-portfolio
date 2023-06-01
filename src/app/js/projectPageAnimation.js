@@ -22,18 +22,11 @@ function handleHeroImg() {
     aspectRatio = projHeroImg.naturalWidth / projHeroImg.naturalHeight, // calculate aspect ratio of image
     heroImgW = resizedH * aspectRatio; // calculate corresponding width of image
 
-  if (clientW > 560) {
     projHeroImg.style.height = `${resizedH}px`;
     projHeroImg.style.width = `${heroImgW}px`;
-  } else {
-    projHeroImg.style.height = 'auto';
-    projHeroImg.style.width = '100%';
-    heroImgCont.style.position = 'relative';
-  }
 }
 
-if (clientW > 560) {
-  let animProjHero = gsap.fromTo(
+let animProjHero = gsap.fromTo(
     projHeroImg,
     {
       scale: 1,
@@ -50,11 +43,10 @@ if (clientW > 560) {
         pin: projHero,
         endTrigger: externalCTA,
         end: "top top",
-        scrub: true
+        scrub: true,
       }
     }
-  );
-}
+);
 
 // fade out hero headings on scroll
 let fadeHeadings = gsap.fromTo(

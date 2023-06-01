@@ -35,7 +35,7 @@ require(get_path("data/projects.php"));
         <div class="s-section-wrapper">
             <section class="s-section--pad-large js-o-mission">
                 <div class="s-section__content--left-align">
-                    <h2 class="a-text--xxl u-text-upper">Inspired by <br>
+                    <h2 class="a-text--xxl a-text--upper">Inspired by <br>
                         Compassion <br>
                         Dedicated to <br>
                         Imagination
@@ -52,7 +52,7 @@ require(get_path("data/projects.php"));
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
-                    <h2 class="js-project-heading">My latest <span class="u-font-highlight">imposter syndrome inducing</span> projects</h2>
+                    <h2 class="js-project-heading">My latest <span class="a-text--highlight">imposter syndrome inducing</span> projects</h2>
                     <a class="a-button u-visually-hidden" href="all-projects.php">🎉 View All Projects</a>
                 </div>
             </section>

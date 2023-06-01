@@ -1,0 +1,13 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+// Into Container
+// ===========================
+.m-intro-container {
+    // padding-block: $spacing--03;
+    @include m.flex(center, center, column);
+
+    &--vh100 {
+        min-height: 100vh;
+    }
+}

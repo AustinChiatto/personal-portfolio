@@ -75,7 +75,7 @@ let headingChange = ScrollTrigger.create({
     onLeaveBack: function() { 
       if (currentLocation.includes("all-projects")){
       } else {
-        projectListHeading.innerHTML = 'My latest <span class="u-font-highlight">imposter syndrome inducing</span> projects';
+        projectListHeading.innerHTML = 'My latest <span class="a-text--highlight">imposter syndrome inducing</span> projects';
         projectListBtn.classList.add("u-visually-hidden");
       }
     }

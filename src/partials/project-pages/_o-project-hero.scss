@@ -1,0 +1,29 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+// top level parent
+.o-project-hero {
+    padding-inline: unset;
+    max-height: 92.5vh;
+
+
+    @include m.media-query("tablet") {
+        padding-inline: unset;
+    }
+}
+
+.o-project-hero__img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-x: hidden;
+    pointer-events: none;
+
+    @include m.flex(center, center);
+}
+
+.o-project-hero__img {
+    position: relative;
+    max-width: none;
+}

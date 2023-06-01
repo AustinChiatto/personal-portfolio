@@ -15,7 +15,7 @@ require("../src/partials/shared/base/head.php");
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
                 <div class="s-section__content">
-                    <h1 class="a-text--lg u-text-center"><span class="u-font-highlight">My friends call me bald but most</span> call me Austin</h1>
+                    <h1 class="a-text--lg a-text--center"><span class="a-text--highlight">My friends call me bald but most</span> call me Austin</h1>
                 </div>
             </section>
             <section class="s-section">
@@ -49,7 +49,7 @@ require("../src/partials/shared/base/head.php");
         <div class="s-section-wrapper--theme-dark">
             <section class="s-section--pad-large">
                 <div class="s-section__content--left-align">
-                    <h2  class="a-text--xl u-text-upper">Some things I'd like to do before ai takes over the world</h2>
+                    <h2  class="a-text--xl a-text--upper">Some things I'd like to do before ai takes over the world</h2>
                     <ul class="o-goal-list">
                         <li class="o-goal-list__item">Be employed as a Front End Developer</li>
                         <li class="o-goal-list__item">Make something that helps people</li>

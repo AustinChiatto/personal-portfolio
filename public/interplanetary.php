@@ -111,8 +111,8 @@ require("../src/partials/shared/base/head.php");
                 <!-- Milestone Three -->
                 <section class="o-milestones__section">
                     <div class="s-section__content--left-align">
-                        <h2 class="a-heading--large u-pad-bottom u-font-highlight">Live Solar Map</h2>
-                        <p class="u-font-highlight">This milestone is a work in progress, but when complete, it will provide users with a full and accurate map of our solar system. This would include planet data, live orbits and positions, and will give the user a sense of the immense scale of our solar system.</p>
+                        <h2 class="a-heading--large u-pad-bottom a-text--highlight">Live Solar Map</h2>
+                        <p class="a-text--highlight">This milestone is a work in progress, but when complete, it will provide users with a full and accurate map of our solar system. This would include planet data, live orbits and positions, and will give the user a sense of the immense scale of our solar system.</p>
                     </div>
                 </section>
             </div>

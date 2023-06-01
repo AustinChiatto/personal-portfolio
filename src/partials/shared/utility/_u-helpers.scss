@@ -1,21 +1,27 @@
+/* ===========================
+    Utility - Helpers
+=========================== */
+
+//imports
+// ===========================
 @use "u-variables" as *;
 
-// Helper Classes
 
-// Structure & Layout
+// Misc
 // ===========================
+// visually hide an element to displays & screen readers
+a.u-visually-hidden, .u-visibly-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+// ! remove - this does not need to be a helper
 .u-pad-bottom {
     padding-bottom: 4rem;
 }
 
-.u-text-upper {
-    text-transform: uppercase;
-}
-
-.u-font-highlight {
-    color: $color-secondary;
-}
-
+// ! remove - this does not need to be a helper
 .js-pin-headline {
     z-index: 1;
     display: flex;
@@ -25,14 +31,8 @@
     text-align: center;
 }
 
-a.u-visually-hidden, .u-visibly-hidden {
-    display: none !important;
-}
-
-.u-text-center {
-    text-align: center;
-}
-
+// ! remove - this does not need to be a helper
+// used for text split plugin in use with the color change reveal on the about page
 .word{
     transform: translateY(4rem);
     opacity: 0;

@@ -1,100 +1,170 @@
 @use "../utility/u-variables" as *;
 @use "../utility/u-mixins" as m;
 
-// Section
+// Top Level Section
 // ===========================
-// responsible for vertical spacing & layout
 .s-section {
-    padding-block: 2rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.25rem;
+    @include m.grid(12);
 
-    &--pad-large {
-        @extend .s-section;
-        padding-block: 15vh;
-
-        @include m.min-width(tablet) {
-            padding-block: 20vh;
-        }
-
-        @include m.min-width(desktop) {
-            padding-block: 25vh;
-        }
-    }
-
-    &--full-height {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &--flex {
-        padding-block: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    &--theme-light {
+        @include m.theme("light");
     }
 }
 
-// dictates grid item behavior
+// Section Content
+// ===========================
 .s-section__content {
-    grid-column: 1 / span 12;
-    position: relative;
+	grid-column: 1 / span 12;
+	position: relative;
+	padding-inline: $spacing--01;
+	padding-block: $spacing--half;
 
-    @include m.min-width(tablet) {
+	@include m.media-query("tablet") {
         grid-column: 2 / span 10;
+		padding-inline: unset;
     }
 
-    @include m.min-width(desktop) {
+    @include m.media-query("desktop") {
         grid-column: 3 / span 8;
     }
 
-    @include m.min-width(desktop-large) {
+    @include m.media-query("desktop-wide") {
         grid-column: 4 / span 6;
     }
 
-    &--wide {
-        @extend  .s-section__content;
+	&--wide {
 
-        @include m.min-width(tablet) {
-            grid-column: 2 / span 10;
-        }
+		@include m.media-query("tablet") {
+	        grid-column: unset;
+	    }
+	    
+		@include m.media-query("tablet") {
+	        grid-column: 2 / span 10;
+	    }
+	
+	    @include m.media-query("desktop-wide") {
+	        grid-column: 3 / span 8;
+	    }
+	}
+
+	&--full {
+        grid-column: 1 / span 12;
+
+		@include m.media-query("tablet") {
+	        // grid-column: unset;
+            padding-inline: $spacing--02;
+	    }
+	    
+		@include m.media-query("tablet") {
+	        // grid-column: unset;
+	    }
+	
+	    @include m.media-query("desktop-wide") {
+	        // grid-column: unset;
+	    }
+	}
+}
+
+
+
+
+
+
+
+// Section
+// ===========================
+// responsible for vertical spacing & layout
+// .s-section {
+//     padding-block: 2rem;
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     gap: 1.25rem;
+
+//     &--pad-large {
+//         @extend .s-section;
+//         padding-block: 15vh;
+
+//         @include m.min-width(tablet) {
+//             padding-block: 20vh;
+//         }
+
+//         @include m.min-width(desktop) {
+//             padding-block: 25vh;
+//         }
+//     }
+
+//     &--full-height {
+//         min-height: 100vh;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     &--flex {
+//         padding-block: 2rem;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// // dictates grid item behavior
+// .s-section__content {
+//     grid-column: 1 / span 12;
+//     position: relative;
+
+//     @include m.min-width(tablet) {
+//         grid-column: 2 / span 10;
+//     }
+
+//     @include m.min-width(desktop) {
+//         grid-column: 3 / span 8;
+//     }
+
+//     @include m.min-width(desktop-large) {
+//         grid-column: 4 / span 6;
+//     }
+
+//     &--wide {
+//         @extend  .s-section__content;
+
+//         @include m.min-width(tablet) {
+//             grid-column: 2 / span 10;
+//         }
     
-        @include m.min-width(desktop-large) {
-            grid-column: 3 / span 8;
-        }
-    }
+//         @include m.min-width(desktop-large) {
+//             grid-column: 3 / span 8;
+//         }
+//     }
 
-    &--left-align {
-        @extend .s-section__content;
+//     &--left-align {
+//         @extend .s-section__content;
 
-        @include m.min-width(tablet) {
-            grid-column: 1 / span 8;
-        }
+//         @include m.min-width(tablet) {
+//             grid-column: 1 / span 8;
+//         }
 
-        @include m.min-width(desktop) {
-            grid-column: 2 / span 8;
-        }
+//         @include m.min-width(desktop) {
+//             grid-column: 2 / span 8;
+//         }
 
-        @include m.min-width(desktop-large) {
-            grid-column: 2 / span 6;
-        }
-    }
-}
+//         @include m.min-width(desktop-large) {
+//             grid-column: 2 / span 6;
+//         }
+//     }
+// }
 
-// adds spacing between section__content tags if they are siblings to one another
-.s-section__content + .s-section__content {
-    margin-top: 4rem;
+// // adds spacing between section__content tags if they are siblings to one another
+// .s-section__content + .s-section__content {
+//     margin-top: 4rem;
 
-    @include m.min-width(tablet) {
-        margin-top: 6rem;
-    }
+//     @include m.min-width(tablet) {
+//         margin-top: 6rem;
+//     }
 
-    @include m.min-width(desktop-large) {
-        margin-top: 8rem;
-    }
-}
+//     @include m.min-width(desktop-large) {
+//         margin-top: 8rem;
+//     }
+// }
