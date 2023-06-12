@@ -29,34 +29,68 @@ require(get_path("data/projects.php"));
         </section>
         <!-- info-grid section -->
         <?php include("../src/partials/project-pages/project-info-grid.php"); ?>
-        <div class="s-section-wrapper--theme-dark">
             <!-- challenges section -->
             <?php include("../src/partials/project-pages/project-challenges.php"); ?>
-            <section class="s-section">
-                <div class="s-section__content--wide">
-                    <a class="o-doc-callout" href="#">
-                        <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
-                        <p class="a-text--highlight o-doc-callout__copy">Explore the project documentation for more.</p>
-                    </a>
+        <section class="s-section">
+            <div class="s-section__content--wide">
+                <a class="o-doc-callout" href="#">
+                    <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
+                    <p class="a-text--highlight o-doc-callout__copy">Explore the project documentation for more.</p>
+                </a>
+            </div>
+        </section>
+        <section class="s-section">
+            <div class="s-section__content">
+                <div class="m-content-grid">
+                    <!-- content-grid column 01 -->
+                    <div class="m-content-grid__column">
+                        <div class="a-card--tall">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                    </div>
+                    <!-- content-grid column 02 -->
+                    <div class="m-content-grid__column">
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                        <div class="a-card--tall">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="s-section--pad-large">
-                <div class="s-section__content">
-                    <h2 class="a-text--center">Liked [Project Name]? <span class="a-text--highlight">Take a Look at</span> Another Project</h2>
-                </div>
-                <ul class="s-section__content o-proj-selection">
-                    <?php
-                    foreach ($projects as $project) : ?>
-                        <li class="o-proj-selection__row">
-                            <a class="o-proj-selection__wrapper" href="<?php echo h($project->link) ?>">
-                                <h3><?php echo h($project->name)?></h3>
-                                <p class="a-text--highlight"><?php echo h($project->type)?></p>
-                            </a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>

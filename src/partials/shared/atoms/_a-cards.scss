@@ -1,0 +1,51 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.a-card,
+.a-card__headings {
+    @include m.flex(space-between, center, column);
+}
+
+.a-card {
+    grid-column: auto / span 6;
+    aspect-ratio: 1/1;
+    padding: $spacing--01;
+    padding-bottom: 0;
+    background: $color-card-bg;
+    border: 1px solid $color-card-border;
+    border-radius: $border-radius;
+    transition: background 100ms ease;
+    
+
+    &--tall {
+        @extend .a-card;
+        grid-column: auto / span 6;
+        aspect-ratio: 1/1.5;
+    }
+
+    &--wide {
+        @extend .a-card;
+        grid-column: auto / span 2;
+        aspect-ratio: unset;
+        padding-bottom: $spacing--01;
+        @include m.flex(center, flex-start, column);
+
+        @include m.media-query("phone-wide") {
+            @include m.flex(space-between, center, row);
+        }
+    }
+
+    &:hover {
+        background: #181818;
+        cursor: pointer;
+    }
+}
+
+.a-card__headings {
+    padding-top: $spacing--01;
+
+    &--wide {
+        text-align: center;
+        flex-grow: 1;
+    }
+}

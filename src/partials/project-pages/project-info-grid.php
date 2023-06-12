@@ -1,18 +1,18 @@
 <section class="s-section">
     <div class="s-section__content">
-        <div class="o-info-grid">
+        <div class="m-content-grid">
             <!-- info-grid column 01 -->
-            <div class="o-info-grid__column">
+            <div class="m-content-grid__column">
                 <!-- team / solo card -->
-                <div class="o-info-grid__card--tall">
-                    <div class="o-info-grid__heading-cont">
+                <div class="a-card--tall">
+                    <div class="a-card__headings">
                         <h4 class="a-text--base a-text--highlight">My Contributions</h4>
                         <h3>Solo Project</h3>
                     </div>
                 </div>
                 <!-- last commit card -->
-                <div class="o-info-grid__card o-info-grid__repo">
-                    <div class="o-info-grid__heading-cont">
+                <div class="a-card">
+                    <div class="a-card__headings">
                         <h4 class="a-text--base a-text--highlight">Last Commit</h4>
                         <h3>June 3, 2023</h3>
                     </div>
@@ -21,23 +21,23 @@
             </div>
             <div class="o-info-grid__column">
                 <!-- live site card -->
-                <div class="o-info-grid__card o-info-grid__repo">
-                    <div class="o-info-grid__heading-cont">
+                <div class="a-card">
+                    <div class="a-card__headings">
                         <h4 class="a-text--base a-text--highlight">Explore The Project</h4>
                         <h3>Live Website</h3>
                     </div>
                     <img src="../src/assets/images/test-live-site-mockup.png" alt="">
                 </div>
                 <!-- development details card -->
-                <div class="o-info-grid__card--tall">
-                    <div class="o-info-grid__heading-cont">
+                <div class="a-card--tall">
+                    <div class="a-card__headings">
                         <h4 class="a-text--base a-text--highlight">Development Track</h4>
                         <h3>Project Details</h3>
                     </div>
                 </div>
             </div>
-            <div class="o-info-grid__card--wide">
-                <h3 class="o-info-grid__tech-heading a-text--base a-text--center">Made with love <span class="a-text--highlight">and {brackets}</span></h3>
+            <div class="a-card--wide">
+                <h3 class="a-card__headings--wide a-text--base">Made with love <span class="a-text--highlight">and {brackets}</span></h3>
                 <ul class="o-info-grid__tech">
                     <li class="o-info-grid__tech-icon">
                         <!-- <img src="../src/assets/images/tech-logo__js.svg" alt=""> -->

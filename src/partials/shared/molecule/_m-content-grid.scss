@@ -1,0 +1,16 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.m-content-grid {
+    @include m.grid(2, false, $spacing--01);
+    padding-top: 25vh;
+}
+
+.m-content-grid__column {
+    grid-column: auto / span 2;
+    @include m.grid(6, false, $spacing--01);
+    
+    @include m.media-query("tablet") {
+        grid-column: auto / span 1;
+    }
+}

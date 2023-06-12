@@ -24,6 +24,7 @@
 @use "src/partials/shared/atoms/a-links";
 @use "src/partials/shared/atoms/a-badges";
 @use "src/partials/shared/atoms/a-typography";
+@use "src/partials/shared/atoms/a-cards";
 
 // Molecules
 // ===========================
@@ -32,6 +33,7 @@
 @use "src/partials/shared/molecule/m-link-list";
 @use "src/partials/shared/molecule/m-projects-stats";
 @use "src/partials/shared/molecule/m-intro-container";
+@use "src/partials/shared/molecule/m-content-grid";
 
 // Home Page
 // ===========================
