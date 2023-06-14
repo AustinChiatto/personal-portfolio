@@ -7,6 +7,7 @@
     @include m.grid(12);
 
     &--theme-light {
+		@extend .s-section;
         @include m.theme("light");
     }
 }

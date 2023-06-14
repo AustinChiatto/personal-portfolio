@@ -39,10 +39,9 @@ require(get_path("data/projects.php"));
                 </a>
             </div>
         </section>
-        <section class="s-section">
+        <!-- <section class="s-section">
             <div class="s-section__content">
                 <div class="m-content-grid">
-                    <!-- content-grid column 01 -->
                     <div class="m-content-grid__column">
                         <div class="a-card--tall">
                             <div class="a-card__headings">
@@ -65,7 +64,6 @@ require(get_path("data/projects.php"));
                             <img src="../src/assets/images/test-laptop-mockup.png" alt="">
                         </div>
                     </div>
-                    <!-- content-grid column 02 -->
                     <div class="m-content-grid__column">
                         <div class="a-card">
                             <div class="a-card__headings">
@@ -90,7 +88,7 @@ require(get_path("data/projects.php"));
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
