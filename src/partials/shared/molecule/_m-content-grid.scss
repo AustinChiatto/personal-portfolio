@@ -3,7 +3,7 @@
 
 .m-content-grid {
     @include m.grid(2, false, $spacing--01);
-    padding-top: 25vh;
+    padding-top: $spacing--02;
 
     &--pad-bottom {
         @extend .m-content-grid;

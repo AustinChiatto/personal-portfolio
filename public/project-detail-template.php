@@ -40,27 +40,14 @@ require(get_path("data/projects.php"));
             </div>
         </section>
         <section class="s-section">
-            <div class="s-section__content m-intro-container">
-                <h2>Enjoyed Interplanetary? <span class="a-text--highlight">Take a look</span> at another project</h2>
+            <div class="s-section__content m-intro-container--md">
+                <h2 class="a-text--center">Enjoyed Interplanetary? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
             </div>
         </section>
         <section class="s-section">
             <div class="s-section__content">
                 <div class="m-content-grid--pad-bottom">
                     <div class="m-content-grid__column">
-                        <div class="a-card--tall">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
-                            </div>
-                        </div>
-                        <div class="a-card">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
-                            </div>
-                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
-                        </div>
                         <div class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Tags</h4>
@@ -70,19 +57,6 @@ require(get_path("data/projects.php"));
                         </div>
                     </div>
                     <div class="m-content-grid__column">
-                        <div class="a-card">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
-                            </div>
-                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
-                        </div>
-                        <div class="a-card--tall">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
-                            </div>
-                        </div>
                         <div class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Tags</h4>

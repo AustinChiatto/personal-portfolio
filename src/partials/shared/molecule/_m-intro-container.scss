@@ -11,4 +11,9 @@
         @extend .m-intro-container;
         min-height: 100vh;
     }
+
+    &--md {
+        @extend .m-intro-container;
+        min-height: 50vh;
+    }
 }

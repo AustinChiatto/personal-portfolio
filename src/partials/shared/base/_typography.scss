@@ -27,61 +27,6 @@ p {
     @include m.font-size("base");
 }
 
-
-
-// Copy
-// ===========================
-// p {
-//     font-size: 1.15rem;
-//     line-height: 1.5;
-//     word-wrap: normal;
-
-//     @include m.min-width(tablet) {
-//         font-size: 1.25rem;
-//     }
-
-//     @include m.min-width(desktop) {
-//         font-size: 1.5rem;
-//     }
-
-//     @include m.min-width(desktop-large) {
-//         font-size: 2rem;
-//     }
-// }
-
-// .p {
-//     @extend p;
-
-//     &--small {
-//         @extend .p;
-//         font-size: 1rem;
-//         line-height: 1.33;
-
-//         @include m.min-width(tablet) {
-//             font-size: 1.15rem;
-//         }
-
-//         @include m.min-width(desktop) {
-//             font-size: 1.25rem;
-//         }
-
-//         @include m.min-width(desktop-large) {
-//             font-size: 1.33rem;
-//         }
-//     }
-
-//     &--xs {
-//         @extend .p;
-//         font-size: 1rem;
-//         line-height: 1.33;
-//         font-weight: $font-regular;
-
-//         @include m.min-width(desktop-large) {
-//             font-size: 1.15rem;
-//         }
-//     }
-// }
-
 // Links
 // ===========================
 a {
