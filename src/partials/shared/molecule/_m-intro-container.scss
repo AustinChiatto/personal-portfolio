@@ -4,10 +4,11 @@
 // Into Container
 // ===========================
 .m-intro-container {
-    // padding-block: $spacing--03;
+    text-wrap: balance;
     @include m.flex(center, center, column);
 
     &--vh100 {
+        @extend .m-intro-container;
         min-height: 100vh;
     }
 }

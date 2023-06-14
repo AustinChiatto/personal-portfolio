@@ -4,6 +4,11 @@
 .m-content-grid {
     @include m.grid(2, false, $spacing--01);
     padding-top: 25vh;
+
+    &--pad-bottom {
+        @extend .m-content-grid;
+        margin-bottom: 25vh;
+    }
 }
 
 .m-content-grid__column {

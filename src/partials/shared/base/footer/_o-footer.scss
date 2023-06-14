@@ -1,6 +1,10 @@
 @use "../../utility/u-variables" as *;
 @use "../../utility/u-mixins" as m;
 
+footer {
+    margin-top: $spacing--02;
+}
+
 .o-footer {
     margin-block: $spacing--05;
 }
@@ -12,78 +16,29 @@
 }
 
 .o-footer__copyright-container {
-    padding: $spacing--01;
+    padding-block: $spacing--01;
+    color: $color-secondary
 }
 
 .o-footer__recap {
-    @include m.flex(space-between, center);
+    @include m.flex(space-between, flex-start, column);
+    padding-block: $spacing--03;
+
+    @include m.media-query("phone-wide") {
+        @include m.flex(space-between, center, row);
+    }
 }
 
 .o-footer__recap-links {
-    @include m.flex(center, flex-end, column);
+    @include m.flex(center, flex-start, column);
+    margin-top: $spacing--01;
+
+    @include m.media-query("phone-wide") {
+        @include m.flex(center, flex-end, column);
+        margin-top: unset;
+    }
 }
 
-// .o-footer__content {
-//     grid-column: 1 / span 12;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: flex-start;
-
-//     @include m.min-width(tablet) {
-//         flex-direction: row;
-//     }
-
-//     @include m.min-width(desktop) {
-//         grid-column: 2 / span 8;
-//     }
-
-//     @include m.min-width(desktop-large) {
-//         grid-column: 2 / span 10;
-//     }
-// }
-
-// .o-footer__recap {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     padding-bottom: 3rem;
-
-//     @include m.min-width(tablet) {
-//         flex-direction: row;
-//         justify-content: center;
-//         padding-bottom: unset;
-//     }
-// }
-
-// .o-footer__recap-heading {
-//     font-size: 1.15rem;
-//     font-weight: $font-regular;
-//     color: $color-secondary;
-
-//     @include m.min-width(tablet) {
-//         font-size: 1.25rem;
-//     }
-// }
-
-// .o-footer__link-list {
-//     padding-top: 3rem;
-
-//     @include m.min-width(tablet) {
-//         padding-left: 7em;
-//         padding-top: unset;
-//     }
-
-//     @include m.min-width(desktop) {
-//         padding-left: 8rem;
-//     }
-
-//     @include m.min-width(desktop-large) {
-//         padding-left: 10rem;
-//     }
-// }
-
-// .o-footer__link-list > li + li {
-//     margin-top: 0.5rem;
-// }
+.o-footer__recap-links > * + * {
+    margin-top: $spacing--half;
+}
