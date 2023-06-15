@@ -38,6 +38,7 @@
 // Home Page
 // ===========================
 @use "src/partials/home/o-home-hero";
+@use "src/partials/home/o-mission";
 
 // About Page
 // ===========================
@@ -55,3 +56,4 @@
 @use "src/partials/project-pages/o-proj-selection";
 @use "src/partials/project-pages/o-project-hero";
 @use "src/partials/project-pages/o-info-grid";
+@use "src/partials/project-pages/o-project-personal";

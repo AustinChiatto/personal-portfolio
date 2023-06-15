@@ -15,6 +15,7 @@
     border: 1px solid $color-card-border;
     border-radius: $border-radius;
     transition: background 100ms ease;
+    position: relative;
     
 
     &--tall {
@@ -39,6 +40,28 @@
         background: #181818;
         cursor: pointer;
     }
+
+    &:hover::before {
+        opacity: 1;
+        bottom: 1rem;
+    }
+}
+
+.a-card::before {
+    content: "+";
+    position: absolute;
+    right: 1rem;
+    bottom: 0rem;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    @include m.flex(center, center);
+    opacity: 0;
+    border-radius: 5rem;
+    border: 0.0625rem solid $color-card-border;
+    background: #0f0f0f50;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    transition: all 100ms ease;
 }
 
 .a-card__headings {

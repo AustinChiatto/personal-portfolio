@@ -9,6 +9,11 @@
         @extend .m-content-grid;
         margin-bottom: 25vh;
     }
+
+    &--pad-top {
+        @extend .m-content-grid;
+        margin-top: 25vh;
+    }
 }
 
 .m-content-grid__column {

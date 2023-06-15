@@ -1,6 +1,6 @@
 <section class="s-section">
     <div class="s-section__content">
-        <div class="m-content-grid">
+        <div class="m-content-grid--pad-top">
             <!-- info-grid column 01 -->
             <div class="m-content-grid__column">
                 <!-- team / solo card -->
@@ -8,6 +8,11 @@
                     <div class="a-card__headings">
                         <h4 class="a-text--base a-text--highlight">My Contributions</h4>
                         <h3>Solo Project</h3>
+                    </div>
+                    <div class="o-project-personal">
+                        <div class="o-project-personal__design">design</div>
+                        <div class="o-project-personal__front-end">front end</div>
+                        <div class="o-project-personal__back-end">back end</div>
                     </div>
                 </div>
                 <!-- last commit card -->
@@ -31,8 +36,8 @@
                 <!-- development details card -->
                 <div class="a-card--tall">
                     <div class="a-card__headings">
-                        <h4 class="a-text--base a-text--highlight">Development Track</h4>
-                        <h3>Project Details</h3>
+                        <h4 class="a-text--base a-text--highlight">Project Purpose</h4>
+                        <h3>Intentions</h3>
                     </div>
                 </div>
             </div>

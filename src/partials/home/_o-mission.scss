@@ -1,0 +1,15 @@
+@use "../shared/utility/u-variables" as *;
+@use "../shared/utility/u-mixins" as m;
+
+.o-mission {
+    min-height: 75vh;
+    @include m.flex(flex-start, center)
+}
+
+.o-mission__cta {
+    padding-block: $spacing--05;
+}
+
+.o-mission__cta-btn {
+    margin-top: $spacing--02;
+}

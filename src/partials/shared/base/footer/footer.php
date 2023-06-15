@@ -21,7 +21,10 @@
                     <a class="a-text--highlight" href="#">Codepen</a>
                 </div>
             </div>
-            <div class="o-footer__copyright-container">&copy; 2023</div>
+            <div class="o-footer__copyright-container">
+                <p>&copy; 2023</p>
+                <a class="a-text--highlight" href="">Back To Top</a>
+            </div>
         </div>
     </section>
 </footer>

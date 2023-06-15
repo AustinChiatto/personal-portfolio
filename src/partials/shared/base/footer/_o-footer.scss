@@ -17,7 +17,8 @@ footer {
 
 .o-footer__copyright-container {
     padding-block: $spacing--01;
-    color: $color-secondary
+    color: $color-secondary;
+    @include m.flex(space-between, center)
 }
 
 .o-footer__recap {

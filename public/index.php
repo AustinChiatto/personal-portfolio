@@ -14,8 +14,8 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
         <!-- Hero Section -->
-        <div class="s-section-wrapper--theme-dark">
-            <section class="o-home-hero js-home-hero">
+        <section class="s-section">
+            <div class="s-section__content--full o-home-hero js-home-hero">
                 <div class="o-home-hero__wrapper">
                     <div class="o-home-hero__text">
                         <h1 class="a-text--xl js-home-hero__text-top">Building Things</h1>
@@ -29,27 +29,55 @@ require(get_path("data/projects.php"));
                     <p class="o-home-hero__label js-home-scroll-fade">Front End Developer</p>
                     <p class="o-home-hero__label js-home-scroll-hide">Scroll</p>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Mission Statement -->
-        <div class="s-section-wrapper">
-            <section class="s-section--pad-large js-o-mission">
-                <div class="s-section__content--left-align">
-                    <h2 class="a-text--xxl a-text--upper">Inspired by <br>
-                        Compassion <br>
-                        Dedicated to <br>
-                        Imagination
-                    </h2>
+        <section class="s-section--theme-light">
+            <div class="s-section__content--wide o-mission">
+                <h2 class="a-text--xxl a-text--upper">Inspired by <br>
+                    Compassion <br>
+                    Dedicated to <br>
+                    Imagination
+                </h2>
+            </div>
+        </section>
+        <section class="s-section--theme-light">
+            <div class="s-section__content--wide o-mission__cta">
+                <h3>I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
+                <a class="o-mission__cta-btn a-button--invert" href="about.php">👉 More about me</a>
+            </div>
+        </section>
+        <section class="s-section">
+            <div class="s-section__content m-intro-container--md">
+                <h2 class="a-text--center">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
+            </div>
+        </section>
+        <section class="s-section">
+            <div class="s-section__content">
+                <div class="m-content-grid--pad-bottom">
+                    <div class="m-content-grid__column">
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="m-content-grid__column">
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <!-- About CTA section -->
-                <div class="s-section__content--left-align">
-                    <h3 class="u-pad-bottom">I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
-                    <a class="a-button--invert" href="about.php">👉 More about me</a>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- Featured Project List -->
-        <div class="s-section-wrapper--theme-dark">
+        <!-- <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">
                 <div class="js-pin-headline">
                     <h2 class="js-project-heading">My latest <span class="a-text--highlight">imposter syndrome inducing</span> projects</h2>
@@ -57,8 +85,6 @@ require(get_path("data/projects.php"));
                 </div>
             </section>
             <section class="s-section">
-                <!-- Project card loop -->
-                <!-- <div class="a-cursor-follower">View</div> -->
                 <ul class="o-projects-list js-projects-list">
                     <?php
                     foreach ($projects as $project) : 
@@ -71,7 +97,7 @@ require(get_path("data/projects.php"));
                     endforeach; ?>
                 </ul>
             </section>
-        </div>
+        </div> -->
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>

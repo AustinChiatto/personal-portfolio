@@ -19,7 +19,8 @@ require(get_path("data/projects.php"));
         <section class="s-section js-externalCTA">
             <div class="s-section__content">
                 <div class="m-intro-container">
-                    <h2 class="a-text--center">Keep up <span class="a-text--highlight">with the <br> Modern-Day</span> Space Race</h2>
+                    <h2 class="a-text--center">Explore the Final Frontier <br> and Save The Galaxy!</h2>
+                    <!-- <h2 class="a-text--center">Keep up <span class="a-text--highlight">with the <br> Modern-Day</span> Space Race</h2> -->
                     <ul class="m-link-list">
                         <li><a class="a-button--new" href="#" title="">Live Website</a></li>
                         <li><a class="a-button--new" href="#" title="">Source Code</a></li>
