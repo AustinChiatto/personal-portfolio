@@ -1,7 +1,7 @@
 <section class="s-section">
     <div class="s-section__content s-section__content--full o-project-hero js-projHero">
         <!-- hero headings -->
-        <div class="m-intro-container m-intro-container--vh100">
+        <div class="m-intro-container m-intro-container--vh100 js-projHeadings">
             <h1>Asteroid Run</h1>
             <h2 class="a-text--sm">Space and guns and stuff</h2>
         </div>

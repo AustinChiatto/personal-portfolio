@@ -42,7 +42,7 @@ require(get_path("data/projects.php"));
         </section>
         <section class="s-section">
             <div class="s-section__content m-intro-container--md">
-                <h2 class="a-text--center">Enjoyed Interplanetary? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
+                <h2 class="a-text--center">Enjoyed Asteroid Run? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
             </div>
         </section>
         <section class="s-section">
@@ -51,17 +51,17 @@ require(get_path("data/projects.php"));
                     <div class="m-content-grid__column">
                         <div class="a-card">
                             <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
+                                <h4 class="a-text--base a-text--highlight">React Application</h4>
+                                <h3>CSS Grid Tool</h3>
                             </div>
-                            <img src="../src/assets/images/test-laptop-mockup.png" alt="">
+                            <img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
                         </div>
                     </div>
                     <div class="m-content-grid__column">
                         <div class="a-card">
                             <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Tags</h4>
-                                <h3>Project Name</h3>
+                                <h4 class="a-text--base a-text--highlight">A Super Cool Project</h4>
+                                <h3>Coming Soon...</h3>
                             </div>
                             <img src="../src/assets/images/test-laptop-mockup.png" alt="">
                         </div>
@@ -74,5 +74,6 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="../src/app/js/projectPageAnimation.js"></script>
+    <script src="../src/app/js/projectContentCards.js"></script>
 </body>
 </html>

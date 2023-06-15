@@ -19,6 +19,7 @@
     left: 0;
     overflow-x: hidden;
     pointer-events: none;
+    z-index: -1;
 
     @include m.flex(center, center);
 }
