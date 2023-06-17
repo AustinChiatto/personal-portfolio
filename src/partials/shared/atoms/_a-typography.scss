@@ -32,6 +32,10 @@
         color: $color-secondary;
     }
 
+    &--white {
+        color: $color-primary;
+    }
+
     &--upper {
         text-transform: uppercase;
     }

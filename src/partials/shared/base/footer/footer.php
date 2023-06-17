@@ -1,6 +1,6 @@
 <footer>
     <section class="s-section--theme-light">
-        <div class="s-section__content o-footer">
+        <div class="s-section__content--wide o-footer">
             <div class="o-footer__cta">
                 <h2>Reach out, see what else I'm up to on the internet, or recommend a good movie.</h2>
                 <a class="a-text--lg o-footer__email" href="#">hello@austinchiatto.com</a>
@@ -8,7 +8,7 @@
         </div>
     </section>
     <section class="s-section">
-        <div class="s-section__content">
+        <div class="s-section__content--wide">
             <div class="o-footer__recap">
                 <div class="o-footer__recap-headings">
                     <h2>Austin Chiatto</h2>

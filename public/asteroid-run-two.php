@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Interplanetary Launch Tracker";
-$meta_desc = "Stay up-to-date on the latest rocket launches with our comprehensive tracking tool! Our project provides real-time updates on upcoming launches, including launch dates, times, and locations. Never miss a rocket launch again - start tracking today.";
-$og_url = "https://austinchiatto.com/public/interplanetary.php";
+$title_tag = "Austin Chiatto | Asteroid Run Two";
+$meta_desc = "pew pew pew space and guns and lasers and stuff!";
+$og_url = "https://austinchiatto.com/public/asteroid-run-two.php";
 $og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));

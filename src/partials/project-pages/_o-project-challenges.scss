@@ -40,8 +40,13 @@
     justify-content: center;
 
     @include m.min-width(tablet) {
-        grid-column: 7 / span 5;
+        grid-column: 8 / span 5;
     }
+}
+
+.o-challenge__copy-heading {
+    padding-bottom: $spacing--01;
+    border-bottom: 0.0625rem solid $color-card-border;
 }
 
 .o-challenge__copy > * + * {
