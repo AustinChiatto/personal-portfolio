@@ -16,4 +16,16 @@
         @extend .m-intro-container;
         min-height: 50vh;
     }
+
+    &--projects-page {
+        @extend .m-intro-container;
+        text-align: center;
+        padding-block: 20vh;
+    }
+
+    &--block {
+        @extend .m-intro-container;
+        align-items: flex-start;
+        padding-block: 15vh;
+    }
 }

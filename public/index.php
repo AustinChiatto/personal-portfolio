@@ -14,8 +14,8 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
         <!-- Hero Section -->
-        <section class="s-section">
-            <div class="s-section__content--full o-home-hero js-home-hero">
+        <section class="s-section js-home-hero">
+            <div class="s-section__content--full o-home-hero">
                 <div class="o-home-hero__wrapper">
                     <div class="o-home-hero__text">
                         <h1 class="a-text--xl js-home-hero__text-top">Building Things</h1>
@@ -23,7 +23,7 @@ require(get_path("data/projects.php"));
                     <div class="o-home-hero__text">
                         <h2 class="a-text--xl js-home-hero__text-bottom">For Humans</h2>
                     </div>
-                    <div class="o-home-hero__circe js-circle"></div>
+                    <div class="o-home-hero__circle js-circle"></div>
                 </div>
                 <div class="o-home-hero__quick-content">
                     <p class="o-home-hero__label js-home-scroll-fade">Front End Developer</p>
@@ -33,7 +33,7 @@ require(get_path("data/projects.php"));
         </section>
         <!-- Mission Statement -->
         <section class="s-section--theme-light">
-            <div class="s-section__content--wide o-mission">
+            <div class="s-section__content--wide m-intro-container--block">
                 <h2 class="a-text--xxl a-text--upper">Inspired by <br>
                     Compassion <br>
                     Dedicated to <br>
@@ -74,6 +74,14 @@ require(get_path("data/projects.php"));
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="s-section">
+            <div class="s-section__content--wide">
+                <a class="o-doc-callout" href="#">
+                    <h2 class="a-text--sm o-doc-callout__label">See More</h2>
+                    <p class="a-text--highlight o-doc-callout__copy">Take a look at the rest of my work.</p>
+                </a>
             </div>
         </section>
         <!-- Featured Project List -->

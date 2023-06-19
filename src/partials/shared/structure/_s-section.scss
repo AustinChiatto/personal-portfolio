@@ -19,6 +19,7 @@
 	position: relative;
 	padding-inline: $spacing--01;
 	padding-block: $spacing--half;
+	max-width: 100rem;
 
 	@include m.media-query("tablet") {
         grid-column: 2 / span 10;
@@ -29,17 +30,15 @@
         grid-column: 3 / span 8;
     }
 
-    @include m.media-query("desktop-wide") {
-        grid-column: 4 / span 6;
-    }
-
 	&--wide {
+
+		@extend .s-section__content;
 
 		@include m.media-query("tablet") {
 	        grid-column: unset;
 	    }
 	    
-		@include m.media-query("tablet") {
+		@include m.media-query("desktop") {
 	        grid-column: 2 / span 10;
 	    }
 	
@@ -49,19 +48,19 @@
 	}
 
 	&--full {
-        grid-column: 1 / span 12;
+		@extend .s-section__content;
 
 		@include m.media-query("tablet") {
-	        // grid-column: unset;
+			grid-column: 1 / span 12;
             padding-inline: $spacing--02;
 	    }
 	    
-		@include m.media-query("tablet") {
-	        // grid-column: unset;
+		@include m.media-query("desktop") {
+			grid-column: 1 / span 12;
 	    }
 	
 	    @include m.media-query("desktop-wide") {
-	        // grid-column: unset;
+			grid-column: 1 / span 12;
 	    }
 	}
 }

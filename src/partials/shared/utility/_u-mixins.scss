@@ -136,6 +136,14 @@ $font-size: (
   }
 }
 
+// defines grid
+@mixin gridSpan($colStart, $colSpan, $rowStart: false, $rowSpan: false) {
+  grid-column: $colStart / span $colSpan;
+  @if $rowStart{
+    grid-row: $rowStart / span $rowSpan;
+  }
+}
+
 // defines flex
 @mixin flex($justify, $align, $direction: false) {
 	display: flex;

@@ -12,26 +12,61 @@ require(get_path("data/projects.php"));
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
-        <div class="s-section-wrapper--theme-dark">
-            <!-- Project Page Heading -->
-            <section class="s-section--full-height js-project-headline">
-                <div class="js-pin-headline">
-                    <h1 class="a-text--lg js-project-heading">Discover the work <span class="a-text--highlight">and the caffeine addiction</span> behind the projects I'm most proud of</h1>
+        <section class="s-section">
+            <div class="s-section__content">
+                <div class="m-intro-container--projects-page">
+                    <h1 class="a-text--xl">Just a few projects that <br> I thought were fun to build</h1>
                 </div>
-            </section>
-            <section class="s-section">
-                <!-- Project card loop -->
-                <!-- <div class="a-cursor-follower">View</div> -->
-                <ul class="o-projects-list js-projects-list">
-                    <?php
-                    foreach ($projects as $project) : ?>
-                        <li class="o-projects-list__item">
-                            <?php include("../src/partials/shared/molecule/project-card.php"); ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </section>
-        </div>
+                <div class="m-content-grid--pad-bottom">
+                    <!-- Column 01 -->
+                    <div class="m-content-grid__column">
+                        <div class="a-card--tall js-contributionCard">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Details</h4>
+                                <h3>Coming Soon</h3>
+                            </div>
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">A JavaScript Game</h4>
+                                <h3>Asteroid Run</h3>
+                            </div>
+                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Details</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Column 02 -->
+                    <div class="o-info-grid__column">
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">React Application</h4>
+                                <h3>Grid Tool</h3>
+                            </div>
+                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
+                        </div>
+                        <div class="a-card--tall">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">React Application</h4>
+                                <h3>Jade</h3>
+                            </div>
+                        </div>
+                        <div class="a-card">
+                            <div class="a-card__headings">
+                                <h4 class="a-text--base a-text--highlight">Project Details</h4>
+                                <h3>Project Name</h3>
+                            </div>
+                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
