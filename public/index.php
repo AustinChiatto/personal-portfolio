@@ -13,12 +13,6 @@ require(get_path("data/projects.php"));
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
-        <!-- <section class="s-section">
-            <div class="s-section__content m-intro-container--vh100">
-                <h3 class="a-text--sm a-text--highlight">Focused On</h3>
-                <h2 class="a-text--xxl a-text--upper">Humans</h2>
-            </div>
-        </section> -->
         <!-- Hero Section -->
         <section class="s-section js-home-hero">
             <div class="s-section__content--full o-home-hero">
@@ -37,6 +31,19 @@ require(get_path("data/projects.php"));
                 </div>
             </div>
         </section>
+        <!-- <section class="s-section">
+            <div class="s-section__content m-intro-container--vh100 js-missionContainer">
+                <div class="o-mission-list js-missionList">
+                    <h3 class="a-text--sm a-text--highlight">Focused On</h3>
+                   <div class="o-mission-list__items js-missionItems">
+                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Curiosity</h3>
+                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Compassion</h3>
+                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Imagination</h3>
+                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Humans</h3>
+                   </div>
+                </div>
+            </div>
+        </section> -->
         <!-- Mission Statement -->
         <section class="s-section--theme-light">
             <div class="s-section__content--wide m-intro-container--block">

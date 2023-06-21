@@ -1,0 +1,42 @@
+@use "../../partials/shared/utility/u-variables" as *;
+@use "../../partials/shared/utility/u-mixins" as m;
+@use "../../partials/shared/utility/u-functions" as f;
+
+.o-mission-list {
+    @include m.flex(flex-start, center, column);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.o-mission-list__items {
+    @include m.flex(flex-start, center, column);
+    max-height: 5rem * f.pow(1.250, 2);
+    overflow: hidden;
+}
+
+.o-mission-list__item {
+    animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {
+        transform:translateY(0);
+    }
+    25% {
+        transform:translateY(-100%);
+    }
+    50% {
+        transform:translateY(-200%);
+    }
+    75% {
+        transform:translateY(-300%);
+    }
+    100% {
+        transform:translateY(-400%);
+    }
+}
