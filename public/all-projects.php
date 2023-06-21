@@ -20,49 +20,45 @@ require(get_path("data/projects.php"));
                 <div class="m-content-grid--pad-bottom">
                     <!-- Column 01 -->
                     <div class="m-content-grid__column">
-                        <div class="a-card--tall js-contributionCard">
+                        <article class="a-card--tall js-contributionCard">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Details</h4>
                                 <h3>Coming Soon</h3>
                             </div>
-                        </div>
-                        <div class="a-card">
+                        </article>
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">A JavaScript Game</h4>
                                 <h3>Asteroid Run</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
-                        </div>
-                        <div class="a-card">
+                        </article>
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Details</h4>
                                 <h3>Project Name</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
-                        </div>
+                        </article>
                     </div>
                     <!-- Column 02 -->
                     <div class="o-info-grid__column">
-                        <div class="a-card">
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">React Application</h4>
                                 <h3>Grid Tool</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
-                        </div>
-                        <div class="a-card--tall">
+                        </article>
+                        <article class="a-card--tall">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">React Application</h4>
                                 <h3>Jade</h3>
                             </div>
-                        </div>
-                        <div class="a-card">
+                        </article>
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Details</h4>
                                 <h3>Project Name</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>

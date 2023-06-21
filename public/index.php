@@ -13,6 +13,12 @@ require(get_path("data/projects.php"));
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
+        <!-- <section class="s-section">
+            <div class="s-section__content m-intro-container--vh100">
+                <h3 class="a-text--sm a-text--highlight">Focused On</h3>
+                <h2 class="a-text--xxl a-text--upper">Humans</h2>
+            </div>
+        </section> -->
         <!-- Hero Section -->
         <section class="s-section js-home-hero">
             <div class="s-section__content--full o-home-hero">
@@ -48,7 +54,7 @@ require(get_path("data/projects.php"));
             </div>
         </section>
         <section class="s-section">
-            <div class="s-section__content m-intro-container--md">
+            <div class="s-section__content m-intro-container--projects-page">
                 <h2 class="a-text--center">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
             </div>
         </section>
@@ -56,34 +62,34 @@ require(get_path("data/projects.php"));
             <div class="s-section__content">
                 <div class="m-content-grid--pad-bottom">
                     <div class="m-content-grid__column">
-                        <div class="a-card">
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Tags</h4>
                                 <h3>Project Name</h3>
                             </div>
                             <img src="../src/assets/images/test-laptop-mockup.png" alt="">
-                        </div>
+                        </article>
                     </div>
                     <div class="m-content-grid__column">
-                        <div class="a-card">
+                        <article class="a-card">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Project Tags</h4>
                                 <h3>Project Name</h3>
                             </div>
                             <img src="../src/assets/images/test-laptop-mockup.png" alt="">
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="s-section">
+        <!-- <section class="s-section">
             <div class="s-section__content--wide">
                 <a class="o-doc-callout" href="#">
                     <h2 class="a-text--sm o-doc-callout__label">See More</h2>
                     <p class="a-text--highlight o-doc-callout__copy">Take a look at the rest of my work.</p>
                 </a>
             </div>
-        </section>
+        </section> -->
         <!-- Featured Project List -->
         <!-- <div class="s-section-wrapper--theme-dark">
             <section class="s-section--full-height js-project-headline">

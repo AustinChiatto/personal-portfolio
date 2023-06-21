@@ -5,6 +5,11 @@
     @include m.grid(2, false, $spacing--01);
     padding-top: $spacing--02;
 
+    &--pad-block {
+        @extend .m-content-grid;
+        margin-block: 25vh;
+    }
+
     &--pad-bottom {
         @extend .m-content-grid;
         margin-bottom: 25vh;

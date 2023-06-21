@@ -1,15 +1,4 @@
-
-// .o-milestones {
-//     min-height: 100vh;
-//     min-width: fit-content;
-//     display: flex;
-//     flex-direction: column;
-//     // overflow: hidden;
-//     align-items: center;
-// }
-
 .o-milestones__section {
-    // min-width: 100vw;
     padding-block: 10vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);

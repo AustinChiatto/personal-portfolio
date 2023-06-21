@@ -33,7 +33,7 @@ require(get_path("data/projects.php"));
             <!-- challenges section -->
             <?php include("../src/partials/project-pages/project-challenges.php"); ?>
         <section class="s-section">
-            <div class="s-section__content--wide">
+            <div class="s-section__content">
                 <a class="o-doc-callout" href="#">
                     <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
                     <p class="a-text--highlight o-doc-callout__copy">See more about how and why I built Asteroid Run.</p>

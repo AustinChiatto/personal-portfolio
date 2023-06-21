@@ -18,7 +18,7 @@ require("../src/partials/shared/base/head.php");
             </div>
         </section>
         <section class="s-section">
-            <div class="s-section__content--full">
+            <div class="s-section__content--wide">
                 <ul class="m-link-list">
                     <li><a class="a-button--new" href="mailto:chiattoaustin@gmail.com" title="Send me an email">Email</a></li>
                     <li><a class="a-button--new" href="https://www.linkedin.com/in/austin-chiatto/" target="_blank" title="View my LinkedIn profile">LinkedIn</a></li>

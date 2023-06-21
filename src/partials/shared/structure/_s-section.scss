@@ -19,7 +19,9 @@
 	position: relative;
 	padding-inline: $spacing--01;
 	padding-block: $spacing--half;
-	max-width: 100rem;
+	width: 100%;
+	max-width: 70rem;
+	margin-inline: auto;
 
 	@include m.media-query("tablet") {
         grid-column: 2 / span 10;
@@ -31,8 +33,10 @@
     }
 
 	&--wide {
-
 		@extend .s-section__content;
+		width: 100%;
+		max-width: 80rem;
+		margin-inline: auto;
 
 		@include m.media-query("tablet") {
 	        grid-column: unset;
@@ -49,6 +53,8 @@
 
 	&--full {
 		@extend .s-section__content;
+		max-width: none;
+		margin-inline: unset;
 
 		@include m.media-query("tablet") {
 			grid-column: 1 / span 12;

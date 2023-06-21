@@ -24,7 +24,7 @@
                     <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
                 </div>
             </div>
-            <div class="o-info-grid__column">
+            <div class="m-content-grid__column">
                 <!-- live site card -->
                 <div class="a-card js-liveCard">
                     <div class="a-card__headings">
