@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php
 require("../src/app/init.php");
-$title_tag = "Austin Chiatto | Interplanetary Launch Tracker";
-$meta_desc = "Stay up-to-date on the latest rocket launches with our comprehensive tracking tool! Our project provides real-time updates on upcoming launches, including launch dates, times, and locations. Never miss a rocket launch again - start tracking today.";
-$og_url = "https://austinchiatto.com/public/interplanetary.php";
-$og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
+$title_tag = "Austin Chiatto | CSS Grid Tool";
+$meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
+$og_url = "https://austinchiatto.com/public/grid-tool-two.php";
+$og_image = "../src/assets/images/grid-tool-hero.png";
 require("../src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
@@ -18,12 +18,12 @@ require(get_path("data/projects.php"));
             <div class="s-section__content s-section__content--full o-project-hero js-projHero">
                 <!-- hero headings -->
                 <div class="m-intro-container m-intro-container--vh100 js-projHeadings">
-                    <h1>PROJECT TITLE</h1>
-                    <h2 class="a-text--sm">subtitle</h2>
+                    <h1>CSS Grid Tool</h1>
+                    <h2 class="a-text--sm">Grids Made Simple</h2>
                 </div>
                 <!-- hero animated mockup -->
                 <div class="o-project-hero__img-container js-projHeroImgCont">
-                    <img class="o-project-hero__img js-projHeroImg" src="../src/assets/images/asteroid-run-hero.png" alt="">
+                    <img class="o-project-hero__img js-projHeroImg" src="../src/assets/images/grid-tool-hero.png" alt="">
                 </div>
             </div>
         </section>
@@ -31,10 +31,9 @@ require(get_path("data/projects.php"));
         <section class="s-section js-externalCTA">
             <div class="s-section__content">
                 <div class="m-intro-container">
-                    <h2 class="a-text--center">title</h2>
-                    <!-- <h2 class="a-text--center">Keep up <span class="a-text--highlight">with the <br> Modern-Day</span> Space Race</h2> -->
+                    <h2 class="a-text--center">Revolutionize your grid <br> design with this CSS Grid Tool</h2>
                     <ul class="m-link-list">
-                        <li><a class="a-button--new" href="#" title="">Live Site</a></li>
+                        <li><a class="a-button--new" href="https://grid-tool-v2.austinchiatto.com/" target="_blank" title="">Live Site</a></li>
                         <li><a class="a-button--new" href="#" title="">Source Code</a></li>
                     </ul>
                 </div>
@@ -59,23 +58,23 @@ require(get_path("data/projects.php"));
                             </div>
                         </div>
                         <!-- last commit card -->
-                        <div class="a-card js-gitCard">
+                        <a class="a-card js-gitCard" href="https://github.com/AustinChiatto/grid-tool--2.0" target="_blank" title="">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Last Commit</h4>
-                                <h3>June 3, 2023</h3>
+                                <h3>June 6, 2023</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
-                        </div>
+                            <img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
+                        </a>
                     </div>
                     <div class="m-content-grid__column">
                         <!-- live site card -->
-                        <div class="a-card js-liveCard">
+                        <a class="a-card js-liveCard" href="#">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">Explore The Project</h4>
                                 <h3>Live Website</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
-                        </div>
+                            <img src="../src/assets/images/grid-tool-card-mobile.png" alt="">
+                        </a>
                         <!-- development details card -->
                         <div class="a-card--tall js-devCard">
                             <div class="a-card__headings">
@@ -111,25 +110,27 @@ require(get_path("data/projects.php"));
             <section class="s-section">
                 <div class="s-section__content">
                     <div class="m-intro-container m-intro-container--vh100 js-chalHeaderCont">
-                        <h2 class="a-text--center js-chalHeader">Challenges Overcome <span class="a-text--highlight">in the <br></span> Development <span class="a-text--highlight">of [PROJECT NAME]</span></h2>
+                        <h2 class="a-text--center js-chalHeader">Challenges Overcome <span class="a-text--highlight">in the <br></span> Development <span class="a-text--highlight">of CSS Grid Tool</span></h2>
                     </div>
                 </div>
             </section>
             <div class="o-challenge">
                 <section class="s-section js-chalImgCont">
                     <div class="s-section__content o-challenge__img-cont js-chalImg">
-                        <img class="o-challenge__img" src="../src/assets/images/asteroid-run_challenge-mockup.png" alt="">
+                        <img class="o-challenge__img" src="../src/assets/images/grid-tool-challenge.png" alt="">
                     </div>
                 </section>
                 <section class="s-section js-chalCopyCont">
                     <div class="s-section__content--wide o-challenge__grid">
                         <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">Challenge</h3>
-                            <p class="a-text--highlight"><span class="a-text--white">copy</p>
+                            <h3 class="o-challenge__copy-heading">React Props</h3>
+                            <p class="a-text--highlight"><span class="a-text--white">As a newcomer to React</span>,I encountered some obstacles along the way. While constructing the static version of the site proved to be relatively smooth,  I encountered difficulties when attempting to divide the project into distinct components. Specifically, <span class="a-text--white">I struggled to comprehend the relationships between components</span>, <span class="a-text--white">as well as the process of relaying information between them.</span></p>
+                            <p class="a-text--highlight">This was <span class="a-text--white">especially the case when passing functions and state</span> down multiple components or to another deeply nested component..</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">Solution</h3>
-                            <p class="a-text--highlight"><span class="a-text--white">copy</p>
+                            <h3 class="o-challenge__copy-heading">UseContext</h3>
+                            <p class="a-text--highlight">The <span class="a-text--white">React Hook UseContext() ended up being the missing key</span> for the specific issue I was having. I needed to pass the state of the inputs over and down to the grid. <span class="a-text--white">Instead of raising the state all the way up the chain</span> to the main component rendered. <span class="a-text--white">I simply put the state for the inputs in a separate file.</span></p>
+                            <p class="a-text--highlight">Then using the UseContext Hook <span class="a-text--white">I could simply pass and alter that state from multiple nested children</span> at once. This worked perfectly to achieve the effect I was looking for, and it was the moment where <span class="a-text--white">React finally felt like it was beginning to click into place!</span></p>
                         </div>
                     </div>
                 </section>
@@ -138,13 +139,13 @@ require(get_path("data/projects.php"));
             <div class="s-section__content">
                 <a class="o-doc-callout" href="#">
                     <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
-                    <p class="a-text--highlight o-doc-callout__copy">See more about how and why I built [PROJECT RUN]</p>
+                    <p class="a-text--highlight o-doc-callout__copy">See more about how and why I built the CSS Grid Tool</p>
                 </a>
             </div>
         </section>
         <section class="s-section">
             <div class="s-section__content m-intro-container--md">
-                <h2 class="a-text--center">Enjoyed [PROJECT RUN]? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
+                <h2 class="a-text--center">Enjoyed CSS Grid Tool? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
             </div>
         </section>
         <section class="s-section">
@@ -176,6 +177,5 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="../src/app/js/projectPageAnimation.js"></script>
-    <script src="../src/app/js/projectContentCards.js"></script>
 </body>
 </html>
