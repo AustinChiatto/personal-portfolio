@@ -1,7 +1,6 @@
 const missionContainer = document.querySelector(".js-missionContainer");
 const missionList = document.querySelector(".js-missionList");
 const missionItems = document.querySelector(".js-missionItems");
-// const missionItem = document.querySelectorAll(".js-missionItem");
 
 // move headings
 // ===========================
@@ -10,9 +9,9 @@ let scrollItems = gsap.timeline({
         trigger: missionContainer,
         start: "top top",
         pin: true,
-        // markers: true,
         scrub: true,
         end: "bottom top",
+        pinSpacing: true,
     },
 });
 

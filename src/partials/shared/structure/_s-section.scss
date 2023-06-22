@@ -5,6 +5,7 @@
 // ===========================
 .s-section {
     @include m.grid(12);
+	position: relative;
 
     &--theme-light {
 		@extend .s-section;

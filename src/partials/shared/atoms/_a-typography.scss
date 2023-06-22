@@ -43,4 +43,8 @@
     &--center {
         text-align: center;
     }
+
+    &--pad-bottom {
+        padding-bottom: $spacing--02;
+    }
 }

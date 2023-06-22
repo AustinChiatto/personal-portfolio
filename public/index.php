@@ -32,8 +32,8 @@ require(get_path("data/projects.php"));
             </div>
         </section>
         <!-- Mission Statement -->
-        <section class="s-section">
-            <div class="s-section__content m-intro-container--vh100 js-missionContainer">
+        <section class="s-section js-missionContainer">
+            <div class="s-section__content m-intro-container--vh100">
                 <div class="o-mission-list js-missionList">
                     <h3 class="a-text--sm a-text--highlight">Focused On</h3>
                    <div class="o-mission-list__items">
@@ -47,16 +47,18 @@ require(get_path("data/projects.php"));
                 </div>
             </div>
         </section>
+        <!-- Project List (Featured) -->
         <section class="s-section">
-            <div class="s-section__content m-intro-container--pad-bottom">
-                <h2 class="a-text--center">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
+            <div class="s-section__content m-intro-container--project-list js-projectListIntro">
+                <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
+                <a class="a-button--new js-projectListIntroBtn u-visibly-hidden" href="#">View All</a>
             </div>
         </section>
         <section class="s-section">
             <div class="s-section__content">
-                <div class="m-content-grid--pad-bottom">
+                <div class="m-content-grid--pad-bottom js-contentGrid">
                     <div class="m-content-grid__column">
-                        <a class="a-card" href="../public/grid-tool-two.php">
+                        <a class="a-card js-projectListTrigger" href="../public/grid-tool-two.php">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">React Application</h4>
                                 <h3>CSS Grid Tool</h3>
@@ -76,41 +78,14 @@ require(get_path("data/projects.php"));
                 </div>
             </div>
         </section>
-        <!-- <section class="s-section">
-            <div class="s-section__content--wide">
-                <a class="o-doc-callout" href="#">
-                    <h2 class="a-text--sm o-doc-callout__label">See More</h2>
-                    <p class="a-text--highlight o-doc-callout__copy">Take a look at the rest of my work.</p>
-                </a>
-            </div>
-        </section> -->
-        <!-- Featured Project List -->
-        <!-- <div class="s-section-wrapper--theme-dark">
-            <section class="s-section--full-height js-project-headline">
-                <div class="js-pin-headline">
-                    <h2 class="js-project-heading">My latest <span class="a-text--highlight">imposter syndrome inducing</span> projects</h2>
-                    <a class="a-button u-visually-hidden" href="all-projects.php">🎉 View All Projects</a>
-                </div>
-            </section>
-            <section class="s-section">
-                <ul class="o-projects-list js-projects-list">
-                    <?php
-                    foreach ($projects as $project) : 
-                        if (h($project->featured) == true) : ?>
-                        <li class="o-projects-list__item js-project-list-item">
-                            <?php include("../src/partials/shared/molecule/project-card.php"); ?>
-                        </li>
-                    <?php
-                        endif;
-                    endforeach; ?>
-                </ul>
-            </section>
-        </div> -->
     </main>
     <!-- Footer -->
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
-    <!-- Scripts -->
+    <!-- Hero animation -->
     <script src="../src/app/js/homeAnimations.js"></script>
+    <!-- Mission Statement heading flip animation -->
     <script src="../src/app/js/missionContainer.js"></script>
+    <!-- Project List animation -->
+    <script src="../src/app/js/projectListAnimation.js"></script>
 </body>
 </html>

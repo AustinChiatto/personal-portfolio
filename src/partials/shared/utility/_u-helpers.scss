@@ -15,6 +15,11 @@ a.u-visually-hidden, .u-visibly-hidden {
     visibility: hidden;
 }
 
+.u-no-pointer {
+    pointer-events: none;
+    border: 1px solid blue;
+}
+
 
 // ! remove - this does not need to be a helper
 .u-pad-bottom {
