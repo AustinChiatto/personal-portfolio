@@ -14,9 +14,10 @@
     background: $color-card-bg;
     border: 1px solid $color-card-border;
     border-radius: $border-radius;
-    transition: background 100ms ease;
+    transition: all 100ms ease;
     position: relative;
     color: $color-primary;
+    overflow: hidden;
     
 
     &--tall {

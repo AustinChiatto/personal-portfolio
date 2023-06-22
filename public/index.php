@@ -31,37 +31,24 @@ require(get_path("data/projects.php"));
                 </div>
             </div>
         </section>
-        <!-- <section class="s-section">
+        <!-- Mission Statement -->
+        <section class="s-section">
             <div class="s-section__content m-intro-container--vh100 js-missionContainer">
                 <div class="o-mission-list js-missionList">
                     <h3 class="a-text--sm a-text--highlight">Focused On</h3>
-                   <div class="o-mission-list__items js-missionItems">
-                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Curiosity</h3>
-                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Compassion</h3>
-                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Imagination</h3>
-                        <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Humans</h3>
+                   <div class="o-mission-list__items">
+                        <div class="o-mission-list__container js-missionItems">
+                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Curiosity</h3>
+                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Compassion</h3>
+                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Imagination</h3>
+                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Humans</h3>
+                        </div>
                    </div>
                 </div>
             </div>
-        </section> -->
-        <!-- Mission Statement -->
-        <section class="s-section--theme-light">
-            <div class="s-section__content--wide m-intro-container--block">
-                <h2 class="a-text--xxl a-text--upper">Inspired by <br>
-                    Compassion <br>
-                    Dedicated to <br>
-                    Imagination
-                </h2>
-            </div>
-        </section>
-        <section class="s-section--theme-light">
-            <div class="s-section__content--wide o-mission__cta">
-                <h3>I'm a developer focused on creating purposeful interaction and intuitive user experience.</h3>
-                <a class="o-mission__cta-btn a-button--invert" href="about.php">👉 More about me</a>
-            </div>
         </section>
         <section class="s-section">
-            <div class="s-section__content m-intro-container--projects-page">
+            <div class="s-section__content m-intro-container--pad-bottom">
                 <h2 class="a-text--center">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
             </div>
         </section>
@@ -124,7 +111,6 @@ require(get_path("data/projects.php"));
     <?php require("../src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="../src/app/js/homeAnimations.js"></script>
-    <script src="../src/app/js/cursorInteractions.js"></script>
-    <script src="../src/app/js/projectListAnimation.js"></script>
+    <script src="../src/app/js/missionContainer.js"></script>
 </body>
 </html>

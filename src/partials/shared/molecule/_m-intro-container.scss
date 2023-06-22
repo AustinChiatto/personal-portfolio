@@ -28,4 +28,9 @@
         align-items: flex-start;
         padding-block: 15vh;
     }
+
+    &--pad-bottom {
+        @extend .m-intro-container;
+        padding-bottom: 15vh;
+    }
 }
