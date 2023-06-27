@@ -3,17 +3,21 @@
 @use "../../partials/shared/utility/u-functions" as f;
 
 .o-mission-list {
-    @include m.flex(flex-start, center, column);
+    @include m.flex(center, center, column);
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
+    min-height: 100vh;
+    opacity: 0;
 }
 
 .o-mission-list__items {
     max-height: 5rem * f.pow(1.250, 2);
     overflow: hidden;
+    color: $color-primary;
 }
 
 .o-mission-list__container {

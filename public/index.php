@@ -13,44 +13,35 @@ require(get_path("data/projects.php"));
     <!-- Header -->
     <?php require("../src/partials/shared/base/header/header.php"); ?>
     <main>
-        <!-- Hero Section -->
-        <section class="s-section js-home-hero">
-            <div class="s-section__content--full o-home-hero">
-                <div class="o-home-hero__wrapper">
-                    <div class="o-home-hero__text">
-                        <h1 class="a-text--xl js-home-hero__text-top">Building Things</h1>
-                    </div>
-                    <div class="o-home-hero__text">
-                        <h2 class="a-text--xl js-home-hero__text-bottom">For Humans</h2>
-                    </div>
-                    <div class="o-home-hero__circle js-circle"></div>
-                </div>
-                <div class="o-home-hero__quick-content">
-                    <p class="o-home-hero__label js-home-scroll-fade">Front End Developer</p>
-                    <p class="o-home-hero__label js-home-scroll-hide">Scroll</p>
+        <section class="s-section--theme-light o-hero js-heroContainer">
+            <div class="s-section__content--wide o-hero__intro js-hero">
+                <h2 class="a-text--lg a-text--left js-heroBlur">Austin Chiatto</h2>
+                <h1 class="a-text--upper a-text--center js-heroHeading o-hero__heading-main"><span class="o-hero__heading-main--stretch">Front-End</span> <br> Developer</h1>
+                <div class="o-hero__sub js-heroBlur">
+                    <ul class="o-hero__sub-container">
+                        <li class="a-text--sm a-text--right">Aspiring Astronaut</li>
+                        <li class="a-text--sm a-text--right">Infinite Scroller</li>
+                        <li class="a-text--sm a-text--right">65% Keyboard User</li>
+                        <li class="a-text--sm a-text--right">Knowledge Addict</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- Mission Statement -->
-        <section class="s-section js-missionContainer">
-            <div class="s-section__content m-intro-container--vh100">
-                <div class="o-mission-list js-missionList">
-                    <h3 class="a-text--sm a-text--highlight">Focused On</h3>
-                   <div class="o-mission-list__items">
-                        <div class="o-mission-list__container js-missionItems">
-                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Curiosity</h3>
-                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Compassion</h3>
-                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Imagination</h3>
-                            <h3 class="a-text--xxl a-text--upper o-mission-list__item js-missionItem">Humans</h3>
-                        </div>
-                   </div>
+            <div class="o-mission-list js-missionList">
+                <h3 class="a-text--sm a-text--highlight">Focused On</h3>
+                <div class="o-mission-list__items">
+                    <ul class="o-mission-list__container js-missionItems">
+                        <li class="a-text--xxl a-text--upper o-mission-list__item">Curiosity</li>
+                        <li class="a-text--xxl a-text--upper o-mission-list__item">Compassion</li>
+                        <li class="a-text--xxl a-text--upper o-mission-list__item">Imagination</li>
+                        <li class="a-text--xxl a-text--upper o-mission-list__item">Humans</li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- Project List (Featured) -->
         <section class="s-section">
             <div class="s-section__content m-intro-container--project-list js-projectListIntro">
-                <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">My latest <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
+                <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">Featured <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
                 <a class="a-button--new js-projectListIntroBtn u-visibly-hidden" href="#">View All</a>
             </div>
         </section>
@@ -86,6 +77,7 @@ require(get_path("data/projects.php"));
     <!-- Mission Statement heading flip animation -->
     <script src="../src/app/js/missionContainer.js"></script>
     <!-- Project List animation -->
-    <script src="../src/app/js/projectListAnimation.js"></script>
+    <!-- <script src="../src/app/js/projectListAnimation.js"></script> -->
 </body>
+
 </html>

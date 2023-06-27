@@ -1,6 +1,59 @@
 @use "../shared/utility/u-variables" as *;
 @use "../shared/utility/u-mixins" as m;
 
+.o-hero {
+    z-index: 9;
+    overflow: hidden;
+}
+
+.o-hero__intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.o-hero__heading-main {
+    z-index: 10;
+    font-size: 13rem;
+    line-height: 10rem;
+    align-self: center;
+    margin-block: $spacing--01;
+
+    &--stretch {
+        @extend .o-hero__heading-main;
+        letter-spacing: 0.23rem;
+    }
+}
+
+.o-hero__sub {
+    max-height: 2rem;
+    overflow: hidden;
+}
+
+.o-hero__sub-container {
+    animation-name: heroSub;
+    animation-duration: 7.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.75,0,.25,1);
+}
+
+@keyframes heroSub {
+    33% {
+        transform: translateY(-25%);
+    }
+    66% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-75%);
+    }
+}
+
+// ---
+
 .o-home-hero {
     min-height: 100vh;
     display: flex;

@@ -1,28 +1,22 @@
-// Home hero circle animations
-// ===========================
-const jsCircle = document.querySelector(".js-circle");
-const textTop = document.querySelector(".js-home-hero__text-top");
-const textBot = document.querySelector(".js-home-hero__text-bottom");
+const missionContainer = document.querySelector(".js-missionContainer");
+const missionList = document.querySelector(".js-missionList");
+const missionItems = document.querySelector(".js-missionItems");
 
-let homeCircle = gsap.timeline({
+let zoomIn = gsap.timeline({
     scrollTrigger: {
-        trigger: ".js-home-hero",
-        pin: true,
+        trigger: ".js-heroContainer",
         start: "top top",
+        pin: ".js-heroContainer",
         scrub: true,
-        end: "+=2000",
-
-        onUpdate() {
-            currentRotation = gsap.getProperty(jsCircle, "rotateZ");
-
-            if (currentRotation >= 180) {
-                textTop.textContent = "On The Web";
-            } else {
-                textTop.textContent = "Building Things";
-            }
-        },
+        end: "bottom -100%",
     },
 });
 
-homeCircle.to(jsCircle, { rotateZ: 360 });
-homeCircle.to(".js-home-scroll-hide", { opacity: 0 }, "<");
+zoomIn.to(".js-heroBlur", { filter: "blur(8px)", color: "#6E6E73", duration: 2, ease: "power1.in" }, "<");
+zoomIn.to(".js-heroHeading", { scale: 100, x: "-385%", y: "1000%", duration: 6, delay: 1, ease: "power1.in" }, "<");
+zoomIn.to(".js-heroContainer", { backgroundColor: "#0f0f0f", duration: 1, delay: 4 }, "<");
+zoomIn.to(missionList, { opacity: 1, duration: 1, delay: 0.25 }, "<");
+zoomIn.to(missionItems, { y: "-25%", duration: 1 });
+zoomIn.to(missionItems, { y: "-50%", duration: 1 });
+zoomIn.to(missionItems, { y: "-75%", duration: 1 });
+zoomIn.to(missionItems, { y: "-75%", duration: 1 });

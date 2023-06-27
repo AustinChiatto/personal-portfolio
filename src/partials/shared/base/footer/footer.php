@@ -28,9 +28,35 @@
         </div>
     </section>
 </footer>
+<!-- Lenis Smooth Scroll -->
+<script src="../src/app/js/lenis.min.js"></script>
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <!-- GSAP Scroll Trigger Plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <!-- Animations for links - site wide -->
 <script src="../src/app/js/linkAnimation.js"></script>
+<!-- test -->
+<script>
+    const lenis = new Lenis({
+        duration: 1.1,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -20 * t))
+    });
+
+    lenis.on("scroll", (e) => {
+        console.log("lenis");
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+    });
+</script>

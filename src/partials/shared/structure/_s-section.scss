@@ -40,16 +40,16 @@
 		margin-inline: auto;
 
 		@include m.media-query("tablet") {
-	        grid-column: unset;
-	    }
-	    
+			grid-column: unset;
+		}
+
 		@include m.media-query("desktop") {
-	        grid-column: 2 / span 10;
-	    }
+			grid-column: 2 / span 10;
+		}
 	
-	    @include m.media-query("desktop-wide") {
-	        grid-column: 3 / span 8;
-	    }
+		@include m.media-query("desktop-wide") {
+			grid-column: 3 / span 8;
+		}
 	}
 
 	&--full {
@@ -60,14 +60,14 @@
 		@include m.media-query("tablet") {
 			grid-column: 1 / span 12;
             padding-inline: $spacing--02;
-	    }
-	    
+		}
+
 		@include m.media-query("desktop") {
 			grid-column: 1 / span 12;
-	    }
+		}
 	
-	    @include m.media-query("desktop-wide") {
+		@include m.media-query("desktop-wide") {
 			grid-column: 1 / span 12;
-	    }
+		}
 	}
 }
