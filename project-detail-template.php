@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <?php
-require("../src/app/init.php");
+require("src/app/init.php");
 $title_tag = "Austin Chiatto | Interplanetary Launch Tracker";
 $meta_desc = "Stay up-to-date on the latest rocket launches with our comprehensive tracking tool! Our project provides real-time updates on upcoming launches, including launch dates, times, and locations. Never miss a rocket launch again - start tracking today.";
 $og_url = "https://austinchiatto.com/public/interplanetary.php";
-$og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
-require("../src/partials/shared/base/head.php");
+$og_image = "src/assets/images/interplanetary-mockup__laptop-01.png";
+require("src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
 
 <body>
     <!-- Header -->
-    <?php require("../src/partials/shared/base/header/header.php"); ?>
+    <?php require("src/partials/shared/base/header/header.php"); ?>
     <main>
         <!-- hero section -->
         <section class="s-section">
@@ -23,7 +23,7 @@ require(get_path("data/projects.php"));
                 </div>
                 <!-- hero animated mockup -->
                 <div class="o-project-hero__img-container js-projHeroImgCont">
-                    <img class="o-project-hero__img js-projHeroImg" src="../src/assets/images/asteroid-run-hero.png" alt="">
+                    <img class="o-project-hero__img js-projHeroImg" src="src/assets/images/asteroid-run-hero.png" alt="">
                 </div>
             </div>
         </section>
@@ -64,7 +64,7 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">Last Commit</h4>
                                 <h3>June 3, 2023</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
                         </div>
                     </div>
                     <div class="m-content-grid__column">
@@ -74,7 +74,7 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">Explore The Project</h4>
                                 <h3>Live Website</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
+                            <img src="src/assets/images/asteroid-run_card-mockup-mobile.png" alt="">
                         </div>
                         <!-- development details card -->
                         <div class="a-card--tall js-devCard">
@@ -118,7 +118,7 @@ require(get_path("data/projects.php"));
             <div class="o-challenge">
                 <section class="s-section js-chalImgCont">
                     <div class="s-section__content o-challenge__img-cont js-chalImg">
-                        <img class="o-challenge__img" src="../src/assets/images/asteroid-run_challenge-mockup.png" alt="">
+                        <img class="o-challenge__img" src="src/assets/images/asteroid-run_challenge-mockup.png" alt="">
                     </div>
                 </section>
                 <section class="s-section js-chalCopyCont">
@@ -156,16 +156,16 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">React Application</h4>
                                 <h3>CSS Grid Tool</h3>
                             </div>
-                            <img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
                         </a>
                     </div>
                     <div class="m-content-grid__column">
-                        <a class="a-card" href="../public/asteroid-run-two.php">
+                        <a class="a-card" href="asteroid-run-two.php">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">JavaScript Game</h4>
                                 <h3>Asteroid Run</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -173,9 +173,9 @@ require(get_path("data/projects.php"));
         </section>
     </main>
     <!-- Footer -->
-    <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <?php require("src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
-    <script src="../src/app/js/projectPageAnimation.js"></script>
-    <script src="../src/app/js/projectContentCards.js"></script>
+    <script src="src/app/js/projectPageAnimation.js"></script>
+    <script src="src/app/js/projectContentCards.js"></script>
 </body>
 </html>

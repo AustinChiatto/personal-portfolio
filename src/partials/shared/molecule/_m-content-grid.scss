@@ -19,6 +19,11 @@
         @extend .m-content-grid;
         margin-top: 25vh;
     }
+
+    &--project-list {
+        @extend .m-content-grid;
+        padding-block: 15vh;
+    }
 }
 
 .m-content-grid__column {
@@ -28,4 +33,9 @@
     @include m.media-query("tablet") {
         grid-column: auto / span 1;
     }
+}
+
+.m-content-grid__spacer {
+    pointer-events: none;
+    min-height: 40vh;
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <?php
-require("../src/app/init.php");
+require("src/app/init.php");
 $title_tag = "Austin Chiatto | More about me";
 $meta_desc = "I'm a developer, fascinated and inspired by the ability to bring ideas to life with code.";
 $og_url = "https://austinchiatto.com/public/about.php";
-$og_image = "../src/assets/images/about-section__image-00.jpg";
-require("../src/partials/shared/base/head.php");
+$og_image = "src/assets/images/about-section__image-00.jpg";
+require("src/partials/shared/base/head.php");
 ?>
 <body>
     <!-- Header -->
-    <?php require("../src/partials/shared/base/header/header.php"); ?>
+    <?php require("src/partials/shared/base/header/header.php"); ?>
     <main>
         <!-- About Hero -->
         <section class="s-section">
@@ -26,9 +26,9 @@ require("../src/partials/shared/base/head.php");
                 </ul>
                 <!-- Personal Images -->
                 <div class="o-about-hero__gallery">
-                    <img loading="lazy" class="o-about-hero__image" src="../src/assets/images/about-section__image-01.jpg" alt="myself and my partner tasha">
-                    <img loading="lazy" class="o-about-hero__image--primary" src="../src/assets/images/about-section__image-00.jpg" alt="myself in a green sweater on the lake">
-                    <img loading="lazy" class="o-about-hero__image" src="../src/assets/images/about-section__image-02.jpg" alt="a headshot of myself with a blurred background">
+                    <img loading="lazy" class="o-about-hero__image" src="src/assets/images/about-section__image-01.jpg" alt="myself and my partner tasha">
+                    <img loading="lazy" class="o-about-hero__image--primary" src="src/assets/images/about-section__image-00.jpg" alt="myself in a green sweater on the lake">
+                    <img loading="lazy" class="o-about-hero__image" src="src/assets/images/about-section__image-02.jpg" alt="a headshot of myself with a blurred background">
                 </div>
             </div>
         </section>
@@ -74,10 +74,10 @@ require("../src/partials/shared/base/head.php");
         </div>
     </main>
     <!-- Footer -->
-    <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <?php require("src/partials/shared/base/footer/footer.php"); ?>
     <!-- SplitType.js -->
     <script src="https://unpkg.com/split-type"></script>
     <!-- animation.js file -->
-    <script src="../src/app/js/aboutAnimation.js"></script>
+    <script src="src/app/js/aboutAnimation.js"></script>
 </body>
 </html>

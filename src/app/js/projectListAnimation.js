@@ -12,7 +12,7 @@ let listHeadingPin = ScrollTrigger.create({
     start: "center center",
     pin: intro,
     endTrigger: ".js-projectListTrigger",
-    end: "bottom 15%",
+    end: "bottom 25%",
     scrub: true,
     pinSpacing: false,
 });
@@ -28,9 +28,9 @@ let fadeIn = gsap.fromTo(
         scale: 1,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "bottom center",
+            start: "bottom 45%",
             scrub: true,
-            end: "bottom 30%",
+            end: "bottom 35%",
         },
     }
 );
@@ -46,7 +46,7 @@ let fadeOut = gsap.fromTo(
         scale: 0.9,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "top 75%",
+            start: "top 60%",
             scrub: true,
             end: "top center",
         },
@@ -67,23 +67,25 @@ let fadeBtnIn = gsap.fromTo(
         scale: 1,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "bottom center",
+            start: "bottom 45%",
             scrub: true,
-            end: "bottom 30%",
+            end: "bottom 35%",
         },
     }
 );
 
 // Change text content of heading
 // ===========================
+
 let handleIntroChange = ScrollTrigger.create({
     trigger: ".js-projectListTrigger",
     start: "center center",
     end: "center center",
 
     // check when card leaves the scroll trigger
-    onLeave: function () {
+    onLeave: () => {
         listHeading.textContent = "See more of what I enjoy doing";
+        intro.style.zIndex = 9;
         // checks if the project button is present on the page
         if (projectListBtn) {
             projectListBtn.classList.remove("u-visibly-hidden");
@@ -91,11 +93,17 @@ let handleIntroChange = ScrollTrigger.create({
     },
 
     // check if card re-enters the scroll trigger
-    onLeaveBack: function () {
+    onLeaveBack: () => {
         listHeading.innerHTML = 'My latest <span class="a-text--highlight">imposter syndrome <br> inducing</span> projects';
         // checks if the project button is present on the page
         if (projectListBtn) {
             projectListBtn.classList.add("u-visibly-hidden");
         }
+    },
+
+    // check if card re-enters the scroll trigger
+    onEnterBack: () => {
+        // checks if the project button is present on the page
+        intro.style.zIndex = -1;
     },
 });

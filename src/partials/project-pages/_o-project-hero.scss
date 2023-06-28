@@ -6,7 +6,6 @@
     padding-inline: unset;
     max-height: 92.5vh;
 
-
     @include m.media-query("tablet") {
         padding-inline: unset;
     }
@@ -27,4 +26,8 @@
 .o-project-hero__img {
     position: relative;
     max-width: none;
+}
+
+.o-project-list__heading {
+    pointer-events: none;
 }

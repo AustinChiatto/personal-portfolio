@@ -45,14 +45,14 @@
 
     &:hover::before {
         opacity: 1;
-        bottom: 1rem;
+        bottom: $spacing--01;
     }
 }
 
 .a-card::before {
     content: "+";
     position: absolute;
-    right: 1rem;
+    right: $spacing--01;
     bottom: 0rem;
     width: 3rem;
     aspect-ratio: 1/1;

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <?php
-require("../src/app/init.php");
+require("src/app/init.php");
 $title_tag = "Austin Chiatto | CSS Grid Tool";
 $meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
 $og_url = "https://austinchiatto.com/public/grid-tool-two.php";
-$og_image = "../src/assets/images/grid-tool-hero.png";
-require("../src/partials/shared/base/head.php");
+$og_image = "src/assets/images/grid-tool-hero.png";
+require("src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
 
 <body>
     <!-- Header -->
-    <?php require("../src/partials/shared/base/header/header.php"); ?>
+    <?php require("src/partials/shared/base/header/header.php"); ?>
     <main>
         <!-- hero section -->
         <section class="s-section">
@@ -23,7 +23,7 @@ require(get_path("data/projects.php"));
                 </div>
                 <!-- hero animated mockup -->
                 <div class="o-project-hero__img-container js-projHeroImgCont">
-                    <img class="o-project-hero__img js-projHeroImg" src="../src/assets/images/grid-tool-hero.png" alt="">
+                    <img class="o-project-hero__img js-projHeroImg" src="src/assets/images/grid-tool-hero.png" alt="">
                 </div>
             </div>
         </section>
@@ -63,7 +63,7 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">Last Commit</h4>
                                 <h3>June 6, 2023</h3>
                             </div>
-                            <img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
                         </a>
                     </div>
                     <div class="m-content-grid__column">
@@ -73,7 +73,7 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">Explore The Project</h4>
                                 <h3>Live Website</h3>
                             </div>
-                            <img src="../src/assets/images/grid-tool-card-mobile.png" alt="">
+                            <img src="src/assets/images/grid-tool-card-mobile.png" alt="">
                         </a>
                         <!-- development details card -->
                         <div class="a-card--tall js-devCard">
@@ -117,7 +117,7 @@ require(get_path("data/projects.php"));
             <div class="o-challenge">
                 <section class="s-section js-chalImgCont">
                     <div class="s-section__content o-challenge__img-cont js-chalImg">
-                        <img class="o-challenge__img" src="../src/assets/images/grid-tool-challenge.png" alt="">
+                        <img class="o-challenge__img" src="src/assets/images/grid-tool-challenge.png" alt="">
                     </div>
                 </section>
                 <section class="s-section js-chalCopyCont">
@@ -157,16 +157,16 @@ require(get_path("data/projects.php"));
                                 <h4 class="a-text--base a-text--highlight">React Application</h4>
                                 <h3>CSS Grid Tool</h3>
                             </div>
-                            <img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
                         </a>
                     </div>
                     <div class="m-content-grid__column">
-                        <a class="a-card" href="../public/asteroid-run-two.php">
+                        <a class="a-card" href="asteroid-run-two.php">
                             <div class="a-card__headings">
                                 <h4 class="a-text--base a-text--highlight">JavaScript Game</h4>
                                 <h3>Asteroid Run</h3>
                             </div>
-                            <img src="../src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
+                            <img src="src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -174,8 +174,8 @@ require(get_path("data/projects.php"));
         </section>
     </main>
     <!-- Footer -->
-    <?php require("../src/partials/shared/base/footer/footer.php"); ?>
+    <?php require("src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
-    <script src="../src/app/js/projectPageAnimation.js"></script>
+    <script src="src/app/js/projectPageAnimation.js"></script>
 </body>
 </html>

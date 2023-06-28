@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <?php
-require("../src/app/init.php");
+require("src/app/init.php");
 $title_tag = "Austin Chiatto | All Projects";
 $meta_desc = "Explore my portfolio of web development projects! From front-end to back-end development, my portfolio showcases a range of web applications, websites, and tools that highlight my skills and expertise. Browse through my projects and see how I can help bring your ideas to life with clean, efficient code.";
 $og_url = "https://austinchiatto.com/public/all-projects.php";
-$og_image = "../src/assets/images/interplanetary-mockup__laptop-01.png";
-require("../src/partials/shared/base/head.php");
+$og_image = "src/assets/images/interplanetary-mockup__laptop-01.png";
+require("src/partials/shared/base/head.php");
 require(get_path("data/projects.php"));
 ?>
 <body>
     <!-- Header -->
-    <?php require("../src/partials/shared/base/header/header.php"); ?>
+    <?php require("src/partials/shared/base/header/header.php"); ?>
     <main>
         <section class="s-section">
             <div class="s-section__content">
@@ -65,9 +65,6 @@ require(get_path("data/projects.php"));
         </section>
     </main>
     <!-- Footer -->
-    <?php require("../src/partials/shared/base/footer/footer.php"); ?>
-    <!-- Scripts -->
-    <script src="../src/app/js/cursorInteractions.js"></script>
-    <script src="../src/app/js/projectListAnimation.js"></script>
+    <?php require("src/partials/shared/base/footer/footer.php"); ?>
 </body>
 </html>

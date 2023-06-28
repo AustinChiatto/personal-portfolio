@@ -15,9 +15,17 @@
 }
 
 .o-mission-list__items {
-    max-height: 5rem * f.pow(1.250, 2);
+    max-height: 2.5rem * f.pow(1.250, 2);
     overflow: hidden;
     color: $color-primary;
+
+    @include m.media-query("tablet") {
+        max-height: 3rem * f.pow(1.250, 2);
+    }
+
+    @include m.media-query("desktop") {
+        max-height: 5rem * f.pow(1.250, 2);
+    }
 }
 
 .o-mission-list__container {

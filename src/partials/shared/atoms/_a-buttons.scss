@@ -2,10 +2,11 @@
 @use "../utility/u-mixins" as m;
 
 .a-button--new {
+    position: relative;
     display: block;
     padding: 0.75rem 1rem;
-    font-weight: 400;
-    font-size: 1rem;
+    // font-weight: 400;
+    // font-size: 1rem;
     background: $color-primary;
     border: 1px solid $color-secondary;
     color: $color-primary--dark;
@@ -16,13 +17,13 @@
     -moz-box-shadow:0px 3px 0px 0px $color-secondary;
     transition: all 50ms ease-in-out;
 
-    @include m.min-width(desktop) {
-        font-size: 1.25rem;
-    }
+    // @include m.min-width(desktop) {
+    //     font-size: 1.25rem;
+    // }
 
     &:hover{
         @extend .a-button--new;
-        transform: translateY(3px);
+        transform: translateY(3px) !important;
         box-shadow:0px 0px 0px 0px $color-secondary;
         -webkit-box-shadow:0px 0px 0px 0px $color-secondary;
         -moz-box-shadow:0px 0px 0px 0px $color-secondary;

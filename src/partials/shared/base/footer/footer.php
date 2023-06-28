@@ -23,7 +23,7 @@
             </div>
             <div class="o-footer__copyright-container">
                 <p>&copy; 2023</p>
-                <a class="a-text--highlight" href="">Back To Top</a>
+                <a class="a-text--highlight" href="#top">Top</a>
             </div>
         </div>
     </section>
@@ -41,10 +41,6 @@
     const lenis = new Lenis({
         duration: 1.1,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -20 * t))
-    });
-
-    lenis.on("scroll", (e) => {
-        console.log("lenis");
     });
 
     function raf(time) {
