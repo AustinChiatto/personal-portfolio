@@ -34,9 +34,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <!-- GSAP Scroll Trigger Plugin -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-<!-- Animations for links - site wide -->
-<script src="../src/app/js/linkAnimation.js"></script>
-<!-- test -->
+<!-- smooth scrolling -->
 <script>
     const lenis = new Lenis({
         duration: 1.1,
