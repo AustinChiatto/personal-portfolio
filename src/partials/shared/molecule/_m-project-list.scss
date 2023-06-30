@@ -1,0 +1,7 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.m-project-list__headings {
+    @include m.flex(center, center, column);
+    max-height: none;
+}

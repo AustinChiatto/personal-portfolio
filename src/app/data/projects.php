@@ -1,51 +1,94 @@
 <?php
-
-// objects for each of my projects
-// used for populating the information on the project-card.php partial
-// this is displayed on the home page and all-projects pages
-// find a way to label 2 objects as featured and have only them displayed on the home page
-
 require_once(__DIR__ . "/../init.php");
 
-$project_one = new Project([
-    "link" => "interplanetary.php",
-    "name" => "Interplanetary",
-    "type" => "API Integrated Launch Tracker",
-    "image_url" => "project-img__00.png",
-    "image_alt" => "A product mockup displaying a web page that gathers and provides a list of upcoming rocket launches.",
-    "featured" => true
+// CSS Grid Tool
+// ===========================
+$grid_tool = new Project([
+    "title" => "Grid Tool",
+    "sub_title" => "Grids Made Simple",
+    "type" => "React Application",
+    "desc" => "A GUI to help new developers create layouts using CSS Grids",
+    "internal_url" => "grid-tool-two.php",
+    "external_url" => "https://staging.austinchiatto.com/public/grid-tool-two.php",
+    "documentation_url" => "https://github.com/AustinChiatto/grid-tool--2.0",
+    "image_path" => "grid-tool-hero.png",
+    "is_featured" => true,
 ]);
 
-$project_two = new Project([
-    "link" => "asteroid-run.php",
-    "name" => "Asteroid Run",
-    "type" => "Vanilla JS Browser Game",
-    "image_url" => "project-img__01.png",
-    "image_alt" => "A product mockup showing the desktop version of a video game, the player controls a triangle ship and their goal is to dodge oncoming asteroids.",
-    "featured" => false
+// Asteroid Run
+// ===========================
+$asteroid_run = new Project([
+    "title" => "Asteroid Run",
+    "sub_title" => "Unleash your Inner Space Cowboy",
+    "type" => "JavaScript Game",
+    "desc" => "A retro shooter inspired browser based game",
+    "internal_url" => "asteroid-run-two.php",
+    "external_url" => "",
+    "documentation_url" => "https://github.com/AustinChiatto/asteroid-run-2.0.0",
+    "image_path" => "asteroid-run-hero.png",
+    "is_featured" => false,
 ]);
 
-$project_three = new Project([
-    "link" => "neil-and-sab.php",
-    "name" => "The Heppells",
-    "type" => "Static Wedding RSVP Website",
-    "image_url" => "project-img__03.png",
-    "image_alt" => "a product mockup for a website for an upcoming wedding. The site displays the homepage with the title 'Sabrina & Neil' and an image of the bride and groom.",
-    "featured" => false
+// Jade
+// ===========================
+$jade = new Project([
+    "title" => "",
+    "sub_title" => "",
+    "type" => "",
+    "desc" => "",
+    "internal_url" => "",
+    "external_url" => "",
+    "documentation_url" => "",
+    "image_path" => "",
+    "is_featured" => false,
 ]);
 
+// 
+// ===========================
 $project_four = new Project([
-    "link" => "grid-tool.php",
-    "name" => "CSS Grid Tool",
-    "type" => "CSS grid tool",
-    "image_url" => "project-img__02.png",
-    "image_alt" => "Tablet mockup of the grid tool interface which has a colorful retro inspired theme",
-    "featured" => true
+    "title" => "",
+    "sub_title" => "",
+    "type" => "",
+    "desc" => "",
+    "internal_url" => "",
+    "external_url" => "",
+    "documentation_url" => "",
+    "image_path" => "",
+    "is_featured" => false,
 ]);
 
+$project_five = new Project([
+    "title" => "",
+    "sub_title" => "",
+    "type" => "",
+    "desc" => "",
+    "internal_url" => "",
+    "external_url" => "",
+    "documentation_url" => "",
+    "image_path" => "",
+    "is_featured" => false,
+]);
+
+// 
+// ===========================
+$project_six = new Project([
+    "title" => "",
+    "sub_title" => "",
+    "type" => "",
+    "desc" => "",
+    "internal_url" => "",
+    "external_url" => "",
+    "documentation_url" => "",
+    "image_path" => "",
+    "is_featured" => false,
+]);
+
+// store all project objects in array
 $projects = [
-    $project_one,
-    $project_two,
-    $project_three,
+    $grid_tool,
+    $asteroid_run,
+    $jade,
     $project_four,
+    $project_five,
+    $project_six,
 ];

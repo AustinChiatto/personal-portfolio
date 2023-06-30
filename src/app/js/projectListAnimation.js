@@ -85,7 +85,6 @@ let handleIntroChange = ScrollTrigger.create({
     // check when card leaves the scroll trigger
     onLeave: () => {
         listHeading.textContent = "See more of what I enjoy doing";
-        intro.style.zIndex = 9;
         // checks if the project button is present on the page
         if (projectListBtn) {
             projectListBtn.classList.remove("u-visibly-hidden");
@@ -99,11 +98,5 @@ let handleIntroChange = ScrollTrigger.create({
         if (projectListBtn) {
             projectListBtn.classList.add("u-visibly-hidden");
         }
-    },
-
-    // check if card re-enters the scroll trigger
-    onEnterBack: () => {
-        // checks if the project button is present on the page
-        intro.style.zIndex = -1;
     },
 });

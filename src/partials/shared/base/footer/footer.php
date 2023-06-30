@@ -54,3 +54,11 @@
         lenis.raf(time * 1000);
     });
 </script>
+<script src="build/js/highlight.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightElement(block);
+    });
+});
+</script>

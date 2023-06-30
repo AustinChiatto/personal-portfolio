@@ -74,6 +74,5 @@ require(get_path("data/projects.php"));
     <?php require("src/partials/shared/base/footer/footer.php"); ?>
     <!-- Scripts -->
     <script src="src/app/js/projectPageAnimation.js"></script>
-    <script src="src/app/js/projectContentCards.js"></script>
 </body>
 </html>

@@ -1,10 +1,18 @@
+<?php
+
+// check which page i am on
+// do a thing
+
+if ($page_title == "index") {
+    // change data
+} ?>
 <section class="s-section">
-    <div class="s-section__content m-intro-container js-projectListIntro">
-        <h2 class="a-text--center a-text--pad-bottom o-project-list__heading js-projectListHeading">Featured <span class="a-text--highlight">imposter <br> syndrome inducing</span> projects</h2>
-        <a class="a-button--new js-projectListIntroBtn u-visibly-hidden" href="#">View All</a>
+    <div class="s-section__content m-intro-container">
+        <div class="m-project-list__headings js-projectListIntro">
+            <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">Featured <span class="a-text--highlight">imposter syndrome inducing</span> projects</h2>
+            <a class="a-button--new js-projectListIntroBtn u-visibly-hidden" href="#">View All</a>
+        </div>
     </div>
-</section>
-<section class="s-section">
     <div class="s-section__content">
         <div class="m-content-grid--project-list js-contentGrid">
             <div class="m-content-grid__column">

@@ -15,15 +15,25 @@
         <div class="s-section__content--wide o-challenge__grid">
             <div class="o-challenge__copy">
                 <h3 class="o-challenge__copy-heading">Player Projectiles</h3>
-                <p class="a-text--highlight"><span class="a-text--white">Players get to channel their inner space cowboy by blasting enemy ships with a hail of projectiles</span>. But let me tell you, managing all those projectiles was no walk in the space park.</p>
-                <p class="a-text--highlight">As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
-                <p class="a-text--highlight">To make matters worse, players could fire off <span class="a-text--white">as many projectiles as they wanted</span>, which meant I had to come up with a way to keep track of all those little rascals.</p>
+                <p>Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
+                <pre><code>document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+    });
+});</code></pre>
+                <p>As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
+                <pre><code>const projHero = document.querySelector(".js-projHero");</code></pre>
             </div>
             <div class="o-challenge__copy">
-                <h3 class="o-challenge__copy-heading">Cosmic Storage Array</h3>
-                <p class="a-text--highlight">To solve this, <span class="a-text--white">every time the player hit the "z" key</span> to fire a projectile, <span class="a-text--white">a new object is created and pushed to an array</span>. This array acts like a cosmic garage, holding all the active projectiles in the game.</p>
-                <p class="a-text--highlight">This means I can simply use a forEach loop to <span class="a-text--white">loop through each projectile</span> to <span class="a-text--white">test if the projectile is "inside" an enemy</span> ship, <span class="a-text--white">or has exited the canvas</span>. If either is true the projectile is simply <span class="a-text--white">spliced from the array</span>, limiting the number of projectiles on screen to a manageable amount.</p>
-                <p class="a-text--highlight">Now players can shoot to their heart's content, and watch their enemies explode into a shower of space debris, <span class="a-text--white">without crashing their browser</span>. It's a beautiful thing.</p>
+                <h3 class="o-challenge__copy-heading">Player Projectiles</h3>
+                <p>Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
+                <pre><code>document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+    });
+});</code></pre>
+                <p>As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
+                <pre><code>const projHero = document.querySelector(".js-projHero");</code></pre>
             </div>
             <div class="o-challenge__copy">
                 <h3 class="o-challenge__copy-heading">Enemy Behaviour</h3>

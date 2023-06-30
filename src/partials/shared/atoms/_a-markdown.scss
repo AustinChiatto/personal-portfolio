@@ -1,0 +1,11 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.a-code-highlight {
+    display: inline;
+    background: $color-card-bg;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid $color-card-border;
+    color: $color-secondary;
+}
