@@ -39,11 +39,16 @@
         @extend .a-card;
         grid-column: auto / span 2;
         aspect-ratio: unset;
-        padding-bottom: $spacing--01;
+        padding: $spacing--01;
+
         @include m.flex(center, flex-start, column);
 
         @include m.media-query("phone-wide") {
             @include m.flex(space-between, center, row);
+        }
+
+        @include m.media-query("tablet") {
+            padding: $spacing--02;
         }
     }
 
