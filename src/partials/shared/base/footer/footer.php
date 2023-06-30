@@ -1,29 +1,18 @@
 <footer>
-    <section class="s-section--theme-light">
-        <div class="s-section__content--wide o-footer">
-            <div class="o-footer__cta">
-                <h2>Reach out, see what else I'm up to on the internet, or recommend a good movie.</h2>
-                <a class="a-text--lg o-footer__email" href="#">hello@austinchiatto.com</a>
-            </div>
-        </div>
-    </section>
     <section class="s-section">
-        <div class="s-section__content--wide">
-            <div class="o-footer__recap">
-                <div class="o-footer__recap-headings">
-                    <h2>Austin Chiatto</h2>
-                    <h3 class="a-text--base a-text--highlight">Front End Developer</h3>
-                </div>
-                <div class="o-footer__recap-links">
-                    <a class="a-text--highlight" href="#">Email</a>
-                    <a class="a-text--highlight" href="#">LinkedIn</a>
-                    <a class="a-text--highlight" href="#">GitHub</a>
-                    <a class="a-text--highlight" href="#">Codepen</a>
-                </div>
-            </div>
+        <div class="o-footer">
+            <a class="a-text--lg a-text--white o-footer__email" href="#">hello@austinchiatto.com</a>
+            <hr class="o-footer__hr">
+            <ul class="o-footer__link-list">
+                <li><a class="a-text--highlight a-text--base" href="#">LinkedIn</a></li>
+                <li><a class="a-text--highlight a-text--base" href="#">GitHub</a></li>
+                <li><a class="a-text--highlight a-text--base" href="#">Codepen</a></li>
+            </ul>
+        </div>
+        <div class="s-section__content--full">
             <div class="o-footer__copyright-container">
-                <p>&copy; 2023</p>
-                <a class="a-text--highlight" href="#top">Top</a>
+                <p class="a-text--copy">&copy; 2023</p>
+                <a class="a-text--copy a-text--highlight" href="#top">Top</a>
             </div>
         </div>
     </section>

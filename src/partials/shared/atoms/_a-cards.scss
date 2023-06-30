@@ -18,6 +18,15 @@
     position: relative;
     color: $color-primary;
     overflow: hidden;
+
+    // ! change this to be a mixin or something that is not hard coded
+    @include m.media-query("tablet") {
+        border-radius: 1rem;
+    }
+
+    @include m.media-query("desktop") {
+        border-radius: 1rem;
+    }
     
 
     &--tall {

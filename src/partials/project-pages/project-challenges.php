@@ -15,31 +15,31 @@
         <div class="s-section__content--wide o-challenge__grid">
             <div class="o-challenge__copy">
                 <h3 class="o-challenge__copy-heading">Player Projectiles</h3>
-                <p>Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
+                <p class="a-text--copy">Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
                 <pre><code>document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre code').forEach((el) => {
         hljs.highlightElement(el);
     });
 });</code></pre>
-                <p>As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
+                <p class="a-text--copy">As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
                 <pre><code>const projHero = document.querySelector(".js-projHero");</code></pre>
             </div>
             <div class="o-challenge__copy">
                 <h3 class="o-challenge__copy-heading">Player Projectiles</h3>
-                <p>Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
+                <p class="a-text--copy">Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
                 <pre><code>document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre code').forEach((el) => {
         hljs.highlightElement(el);
     });
 });</code></pre>
-                <p>As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
+                <p class="a-text--copy">As a developer who was still getting the hang of <span class="a-text--white">HTML canvas</span> and <span class="a-text--white">JavaScript objects</span>, I found the whole process of creating, animating, and detecting collisions for the projectiles to be a bit of a black hole.</p>
                 <pre><code>const projHero = document.querySelector(".js-projHero");</code></pre>
             </div>
             <div class="o-challenge__copy">
                 <h3 class="o-challenge__copy-heading">Enemy Behaviour</h3>
-                <p class="a-text--highlight">The next challenge I faced was <span class="a-text--white">creating enemies</span> that kept players on their toes. I wanted to make sure that the <span class="a-text--white">enemies didn't appear in predictable spots</span>, so I had to figure out a way to spawn them at <span class="a-text--white">random x-axis positions</span> above the canvas.</p>
-                <p class="a-text--highlight">But that was only half the battle. I also had to make sure that the <span class="a-text--white">enemies moved in a way that felt natural and unpredictable</span>, while staying <span class="a-text--white">within the bounds of the canvas</span>.</p>
-                <p class="a-text--highlight">So, I will need a random animation interval, random spawn position, random movement direction... I have a feeling <span class="a-text--white">Math.random()</span> will come in handy!</p>
+                <p class="a-text--highlight a-text--copy">The next challenge I faced was <span class="a-text--white">creating enemies</span> that kept players on their toes. I wanted to make sure that the <span class="a-text--white">enemies didn't appear in predictable spots</span>, so I had to figure out a way to spawn them at <span class="a-text--white">random x-axis positions</span> above the canvas.</p>
+                <p class="a-text--highlight a-text--copy">But that was only half the battle. I also had to make sure that the <span class="a-text--white">enemies moved in a way that felt natural and unpredictable</span>, while staying <span class="a-text--white">within the bounds of the canvas</span>.</p>
+                <p class="a-text--highlight a-text--copy">So, I will need a random animation interval, random spawn position, random movement direction... I have a feeling <span class="a-text--white">Math.random()</span> will come in handy!</p>
             </div>
             <div class="o-challenge__copy js-chalCopyTrig">
                 <h3 class="o-challenge__copy-heading">A Galactic Clock</h3>

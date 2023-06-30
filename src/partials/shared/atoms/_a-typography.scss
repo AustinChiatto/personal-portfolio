@@ -8,6 +8,11 @@
         @include m.font-size("base");
     }
 
+    &--copy {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
     &--sm {
         @include m.font-size("sm");
     }

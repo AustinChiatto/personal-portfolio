@@ -6,40 +6,36 @@ footer {
 }
 
 .o-footer {
-    margin-block: $spacing--05;
+    grid-column: 1 / span 12;
+    @include m.flex(center, center, column);
+    background: $color-card-bg;
+    border: 0.0625rem solid $color-card-border;
+    border-radius: 1rem;
+    margin: $spacing--01;
+    padding: $spacing--02;
 }
 
 .o-footer__email {
-    display: block;
-    color: $color-primary--dark;
-    padding-top: $spacing--02;
+    padding-block: $spacing--03;
+}
+
+.o-footer__hr {
+    width: 75%;
+    border: 0.0625rem solid $color-card-border;
+    border-bottom: transparent;
+}
+
+.o-footer__link-list {
+    @include m.flex(center, center);
+    padding-block: $spacing--03;
+}
+
+.o-footer__link-list > li + li {
+    margin-left: $spacing--01;
 }
 
 .o-footer__copyright-container {
     padding-block: $spacing--01;
     color: $color-secondary;
     @include m.flex(space-between, center)
-}
-
-.o-footer__recap {
-    @include m.flex(space-between, flex-start, column);
-    padding-block: $spacing--03;
-
-    @include m.media-query("phone-wide") {
-        @include m.flex(space-between, center, row);
-    }
-}
-
-.o-footer__recap-links {
-    @include m.flex(center, flex-start, column);
-    margin-top: $spacing--01;
-
-    @include m.media-query("phone-wide") {
-        @include m.flex(center, flex-end, column);
-        margin-top: unset;
-    }
-}
-
-.o-footer__recap-links > * + * {
-    margin-top: $spacing--half;
 }
