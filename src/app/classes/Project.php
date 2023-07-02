@@ -10,6 +10,8 @@ class Project
     public $documentation_url;
     public $thumbnail;
     public $is_featured;
+    public $card_type;
+    public $grid_col;
 
     public function __construct($projects = [])
     {
@@ -22,5 +24,7 @@ class Project
         $this->documentation_url = $projects["documentation_url"] ?? null;
         $this->thumbnail = $projects["thumbnail"] ?? null;
         $this->is_featured = $projects["is_featured"] ?? null;
+        $this->card_type = $projects["card_type"] ?? null;
+        $this->grid_col = $projects["grid_col"] ?? null;
     }
 }

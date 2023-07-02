@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../init.php");
+require_once __DIR__ . "/../init.php";
 
 // CSS Grid Tool
 // ===========================
@@ -11,8 +11,10 @@ $grid_tool = new Project([
     "internal_url" => "grid-tool-two.php",
     "external_url" => "https://staging.austinchiatto.com/public/grid-tool-two.php",
     "documentation_url" => "https://github.com/AustinChiatto/grid-tool--2.0",
-    "image_path" => "grid-tool-hero.png",
+    "thumbnail" => "grid-tool_card-mockup-laptop.png",
     "is_featured" => true,
+    "card_type" => "--tall",
+    "grid_col" => "left",
 ]);
 
 // Asteroid Run
@@ -25,8 +27,9 @@ $asteroid_run = new Project([
     "internal_url" => "asteroid-run-two.php",
     "external_url" => "",
     "documentation_url" => "https://github.com/AustinChiatto/asteroid-run-2.0.0",
-    "image_path" => "asteroid-run-hero.png",
-    "is_featured" => false,
+    "thumbnail" => "asteroid-run_card-mockup-laptop.png",
+    "is_featured" => true,
+    "grid_col" => "right",
 ]);
 
 // Jade
@@ -39,11 +42,12 @@ $jade = new Project([
     "internal_url" => "",
     "external_url" => "",
     "documentation_url" => "",
-    "image_path" => "",
+    "thumbnail" => "",
     "is_featured" => false,
+    "grid_col" => "left",
 ]);
 
-// 
+//
 // ===========================
 $project_four = new Project([
     "title" => "",
@@ -53,8 +57,9 @@ $project_four = new Project([
     "internal_url" => "",
     "external_url" => "",
     "documentation_url" => "",
-    "image_path" => "",
+    "thumbnail" => "",
     "is_featured" => false,
+    "grid_col" => "right",
 ]);
 
 $project_five = new Project([
@@ -65,11 +70,12 @@ $project_five = new Project([
     "internal_url" => "",
     "external_url" => "",
     "documentation_url" => "",
-    "image_path" => "",
+    "thumbnail" => "",
     "is_featured" => false,
+    "grid_col" => "left",
 ]);
 
-// 
+//
 // ===========================
 $project_six = new Project([
     "title" => "",
@@ -79,16 +85,10 @@ $project_six = new Project([
     "internal_url" => "",
     "external_url" => "",
     "documentation_url" => "",
-    "image_path" => "",
+    "thumbnail" => "",
     "is_featured" => false,
+    "grid_col" => "right",
 ]);
 
 // store all project objects in array
-$projects = [
-    $grid_tool,
-    $asteroid_run,
-    $jade,
-    $project_four,
-    $project_five,
-    $project_six,
-];
+$projects = [$grid_tool, $asteroid_run, $jade, $project_four, $project_five, $project_six];
