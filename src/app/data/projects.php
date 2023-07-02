@@ -35,14 +35,14 @@ $asteroid_run = new Project([
 // Jade
 // ===========================
 $jade = new Project([
-    "title" => "",
-    "sub_title" => "",
-    "type" => "",
-    "desc" => "",
-    "internal_url" => "",
+    "title" => "Asteroid Run",
+    "sub_title" => "Unleash your Inner Space Cowboy",
+    "type" => "JavaScript Game",
+    "desc" => "A retro shooter inspired browser based game",
+    "internal_url" => "asteroid-run-two.php",
     "external_url" => "",
-    "documentation_url" => "",
-    "thumbnail" => "",
+    "documentation_url" => "https://github.com/AustinChiatto/asteroid-run-2.0.0",
+    "thumbnail" => "asteroid-run_card-mockup-laptop.png",
     "is_featured" => false,
     "grid_col" => "left",
 ]);
@@ -50,15 +50,16 @@ $jade = new Project([
 //
 // ===========================
 $project_four = new Project([
-    "title" => "",
-    "sub_title" => "",
-    "type" => "",
-    "desc" => "",
-    "internal_url" => "",
-    "external_url" => "",
-    "documentation_url" => "",
-    "thumbnail" => "",
+    "title" => "Grid Tool",
+    "sub_title" => "Grids Made Simple",
+    "type" => "React Application",
+    "desc" => "A GUI to help new developers create layouts using CSS Grids",
+    "internal_url" => "grid-tool-two.php",
+    "external_url" => "https://staging.austinchiatto.com/public/grid-tool-two.php",
+    "documentation_url" => "https://github.com/AustinChiatto/grid-tool--2.0",
+    "thumbnail" => "grid-tool_card-mockup-laptop.png",
     "is_featured" => false,
+    "card_type" => "--tall",
     "grid_col" => "right",
 ]);
 
