@@ -43,6 +43,8 @@
         lenis.raf(time * 1000);
     });
 </script>
+
+<!-- highlight JS code - used for code blocks in project pages -->
 <script src="build/js/highlight.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', (event) => {

@@ -15,6 +15,7 @@ $grid_tool = new Project([
     "is_featured" => true,
     "card_type" => "--tall",
     "grid_col" => "left",
+    // "cards" => $details, --can I do this?
 ]);
 
 // Asteroid Run

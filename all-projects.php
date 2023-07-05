@@ -11,7 +11,7 @@ require get_path("data/projects.php");
 <body>
     <!-- Header -->
     <?php require "src/partials/shared/base/header/header.php"; ?>
-    <main>
+    <main id="top">
         <section class="s-section">
             <div class="s-section__content m-intro-container">
                 <div class="m-intro-container--projects-page">
