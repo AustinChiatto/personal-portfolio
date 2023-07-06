@@ -12,10 +12,25 @@ $og_image = "src/assets/images/about-section__image-00.jpg";
 
 // page content
 // ===========================
+//hero
+$project_name = "Asteroid Run";
+$project_tagline = "Unleash your Inner Space Cowboy";
+$hero_img_path = "asteroid-run-hero.png";
+
+// external cta section
+$external_cta_heading = 'Strap in, Power Up, Shoot First, <br> <span class="a-text--highlight">Ask Questions Never!</span>';
+$external_cta_link_01 = "Play Game";
+$external_cta_link_02 = "Source Code";
+
+// callout
+$callout_label = "GitHub Readme";
+$callout_copy = "See more about how and why I built Asteroid Run.";
+
+// project selection
+$project_selection_heading = "Enjoyed" . $project_name . '? <span class="a-text--highlight">Take a <br> look at</span> another project';
 
 // detail cards
 // ===========================
-
 // Team Card
 $team_card_content = '
     <div class="o-project-personal">
@@ -42,7 +57,7 @@ $git_card_content = '<img src="../src/assets/images/asteroid-run_card-mockup-lap
 $git_card = new Detail([
     "type" => "git",
     "pre_heading" => "Latest Commit",
-    "heading" => "DATE-PH",
+    "heading" => "DATE-OF-COMMIT",
     "card_content" => $git_card_content,
     "grid_col" => "left",
 ]);
@@ -97,7 +112,7 @@ $technology_panel_content = "";
 
 $technology_card = new Detail([
     "type" => "technology",
-    "pre_heading" => "Made with love <span class='a-text--highlight'>and {brackets}</>",
+    "pre_heading" => "<span class='a-text--white'>Made with love</span> and {brackets}",
     "card_content" => $technology_card_content,
     "panel_content" => "PH",
     "card_type" => "--wide",
@@ -105,4 +120,13 @@ $technology_card = new Detail([
 
 // store all project objects in array
 $details = [$team_card, $git_card, $live_card, $purpose_card, $technology_card];
+
+// challenge section content
+// ===========================
+$challenge_01 = "";
+$challenge_02 = "";
+$challenge_03 = "";
+
+// array of all challenges
+$challenges = [$challenge_01, $challenge_02, $challenge_03];
 ?>
