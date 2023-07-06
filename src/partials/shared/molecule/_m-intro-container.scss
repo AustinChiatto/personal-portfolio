@@ -38,4 +38,9 @@
         @extend .m-intro-container;
         padding-bottom: 8vh;
     }
+
+    &--about-page {
+        @extend .m-intro-container;
+        padding-block: 20vh 15vh;
+    }
 }
