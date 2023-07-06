@@ -9,4 +9,5 @@ require "functions.php";
 // Include Classes
 require get_path("classes/Project.php");
 require get_path("classes/ProjectDetails.php");
+require get_path("classes/AboutDetails.php");
 ?>

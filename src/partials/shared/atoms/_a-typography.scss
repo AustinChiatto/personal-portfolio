@@ -60,4 +60,8 @@
     &--pad-bottom {
         padding-bottom: $spacing--02;
     }
+
+    &--restrict {
+        max-width: 50rem;
+    }
 }
