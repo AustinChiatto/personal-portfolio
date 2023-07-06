@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<?php
-require("src/app/init.php");
-$title_tag = "Austin Chiatto | Asteroid Run Two";
-$meta_desc = "pew pew pew space and guns and lasers and stuff!";
-$og_url = "https://austinchiatto.com/public/asteroid-run-two.php";
-$og_image = "src/assets/images/interplanetary-mockup__laptop-01.png";
-require("src/partials/shared/base/head.php");
-require(get_path("data/projects.php"));
-?>
+    <?php
+    require "src/app/init.php";
+    // data for current page - used in head and body contents
+    require get_path("data/asteroid-run.php");
+    // head
+    require "src/partials/shared/base/head.php";
+    // project data
+    require get_path("data/projects.php");
+    ?>
 
 <body>
     <!-- Header -->
-    <?php require("src/partials/shared/base/header/header.php"); ?>
+    <?php require "src/partials/shared/base/header/header.php"; ?>
     <main>
         <!-- hero section -->
-        <?php include("src/partials/project-pages/project-hero.php"); ?>
+        <?php include "src/partials/project-pages/project-hero.php"; ?>
         <!-- project-cta section -->
         <section class="s-section js-externalCTA">
             <div class="s-section__content">
@@ -29,9 +29,9 @@ require(get_path("data/projects.php"));
             </div>
         </section>
         <!-- info-grid section -->
-        <?php include("src/partials/project-pages/project-info-grid.php"); ?>
+        <?php include "src/partials/project-pages/project-info-grid.php"; ?>
             <!-- challenges section -->
-            <?php include("src/partials/project-pages/project-challenges.php"); ?>
+            <?php include "src/partials/project-pages/project-challenges.php"; ?>
         <section class="s-section">
             <div class="s-section__content--wide">
                 <a class="o-doc-callout" href="#">
@@ -71,7 +71,7 @@ require(get_path("data/projects.php"));
         </section>
     </main>
     <!-- Footer -->
-    <?php require("src/partials/shared/base/footer/footer.php"); ?>
+    <?php require "src/partials/shared/base/footer/footer.php"; ?>
     <!-- Scripts -->
     <script src="src/app/js/projectPageAnimation.js"></script>
 </body>

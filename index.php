@@ -26,7 +26,7 @@
                         <a class="a-button--new js-projectListIntroBtn u-visibly-hidden" href="#">View All</a>
                     </div>
                 </div>
-                <?php require "src/partials/shared/molecule/content-grid.php"; ?>
+                <?php require "src/partials/home/featured_projects.php"; ?>
                 <div class="s-section__content m-content-grid__spacer"></div>
             </section>
         </main>

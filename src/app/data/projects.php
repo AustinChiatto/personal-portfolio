@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../init.php";
+require_once __DIR__ . "/../data/asteroid-run.php";
 
 // CSS Grid Tool
 // ===========================
@@ -15,7 +16,7 @@ $grid_tool = new Project([
     "is_featured" => true,
     "card_type" => "--tall",
     "grid_col" => "left",
-    // "cards" => $details, --can I do this?
+    "project_details" => $details,
 ]);
 
 // Asteroid Run
@@ -31,6 +32,7 @@ $asteroid_run = new Project([
     "thumbnail" => "asteroid-run_card-mockup-laptop.png",
     "is_featured" => true,
     "grid_col" => "right",
+    "project_details" => $details,
 ]);
 
 // Jade
@@ -46,6 +48,7 @@ $jade = new Project([
     "thumbnail" => "asteroid-run_card-mockup-laptop.png",
     "is_featured" => false,
     "grid_col" => "left",
+    "project_details" => $details,
 ]);
 
 //
@@ -62,6 +65,7 @@ $project_four = new Project([
     "is_featured" => false,
     "card_type" => "--tall",
     "grid_col" => "right",
+    "project_details" => $details,
 ]);
 
 $project_five = new Project([
@@ -75,6 +79,7 @@ $project_five = new Project([
     "thumbnail" => "",
     "is_featured" => false,
     "grid_col" => "left",
+    "project_details" => $details,
 ]);
 
 //
@@ -90,6 +95,7 @@ $project_six = new Project([
     "thumbnail" => "",
     "is_featured" => false,
     "grid_col" => "right",
+    "project_details" => $details,
 ]);
 
 // store all project objects in array
