@@ -27,8 +27,22 @@
     background: $color-card-bg;
     border-left: 0.0625rem solid $color-card-border;
     overflow-y: scroll;
-    padding: 2rem;
+    padding: $spacing--02;
     padding-top: 8rem;
+}
+
+.m-content-panel__close-icon {
+    position: absolute;
+    top: 2.5rem;
+    right: $spacing--02;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: scale 150ms ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
 }
 
 .m-content-panel__section {
@@ -56,3 +70,4 @@
     padding-bottom: $spacing--01;
     border-bottom: 0.0625rem solid $color-card-border;
 }
+

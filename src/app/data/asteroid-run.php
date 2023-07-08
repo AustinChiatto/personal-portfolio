@@ -57,7 +57,7 @@ $git_card_content = '<img src="../src/assets/images/asteroid-run_card-mockup-lap
 $git_card = new Detail([
     "type" => "git",
     "pre_heading" => "Latest Commit",
-    "heading" => "DATE-OF-COMMIT",
+    "heading" => "Version History",
     "card_content" => $git_card_content,
     "grid_col" => "left",
 ]);

@@ -2,6 +2,7 @@ const card = document.querySelectorAll(".js-projectDetailCard"),
     contentPanel = document.querySelector(".js-contentPanel"),
     panelModal = document.querySelector(".js-panelModal");
 
+// set styling for animation
 gsap.set(contentPanel, {
     display: "none",
     opacity: 0,
@@ -11,10 +12,11 @@ gsap.set(panelModal, {
     x: "100%",
 });
 
-// initialize panel timelines
+// panel open
+// ===========================
 let panelOpen = gsap.timeline({ paused: true });
-let panelClose = gsap.timeline({ paused: true });
 
+// if any card is clicked - open designated panel
 card.forEach((e) => {
     e.addEventListener("click", (e) => {
         e.preventDefault();
@@ -41,28 +43,41 @@ card.forEach((e) => {
     });
 });
 
+// panel close
+// ===========================
+let panelClose = gsap.timeline({ paused: true });
+
+// close panel if user clicks outside of panel
 contentPanel.addEventListener("click", (e) => {
     if (!panelModal.contains(e.target)) {
         document.body.style.overflow = ""; // show body overflow
-        lenis.start(); // start lenis smooth scroll
-        panelClose
-            .to(panelModal, {
-                x: "100%",
-                duration: 0.2,
-                ease: "power1.out",
-            })
-            .to(
-                contentPanel,
-                {
-                    display: "none",
-                    opacity: 0,
-                    backdropFilter: "blur(0rem)",
-                    duration: 0.2,
-                    ease: "power1.out",
-                },
-                "<"
-            );
-
-        panelClose.play();
+        closeAnimation();
     }
 });
+
+// close panel if user clicks the close icon
+document.querySelector(".js-panelClose").addEventListener("click", closeAnimation);
+
+// function that runs the close animation - used in the above event handlers
+function closeAnimation() {
+    lenis.start(); // start lenis smooth scroll
+    panelClose
+        .to(panelModal, {
+            x: "100%",
+            duration: 0.2,
+            ease: "power1.out",
+        })
+        .to(
+            contentPanel,
+            {
+                display: "none",
+                opacity: 0,
+                backdropFilter: "blur(0rem)",
+                duration: 0.2,
+                ease: "power1.out",
+            },
+            "<"
+        );
+
+    panelClose.play();
+}

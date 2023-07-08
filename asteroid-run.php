@@ -23,6 +23,11 @@
             <div class="m-content-panel js-contentPanel">
                 <div class="m-content-panel__container">
                     <aside data-lenis-prevent class="m-content-panel__modal js-panelModal">
+                        <div class="m-content-panel__header">
+                            <a class="m-content-panel__close-icon js-panelClose">
+                                <img src="src/assets/icons/Close.svg" width="24" height="24" alt="close icon">
+                            </a>
+                        </div>
                         <article class="m-content-panel__section">
                         <h3 class="m-content-panel__copy-heading">Player Projectiles</h3>
                 <p class="a-text--copy">Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
