@@ -39,14 +39,19 @@ $team_card_content = '
         <div class="o-project-personal__back-end">Back End</div>
     </div>';
 
-$team_panel_content = "";
+$team_panel_content = '
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Player Projectiles</h4>
+        <p class="a-text--copy">Players get to channel their inner space blasting enemy ships with a hail of projectiles. But let me tell you, managing all those projectiles was no walk in the space park.</p>
+    </article>
+';
 
 $team_card = new Detail([
     "type" => "team",
     "pre_heading" => "My Contributions",
     "heading" => "Solo Project",
     "card_content" => $team_card_content,
-    "panel_content" => "PH",
+    "panel_content" => $team_panel_content,
     "card_type" => "--tall",
     "grid_col" => "left",
 ]);

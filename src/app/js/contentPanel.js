@@ -1,6 +1,7 @@
 const card = document.querySelectorAll(".js-projectDetailCard"),
     contentPanel = document.querySelector(".js-contentPanel"),
-    panelModal = document.querySelector(".js-panelModal");
+    panelModal = document.querySelector(".js-panelModal"),
+    ajaxWorkaround = document.querySelector(".js-ajaxWorkaround");
 
 // set styling for animation
 gsap.set(contentPanel, {
@@ -23,23 +24,37 @@ card.forEach((e) => {
         document.body.style.overflow = "hidden"; // hide body overflow - prevent scrolling when panel is open
         // stop smooth scrolling with lenis
         lenis.stop();
-        // open panel animation
-        panelOpen
-            .to(contentPanel, {
-                display: "grid",
-                opacity: 1,
-                background: "#0f0f0f25",
-                backdropFilter: "blur(0.5rem)",
-                duration: 0.2,
-                ease: "power1.out",
-            })
-            .to(panelModal, {
-                x: 0,
-                duration: 0.2,
-                ease: "power1.out",
-            });
 
-        panelOpen.play();
+        const cardId = e.target.id;
+
+        // Make an AJAX request to the PHP file
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const content = xhr.responseText;
+                contentPanel.innerHTML = content;
+                // open panel animation
+                // ===========================
+                panelOpen
+                    .to(contentPanel, {
+                        display: "grid",
+                        opacity: 1,
+                        background: "#0f0f0f25",
+                        backdropFilter: "blur(0.5rem)",
+                        duration: 0.2,
+                        ease: "power1.out",
+                    })
+                    .to(panelModal, {
+                        x: 0,
+                        duration: 0.2,
+                        ease: "power1.out",
+                    });
+
+                panelOpen.play();
+            }
+        };
+        xhr.open("GET", `src/partials/shared/molecule/content-panel.php?cardId=${cardId}`, true);
+        xhr.send();
     });
 });
 
