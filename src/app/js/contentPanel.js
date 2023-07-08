@@ -1,7 +1,7 @@
 const card = document.querySelectorAll(".js-projectDetailCard"),
     contentPanel = document.querySelector(".js-contentPanel"),
     panelModal = document.querySelector(".js-panelModal"),
-    ajaxWorkaround = document.querySelector(".js-ajaxWorkaround");
+    panelContent = document.querySelector(".js-panelContent");
 
 // set styling for animation
 gsap.set(contentPanel, {
@@ -19,20 +19,21 @@ let panelOpen = gsap.timeline({ paused: true });
 
 // if any card is clicked - open designated panel
 card.forEach((e) => {
+    // get id of card clicked
+    const cardId = e.id;
+
     e.addEventListener("click", (e) => {
         e.preventDefault();
         document.body.style.overflow = "hidden"; // hide body overflow - prevent scrolling when panel is open
         // stop smooth scrolling with lenis
         lenis.stop();
 
-        const cardId = e.target.id;
-
         // Make an AJAX request to the PHP file
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 const content = xhr.responseText;
-                contentPanel.innerHTML = content;
+                panelContent.innerHTML = content;
                 // open panel animation
                 // ===========================
                 panelOpen
@@ -53,7 +54,7 @@ card.forEach((e) => {
                 panelOpen.play();
             }
         };
-        xhr.open("GET", `src/partials/shared/molecule/content-panel.php?cardId=${cardId}`, true);
+        xhr.open("GET", `src/partials/shared/molecule/panel-content.php?cardId=${cardId}`, true);
         xhr.send();
     });
 });
