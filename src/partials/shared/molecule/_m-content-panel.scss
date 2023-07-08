@@ -1,0 +1,58 @@
+@use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
+
+.m-content-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 998;
+    @include m.grid(12);
+}
+
+.m-content-panel__container {
+    grid-column: 8 / span 5;
+}
+
+.m-content-panel__modal {
+    margin-left: auto;
+    max-width: fit-content;
+    max-height: 100vh;
+    overscroll-behavior: contain;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $color-card-bg;
+    border-left: 0.0625rem solid $color-card-border;
+    overflow-y: scroll;
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+.m-content-panel__section {
+    margin-inline: auto;
+    max-width: 35rem;
+}
+
+.m-content-panel__section + .m-content-panel__section {
+    margin-top: 4rem;
+
+    @include m.min-width(tablet) {
+        margin-top: 6rem;
+    }
+}
+
+.m-content-panel__section > * + * {
+    margin-top: 0.5rem;
+
+    @include m.min-width(tablet) {
+        margin-top: 1rem;
+    }
+}
+
+.m-content-panel__copy-heading {
+    padding-bottom: $spacing--01;
+    border-bottom: 0.0625rem solid $color-card-border;
+}
