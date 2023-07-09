@@ -23,15 +23,6 @@
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
-            <?php foreach ($projects as $project): ?>
-                <?php if ($project->title === $project_name): ?>
-                    <?php foreach ($project->project_details as $detail):
-                        if ($detail->card_type == "--wide") {
-                            require "src/partials/shared/atoms/detail-card.php";
-                        }
-                    endforeach; ?>
-                <?php endif; ?>
-            <?php endforeach; ?>
         </div>
     </div>
 </section>

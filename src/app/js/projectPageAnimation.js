@@ -113,13 +113,13 @@ let pinChalImg = ScrollTrigger.create({
 let chalImgSlideIn = gsap.fromTo(
     chalImg,
     {
-        x: clientW < 670 ? "-100%" : "-70%",
+        x: clientW < 670 ? "-100%" : "-75%",
     },
     {
         x: 0,
         scrollTrigger: {
             trigger: chalCopyCont,
-            start: "bottom center",
+            start: "bottom 75%",
             endTrigger: chalCopyCont,
             end: "bottom top",
             scrub: true,
@@ -140,10 +140,10 @@ let chalImgSlideOut = gsap.fromTo(
         x: 0,
     },
     {
-        x: clientW < 670 ? "-100%" : "-70%",
+        x: clientW < 670 ? "-100%" : "-75%",
         scrollTrigger: {
-            trigger: chalCopyCont,
-            start: "top 65%",
+            trigger: chalImg,
+            start: "center center",
             endTrigger: chalCopyCont,
             end: "top top",
             scrub: true,

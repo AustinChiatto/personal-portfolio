@@ -64,4 +64,8 @@
     &--restrict {
         max-width: 50rem;
     }
+
+    &--pad-top {
+        padding-top: $spacing--02;
+    }
 }

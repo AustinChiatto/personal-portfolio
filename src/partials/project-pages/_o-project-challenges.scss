@@ -23,13 +23,13 @@
 }
 
 .o-challenge__img-cont {
-    z-index: 99;
     text-align: center;
 }
 
 .o-challenge__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-block: 15vh;
 }
 
 .o-challenge__copy {

@@ -79,6 +79,8 @@
     padding: 0.75rem;
     background: $color-primary--dark;
     border-radius: $border-radius;
+    margin-bottom: 0.5rem;
+    
 }
 
 .o-info-grid__tech-icon + .o-info-grid__tech-icon {
@@ -100,4 +102,10 @@
 
 .o-info-grid__tech-heading {
     flex-grow: 1;
+}
+
+.o-info-grid__purpose {
+    justify-content: flex-start;
+    margin-top: $spacing--04;
+    padding-inline: $spacing--03;
 }

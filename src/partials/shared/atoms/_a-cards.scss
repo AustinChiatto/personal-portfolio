@@ -88,3 +88,13 @@
         flex-grow: 1;
     }
 }
+
+.a-card__content {
+    flex-grow: 1;
+    @include m.flex(center, center, column);
+
+    &--img {
+        flex-grow: 1;
+        @include m.flex(center, flex-end);
+    }
+}

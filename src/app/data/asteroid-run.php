@@ -51,14 +51,16 @@ $git_card = new Detail([
     "pre_heading" => "Latest Commit",
     "heading" => "Version History",
     "card_content" => $git_card_content,
+    "panel_content" => $git_panel_content,
     "grid_col" => "left",
 ]);
 
-$live_card = new Detail([
-    "type" => "live",
-    "pre_heading" => "Explore The Project",
-    "heading" => "Live Website",
-    "card_content" => $live_card_content,
+$technology_card = new Detail([
+    "type" => "technology",
+    "pre_heading" => "Built with love and brackets",
+    "heading" => "Technology",
+    "card_content" => $technology_card_content,
+    "panel_content" => $technology_panel_content,
     "grid_col" => "right",
 ]);
 
@@ -72,14 +74,6 @@ $purpose_card = new Detail([
     "grid_col" => "right",
 ]);
 
-$technology_card = new Detail([
-    "type" => "technology",
-    "pre_heading" => "<span class='a-text--white'>Made with love</span> and {brackets}",
-    "card_content" => $technology_card_content,
-    "panel_content" => $technology_panel_content,
-    "card_type" => "--wide",
-]);
-
 // store all project objects in array
-$details = [$team_card, $git_card, $live_card, $purpose_card, $technology_card];
+$details = [$team_card, $git_card, $technology_card, $purpose_card];
 ?>
