@@ -1,35 +1,31 @@
 <?php
-require_once "/Users/austinchiatto/development/personal-portfolio/src/app/init.php";
-
 // page data
 // ===========================
-// about page
-require_once get_path("data/about.php");
 // projects
-require_once get_path("data/projects.php");
-// project pages
-require_once get_path("data/asteroid-run.php");
+require __DIR__ . "../../../../app/init.php";
+// project cards
 
 // get request for card id
 // ===========================
-$cardId = $_GET["cardId"]; // get request to get id of card being clicked -- passed from AJAX in contentPanel.js
+$projectName = $_GET["projectName"];
+$cardId = $_GET["cardId"];
+$pageTitle = $_GET["pageTitle"];
+
+require __DIR__ . "../../../../app/data/{$pageTitle}.php";
 
 // load content
 // ===========================
-if ($page_type == "about") {
+if ($page_type === "about") {
     foreach ($about_grids as $detail) {
         if (trim($detail->type) == trim($cardId)) {
             echo $content = $detail->panel_content;
+            break;
         }
     }
-} else {
-    foreach ($projects as $project) {
-        if ($project->title === $project_name) {
-            foreach ($project->project_details as $detail) {
-                if (trim($detail->type) == trim($cardId)) {
-                    echo $content = $detail->panel_content;
-                }
-            }
+} elseif ($page_type === "project-detail") {
+    foreach ($details as $detail) {
+        if (trim($detail->type) == trim($cardId)) {
+            echo $content = $detail->panel_content;
         }
     }
 }

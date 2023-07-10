@@ -92,6 +92,7 @@ require "src/partials/shared/base/head.php";
     <!-- animation.js file -->
     <script src="src/app/js/aboutAnimation.js"></script>
     <!-- content panel -->
+    <?php echo "<script>const projectName = '$project_name'; const pageTitle = '$page_title';</script>"; ?>
     <script src="src/app/js/contentPanel.js"></script>
 </body>
 </html>

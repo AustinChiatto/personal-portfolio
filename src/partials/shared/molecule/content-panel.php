@@ -5,7 +5,7 @@
                 <img src="src/assets/icons/Close.svg" width="24" height="24" alt="close icon">
             </div>
             <div class="js-panelContent">
-                <?php isset($_GET["cardId"]) ? require "./content-panel.php" : "error loading content"; ?>
+                <?php isset($_GET["cardId"]) ? require "./panel-content.php" : "error loading content"; ?>
             </div>
         </aside>
     </div>

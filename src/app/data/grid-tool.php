@@ -1,44 +1,45 @@
 <?php
 require_once __DIR__ . "/../init.php";
+
 // page data
 // ===========================
-$page_title = "asteroid-run";
+$page_title = "grid-tool";
 $page_type = "project-detail";
-$title_tag = "Austin Chiatto | Asteroid Run";
-$meta_desc = "pew pew pew space and guns and lasers and stuff!";
-$og_url = "https://austinchiatto.com/public/asteroid-run-two.php";
-$og_image = "src/assets/images/about-section__image-00.jpg";
+$title_tag = "Austin Chiatto | Grid Tool";
+$meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
+$og_url = "https://austinchiatto.com/public/grid-tool.php";
+$og_image = "src/assets/images/grid-tool-hero.png";
 
 // page content
 // ===========================
 //hero
-$project_name = "Asteroid Run";
-$project_tagline = "Unleash your Inner Space Cowboy";
-$hero_img_path = "asteroid-run-hero.png";
+$project_name = "Grid Tool";
+$project_tagline = "Grids Made Simple";
+$hero_img_path = "grid-tool-hero.png";
 
 // external cta section
-$external_cta_heading = 'Strap in, Power Up, Shoot First, <span class="a-text--highlight">Ask Questions Never!</span>';
-$external_cta_link_01 = "Play Game";
+$external_cta_heading = "Revolutionize your grid design with this CSS Grid Tool";
+$external_cta_link_01 = "Live Site";
 $external_cta_link_02 = "Source Code";
 
 // callout
 $callout_label = "GitHub Readme";
-$callout_copy = "See more about how and why I built Asteroid Run.";
+$callout_copy = "See more about how and why I built Grid Tool.";
 
 // project selection
 $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';
 
 // panel & card contents
 // ===========================
-require "asteroid-run/card-content.php";
-require "asteroid-run/panel-content.php";
+require "grid-tool/card-content.php";
+require "grid-tool/panel-content.php";
 
-// card objects -- asteroid run
+// card objects
 // ===========================
 $team_card = new Detail([
     "type" => "team",
     "pre_heading" => "My Contributions",
-    "heading" => "asteroid-run",
+    "heading" => "Solo Project",
     "card_content" => $team_card_content,
     "panel_content" => $team_panel_content,
     "card_type" => "--tall",
@@ -75,5 +76,4 @@ $purpose_card = new Detail([
 
 // store all project objects in array
 $details = [$team_card, $git_card, $purpose_card, $technology_card];
-
 ?>

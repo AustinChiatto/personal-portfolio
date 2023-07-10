@@ -4,11 +4,13 @@
     <?php
     // data for current page - used in head and body contents
     require get_path("data/asteroid-run.php");
+    // $page_title = $page_title;
     // head
     require "src/partials/shared/base/head.php";
     // project data
     require get_path("data/projects.php");
     ?>
+    
     <body>
         <!-- Header -->
         <?php require "src/partials/shared/base/header/header.php"; ?>
@@ -32,6 +34,7 @@
         <?php require "src/partials/shared/base/footer/footer.php"; ?>
         <!-- Scripts -->
         <script src="src/app/js/projectPageAnimation.js"></script>
+        <?php echo "<script>const projectName = '$project_name'; const pageTitle = '$page_title';</script>"; ?>
         <script src="src/app/js/contentPanel.js"></script>
     </body>
 </html>

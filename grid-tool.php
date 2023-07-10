@@ -1,181 +1,40 @@
-<!DOCTYPE html>
-<?php
-require "src/app/init.php";
-$title_tag = "Austin Chiatto | CSS Grid Tool";
-$meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
-$og_url = "https://austinchiatto.com/public/grid-tool-two.php";
-$og_image = "src/assets/images/grid-tool-hero.png";
-require "src/partials/shared/base/head.php";
-require get_path("data/projects.php");
-?>
+<?php require "src/app/init.php"; ?>
 
-<body>
-    <!-- Header -->
-    <?php require "src/partials/shared/base/header/header.php"; ?>
-    <main>
-        <!-- hero section -->
-        <section class="s-section">
-            <div class="s-section__content s-section__content--full o-project-hero js-projHero">
-                <!-- hero headings -->
-                <div class="m-intro-container m-intro-container--vh100 js-projHeadings">
-                    <h1>CSS Grid Tool</h1>
-                    <h2 class="a-text--sm">Grids Made Simple</h2>
-                </div>
-                <!-- hero animated mockup -->
-                <div class="o-project-hero__img-container js-projHeroImgCont">
-                    <img class="o-project-hero__img js-projHeroImg" src="src/assets/images/grid-tool-hero.png" alt="">
-                </div>
-            </div>
-        </section>
-        <!-- project-cta section -->
-        <section class="s-section js-externalCTA">
-            <div class="s-section__content">
-                <div class="m-intro-container">
-                    <h2 class="a-text--center">Revolutionize your grid <br> design with this CSS Grid Tool</h2>
-                    <ul class="m-link-list">
-                        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" target="_blank" title="">Live Site</a></li>
-                        <li><a class="a-button" href="#" title="">Source Code</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- info-grid section -->
-        <section class="s-section">
-            <div class="s-section__content">
-                <div class="m-content-grid--pad-top">
-                    <!-- info-grid column 01 -->
-                    <div class="m-content-grid__column">
-                        <!-- team / solo card -->
-                        <div class="a-card--tall js-contributionCard">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">My Contributions</h4>
-                                <h3>Solo Project</h3>
-                            </div>
-                            <div class="o-project-personal">
-                                <div class="o-project-personal__design">Design</div>
-                                <div class="o-project-personal__front-end">Front End</div>
-                                <div class="o-project-personal__back-end">Back End</div>
-                            </div>
-                        </div>
-                        <!-- last commit card -->
-                        <a class="a-card js-gitCard" href="https://github.com/AustinChiatto/grid-tool--2.0" target="_blank" title="">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Last Commit</h4>
-                                <h3>June 6, 2023</h3>
-                            </div>
-                            <img src="src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
-                        </a>
-                    </div>
-                    <div class="m-content-grid__column">
-                        <!-- live site card -->
-                        <a class="a-card js-liveCard" href="#">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Explore The Project</h4>
-                                <h3>Live Website</h3>
-                            </div>
-                            <img src="src/assets/images/grid-tool-card-mobile.png" alt="">
-                        </a>
-                        <!-- development details card -->
-                        <div class="a-card--tall js-devCard">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">Project Purpose</h4>
-                                <h3>Intentions</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="a-card--wide js-techCard">
-                        <h3 class="a-card__headings--wide a-text--base">Made with love <span class="a-text--highlight">and {brackets}</span></h3>
-                        <ul class="o-info-grid__tech">
-                            <li class="o-info-grid__tech-icon">
-                                <svg viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0L3.77957 43.2011L20.7444 48L37.7524 43.1946L41.5385 0H0ZM33.3173 14.1429H13.4135L13.8462 19.6071H32.8846L31.4232 35.8275L20.7692 38.8371L10.0947 35.8371L9.3613 27.5357H14.5817L14.9517 31.7454L20.7692 33.3289L26.5478 31.7304L27.1514 24.8571H9.08654L7.72464 8.82964H33.7716L33.3173 14.1429Z" fill="#6E6E73"/>
-                                </svg>
-                            </li>
-                            <li class="o-info-grid__tech-icon">
-                                <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0L3.75 43.2021L20.5468 48L37.3929 43.1946L41.1429 0H0ZM31.1443 35.8821L20.5789 38.8929L10.0296 35.8671L9.30643 27.5357H14.4771L14.8446 31.7743L20.5864 33.3986L20.6004 33.4286L26.3293 31.8375L26.9336 24.9643H14.8929L14.4643 19.6071H27.3911L27.8571 14.1429H8.14286L7.71429 8.89286H33.4907L31.1443 35.8821Z" fill="#6E6E73"/>
-                                </svg>
-                            </li>
-                            <li class="o-info-grid__tech-icon">
-                                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V48H48V0H0ZM25.7143 37.2857C25.7143 41.9582 22.9543 44.2361 18.9589 44.2361C15.3504 44.2361 13.2557 42.3675 12.1929 40.1121L15.8657 37.8889C16.5739 39.1457 17.1118 40.2086 18.6579 40.2086C19.9436 40.2086 21 39.6289 21 37.3736V22.2857H25.7143V37.2857ZM36.3589 44.1289C32.1707 44.1289 29.4643 42.2389 28.1432 39.6289L31.8214 37.5C32.7857 39.0793 34.0446 40.1314 36.2679 40.1314C38.1364 40.1314 39.2218 39.3043 39.2218 38.0154C39.2218 36.4693 38.1043 35.9218 36.0418 35.0154L34.9146 34.5311C31.6596 33.1468 29.5018 31.4068 29.5018 27.7329C29.5018 24.3504 32.0786 21.8796 36.1061 21.8796C38.9743 21.8796 41.0346 22.7711 42.5186 25.3811L39 27.6429C38.2264 26.2575 37.3929 25.7143 36.1007 25.7143C34.7796 25.7143 33.9418 26.5521 33.9418 27.6429C33.9418 28.9961 34.7796 29.5436 36.7125 30.3814L37.8396 30.8646C41.6743 32.5082 43.8332 34.1861 43.8332 37.9532C43.8343 42.0139 40.6446 44.1289 36.3589 44.1289Z" fill="#6E6E73"/>
-                                </svg>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!DOCTYPE html>
+    <?php
+    // data for current page - used in head and body contents
+    require get_path("data/grid-tool.php");
+    // head
+    require "src/partials/shared/base/head.php";
+    // project data
+    $page_title = $page_title;
+    require get_path("data/projects.php");
+    ?>
+
+    <body>
+        <!-- Header -->
+        <?php require "src/partials/shared/base/header/header.php"; ?>
+        <main>
+            <!-- hero section -->
+            <?php include "src/partials/project-pages/project-hero.php"; ?>
+            <!-- external-cta section -->
+            <?php include "src/partials/project-pages/external-cta.php"; ?>
+            <!-- info-grid section -->
+            <?php include "src/partials/project-pages/project-info-grid.php"; ?>
+            <!-- card panel -->
+            <?php include "src/partials/shared/molecule/content-panel.php"; ?>
             <!-- challenges section -->
-            <section class="s-section">
-                <div class="s-section__content">
-                    <div class="m-intro-container m-intro-container--vh100 js-chalHeaderCont">
-                        <h2 class="a-text--center js-chalHeader">Challenges Overcome <span class="a-text--highlight">in the <br></span> Development <span class="a-text--highlight">of CSS Grid Tool</span></h2>
-                    </div>
-                </div>
-            </section>
-            <div class="o-challenge">
-                <section class="s-section js-chalImgCont">
-                    <div class="s-section__content o-challenge__img-cont js-chalImg">
-                        <img class="o-challenge__img" src="src/assets/images/grid-tool-challenge.png" alt="">
-                    </div>
-                </section>
-                <section class="s-section js-chalCopyCont">
-                    <div class="s-section__content--wide o-challenge__grid">
-                        <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">React Props</h3>
-                            <p class="a-text--highlight"><span class="a-text--white">As a newcomer to React</span>,I encountered some obstacles along the way. While constructing the static version of the site proved to be relatively smooth,  I encountered difficulties when attempting to divide the project into distinct components. Specifically, <span class="a-text--white">I struggled to comprehend the relationships between components</span>, <span class="a-text--white">as well as the process of relaying information between them.</span></p>
-                            <p class="a-text--highlight">This was <span class="a-text--white">especially the case when passing functions and state</span> down multiple components or to another deeply nested component..</p>
-                        </div>
-                        <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">UseContext</h3>
-                            <p class="a-text--highlight">The <span class="a-text--white">React Hook UseContext() ended up being the missing key</span> for the specific issue I was having. I needed to pass the state of the inputs over and down to the grid. <span class="a-text--white">Instead of raising the state all the way up the chain</span> to the main component rendered. <span class="a-text--white">I simply put the state for the inputs in a separate file.</span></p>
-                            <p class="a-text--highlight">Then using the UseContext Hook <span class="a-text--white">I could simply pass and alter that state from multiple nested children</span> at once. This worked perfectly to achieve the effect I was looking for, and it was the moment where <span class="a-text--white">React finally felt like it was beginning to click into place!</span></p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        <section class="s-section">
-            <div class="s-section__content">
-                <a class="o-doc-callout" href="#">
-                    <h2 class="a-text--sm o-doc-callout__label">GitHub Readme</h2>
-                    <p class="a-text--highlight o-doc-callout__copy">See more about how and why I built the CSS Grid Tool</p>
-                </a>
-            </div>
-        </section>
-        <section class="s-section">
-            <div class="s-section__content m-intro-container--md">
-                <h2 class="a-text--center">Enjoyed CSS Grid Tool? <span class="a-text--highlight">Take a <br> look at</span> another project</h2>
-            </div>
-        </section>
-        <section class="s-section">
-            <div class="s-section__content">
-                <div class="m-content-grid--pad-bottom">
-                    <div class="m-content-grid__column">
-                        <a class="a-card" href="#">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">React Application</h4>
-                                <h3>CSS Grid Tool</h3>
-                            </div>
-                            <img src="src/assets/images/grid-tool_card-mockup-laptop.png" alt="">
-                        </a>
-                    </div>
-                    <div class="m-content-grid__column">
-                        <a class="a-card" href="asteroid-run-two.php">
-                            <div class="a-card__headings">
-                                <h4 class="a-text--base a-text--highlight">JavaScript Game</h4>
-                                <h3>Asteroid Run</h3>
-                            </div>
-                            <img src="src/assets/images/asteroid-run_card-mockup-laptop.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <?php require "src/partials/shared/base/footer/footer.php"; ?>
-    <!-- Scripts -->
-    <script src="src/app/js/projectPageAnimation.js"></script>
-</body>
+            <?php include "src/partials/project-pages/project-challenges.php"; ?>
+            <!-- callout -->
+            <?php include "src/partials/project-pages/callout.php"; ?>
+            <!-- project selection -->
+            <?php include "src/partials/project-pages/project-selection.php"; ?>
+        </main>
+        <!-- Footer -->
+        <?php require "src/partials/shared/base/footer/footer.php"; ?>
+        <!-- Scripts -->
+        <script src="src/app/js/projectPageAnimation.js"></script>
+        <?php echo "<script>const projectName = '$project_name'; const pageTitle = '$page_title';</script>"; ?>
+        <script src="src/app/js/contentPanel.js"></script>
+    </body>
 </html>

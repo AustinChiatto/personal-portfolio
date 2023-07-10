@@ -29,7 +29,6 @@ card.forEach((e) => {
             document.body.style.overflow = "hidden"; // hide body overflow - prevent scrolling when panel is open
             // stop smooth scrolling with lenis
             lenis.stop();
-
             // Make an AJAX request to the PHP file
             const xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
@@ -57,7 +56,7 @@ card.forEach((e) => {
                     panelOpen.play();
                 }
             };
-            xhr.open("GET", `src/partials/shared/molecule/panel-content.php?cardId=${cardId}`, true);
+            xhr.open("GET", `src/partials/shared/molecule/panel-content.php?cardId=${cardId}&projectName=${projectName}&pageTitle=${pageTitle}`, true);
             xhr.send();
         });
     }
