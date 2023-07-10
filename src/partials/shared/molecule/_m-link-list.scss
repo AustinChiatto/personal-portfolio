@@ -8,8 +8,22 @@
     @include m.media-query("tablet") {
         margin-block: $spacing--03;
     }
+
+    &--vertical {
+        @include m.flex(center, center, column);
+    }
+
+    &--card {
+        @include m.grid(2);
+        gap: $spacing--half;
+        width: 100%;
+    }
 }
 
 .m-link-list > * + * {
     margin-left: $spacing--half;
+}
+
+.m-link-list--vertical > * + * {
+    margin-top: $spacing--half;
 }

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <?php
-require("src/app/init.php");
+require "src/app/init.php";
 $title_tag = "Austin Chiatto | CSS Grid Tool";
 $meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
 $og_url = "https://austinchiatto.com/public/grid-tool-two.php";
 $og_image = "src/assets/images/grid-tool-hero.png";
-require("src/partials/shared/base/head.php");
-require(get_path("data/projects.php"));
+require "src/partials/shared/base/head.php";
+require get_path("data/projects.php");
 ?>
 
 <body>
     <!-- Header -->
-    <?php require("src/partials/shared/base/header/header.php"); ?>
+    <?php require "src/partials/shared/base/header/header.php"; ?>
     <main>
         <!-- hero section -->
         <section class="s-section">
@@ -33,8 +33,8 @@ require(get_path("data/projects.php"));
                 <div class="m-intro-container">
                     <h2 class="a-text--center">Revolutionize your grid <br> design with this CSS Grid Tool</h2>
                     <ul class="m-link-list">
-                        <li><a class="a-button--new" href="https://grid-tool-v2.austinchiatto.com/" target="_blank" title="">Live Site</a></li>
-                        <li><a class="a-button--new" href="#" title="">Source Code</a></li>
+                        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" target="_blank" title="">Live Site</a></li>
+                        <li><a class="a-button" href="#" title="">Source Code</a></li>
                     </ul>
                 </div>
             </div>
@@ -174,7 +174,7 @@ require(get_path("data/projects.php"));
         </section>
     </main>
     <!-- Footer -->
-    <?php require("src/partials/shared/base/footer/footer.php"); ?>
+    <?php require "src/partials/shared/base/footer/footer.php"; ?>
     <!-- Scripts -->
     <script src="src/app/js/projectPageAnimation.js"></script>
 </body>

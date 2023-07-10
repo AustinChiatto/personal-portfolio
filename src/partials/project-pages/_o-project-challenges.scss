@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: $spacing--half;
 
     @include m.min-width(tablet) {
         grid-column: 7 / span 6;

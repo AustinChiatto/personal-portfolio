@@ -5,6 +5,7 @@ const intro = document.querySelector(".js-projectListIntro");
 const listHeading = document.querySelector(".js-projectListHeading");
 const projectList = document.querySelector(".js-projectList");
 const projectListBtn = document.querySelector(".js-projectListIntroBtn");
+const clientW = window.innerWidth; // get width of window
 
 // pin section heading
 let listHeadingPin = ScrollTrigger.create({
@@ -12,7 +13,7 @@ let listHeadingPin = ScrollTrigger.create({
     start: "center center",
     pin: intro,
     endTrigger: ".js-projectListTrigger",
-    end: "bottom 25%",
+    end: "bottom 35%",
     scrub: true,
     pinSpacing: false,
 });
@@ -28,9 +29,9 @@ let fadeIn = gsap.fromTo(
         scale: 1,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "bottom 45%",
+            start: "bottom 65%",
             scrub: true,
-            end: "bottom 35%",
+            end: "bottom 40%",
         },
     }
 );
@@ -46,9 +47,9 @@ let fadeOut = gsap.fromTo(
         scale: 0.9,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "top 60%",
+            start: "top 40%",
             scrub: true,
-            end: "top center",
+            end: "top 30%",
         },
     }
 );
@@ -67,9 +68,9 @@ let fadeBtnIn = gsap.fromTo(
         scale: 1,
         scrollTrigger: {
             trigger: ".js-projectListTrigger",
-            start: "bottom 45%",
+            start: "bottom 65%",
             scrub: true,
-            end: "bottom 35%",
+            end: "bottom 40%",
         },
     }
 );

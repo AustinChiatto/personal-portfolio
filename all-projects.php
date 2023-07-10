@@ -13,11 +13,12 @@ require get_path("data/projects.php");
     <?php require "src/partials/shared/base/header/header.php"; ?>
     <main id="top">
         <section class="s-section">
-            <div class="s-section__content m-intro-container">
-                <div class="m-intro-container--projects-page">
-                    <h1 class="a-text--xl">Just a few projects that <br> I thought were fun to build</h1>
-                </div>
+            <div class="s-section__content m-intro-container--about-page">
+                <h2 class="a-text--base a-text--highlight"><?= $hero_pre_heading ?></h2>
+                <h1><?= $hero_heading ?></h1>
             </div>
+        </section>
+        <section class="s-section">
             <?php require "src/partials/shared/molecule/content-grid.php"; ?>
             <div class="s-section__content m-content-grid__spacer"></div>
         </section>

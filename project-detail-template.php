@@ -32,8 +32,8 @@ require get_path("data/projects.php");
                     <h2 class="a-text--center">title</h2>
                     <!-- <h2 class="a-text--center">Keep up <span class="a-text--highlight">with the <br> Modern-Day</span> Space Race</h2> -->
                     <ul class="m-link-list">
-                        <li><a class="a-button--new" href="#" title="">Live Site</a></li>
-                        <li><a class="a-button--new" href="#" title="">Source Code</a></li>
+                        <li><a class="a-button" href="#" title="">Live Site</a></li>
+                        <li><a class="a-button" href="#" title="">Source Code</a></li>
                     </ul>
                 </div>
             </div>

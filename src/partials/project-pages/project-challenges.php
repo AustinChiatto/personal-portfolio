@@ -1,7 +1,7 @@
 <section class="s-section">
     <div class="s-section__content">
         <div class="m-intro-container m-intro-container--vh100 js-chalHeaderCont">
-            <h2 class="a-text--center js-chalHeader">Challenges Overcome <span class="a-text--highlight">in the <br></span> Development <span class="a-text--highlight">of Asteroid Run</span></h2>
+            <h2 class="a-text--center a-text--restrict js-chalHeader">Challenges Overcome <span class="a-text--highlight">in the</span> Development <span class="a-text--highlight">of Asteroid Run</span></h2>
         </div>
     </div>
 </section>

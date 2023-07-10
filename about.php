@@ -19,8 +19,9 @@ require "src/partials/shared/base/head.php";
         </section>
         <!-- grid section - priority grid -->
         <section class="s-section">
-            <div class="s-section__content">
-                <div class="m-content-grid js-contentGrid">
+            <div class="s-section__content--wide">
+                <div class="m-content-grid--project-list js-contentGrid">
+                    <!-- <p class="o-info-grid__caption">Click Around</p> -->
                     <div class="m-content-grid__column">
                         <?php foreach ($primary_grid as $detail) {
                             if ($detail->grid_col == "left") {
@@ -38,23 +39,25 @@ require "src/partials/shared/base/head.php";
                 </div>
             </div>
         </section>
+        <!-- card panel -->
+        <?php include "src/partials/shared/molecule/content-panel.php"; ?>
         <!-- bio section -->
         <section class="s-section">
             <div class="s-section__content m-intro-container--md">
                 <h2 class="a-text--highlight a-text--pad-bottom"><?= $bio_heading ?></h2>
-                <p class="a-text--center a-text--highlight a-text--restrict"><?= $bio_copy ?></p>
+                <?= $bio_copy ?>
             </div>
         </section>
         <!-- marquee -->
-        <section class="s-section">
+        <!-- <section class="s-section">
             <div class="s-section__content m-intro-container--md">
                 <h2 class="a-text--highlight a-text--pad-bottom">Marquee</h2>
             </div>
-        </section>
+        </section> -->
         <!-- grid section - secondary grid -->
         <section class="s-section">
-            <div class="s-section__content">
-                <div class="m-content-grid--pad-bottom js-contentGrid">
+            <div class="s-section__content--wide">
+                <div class="m-content-grid--project-list js-contentGrid">
                     <div class="m-content-grid__column">
                         <?php foreach ($secondary_grid as $detail) {
                             if ($detail->grid_col == "left") {
@@ -75,7 +78,7 @@ require "src/partials/shared/base/head.php";
         <!-- callout -->
         <section class="s-section">
             <div class="s-section__content--wide">
-                <a class="o-doc-callout" href="#">
+                <a class="o-doc-callout--mr-block" href="#">
                     <h2 class="a-text--sm o-doc-callout__label"><?= $callout_label ?></h2>
                     <p class="a-text--highlight o-doc-callout__copy"><?= $callout_copy ?></p>
                 </a>
@@ -88,5 +91,7 @@ require "src/partials/shared/base/head.php";
     <script src="https://unpkg.com/split-type"></script>
     <!-- animation.js file -->
     <script src="src/app/js/aboutAnimation.js"></script>
+    <!-- content panel -->
+    <script src="src/app/js/contentPanel.js"></script>
 </body>
 </html>

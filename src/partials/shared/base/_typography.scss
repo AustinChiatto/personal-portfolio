@@ -27,6 +27,10 @@ p {
     @include m.font-size("base");
 }
 
+p + p {
+    margin-top: $spacing--01;
+}
+
 // Links
 // ===========================
 a {

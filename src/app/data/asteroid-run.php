@@ -18,7 +18,7 @@ $project_tagline = "Unleash your Inner Space Cowboy";
 $hero_img_path = "asteroid-run-hero.png";
 
 // external cta section
-$external_cta_heading = 'Strap in, Power Up, Shoot First, <br> <span class="a-text--highlight">Ask Questions Never!</span>';
+$external_cta_heading = 'Strap in, Power Up, Shoot First, <span class="a-text--highlight">Ask Questions Never!</span>';
 $external_cta_link_01 = "Play Game";
 $external_cta_link_02 = "Source Code";
 
@@ -27,7 +27,7 @@ $callout_label = "GitHub Readme";
 $callout_copy = "See more about how and why I built Asteroid Run.";
 
 // project selection
-$project_selection_heading = "Enjoyed" . $project_name . '? <span class="a-text--highlight">Take a <br> look at</span> another project';
+$project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';
 
 // panel & card contents
 // ===========================
@@ -61,19 +61,19 @@ $technology_card = new Detail([
     "heading" => "Technology",
     "card_content" => $technology_card_content,
     "panel_content" => $technology_panel_content,
+    "card_type" => "--tall",
     "grid_col" => "right",
 ]);
 
 $purpose_card = new Detail([
     "type" => "purpose",
-    "pre_heading" => "Project Purpose",
+    "pre_heading" => "Project Purpose &",
     "heading" => "Intentions",
     "card_content" => $purpose_card_content,
     "panel_content" => $purpose_panel_content,
-    "card_type" => "--tall",
     "grid_col" => "right",
 ]);
 
 // store all project objects in array
-$details = [$team_card, $git_card, $technology_card, $purpose_card];
+$details = [$team_card, $git_card, $purpose_card, $technology_card];
 ?>

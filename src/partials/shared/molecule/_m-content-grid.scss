@@ -22,7 +22,11 @@
 
     &--project-list {
         @extend .m-content-grid;
-        padding-block: 15vh;
+        padding-block: 5vh;
+
+        @include m.media-query("tablet") {
+            padding-block: 15vh;
+        }
     }
 }
 
@@ -38,4 +42,8 @@
 .m-content-grid__spacer {
     pointer-events: none;
     min-height: 40vh;
+
+    @include m.media-query("tablet") {
+        min-height: 40vh;
+    }
 }

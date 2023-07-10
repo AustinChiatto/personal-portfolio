@@ -1,6 +1,6 @@
 <section class="s-section">
     <div class="s-section__content m-intro-container--md">
-        <h2 class="a-text--center"><?= $project_selection_heading ?></h2>
+        <h2 class="a-text--center a-text--restrict"><?= $project_selection_heading ?></h2>
     </div>
 </section>
 <section class="s-section">

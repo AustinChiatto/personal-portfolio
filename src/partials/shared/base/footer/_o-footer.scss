@@ -13,10 +13,15 @@ footer {
     border-radius: 1rem;
     margin: $spacing--01;
     padding: $spacing--02;
+
 }
 
 .o-footer__email {
-    padding-block: $spacing--03;
+    padding-block: $spacing--01;
+
+    @include m.min-width(tablet) {
+        padding-block: $spacing--03;
+    }
 }
 
 .o-footer__hr {
@@ -27,7 +32,11 @@ footer {
 
 .o-footer__link-list {
     @include m.flex(center, center);
-    padding-block: $spacing--03;
+    padding-block: $spacing--01;
+
+    @include m.min-width(tablet) {
+        padding-block: $spacing--03;
+    }
 }
 
 .o-footer__link-list > li + li {
@@ -35,7 +44,11 @@ footer {
 }
 
 .o-footer__copyright-container {
-    padding-block: $spacing--01;
+    padding-block: $spacing--half;
     color: $color-secondary;
-    @include m.flex(space-between, center)
+    @include m.flex(space-between, center);
+
+    @include m.min-width(tablet) {
+        padding-block: $spacing--01;
+    }
 }

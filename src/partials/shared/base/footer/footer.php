@@ -1,7 +1,7 @@
 <footer>
     <section class="s-section">
         <div class="o-footer">
-            <a class="a-text--lg a-text--white o-footer__email" href="#">hello@austinchiatto.com</a>
+            <a class="a-text--md a-text--white o-footer__email" href="#">hello@austinchiatto.com</a>
             <hr class="o-footer__hr">
             <ul class="o-footer__link-list">
                 <li><a class="a-text--highlight a-text--base" href="#">LinkedIn</a></li>
@@ -9,12 +9,12 @@
                 <li><a class="a-text--highlight a-text--base" href="#">Codepen</a></li>
             </ul>
         </div>
-        <div class="s-section__content--full">
+        <!-- <div class="s-section__content--full">
             <div class="o-footer__copyright-container">
                 <p class="a-text--copy">&copy; 2023</p>
                 <a class="a-text--copy a-text--highlight" href="#top">Top</a>
             </div>
-        </div>
+        </div> -->
     </section>
 </footer>
 <!-- Lenis Smooth Scroll -->

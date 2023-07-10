@@ -1,4 +1,4 @@
-<div class="s-section__content">
+<div class="s-section__content--wide">
     <div class="m-content-grid--project-list js-contentGrid">
         <div class="m-content-grid__column">
             <?php foreach ($projects as $project):

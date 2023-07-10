@@ -1,5 +1,5 @@
 <div class="s-section__content">
-    <div class="m-content-grid--project-list js-contentGrid">
+    <div class="m-content-grid--project-list js-projectListTrigger js-contentGrid">
         <div class="m-content-grid__column">
             <?php foreach ($projects as $project):
                 if (h($page_type) !== "project-page" && h($project->is_featured) == true && h($project->grid_col) == "left") {

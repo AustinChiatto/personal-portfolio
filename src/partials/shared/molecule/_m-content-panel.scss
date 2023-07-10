@@ -13,7 +13,11 @@
 }
 
 .m-content-panel__container {
-    grid-column: 8 / span 5;
+    grid-column: 1 / span 12;
+
+    @include m.min-width(desktop) {
+        grid-column: 8 / span 5;
+    }
 }
 
 .m-content-panel__modal {
@@ -33,7 +37,7 @@
 
 .m-content-panel__close-icon {
     position: absolute;
-    top: 2.5rem;
+    bottom: 2.5rem;
     right: $spacing--02;
     padding: 0.25rem;
     cursor: pointer;
@@ -42,6 +46,11 @@
 
     &:hover {
         scale: 1.1;
+    }
+
+    @include m.min-width(desktop) {
+        bottom: unset;
+        top: 2.5rem;
     }
 }
 

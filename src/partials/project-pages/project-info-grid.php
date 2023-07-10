@@ -1,6 +1,7 @@
 <section class="s-section">
-    <div class="s-section__content">
+    <div class="s-section__content--wide">
         <div class="m-content-grid--pad-top js-contentGrid">
+            <!-- <p class="o-info-grid__caption">Click Around</p> -->
             <div class="m-content-grid__column">
                 <?php foreach ($projects as $project): ?>
                     <?php if ($project->title === $project_name): ?>
