@@ -23,7 +23,7 @@ $team_panel_content = '
 $git_panel_content = '
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version History</h4>
-        <p class="a-text--copy">Starting from the latest release, here is a backlog of the projects versions. You can follow the update process to this project and others on <a class="a-link-primary" href="https://www.threads.net/@austin_chiatto" target="_blank">Threads</a></p>
+        <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history. You can follow the update process to this project and others on <a class="a-link-primary" href="https://www.threads.net/@austin_chiatto" target="_blank">Threads</a></p>
     </article>
     <ul class="m-link-list--left">
         <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="" target="_blank">Grid Tool V1</a></li>

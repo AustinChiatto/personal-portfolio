@@ -8,6 +8,7 @@ $title_tag = "Austin Chiatto | More About Me";
 $meta_desc = "I'm a developer, fascinated and inspired by the ability to bring ideas to life with code.";
 $og_url = "https://austinchiatto.com/about.php";
 $og_image = "src/assets/images/about-section__image-00.jpg";
+$project_name = "";
 
 // page content
 // ===========================

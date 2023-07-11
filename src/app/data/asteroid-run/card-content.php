@@ -19,7 +19,7 @@ $live_card_content = '<div class="a-card__content--img"><img src="../src/assets/
 // Purpose Card
 $purpose_card_content = '
     <div class="a-card__content o-info-grid__purpose">
-        <p class="a-text--center a-text--highlight">This project was designed to familiarize myself with HTML canvas and enhance my understanding of JavaScript Objects, Classes, and their functionality.</p>
+        <p class="a-text--center a-text--highlight"></p>
         <p class="a-text--pad-top">Read More</p>
     </div>';
 
@@ -35,6 +35,15 @@ $technology_card_content = '
             </li>
             <li class="o-info-grid__tech-icon">
                 <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__js.svg" />
+            </li>
+            <li class="o-info-grid__tech-icon">
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/aseprite.png" />
+            </li>
+            <li class="o-info-grid__tech-icon">
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/git.svg" />
+            </li>
+            <li class="o-info-grid__tech-icon">
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/Add.svg" />
             </li>
         </ul>
     </div>';
