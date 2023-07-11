@@ -92,7 +92,7 @@
     -webkit-backdrop-filter: blur(1rem);
     transition: all 100ms ease;
 
-    @include m.media-query(desktop) {
+    @include m.media-query("desktop") {
         bottom: $spacing--01;
         border: 0.0625rem solid transparent;
         background: transparent;
@@ -115,7 +115,7 @@
     max-width: 100%;
     @include m.flex(center, center, column);
 
-    @include m.media-query(tablet) {
+    @include m.media-query("tablet") {
         width: 60%;
     }
 
@@ -135,7 +135,8 @@
 // ===========================
 .a-card-inactive {
     &:hover {
-        // background: $color-card-bg;
+        background: $color-card-bg;
+        scale: 1;
         cursor: default;
     }
 
@@ -148,7 +149,7 @@
 .a-card__icon {
     scale: 0.75;
 
-    @include m.min-width(tablet) {
+    @include m.media-query("tablet") {
         scale: 1.3;
     }
 }

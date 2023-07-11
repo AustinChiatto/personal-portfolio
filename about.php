@@ -55,7 +55,7 @@ require "src/partials/shared/base/head.php";
             </div>
         </section> -->
         <!-- grid section - secondary grid -->
-        <section class="s-section">
+        <!-- <section class="s-section">
             <div class="s-section__content--wide">
                 <div class="m-content-grid--project-list js-contentGrid">
                     <div class="m-content-grid__column">
@@ -74,7 +74,7 @@ require "src/partials/shared/base/head.php";
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- callout -->
         <section class="s-section">
             <div class="s-section__content--wide">

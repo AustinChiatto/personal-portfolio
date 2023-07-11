@@ -1,9 +1,30 @@
 @use "../utility/u-variables" as *;
+@use "../utility/u-mixins" as m;
 
 .a-list {
     list-style-type: circle;
     margin-left: 0;
     padding-left: $spacing--01;
+
+    &--grid {
+        @include m.grid(3, false, 0.5rem);
+        padding-top: $spacing--01;
+
+        @include m.media-query(tablet) {
+            @include m.grid(4, false, 0.5rem);
+        }
+    }
+}
+
+.a-list__item--card {
+    grid-column: auto / span 1;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    @include m.flex(center, center);
+    background: $color-primary--dark;
+    border-radius: $border-radius;
+    
 }
 
 .a-list__item::marker {
