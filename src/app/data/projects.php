@@ -11,7 +11,7 @@ $grid_tool = new Project([
     "internal_url" => "grid-tool.php",
     "external_url" => "https://staging.austinchiatto.com/public/grid-tool-two.php",
     "documentation_url" => "https://github.com/AustinChiatto/grid-tool--2.0",
-    "thumbnail" => "grid-tool_card-mockup-laptop.png",
+    "thumbnail" => "grid-tool__card-thumbnail-001.png",
     "is_featured" => true,
     "card_type" => "--tall",
     "grid_col" => "left",
@@ -45,7 +45,6 @@ $project_three = new Project([
     "thumbnail" => "",
     "is_featured" => false,
     "grid_col" => "left",
-    // "project_details" => $details,
 ]);
 
 //
@@ -62,7 +61,6 @@ $project_four = new Project([
     "is_featured" => false,
     "card_type" => "--tall",
     "grid_col" => "right",
-    // "project_details" => $details,
 ]);
 
 $project_five = new Project([
@@ -76,7 +74,6 @@ $project_five = new Project([
     "thumbnail" => "",
     "is_featured" => false,
     "grid_col" => "left",
-    // "project_details" => $details,
 ]);
 
 //
@@ -92,7 +89,6 @@ $project_six = new Project([
     "thumbnail" => "",
     "is_featured" => false,
     "grid_col" => "right",
-    // "project_details" => $details,
 ]);
 
 // store all project objects in array
