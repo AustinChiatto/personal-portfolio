@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../init.php";
+
 // page data
 // ===========================
 $page_title = "asteroid-run";
@@ -32,13 +33,14 @@ $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text
 // ===========================
 require "asteroid-run/card-content.php";
 require "asteroid-run/panel-content.php";
+require "asteroid-run/challenge-content.php";
 
 // card objects -- asteroid run
 // ===========================
 $team_card = new Detail([
     "type" => "team",
     "pre_heading" => "My Contributions",
-    "heading" => "asteroid-run",
+    "heading" => "Solo Project",
     "card_content" => $team_card_content,
     "panel_content" => $team_panel_content,
     "card_type" => "--tall",
@@ -47,7 +49,7 @@ $team_card = new Detail([
 
 $git_card = new Detail([
     "type" => "git",
-    "pre_heading" => "Latest Commit",
+    "pre_heading" => "Project Journey &",
     "heading" => "Version History",
     "card_content" => $git_card_content,
     "panel_content" => $git_panel_content,

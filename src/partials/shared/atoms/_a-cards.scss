@@ -14,7 +14,7 @@
     background: $color-card-bg;
     border: 1px solid $color-card-border;
     border-radius: $border-radius;
-    transition: all 100ms ease;
+    transition: all 250ms cubic-bezier(.47,1.64,.41,.8);
     position: relative;
     color: $color-primary;
     overflow: hidden;
@@ -58,6 +58,7 @@
     }
 
     &:hover {
+        scale: 0.9925;
         background: #181818;
         cursor: pointer;
     }
@@ -120,6 +121,7 @@
 
     &--img {
         flex-grow: 1;
+        width: 90%;
         @include m.flex(center, flex-end);
     }
 }

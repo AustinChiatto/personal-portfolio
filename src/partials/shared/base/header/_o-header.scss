@@ -34,8 +34,8 @@
     border-radius: 0.25rem;
     color: $color-primary;
     transition-property: background, border, color;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
 
     &:hover {
         background: #eef0f225;

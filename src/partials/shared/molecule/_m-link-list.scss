@@ -13,6 +13,12 @@
         @include m.flex(center, center, column);
     }
 
+    &--left {
+        @extend .m-link-list;
+        margin-block: $spacing--02 $spacing--03;
+        @include m.flex(flex-start, center);
+    }
+
     &--card {
         @include m.grid(2);
         gap: $spacing--half;

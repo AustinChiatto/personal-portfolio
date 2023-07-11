@@ -11,30 +11,29 @@ $team_card_content = '
     </div>';
 
 // Git Card
-$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool_card-mockup-laptop.png" alt=""></div>';
-
-// Live Card
-$live_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/asteroid-run_card-mockup-mobile.png" alt=""></div>';
+$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool__card-thumbnail-002.png" alt=""></div>';
 
 // Purpose Card
-$purpose_card_content = '
-    <div class="a-card__content o-info-grid__purpose">
-        <p class="a-text--center a-text--highlight"></p>
-        <p class="a-text--pad-top">Read More</p>
-    </div>';
+$purpose_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool__card-thumbnail-001.png" alt=""></div>';
 
 // Technology Card
 $technology_card_content = '
     <div class="a-card__content">
         <ul class="o-info-grid__tech">
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__html.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/react.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__css.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/sass.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__js.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/git.svg" />
+            </li>
+            <li class="o-info-grid__tech-icon">
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/figma.svg" />
+            </li>
+            <li class="o-info-grid__tech-icon">
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/Add.svg" />
             </li>
         </ul>
     </div>';

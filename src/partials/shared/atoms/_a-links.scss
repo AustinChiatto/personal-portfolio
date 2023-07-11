@@ -2,12 +2,7 @@
 @use "../utility/u-mixins" as m;
 
 .a-link-primary {
-    color: $color-primary;
-    font-size: 1.15rem;
-
-    @include m.min-width(tablet) {
-        font-size: 1.25rem;
-    }
+    color: $color-blue;
 
     &--dark {
         @extend .a-link-primary;
@@ -21,6 +16,11 @@
         &:hover {
             color: $color-primary;
         }
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: wavy;
     }
 }
 

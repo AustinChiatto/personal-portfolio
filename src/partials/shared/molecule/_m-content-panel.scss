@@ -32,7 +32,7 @@
     border-left: 0.0625rem solid $color-card-border;
     overflow-y: scroll;
     padding: $spacing--02;
-    padding-top: 8rem;
+    padding-block: 8rem;
 }
 
 .m-content-panel__close-icon {
@@ -60,23 +60,20 @@
 }
 
 .m-content-panel__section + .m-content-panel__section {
-    margin-top: 4rem;
+    margin-block: 2rem;
 
     @include m.min-width(tablet) {
-        margin-top: 6rem;
+        margin-block: 3rem;
     }
 }
 
 .m-content-panel__section > * + * {
     margin-top: 0.5rem;
-
-    @include m.min-width(tablet) {
-        margin-top: 1rem;
-    }
 }
 
 .m-content-panel__copy-heading {
     padding-bottom: $spacing--01;
+    margin-bottom: $spacing--01;
     border-bottom: 0.0625rem solid $color-card-border;
 }
 

@@ -25,6 +25,7 @@ $external_cta_link_02 = "Source Code";
 // callout
 $callout_label = "GitHub Readme";
 $callout_copy = "See more about how and why I built Grid Tool.";
+$callout_link = "https://github.com/AustinChiatto/grid-tool--2.0";
 
 // project selection
 $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';
@@ -33,6 +34,7 @@ $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text
 // ===========================
 require "grid-tool/card-content.php";
 require "grid-tool/panel-content.php";
+require "grid-tool/challenge-content.php";
 
 // card objects
 // ===========================
@@ -48,7 +50,7 @@ $team_card = new Detail([
 
 $git_card = new Detail([
     "type" => "git",
-    "pre_heading" => "Latest Commit",
+    "pre_heading" => "Project Journey &",
     "heading" => "Version History",
     "card_content" => $git_card_content,
     "panel_content" => $git_panel_content,
@@ -67,8 +69,8 @@ $technology_card = new Detail([
 
 $purpose_card = new Detail([
     "type" => "purpose",
-    "pre_heading" => "Project Purpose &",
-    "heading" => "Intentions",
+    "pre_heading" => "Why I built this project",
+    "heading" => "Project Purpose",
     "card_content" => $purpose_card_content,
     "panel_content" => $purpose_panel_content,
     "grid_col" => "right",

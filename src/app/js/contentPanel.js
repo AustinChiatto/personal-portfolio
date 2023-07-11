@@ -77,6 +77,14 @@ contentPanel.addEventListener("click", (e) => {
 // close panel if user clicks the close icon
 document.querySelector(".js-panelClose").addEventListener("click", closeAnimation);
 
+// close panel if user presses escape
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        document.body.style.overflow = ""; // show body overflow
+        closeAnimation();
+    }
+});
+
 // function that runs the close animation - used in the above event handlers
 function closeAnimation() {
     lenis.start(); // start lenis smooth scroll

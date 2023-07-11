@@ -1,0 +1,15 @@
+@use "../utility/u-variables" as *;
+
+.a-list {
+    list-style-type: circle;
+    margin-left: 0;
+    padding-left: $spacing--01;
+}
+
+.a-list__item::marker {
+    color: $color-secondary;
+}
+
+.a-list__item + .a-list__item {
+    margin-top: $spacing--01;
+}
