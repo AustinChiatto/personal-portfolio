@@ -28,6 +28,17 @@ $git_panel_content = '
         <li><a class="a-button" href="https://asteroid-run.austinchiatto.com/" title="" target="_blank">Asteroid Run V2</a></li>
     </ul>
     <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 2.1.0</h4>
+        <p class="a-text--copy a-text--highlight">This release focused on improving the games foundational features and adding necessary game components.</p>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Added Start & Game Over screens</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added level count</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added increased difficulty as level increases</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added persistent player control description</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added alternate player controls</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 2.0.0</h4>
         <p class="a-text--copy a-text--highlight">This release of the project saw a complete re-haul of all systems and graphics.</p>
         <ul class="a-list">
