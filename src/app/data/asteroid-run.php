@@ -7,7 +7,7 @@ $page_title = "asteroid-run";
 $page_type = "project-detail";
 $title_tag = "Austin Chiatto | Asteroid Run";
 $meta_desc = "pew pew pew space and guns and lasers and stuff!";
-$og_url = "https://austinchiatto.com/public/asteroid-run-two.php";
+$og_url = "https://austinchiatto.com/asteroid-run-two.php";
 $og_image = "src/assets/images/about-section__image-00.jpg";
 
 // page content
@@ -21,6 +21,8 @@ $hero_img_path = "asteroid-run-hero.png";
 $external_cta_heading = 'Strap in, Power Up, Shoot First, <span class="a-text--highlight">Ask Questions Never!</span>';
 $external_cta_link_01 = "Play Game";
 $external_cta_link_02 = "Source Code";
+$external_cta_live_url = "https://asteroid-run.austinchiatto.com/";
+$external_cta_documentation_url = "https://github.com/AustinChiatto/asteroid-run-2.0.0";
 
 // callout
 $callout_label = "GitHub Readme";

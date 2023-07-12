@@ -25,7 +25,7 @@ $git_panel_content = '
     </article>
     <ul class="m-link-list--left">
         <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="" target="_blank">Asteroid Run V1</a></li>
-        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" title="" target="_blank">Asteroid Run V2</a></li>
+        <li><a class="a-button" href="https://asteroid-run.austinchiatto.com/" title="" target="_blank">Asteroid Run V2</a></li>
     </ul>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 2.0.0</h4>
