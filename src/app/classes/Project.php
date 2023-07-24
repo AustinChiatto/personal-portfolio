@@ -9,6 +9,7 @@ class Project
     public $external_url;
     public $documentation_url;
     public $thumbnail;
+    public $thumbnail_short;
     public $is_featured;
     public $card_type;
     public $grid_col;
@@ -24,6 +25,7 @@ class Project
         $this->external_url = $projects["external_url"] ?? null;
         $this->documentation_url = $projects["documentation_url"] ?? null;
         $this->thumbnail = $projects["thumbnail"] ?? null;
+        $this->thumbnail_short = $projects["thumbnail_short"] ?? null;
         $this->is_featured = $projects["is_featured"] ?? null;
         $this->card_type = $projects["card_type"] ?? null;
         $this->grid_col = $projects["grid_col"] ?? null;

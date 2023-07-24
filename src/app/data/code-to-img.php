@@ -3,41 +3,42 @@ require_once __DIR__ . "/../init.php";
 
 // page data
 // ===========================
-$page_title = "asteroid-run";
+$page_title = "code-to-img";
 $page_type = "project-detail";
-$title_tag = "Austin Chiatto | Asteroid Run";
-$meta_desc = "pew pew pew space and guns and lasers and stuff!";
-$og_url = "https://austinchiatto.com/asteroid-run-two.php";
-$og_image = "src/assets/images/about-section__image-00.jpg";
+$title_tag = "Austin Chiatto | Code To Image";
+$meta_desc = "Create beautiful images of your code.";
+$og_url = "https://austinchiatto.com/code-to-img.php";
+$og_image = "src/assets/images/code-to-img-hero.png";
 
 // page content
 // ===========================
 //hero
-$project_name = "Asteroid Run";
-$project_tagline = "Unleash your Inner Space Cowboy";
-$hero_img_path = "asteroid-run-hero.png";
+$project_name = "Code To Image";
+$project_tagline = "Create stunning images of your code!";
+$hero_img_path = "code-to-img-hero.png";
 
 // external cta section
-$external_cta_heading = 'Strap in, Power Up, Shoot First, <span class="a-text--highlight">Ask Questions Never!</span>';
-$external_cta_link_01 = "Play Game";
+$external_cta_heading = "Create stunning images of your code!";
+$external_cta_link_01 = "Live Site";
 $external_cta_link_02 = "Source Code";
-$external_cta_live_url = "https://asteroid-run.austinchiatto.com/";
-$external_cta_documentation_url = "https://github.com/AustinChiatto/asteroid-run-2.0.0";
+$external_cta_live_url = "https://grid-tool-v2.austinchiatto.com/";
+$external_cta_documentation_url = "https://github.com/AustinChiatto/grid-tool--2.0";
 
 // callout
 $callout_label = "GitHub Readme";
-$callout_copy = "See more about how and why I built Asteroid Run.";
+$callout_copy = "See more about how and why I built " . $project_name . ".";
+$callout_link = "https://github.com/AustinChiatto/grid-tool--2.0";
 
 // project selection
 $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';
 
 // panel & card contents
 // ===========================
-require "asteroid-run/card-content.php";
-require "asteroid-run/panel-content.php";
-require "asteroid-run/challenge-content.php";
+require "code-to-img/card-content.php";
+require "code-to-img/panel-content.php";
+require "code-to-img/challenge-content.php";
 
-// card objects -- asteroid run
+// card objects
 // ===========================
 $team_card = new Detail([
     "type" => "team",
@@ -79,5 +80,4 @@ $purpose_card = new Detail([
 
 // store all project objects in array
 $details = [$team_card, $git_card, $purpose_card, $technology_card];
-
 ?>
