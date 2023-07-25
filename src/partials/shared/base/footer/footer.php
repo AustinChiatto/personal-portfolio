@@ -1,12 +1,12 @@
 <footer>
     <section class="s-section">
         <div class="o-footer">
-            <a class="a-text--md a-text--white o-footer__email" href="#">hello@austinchiatto.com</a>
+            <a class="a-text--md a-text--white o-footer__email" href="mailto:chiattoaustin@gmail.com">hello@austinchiatto.com</a>
             <hr class="o-footer__hr">
             <ul class="o-footer__link-list">
-                <li><a class="a-text--highlight a-text--base" href="#">LinkedIn</a></li>
-                <li><a class="a-text--highlight a-text--base" href="#">GitHub</a></li>
-                <li><a class="a-text--highlight a-text--base" href="#">Codepen</a></li>
+                <li><a class="a-text--highlight a-text--base" href="https://www.linkedin.com/in/austin-chiatto">LinkedIn</a></li>
+                <li><a class="a-text--highlight a-text--base" href="https://github.com/AustinChiatto">GitHub</a></li>
+                <li><a class="a-text--highlight a-text--base" href="https://codepen.io/austinchiatto">Codepen</a></li>
             </ul>
         </div>
         <!-- <div class="s-section__content--full">
