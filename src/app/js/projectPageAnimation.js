@@ -70,27 +70,59 @@ let fadeHeadings = gsap.fromTo(
 // ===========================
 const chalHeaderCont = document.querySelector(".js-chalHeaderCont"), // container for the section header
     chalHeader = document.querySelector(".js-chalHeader"), // section header
-    chalImgCont = document.querySelector(".js-chalImgCont"), // container for the challenge section image
-    chalImg = document.querySelector(".js-chalImg"), // challenge section image
+    projChallenge = document.querySelector(".js-projChallenge"), // container for the challenge section image
+    chalVisual = document.querySelector(".js-chalVisual"), // challenge section image
+    chalEnd = document.querySelector(".js-projChalEnd"), // challenge section image
     chalCopyCont = document.querySelector(".js-chalCopyCont"); // container for all of the challenge section written content
 
+// get bottom of visual - used to end pin
+const chalVisualH = chalVisual.offsetWidth / 2;
+const windowHeight = window.innerHeight / 2;
+const chalVisualBottom = windowHeight - chalVisualH;
+
+// resize chalEnd container to = chalVisualH
+const chalEndH = chalVisualH * 2;
+chalEnd.style.height = `${chalEndH}px`;
+
+// handle challenge heading
+// ===========================
 // pin section heading
 let pinChalHeader = ScrollTrigger.create({
     trigger: chalHeaderCont,
     start: "top top",
     pin: chalHeader,
-    endTrigger: chalImgCont,
-    end: "bottom top",
+    endTrigger: projChallenge,
+    end: "center center",
     scrub: true,
 });
 
+let fadeOut = gsap.fromTo(
+    chalHeader,
+    {
+        opacity: 1,
+        scale: 1,
+    },
+    {
+        opacity: 0,
+        scale: 0.9,
+        scrollTrigger: {
+            trigger: projChallenge,
+            start: "top 70%",
+            scrub: true,
+            end: "top 50%",
+        },
+    }
+);
+
+// handle challenge visual
+// ===========================
 // pin image and handle hiding the heading
-let pinChalImg = ScrollTrigger.create({
-    trigger: chalImgCont,
+let pinChalVisual = ScrollTrigger.create({
+    trigger: chalVisual,
     start: "center center",
-    pin: chalImgCont,
-    endTrigger: chalCopyCont,
-    end: "bottom top",
+    pin: chalVisual,
+    endTrigger: chalEnd,
+    end: `top ${chalVisualBottom}px`,
     scrub: true,
     pinSpacing: false,
 
@@ -101,52 +133,4 @@ let pinChalImg = ScrollTrigger.create({
     onLeaveBack: () => {
         chalHeader.classList.remove("u-visibly-hidden");
     },
-
-    // ! need to write a refresh method as the heading stays hidden if the browser
-    // ! is refreshed midway through the animation. - it makes leaveBack not work.
-    // onRefresh() {
-    //   chalHeader.classList.remove("u-visibly-hidden");
-    // }
 });
-
-// handle image slide in when scrolling out of the challenge section
-let chalImgSlideIn = gsap.fromTo(
-    chalImg,
-    {
-        x: clientW < 670 ? "-100%" : "-75%",
-    },
-    {
-        x: 0,
-        scrollTrigger: {
-            trigger: chalCopyCont,
-            start: "bottom 75%",
-            endTrigger: chalCopyCont,
-            end: "bottom top",
-            scrub: true,
-        },
-
-        // ? solution for a bug causing the image to get stuck in slide out position if reloaded inside of the section.
-        // reset to original position if refreshed inside of animation.
-        onRefresh() {
-            gsap.to(chalImg, { x: 0 });
-        },
-    }
-);
-
-// handle image slide out when scrolling into the challenge section
-let chalImgSlideOut = gsap.fromTo(
-    chalImg,
-    {
-        x: 0,
-    },
-    {
-        x: clientW < 670 ? "-100%" : "-75%",
-        scrollTrigger: {
-            trigger: chalImg,
-            start: "center center",
-            endTrigger: chalCopyCont,
-            end: "top top",
-            scrub: true,
-        },
-    }
-);

@@ -13,7 +13,7 @@ $og_image = "src/assets/images/about-section__image-00.jpg";
 // hero
 $hero_pre_head = "Austin Chiatto";
 $hero_heading = "<span class='o-hero__heading-main--stretch'>Front-End</span> <br> Developer";
-$hero_sub_head = ["Amateur Designer", "Aspiring Astronaut", "Knowledge Addict", "Go Go Gadget"];
+$hero_sub_head = ["& Aspiring Astronaut", "& UI/UX Designer", "& Student", "& Detective Gadget"];
 // mission statement
 $mission_pre_head = "Focused On";
 $mission_sub_head = ["Curiosity", "Compassion", "Imagination", "Humans"];

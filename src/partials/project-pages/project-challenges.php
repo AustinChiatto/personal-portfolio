@@ -5,7 +5,7 @@
         </div>
     </div>
 </section>
-<div class="o-challenge">
+<!-- <div class="o-challenge">
     <section class="s-section js-chalImgCont">
         <div class="s-section__content o-challenge__img-cont js-chalImg">
             <img class="o-challenge__img" src="../src/assets/images/<?= $challenge_mockup_url ?>" alt="<?= $challenge_mockup_alt ?>">
@@ -20,4 +20,14 @@
             <?php endforeach; ?>
         </div>
     </section>
-</div>
+</div> -->
+<section class="s-section js-projChallenge">
+    <div class="s-section__content--full o-project-challenge">
+        <div class="o-project-challenge__visual js-chalVisual">img</div>
+        <?php foreach ($challenges as $challenge): ?>
+            <div class="o-project-challenge__copy">
+                <?= $challenge ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>

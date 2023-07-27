@@ -1,59 +1,64 @@
 @use "../shared/utility/u-variables" as *;
 @use "../shared/utility/u-mixins" as m;
 
-.o-challenge {
-    padding-bottom: 75vh;
+.o-project-challenge {
+    @include m.grid(12);
+    gap: 1rem;
+    // margin-inline: 1.5rem;
+    margin-bottom: 10rem;
+    max-width: 100vw;
 
-    @include m.min-width(tablet) {
-        padding-bottom: 100vh;
+    @include m.media-query("desktop") {
+        gap: unset;
+        margin-inline: unset;
     }
 }
 
-.o-challenge__content {
-    grid-column: 1 / span 12;
-    position: relative;
+.o-project-challenge__visual {
+    @include m.gridSpan(1, 5);
+    background: $color-card-bg;
+    border: 1px solid $color-card-border;
+    border-radius: $border-radius;
+    aspect-ratio: 1/1;
+    display: none;
 
-    @include m.min-width(tablet) {
-        grid-column: 2 / span 10;
+    @include m.media-query("tablet") {
+        display: block;
+        border-radius: 1rem;
+        @include m.gridSpan(1, 5);
     }
 
-    @include m.min-width(desktop-large) {
-        grid-column: 3 / span 8;
-    }
-}
-
-.o-challenge__img-cont {
-    text-align: center;
-}
-
-.o-challenge__grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding-block: 15vh;
-}
-
-.o-challenge__copy {
-    grid-column: 1 / span 12;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-inline: $spacing--half;
-
-    @include m.min-width(tablet) {
-        grid-column: 7 / span 6;
+    @include m.media-query("desktop") {
+        @include m.gridSpan(2, 5);
     }
 }
 
-.o-challenge__copy-heading {
-    padding-bottom: $spacing--01;
-    border-bottom: 0.0625rem solid $color-card-border;
+.o-project-challenge__copy {
+    @include m.gridSpan(1, 12);
+
+    @include m.media-query("tablet") {
+        @include m.gridSpan(7, 5);
+    }
+
+    @include m.media-query("desktop") {
+        @include m.gridSpan(8, 4);
+    }
 }
 
-.o-challenge__copy > * + * {
-    margin-top: 0.5rem;
+.o-project-challenge__copy + .o-project-challenge__copy {
+    margin-top: 10vh;
 
-    @include m.min-width(tablet) {
-        margin-top: 1rem;
+    @include m.media-query("tablet") {
+        margin-top: 15vh;
     }
+
+    @include m.media-query("desktop") {
+        margin-top: 20vh;
+    }
+}
+
+.o-project-challenge__heading {
+    border-bottom: 0.0625rem solid $color-secondary--dark;
+    padding-bottom: $spacing--half;
+    margin-bottom: $spacing--02;
 }

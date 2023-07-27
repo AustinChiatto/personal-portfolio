@@ -22,7 +22,7 @@
             <section class="s-section">
                 <div class="s-section__content m-intro-container">
                     <div class="m-project-list__headings js-projectListIntro">
-                        <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">Featured <span class="a-text--highlight">imposter syndrome inducing</span> projects</h2>
+                        <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">Explore My Featured Projects</h2>
                         <a class="a-button js-projectListIntroBtn u-visibly-hidden" href="all-projects.php">View All</a>
                     </div>
                 </div>

@@ -122,11 +122,11 @@ require get_path("data/projects.php");
                 <section class="s-section js-chalCopyCont">
                     <div class="s-section__content--wide o-challenge__grid">
                         <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">Challenge</h3>
+                            <h3 class="o-project-challenge__heading">Challenge</h3>
                             <p class="a-text--highlight"><span class="a-text--white">copy</p>
                         </div>
                         <div class="o-challenge__copy">
-                            <h3 class="o-challenge__copy-heading">Solution</h3>
+                            <h3 class="o-project-challenge__heading">Solution</h3>
                             <p class="a-text--highlight"><span class="a-text--white">copy</p>
                         </div>
                     </div>
