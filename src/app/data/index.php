@@ -2,6 +2,7 @@
 // page data
 // ===========================
 $page_title = "index";
+$page_name = "Home";
 $page_type = "home";
 $title_tag = "Austin Chiatto | Front End Developer";
 $meta_desc = "I am a Front End Developer passionate about bringing ideas to life within a browser. I specialize in creating intuitive, responsive websites using modern languages and frameworks.";

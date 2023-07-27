@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= $title_tag ?></title>
         <meta name="description" content="<?= $meta_desc ?>">
-        <meta property="og:title" content="<?= $title_tag ?>">
-        <meta property="og:description" content="<?= $meta_desc ?>">
-        <meta property="og:image" content="<?= $og_image ?>">
-        <meta property="og:url" content="<?= $og_title ?>">
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="<?= $title_tag ?>" />
+        <meta property="og:description" content="<?= $meta_desc ?>" />
+        <meta property="og:image" content="<?= $og_image ?>" />
+        <meta property="og:url" content="<?= $og_url ?>" />
+        <meta property="og:site_name" content="<?= $page_name ?>" />
         <link rel="shortcut icon" href="src/assets/icons/austin-chiatto-personal-logo.svg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -4,6 +4,7 @@ require_once __DIR__ . "/../init.php";
 // page data
 // ===========================
 $page_title = "code-to-img";
+$page_name = "Code To Image";
 $page_type = "project-detail";
 $title_tag = "Austin Chiatto | Code To Image";
 $meta_desc = "Create beautiful images of your code.";
@@ -13,7 +14,7 @@ $og_image = "src/assets/images/code-to-img-hero.png";
 // page content
 // ===========================
 //hero
-$project_name = "Code To Image";
+$project_name = $page_name;
 $project_tagline = "Create stunning images of your code!";
 $hero_img_path = "code-to-img-hero.png";
 

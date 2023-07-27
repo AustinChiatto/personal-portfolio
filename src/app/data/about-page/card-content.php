@@ -6,19 +6,19 @@ $contact_card_content = '
     <div class="a-card__content">
         <ul class="o-primary-grid__contacts m-link-list--card">
             <li class="o-primary-grid__contact">
-                <a class="a-button--contact" href="mailto:chiattoaustin@gmail.com" target="_blank">
+                <a class="a-button--contact" href="mailto:chiattoaustin@gmail.com" title="Email Me" target="_blank">
                     <img class="a-card__icon" width="32" height="32" src="../src/assets/icons/AT-fill.svg" />
                     <p>Email</p>
                 </a>
             </li>
             <li class="o-primary-grid__contact">
-                <a class="a-button--contact" href="https://www.linkedin.com/in/austin-chiatto" target="_blank">
+                <a class="a-button--contact" href="https://www.linkedin.com/in/austin-chiatto" title="View LinkedIn Profile" target="_blank">
                     <img class="a-card__icon" width="32" height="32" src="../src/assets/icons/linkedIn.svg" />
                     <p>LinkedIn</p>
                 </a>
             </li>
             <li class="o-primary-grid__contact">
-                <a class="a-button--contact" href="https://github.com/AustinChiatto" target="_blank">
+                <a class="a-button--contact" href="https://github.com/AustinChiatto" title="View GitHub Profile" target="_blank">
                     <img class="a-card__icon" width="32" height="32" src="../src/assets/icons/git.svg" />
                     <p>GitHub</p>
                 </a>

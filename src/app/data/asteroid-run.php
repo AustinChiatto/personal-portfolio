@@ -4,6 +4,7 @@ require_once __DIR__ . "/../init.php";
 // page data
 // ===========================
 $page_title = "asteroid-run";
+$page_name = "Asteroid Run";
 $page_type = "project-detail";
 $title_tag = "Austin Chiatto | Asteroid Run";
 $meta_desc = "pew pew pew space and guns and lasers and stuff!";
@@ -13,7 +14,7 @@ $og_image = "src/assets/images/about-section__image-00.jpg";
 // page content
 // ===========================
 //hero
-$project_name = "Asteroid Run";
+$project_name = $page_name;
 $project_tagline = "Unleash your Inner Space Cowboy";
 $hero_img_path = "asteroid-run-hero.png";
 

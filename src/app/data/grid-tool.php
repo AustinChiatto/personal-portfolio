@@ -4,6 +4,7 @@ require_once __DIR__ . "/../init.php";
 // page data
 // ===========================
 $page_title = "grid-tool";
+$page_name = "Grid Tool";
 $page_type = "project-detail";
 $title_tag = "Austin Chiatto | Grid Tool";
 $meta_desc = "Create stunning CSS grids effortlessly with our easy-to-use tool. Say goodbye to manual grid creation and hello to pixel-perfect designs. Try it now and transform your grid design process!";
@@ -13,7 +14,7 @@ $og_image = "src/assets/images/grid-tool-hero.png";
 // page content
 // ===========================
 //hero
-$project_name = "Grid Tool";
+$project_name = $page_name;
 $project_tagline = "Grids Made Simple";
 $hero_img_path = "grid-tool-hero.png";
 
