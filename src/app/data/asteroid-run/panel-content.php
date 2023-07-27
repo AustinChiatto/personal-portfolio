@@ -24,8 +24,8 @@ $git_panel_content = '
         <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history.</p>
     </article>
     <ul class="m-link-list--left">
-        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="" target="_blank">Asteroid Run V1</a></li>
-        <li><a class="a-button" href="https://asteroid-run.austinchiatto.com/" title="" target="_blank">Asteroid Run V2</a></li>
+        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="View Version One" target="_blank">Asteroid Run V1</a></li>
+        <li><a class="a-button" href="https://asteroid-run.austinchiatto.com/" title="Play Asteroid Run" target="_blank">Asteroid Run V2</a></li>
     </ul>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 2.1.0</h4>

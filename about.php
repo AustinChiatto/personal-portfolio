@@ -76,14 +76,7 @@ require "src/partials/shared/base/head.php";
             </div>
         </section> -->
         <!-- callout -->
-        <section class="s-section">
-            <div class="s-section__content--wide">
-                <a class="o-doc-callout--mr-block" href="#">
-                    <h2 class="a-text--sm o-doc-callout__label"><?= $callout_label ?></h2>
-                    <p class="a-text--highlight o-doc-callout__copy"><?= $callout_copy ?></p>
-                </a>
-            </div>
-        </section>
+        <?php include "src/partials/project-pages/callout.php"; ?>
     </main>
     <!-- Footer -->
     <?php require "src/partials/shared/base/footer/footer.php"; ?>

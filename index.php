@@ -23,7 +23,7 @@
                 <div class="s-section__content m-intro-container">
                     <div class="m-project-list__headings js-projectListIntro">
                         <h2 class="a-text--center a-text--pad-bottom js-projectListHeading">Explore My Featured Projects</h2>
-                        <a class="a-button js-projectListIntroBtn u-visibly-hidden" href="all-projects.php">View All</a>
+                        <a class="a-button js-projectListIntroBtn u-visibly-hidden" href="all-projects.php" title="View All Projects">View All</a>
                     </div>
                 </div>
                 <?php require "src/partials/home/featured_projects.php"; ?>

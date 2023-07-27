@@ -27,6 +27,7 @@ $bio_copy = '
 // callout
 $callout_label = "Hire Me";
 $callout_copy = "I am currently looking for internship opportunities";
+$callout_link = "mailto:chiattoaustin@gmail.com";
 
 // panel & card contents
 // ===========================

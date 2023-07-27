@@ -1,20 +1,14 @@
 <footer>
     <section class="s-section">
         <div class="o-footer">
-            <a class="a-text--md a-text--white o-footer__email" href="mailto:chiattoaustin@gmail.com">hello@austinchiatto.com</a>
+            <a class="a-text--md a-text--white o-footer__email" href="mailto:chiattoaustin@gmail.com" title="Send Me an Email">hello@austinchiatto.com</a>
             <hr class="o-footer__hr">
             <ul class="o-footer__link-list">
-                <li><a class="a-text--highlight a-text--base" href="https://www.linkedin.com/in/austin-chiatto">LinkedIn</a></li>
-                <li><a class="a-text--highlight a-text--base" href="https://github.com/AustinChiatto">GitHub</a></li>
-                <li><a class="a-text--highlight a-text--base" href="https://codepen.io/austinchiatto">Codepen</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://www.linkedin.com/in/austin-chiatto" title="View LinkedIn Profile">LinkedIn</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://github.com/AustinChiatto" title="View GitHub Profile">GitHub</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://codepen.io/austinchiatto" title="View Codepen Profile">Codepen</a></li>
             </ul>
         </div>
-        <!-- <div class="s-section__content--full">
-            <div class="o-footer__copyright-container">
-                <p class="a-text--copy">&copy; 2023</p>
-                <a class="a-text--copy a-text--highlight" href="#top">Top</a>
-            </div>
-        </div> -->
     </section>
 </footer>
 <!-- Lenis Smooth Scroll -->

@@ -26,8 +26,8 @@ $git_panel_content = '
         <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history. You can follow the update process to this project and others on <a class="a-link-primary" href="https://www.threads.net/@austin_chiatto" target="_blank">Threads</a></p>
     </article>
     <ul class="m-link-list--left">
-        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="" target="_blank">Grid Tool V1</a></li>
-        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" title="" target="_blank">Grid Tool V2</a></li>
+        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="View Version One" target="_blank">Grid Tool V1</a></li>
+        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" title="View Version Two" target="_blank">Grid Tool V2</a></li>
     </ul>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 2.0.0</h4>
@@ -103,7 +103,7 @@ $technology_panel_content = '
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">React D&D</h4>
-        <p class="a-text--copy">Drag and drop functionality for the grid child elements is not something I had the time to build from scratch, this is why I chose to use a 3rd party option by including <a class="a-link-primary" href="https://react-dnd.github.io/react-dnd/about" target="_blank">React DnD</a> to my project.</p>
+        <p class="a-text--copy">Drag and drop functionality for the grid child elements is not something I had the time to build from scratch, this is why I chose to use a 3rd party option by including <a class="a-link-primary" href="https://react-dnd.github.io/react-dnd/about" title="See React DnD Library" target="_blank">React DnD</a> to my project.</p>
         <p class="a-text--copy">This made creating the feature much easier, and a lot less time consuming to build. A from scratch drag and drop functionality may be something I look at building in the future, but for now this fits my use case perfectly.</p>
     </article>
     <article class="m-content-panel__section">
