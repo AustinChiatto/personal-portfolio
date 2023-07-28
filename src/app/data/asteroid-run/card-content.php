@@ -11,23 +11,23 @@ $team_card_content = '
     </div>';
 
 // Git Card
-$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/asteroid-run__card-thumbnail-001.png" alt=""></div>';
+$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/asteroid-run_card-thumbnail-001.png" alt=""></div>';
 
 // Purpose Card
-$purpose_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/asteroid-run__card-thumbnail-002.png" alt=""></div>';
+$purpose_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/asteroid-run_card-thumbnail-002.png" alt=""></div>';
 
 // Technology Card
 $technology_card_content = '
     <div class="a-card__content">
         <ul class="o-info-grid__tech">
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__html.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__html.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__css.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__css.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__js.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__js.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
                 <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/aseprite.png" />

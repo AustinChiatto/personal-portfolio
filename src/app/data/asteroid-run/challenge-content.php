@@ -1,8 +1,8 @@
 <?php
 // challenge mockup url
 // ===========================
-$challenge_mockup_url = "asteroid-run_challenge-mockup.png";
-$challenge_mockup_alt = "asteroid-run_challenge-mockup.png";
+$challenge_mockup_url = "asteroid-run_challenge-image-001.png";
+$challenge_mockup_alt = "A pixel art style game screen with enemy space ships firing purple projectiles at the player";
 
 // challenge section content
 // ===========================

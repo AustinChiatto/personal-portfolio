@@ -5,25 +5,11 @@
         </div>
     </div>
 </section>
-<!-- <div class="o-challenge">
-    <section class="s-section js-chalImgCont">
-        <div class="s-section__content o-challenge__img-cont js-chalImg">
-            <img class="o-challenge__img" src="../src/assets/images/<?= $challenge_mockup_url ?>" alt="<?= $challenge_mockup_alt ?>">
-        </div>
-    </section>
-    <section class="s-section js-chalCopyCont">
-        <div class="s-section__content--wide o-challenge__grid">
-        <?php foreach ($challenges as $challenge): ?>
-            <div class="o-challenge__copy">
-                <?= $challenge ?>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </section>
-</div> -->
 <section class="s-section js-projChallenge">
     <div class="s-section__content--full o-project-challenge">
-        <div class="o-project-challenge__visual js-chalVisual">img</div>
+        <div class="o-project-challenge__visual js-chalVisual">
+            <img class="o-project-challenge__img" src="../src/assets/images/<?= $challenge_mockup_url ?>" alt="<?= $challenge_mockup_alt ?>">
+        </div>
         <?php foreach ($challenges as $challenge): ?>
             <div class="o-project-challenge__copy">
                 <?= $challenge ?>

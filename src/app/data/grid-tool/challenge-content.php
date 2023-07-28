@@ -1,7 +1,7 @@
 <?php
 // challenge mockup url
 // ===========================
-$challenge_mockup_url = "grid-tool-challenge.png";
+$challenge_mockup_url = "grid-tool_challenge-image-001.png";
 $challenge_mockup_alt = "grid-tool-challenge.png";
 
 // challenge section content

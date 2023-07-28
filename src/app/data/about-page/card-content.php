@@ -26,30 +26,30 @@ $contact_card_content = '
         </ul>
     </div>';
 
-$map_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/map-of-vancouver.jpg" alt="">';
+$map_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_map-image-001.jpg" alt="">';
 
-$profile_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/cool-kid-austin.jpg" alt="">';
+$profile_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_profile-image-001.jpg" alt="">';
 
 $skills_card_content = '
     <div class="a-card__content">
         <ul class="o-info-grid__tech">
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__html.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__html.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__css.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__css.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
                 <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/react.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__js.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__js.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
                 <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/git.svg" />
             </li>
             <li class="o-info-grid__tech-icon">
-                <img class="a-card__icon" width="48" height="48" src="../src/assets/images/tech-logo__postman.svg" />
+                <img class="a-card__icon" width="48" height="48" src="../src/assets/icons/tech-logo__postman.svg" />
             </li>
         </ul>
     </div>';

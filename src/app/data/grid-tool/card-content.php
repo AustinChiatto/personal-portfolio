@@ -11,10 +11,10 @@ $team_card_content = '
     </div>';
 
 // Git Card
-$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool__card-thumbnail-002.png" alt=""></div>';
+$git_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool_card-thumbnail-002.png" alt=""></div>';
 
 // Purpose Card
-$purpose_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool__card-thumbnail-001.png" alt=""></div>';
+$purpose_card_content = '<div class="a-card__content--img"><img src="../src/assets/images/grid-tool_card-thumbnail-001.png" alt=""></div>';
 
 // Technology Card
 $technology_card_content = '
