@@ -25,8 +25,8 @@ $bio_copy = '
 ';
 
 // callout
-$callout_label = "Hire Me";
-$callout_copy = "I am currently looking for internship opportunities";
+$callout_label = "Get In Touch";
+$callout_copy = "Join me in my adventure. Lets create something new!";
 $callout_link = "mailto:chiattoaustin@gmail.com";
 
 // panel & card contents
@@ -76,8 +76,8 @@ $primary_grid = [$contact_card, $map_card, $profile_image_card, $skills_card];
 // ===========================
 $personal_tech_card = new AboutDetail([
     "type" => "personal-tech",
-    "pre_heading" => "My Life Online",
-    "heading" => "Personal Tech Stack",
+    "pre_heading" => "idk",
+    "heading" => "something neat",
     "card_content" => $personal_tech_card_content,
     "panel_content" => $personal_tech_panel_content,
     "card_type" => "--tall",
@@ -85,9 +85,9 @@ $personal_tech_card = new AboutDetail([
 ]);
 
 $second_card = new AboutDetail([
-    "type" => "second",
-    "card_content" => "content",
-    "panel_content" => "PH",
+    "type" => "profile-img",
+    "card_content" => $second_card_content,
+    "card_type" => "--img-full",
     "grid_col" => "left",
 ]);
 
@@ -100,8 +100,8 @@ $third_image_card = new AboutDetail([
 
 $upcoming_projects_card = new AboutDetail([
     "type" => "upcoming-projects",
-    "pre_heading" => "Projects In Development",
-    "heading" => "Coming Soon?",
+    "pre_heading" => "idk",
+    "heading" => "something neat",
     "card_content" => $upcoming_project_card_content,
     "panel_content" => $upcoming_project_panel_content,
     "card_type" => "--tall",

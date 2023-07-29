@@ -1,22 +1,43 @@
 @use "../shared/utility/u-variables" as *;
 @use "../shared/utility/u-mixins" as m;
 
-.o-about-bio {
-    padding-top: 1rem;
+.o-bio {
+    @include m.grid(12);
+    margin-bottom: 10rem;
 
-    @include m.min-width(tablet) {
-        padding-top: 2rem;
+    &--pad-top {
+        @extend .o-bio;
+        margin-bottom: unset;
+        margin-top: 8rem;
     }
 
-    @include m.min-width(desktop) {
-        padding-top: 5rem;
+    @include m.media-query("desktop") {
+        gap: unset;
+        margin-inline: unset;
     }
 }
 
-.o-about-bio__copy {
-    color: $color-secondary;
+.o-bio__heading {
+    max-width: fit-content;
 }
 
-.o-about-bio__copy + .o-about-bio__copy {
-    padding-top: 2rem;
+.o-bio__span {
+    display: none;
+}
+
+.o-bio__left {
+    @include m.gridSpan(1, 12);
+
+    @include m.media-query("desktop") {
+        @include m.gridSpan(1, 8);
+    }
+}
+
+.o-bio__heading-container {
+    @include m.flex(flex-end, flex-start, column);
+    min-height: 37.5vh;
+}
+
+.o-bio__body {
+    margin-top: $spacing--02;
 }

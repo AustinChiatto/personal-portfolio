@@ -26,9 +26,9 @@ $contact_card_content = '
         </ul>
     </div>';
 
-$map_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_map-image-001.jpg" alt="">';
+$map_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_map-image-001.png" alt="Apple map snapshot of Vancouver, BC, Canada.">';
 
-$profile_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_profile-image-001.jpg" alt="">';
+$profile_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_profile-image-001.png" alt="Myself from childhood holding a Sony Diskman with one fingerless glove on.">';
 
 $skills_card_content = '
     <div class="a-card__content">
@@ -56,6 +56,8 @@ $skills_card_content = '
 
 // secondary grid
 $personal_tech_card_content = "";
+
+$second_card_content = '<img class="a-card__content--img-full" src="../src/assets/images/about-page_profile-image-002.jpg" alt="Myself from childhood holding a Sony Diskman with one fingerless glove on.">';
 
 $upcoming_project_card_content = "";
 

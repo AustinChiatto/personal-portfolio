@@ -41,21 +41,44 @@ require "src/partials/shared/base/head.php";
         </section>
         <!-- card panel -->
         <?php include "src/partials/shared/molecule/content-panel.php"; ?>
-        <!-- bio section -->
+        <!-- bio section 001 -->
         <section class="s-section">
-            <div class="s-section__content m-intro-container--md">
-                <h2 class="a-text--highlight a-text--pad-bottom"><?= $bio_heading ?></h2>
-                <?= $bio_copy ?>
+            <div class="s-section__content--wide o-bio js-aboutBio">
+                <div class="o-bio__left o-bio__heading-container js-bioHeadingCont">
+                    <h2 class="o-bio__heading js-bioHeading">
+                        <span class="o-bio__span js-bioSpan">Think.</span>
+                        <span class="o-bio__span js-bioSpan">Make.</span>
+                        <span class="o-bio__span js-bioSpan">Solve.</span>
+                        <span class="o-bio__span js-bioSpan">Learn.</span>
+                    </h2>
+                </div>
+                <div class="o-bio__left o-bio__body js-bioBody">
+                    <p>Embracing the world of front-end development with an open heart and a curious mind. I find joy in the art of creation and the thrill of solving puzzles. 'Think. Make. Solve. Learn.' This simple mantra defines my journey as a front-end developer. With every project I take on, I strive to envision new possibilities, transforming ideas into realities, and learning every step of the way.</p>
+                    <p>I believe in crafting user experiences that are intuitive and delightful, making the web a better place for everyone. As I continue on this path, I am eager to collaborate, share knowledge, and contribute to the ever-evolving web community. Let's embark on this journey together.</p>
+                </div>
             </div>
         </section>
-        <!-- marquee -->
-        <!-- <section class="s-section">
-            <div class="s-section__content m-intro-container--md">
-                <h2 class="a-text--highlight a-text--pad-bottom">Marquee</h2>
+        <!-- callout -->
+        <?php include "src/partials/project-pages/callout.php"; ?>
+        <!-- bio section 002 -->
+        <section class="s-section">
+            <div class="s-section__content--wide o-bio--pad-top">
+                <div class="o-bio__left">
+                    <h2 class="o-bio__heading">
+                        <span class="js-bioSpan">💻</span>
+                        <span class="js-bioSpan">🚀</span>
+                        <span class="js-bioSpan">👾</span>
+                        <span class="js-bioSpan">🏔️</span>
+                    </h2>
+                </div>
+                <div class="o-bio__left o-bio__body ">
+                    <p>If I'm not found engrossed in a project. You can find me immersed in a sci-fi movie or novel, staring at a game over screen, re-organizing something, or out getting lost in the mountains.</p>
+                    <p>I have always loved technology and its impossibly limitless ability to surprise, help, and inspire myself and humanity. It's a part of my everyday life and becoming a developer has only grown my passion.</p>
+                </div>
             </div>
-        </section> -->
+        </section>
         <!-- grid section - secondary grid -->
-        <!-- <section class="s-section">
+        <section class="s-section">
             <div class="s-section__content--wide">
                 <div class="m-content-grid--project-list js-contentGrid">
                     <div class="m-content-grid__column">
@@ -74,18 +97,15 @@ require "src/partials/shared/base/head.php";
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- callout -->
-        <?php include "src/partials/project-pages/callout.php"; ?>
+        </section>
+        
     </main>
     <!-- Footer -->
     <?php require "src/partials/shared/base/footer/footer.php"; ?>
-    <!-- SplitType.js -->
-    <script src="https://unpkg.com/split-type"></script>
-    <!-- animation.js file -->
-    <script src="src/app/js/aboutAnimation.js"></script>
     <!-- content panel -->
     <?php echo "<script>const projectName = '$project_name'; const pageTitle = '$page_title';</script>"; ?>
     <script src="src/app/js/contentPanel.js"></script>
+    <!-- Bio Animations -->
+    <script src="src/app/js/aboutPageAnimation.js"></script>
 </body>
 </html>

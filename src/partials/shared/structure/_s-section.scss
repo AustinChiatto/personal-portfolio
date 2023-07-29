@@ -62,13 +62,5 @@
 			grid-column: 1 / span 12;
             padding-inline: $spacing--02;
 		}
-
-		@include m.media-query("desktop") {
-			grid-column: 1 / span 12;
-		}
-	
-		@include m.media-query("desktop-wide") {
-			grid-column: 1 / span 12;
-		}
 	}
 }
