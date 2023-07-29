@@ -8,21 +8,12 @@ $title_tag = "Austin Chiatto | More About Me";
 $meta_desc = "I'm a developer, fascinated and inspired by the ability to bring ideas to life with code.";
 $og_url = "https://austinchiatto.com/about.php";
 $og_image = "src/assets/images/about-section__image-00.jpg";
-$project_name = "";
 
 // page content
 // ===========================
 // hero
 $hero_pre_heading = "My friends call me bald, but most";
 $hero_heading = "Call Me Austin";
-
-// bio
-$bio_heading = "Trying to paint with code";
-$bio_copy = '
-    <p class="a-text--center a-text--highlight a-text--restrict">I am constantly amazed by the power coding provides to turn ideas into reality. With it, I love to create immersive user experiences using modern languages and frameworks.</p>
-    <p class="a-text--center a-text--highlight a-text--restrict">I specialize in creating visually appealing and responsive websites. I have strong foundation in vanilla front-end languages, as well as some experience with backend languages such as PHP and SQL. I am also familiar with version control systems such as Git and have experience collaborating with other developers on projects.</p>
-    <p class="a-text--center a-text--highlight a-text--restrict">But most of all I&#39m trying to atone for all the broken computers I confidently thought I could rebuild in my childhood</p>
-';
 
 // callout
 $callout_label = "Get In Touch";
@@ -48,7 +39,6 @@ $contact_card = new AboutDetail([
 $map_card = new AboutDetail([
     "type" => "map",
     "card_content" => $map_card_content,
-    "external_url" => "#",
     "card_type" => "--img-full",
     "grid_col" => "left",
 ]);

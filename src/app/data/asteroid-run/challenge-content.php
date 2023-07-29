@@ -40,7 +40,7 @@ $challenge_02 = '
 $challenge_03 = '
     <div class="js-projChalEnd">
         <h3 class="o-project-challenge__heading">See All Of This Solution</h3>
-        <a class="a-button" href="https://github.com/AustinChiatto/grid-tool--2.0/blob/main/src/GridControlContext.jsx" title="View Code on GitHub" target="_blank">View Code</a>
+        <a class="a-button" href="https://github.com/AustinChiatto/asteroid-run-2.0.0/blob/main/js/enemies/enemy.js" title="View Code on GitHub" target="_blank">View Code</a>
     </div>
 ';
 

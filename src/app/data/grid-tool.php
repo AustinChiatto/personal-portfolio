@@ -22,13 +22,13 @@ $hero_img_path = "grid-tool-hero.png";
 $external_cta_heading = "Revolutionize your grid design with this CSS Grid Tool";
 $external_cta_link_01 = "Live Site";
 $external_cta_link_02 = "Source Code";
-$external_cta_live_url = "https://grid-tool-v2.austinchiatto.com/";
-$external_cta_documentation_url = "https://github.com/AustinChiatto/grid-tool--2.0";
+$external_cta_live_url = "https://crumb.so/grid-tool";
+$external_cta_documentation_url = "https://github.com/AustinChiatto/crumb/tree/main/src/components/GridTool";
 
 // callout
 $callout_label = "GitHub Readme";
 $callout_copy = "See more about how and why I built Grid Tool.";
-$callout_link = "https://github.com/AustinChiatto/grid-tool--2.0";
+$callout_link = $external_cta_documentation_url;
 
 // project selection
 $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';

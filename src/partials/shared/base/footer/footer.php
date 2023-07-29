@@ -4,9 +4,9 @@
             <a class="a-text--md a-text--white o-footer__email" href="mailto:chiattoaustin@gmail.com" title="Send Me an Email">hello@austinchiatto.com</a>
             <hr class="o-footer__hr">
             <ul class="o-footer__link-list">
-                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://www.linkedin.com/in/austin-chiatto" title="View LinkedIn Profile">LinkedIn</a></li>
-                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://github.com/AustinChiatto" title="View GitHub Profile">GitHub</a></li>
-                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://codepen.io/austinchiatto" title="View Codepen Profile">Codepen</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://www.linkedin.com/in/austin-chiatto" title="View LinkedIn Profile" target="_blank">LinkedIn</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://github.com/AustinChiatto" title="View GitHub Profile" target="_blank">GitHub</a></li>
+                <li><a class="a-text--highlight a-text--base a-link-primary" href="https://codepen.io/austinchiatto" title="View Codepen Profile" target="_blank">Codepen</a></li>
             </ul>
         </div>
     </section>

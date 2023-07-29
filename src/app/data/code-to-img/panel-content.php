@@ -4,17 +4,15 @@
 $team_panel_content = '
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">My Role</h4>
-        <p class="a-text--copy">This project was done without the assistance of a team as a way to practice my design skills as well as improve my development skills.</p>
+        <p class="a-text--copy">In this project, I took on the dual role of UI/UX designer and Front-End Developer, working independently as I had done in previous projects.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">UI & UX</h4>
-        <p class="a-text--copy">In designing the user interface, I aimed to create a visually appealing and user-friendly experience. Taking inspiration from Apple&apos;s design principles, I incorporated clean and minimalist elements to ensure that the interface remained intuitive for users.</p>
-        <p class="a-text--copy">I also used this part of the project to create a consistent design language, and set of components, that I could employ in future projects. This not only improved efficiency but also helped in establishing a recognizable brand identity across different interfaces.</p>
+        <p class="a-text--copy">Given that this project served as a tool for both myself and others, I saw an opportunity to enhance and unify other tools I had previously developed, such as the Grid Tool and Snippet Editor. This allowed me to leverage the UI components I had already created, resulting in a more cohesive and streamlined user experience.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Developer</h4>
-        <p class="a-text--copy">By leveraging React, I was able to break down the project into modular components, making the development process more efficient and maintainable. The use of components allowed for reusability and facilitated the organization and management of the codebase.</p>
-        <p class="a-text--copy">This is what will open the door to building more tools like the Grid Tool in the future, allowing me to utilize the design language and components across the entire set of applications.</p>
+        <p class="a-text--copy">The Code To Image tool is the second tool I have built for this project, following the Grid Tool. To maintain consistency and efficiency, I utilized the React components that I had developed earlier. As a result, Code To Image was developed using ReactJS and SCSS, ensuring a robust and dynamic application.</p>
     </article>
 ';
 
@@ -23,43 +21,63 @@ $team_panel_content = '
 $git_panel_content = '
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version History</h4>
-        <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history. You can follow the update process to this project and others on <a class="a-link-primary" href="https://www.threads.net/@austin_chiatto" target="_blank">Threads</a></p>
-    </article>
-    <ul class="m-link-list--left">
-        <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="View Version One" target="_blank">Grid Tool V1</a></li>
-        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" title="View Version Two" target="_blank">Grid Tool V2</a></li>
-    </ul>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 2.0.0</h4>
-        <p class="a-text--copy">This version saw the re-design of the grid tool from the previous "retro" theme, to a modern and intuitive design language.</p>
-        <p class="a-text--copy">It saw the complete re-build of the core features from vanilla JS to ReactJS</p>
-        <p class="a-text--copy">Lastly, this update prepped the inclusion of new features such as child elements and further grid control. These features will be worked on and included in future updates.</p>
+        <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 1.2.1</h4>
+        <h4 class="m-content-panel__copy-heading">Version 0.6.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Ensured all controls and features worked on tablet and mobile devices.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Deployed tool to live site</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Tested full feature set for issues</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 1.2.0</h4>
+        <h4 class="m-content-panel__copy-heading">Version 0.5.2</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added the ability to copy the code snippet via the "copy code" button.</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added tool tips to each of the controls and "copy code" button.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added new background options</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 1.1.0</h4>
+        <h4 class="m-content-panel__copy-heading">Version 0.5.1</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Built the functionality behind the controls of the column, row, and gap size grid settings.</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Created the logic that increased the visual output of the grid setting values both in the output-grid and code snippet.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability to edit file name</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed bug that broke page when a language was selected from the drop down.</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 1.0.0</h4>
+        <h4 class="m-content-panel__copy-heading">Version 0.5.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Created the basic layout of the site using vanilla front-end languages.</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Applied the "retro-brutalism" styling to the page.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added language selection button for when auto-detect doesn&apos;t work correctly</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added better thumbnails for customization options</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed bug where text theme did not change on dark mode container style leading to invisible text</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 0.4.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change background styles</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change container styles</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change box-shadow styles</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 0.3.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Added live syntax highlighting to code snippets using HighlightJS</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 0.2.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Added gradient background</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added snippet container base style</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added snippet container label</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 0.1.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Added editable text area</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added export button</p></li>
         </ul>
     </article>
 ';
@@ -68,25 +86,12 @@ $git_panel_content = '
 // ===========================
 $purpose_panel_content = '
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Helping New Developers</h4>
-        <p class="a-text--copy">During my time at BCIT in the New Media & Web Development program, many of my cohort struggled to grasp some of the basics of coding, at the time I didn&apos;t have a way to help them overcome these struggles.</p>
-        <p class="a-text--copy">I designed this project in order to help with those challenges faced by my friends and for other new developers that would benefit to a layout tool to make things easier or quicker during the development process.</p>
+        <h4 class="m-content-panel__copy-heading">Simplicity</h4>
+        <p class="a-text--copy">During my time at BCIT, I found myself frequently experimenting with code snippets, using tools like Figma, in an attempt to enhance the appearance and professionalism of my code. I wanted to avoid sharing or presenting unattractive screenshots of my code outside of the editor. Motivated by this, I took the initiative to develop a tool aimed at transforming mundane code snippet screenshots into visually appealing representations.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Skill Improvement</h4>
-        <p class="a-text--copy">Other than my mission to help new developers learn and interact with CSS grid layouts, my main focus behind this project was to further my skills as a front-end developer. This project was my first time using ReactJS, and it was incredibly fun and equally challenging.</p>
-        <p class="a-text--copy">If you want to learn even more about my experience with React you can find a complete breakdown in the GitHub Repo.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Learning ReactJS</h4>
-        <p class="a-text--copy">To be completely honest, I have had a hell of a time trying to learn React for this project... Taking a step back I think that was because of a few core reasons.</p>
-        <p class="a-text--copy">React and ES6 are soul mates, and at the time I began learning React I had twice as much confidence in my ES6 knowledge than I had actual knowledge...</p>
-        <p class="a-text--copy">The first time I saw some react code it was so much different to what I was expecting a JS framework to be it took me off guard. Arrows everywhere! It honestly looked more like hieroglyphics than JavaScript at first glance.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Component & Prop Relationships</h4>
-        <p class="a-text--copy">The other struggle I had when learning React was how components interacted with each other... I found it hard to grasp at first, especially with the inclusion of state, where does state go, how do I pass values from one component to another efficiently, etc.</p>
-        <p class="a-text--copy">Fortunately React has very detailed documentation & tutorials I could use, and gaining a more in depth knowledge of hooks in general made this part of the learning process much easier to understand.</p>
+        <h4 class="m-content-panel__copy-heading">ReactJS Growth</h4>
+        <p class="a-text--copy">Furthermore, I saw this project as an invaluable opportunity to further expand my knowledge of React. It served as a platform to solidify my understanding of the fundamentals while simultaneously acquiring new skills and tools, such as React Router, HTML-To-Image, HighlightJS, and various others.</p>
     </article>
 ';
 
@@ -95,20 +100,29 @@ $purpose_panel_content = '
 $technology_panel_content = '
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Technology</h4>
-        <p class="a-text--copy">As this project was a way for me to learn and increase my skills with React I chose to focus primarily on that framework. However, I pair that with sass and a few plugins such as React D&D (drag & drop) to allow for a more rapid development process.</p>
+        <p class="a-text--copy">The primary objective of this project was to enhance my knowledge and proficiency in using ReactJS by carefully considering its design and implementation.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">ReactJS</h4>
-        <p class="a-text--copy">I chose to use ReactJS for this project as it was a chance for me to learn the framework outside of my schooling. It also allowed me to take advantage of components, states, hooks, and other valuable features to create this application as an SPA, which is something I did not have the chance to do until now.</p>
+        <h4 class="m-content-panel__copy-heading">React Router</h4>
+        <p class="a-text--copy">I incorporated the same UI components from my previous React project, the "Grid Tool", into this project. This inspired me to develop a dynamic Single Page Application (SPA) that would showcase the various tools and snippets I had created during my schooling.</p>
+        <p class="a-text--copy">In order to develop the single page application, I utilized React Router for efficient page transitions. I was pleasantly surprised by how straightforward it was to implement, thanks to the comprehensive and easy-to-follow documentation provided.</p>
+        <p class="a-text--copy">In Addition, I constructed an intuitive landing page featuring conveniently displayed thumbnails for each tool, offering users a seamless and efficient navigation experience.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">React D&D</h4>
-        <p class="a-text--copy">Drag and drop functionality for the grid child elements is not something I had the time to build from scratch, this is why I chose to use a 3rd party option by including <a class="a-link-primary" href="https://react-dnd.github.io/react-dnd/about" target="_blank">React DnD</a> to my project.</p>
-        <p class="a-text--copy">This made creating the feature much easier, and a lot less time consuming to build. A from scratch drag and drop functionality may be something I look at building in the future, but for now this fits my use case perfectly.</p>
+        <h4 class="m-content-panel__copy-heading">HTML-To-Image</h4>
+        <p class="a-text--copy">To ensure the successful functionality of this project, I had to devise a solution that would allow the user to download a React component as an image. I accomplished this task by leveraging a library called <a class="a-link-primary" href="https://www.npmjs.com/package/html-to-image" title="View Resource" target="_blank">html-to-img</a>, that provides a function to convert a DOM node into an image format using HTML canvas.</p>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">useRef()</h4>
+        <p class="a-text--copy">In order to convert a React component into an image using html-to-img, I utilized the useRef React Hook. This handy Hook enabled me to easily reference and store the desired component, which I could then pass to the html-to-img function. By passing this function as a prop to the export button, I was able to generate a downloadable image of the component effortlessly.</p>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">JSON</h4>
+        <p class="a-text--copy">I implemented the use of JSON objects to store the style data for each of the user&pos;s customization options. This approach has multiple advantages. Firstly, it helps maintain the readability of my code by keeping the style data separate and organized. Additionally, it enables me to easily extract only the necessary information for each user.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Sass</h4>
-        <p class="a-text--copy">I decided to include sass for the styling of this project in order to take advantage of module styling as well as global mixins, nesting, functions, and other useful content across the site where needed.</p>
+        <p class="a-text--copy">I chose to incorporate SCSS for the styling of this project to leverage module styling, global mixins, nesting, functions, and other valuable features throughout the entire site as required.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">GitHub</h4>

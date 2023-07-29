@@ -19,16 +19,16 @@ $project_tagline = "Create stunning images of your code!";
 $hero_img_path = "code-to-img-hero.png";
 
 // external cta section
-$external_cta_heading = "Create stunning images of your code!";
+$external_cta_heading = "Say Goodbye to Boring IDE Screenshots!";
 $external_cta_link_01 = "Live Site";
 $external_cta_link_02 = "Source Code";
-$external_cta_live_url = "https://grid-tool-v2.austinchiatto.com/";
-$external_cta_documentation_url = "https://github.com/AustinChiatto/grid-tool--2.0";
+$external_cta_live_url = "https://crumb.so/code-to-img";
+$external_cta_documentation_url = "https://github.com/AustinChiatto/crumb/tree/main/src/components/CodeToImg";
 
 // callout
 $callout_label = "GitHub Readme";
 $callout_copy = "See more about how and why I built " . $project_name . ".";
-$callout_link = "https://github.com/AustinChiatto/grid-tool--2.0";
+$callout_link = $external_cta_documentation_url;
 
 // project selection
 $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text--highlight">Take a look at</span> another project';

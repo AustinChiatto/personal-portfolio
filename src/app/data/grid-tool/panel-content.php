@@ -27,7 +27,7 @@ $git_panel_content = '
     </article>
     <ul class="m-link-list--left">
         <li><a class="a-button" href="https://grid-tool.austinchiatto.com/" title="View Version One" target="_blank">Grid Tool V1</a></li>
-        <li><a class="a-button" href="https://grid-tool-v2.austinchiatto.com/" title="View Version Two" target="_blank">Grid Tool V2</a></li>
+        <li><a class="a-button" href="https://crumb.so/grid-tool" title="View Version Two" target="_blank">Grid Tool V2</a></li>
     </ul>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 2.0.0</h4>
