@@ -7,8 +7,7 @@
 
     &--pad-top {
         @extend .o-bio;
-        margin-bottom: unset;
-        margin-top: 8rem;
+        margin-top: 7rem;
     }
 
     @include m.media-query("desktop") {

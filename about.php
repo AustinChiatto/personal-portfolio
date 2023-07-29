@@ -72,13 +72,13 @@ require "src/partials/shared/base/head.php";
                     </h2>
                 </div>
                 <div class="o-bio__left o-bio__body ">
-                    <p>If I'm not found engrossed in a project. You can find me immersed in a sci-fi movie or novel, staring at a game over screen, re-organizing something, or out getting lost in the mountains.</p>
+                    <p>If I'm not found engrossed in a project, you can find me immersed in a sci-fi movie or novel, staring at a game over screen, re-organizing something, or out getting lost in the mountains.</p>
                     <p>I have always loved technology and its impossibly limitless ability to surprise, help, and inspire myself and humanity. It's a part of my everyday life and becoming a developer has only grown my passion.</p>
                 </div>
             </div>
         </section>
         <!-- grid section - secondary grid -->
-        <section class="s-section">
+        <!-- <section class="s-section">
             <div class="s-section__content--wide">
                 <div class="m-content-grid--project-list js-contentGrid">
                     <div class="m-content-grid__column">
@@ -97,8 +97,7 @@ require "src/partials/shared/base/head.php";
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section> -->
     </main>
     <!-- Footer -->
     <?php require "src/partials/shared/base/footer/footer.php"; ?>
