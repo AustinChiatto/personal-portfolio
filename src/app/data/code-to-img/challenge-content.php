@@ -8,12 +8,12 @@ $challenge_mockup_alt = "grid-tool-challenge.png";
 // ===========================
 $challenge_01 = '
     <h3 class="o-project-challenge__heading">Live Syntax Highlighting</h3>
-    <p class="a-text--copy">I aimed to create a seamless experience for the user, allowing them to easily input their code into the container and have it automatically highlighted as they type. However, I was confronted with the unexpected challenge of implementing this feature, as popular libraries like Prism and HighlightJS lack the capability to apply formatting within a text area as they target primarily pre & code tags.</p>
+    <p class="a-text--copy">I created a seamless experience for the user, allowing them to easily input their code into the container and have it automatically highlighted as they type. I was confronted with the unexpected challenge of implementing this feature, as popular libraries like Prism and HighlightJS lack the capability to apply formatting within a text area as they target primarily pre & code tags.</p>
     ';
 
 $challenge_02 = '
     <h3 class="o-project-challenge__heading">The “Sandwich” Approach</h3>
-    <p class="a-text--copy">In order to achieve the desired live syntax highlighting effect, I devised a clever “sandwich” approach. The bottom layer of contained the necessary styling for the container. Placed above this was the layer responsible for rendering the highlighted text. Finally, on top of it all, a text area where the users could input their code.</p>
+    <p class="a-text--copy">To achieve the desired live syntax highlighting effect, I devised a clever “sandwich” approach. The bottom layer contained the necessary styling for the container. Placed above this was the layer responsible for rendering the highlighted text. On top of that I included a text area where the users could input their code.</p>
 <pre><code language="typescript">// user input
 &lt;textarea
     className={styles.CodeInput}
@@ -27,7 +27,7 @@ $challenge_02 = '
     language={codeLang}
     theme={themeLight ? stack : stackDark}
 >&lt;/CodeBlock></code></pre>
-    <p class="a-text--copy">The value of the middle layer was determined by the users input in the top layer text area, which was dynamically rendered using an onChange method. Finally, I made the top layer text content transparent to the user, resulting in a final product that appeared as though the users input was being live highlighted.</p>
+    <p class="a-text--copy">The value of the middle layer was determined by the users input in the top layer, which was dynamically rendered using an onChange method. Finally, I made the top layer text content transparent to the user, resulting in a product that appeared as if the users input was being highlighted in real time.</p>
 ';
 
 $challenge_03 = '

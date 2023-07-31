@@ -8,8 +8,8 @@ $challenge_mockup_alt = "A pixel art style game screen with enemy space ships fi
 // ===========================
 $challenge_01 = '
     <h3 class="o-project-challenge__heading">Enemy Movement</h3>
-    <p class="a-text--copy">I wanted the spawning, and movement of the enemies to feel organic but also wanted them to have a hint of predictability.</p>
-    <p class="a-text--copy">What I found difficult in this process was ensuring that the enemies moved in a random direction for a length of time and to still remain in bounds of the canvas as well as have their animation timing be different than the other objects.</p>
+    <p class="a-text--copy">I wanted the spawning and movement of the enemies to feel organic but also to have a hint of predictability.</p>
+    <p class="a-text--copy">What I found difficult was ensuring that the enemies moved in a random direction for a length of time, yet remain in bounds of the canvas and have their animation timing be different than the other objects.</p>
     <p class="a-text--copy">The first thing I tried was the following:</p>
     <pre><code>if (enemy.position.x + enemy.width >= canvas.width && enemy.position.y + enemy.height >= canvas.height - player.height * 2) {
         enemy.velocity.x = enemyMovementSpeed;
@@ -18,7 +18,7 @@ $challenge_01 = '
     } else if (enemy.position.y) {
         enemy.velocity.y = -enemyMovementSpeed;
     }</code></pre>
-    <p class="a-text--copy">This obviously did not work, and even if it had it would have seen the enemy stop in its tracks if it touched the edge of the canvas.</p>
+    <p class="a-text--copy">This did not work, and even if it had the enemy would have stopped in its tracks if it touched the edge of the canvas.</p>
 ';
 $challenge_02 = '
     <h3 class="o-project-challenge__heading">The "U" Turn</h3>
