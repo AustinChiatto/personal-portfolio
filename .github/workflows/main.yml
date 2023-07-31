@@ -17,3 +17,8 @@ jobs:
         server: premium110.web-hosting.com
         username: portfolio-ftp@austinchiatto.com
         password: ${{ secrets.ftp_password }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.scss*
