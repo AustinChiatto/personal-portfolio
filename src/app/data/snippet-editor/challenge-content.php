@@ -1,33 +1,35 @@
 <?php
 // challenge mockup url
 // ===========================
-$challenge_mockup_url = "code-to-img_challenge-image-001.png";
-$challenge_mockup_alt = "grid-tool-challenge.png";
+$challenge_mockup_url = "snippet-editor_challenge-image-001.png";
+$challenge_mockup_alt = "snippet-editor.png";
 
 // challenge section content
 // ===========================
 $challenge_01 = '
-    <h3 class="o-project-challenge__heading">Live Syntax Highlighting</h3>
-    <p class="a-text--copy">I created a seamless experience for the user, allowing them to easily input their code into the container and have it automatically highlighted as they type. I was confronted with the unexpected challenge of implementing this feature, as popular libraries like Prism and HighlightJS lack the capability to apply formatting within a text area as they target primarily pre & code tags.</p>
+    <h3 class="o-project-challenge__heading">Adapting Colors</h3>
+    <p class="a-text--copy">The most difficult hurdle to overcome in the development of this snippet editor was the color picker. Having the user change the main color of the snippet was not too hard but changing the accent colors of the button automatically was!</p>
+    <p class="a-text--copy">This project stores the styles for each button in a JSON object, this was what made it challenging. JSON is static data, which made getting and setting styles more difficult as I couldn&apos;t find an efficient way to set both the base styles, and hover styles dynamically.</p>
+    <p class="a-text--copy">This was especially the case with the color prop, I wanted to set primary, secondary, and special color properties within the JSON, then spread that across the React component. This proved impossible because of the structure of JSON, so a new solution had to be imagined.</p>
     ';
 
 $challenge_02 = '
-    <h3 class="o-project-challenge__heading">The “Sandwich” Approach</h3>
-    <p class="a-text--copy">To achieve the desired live syntax highlighting effect, I devised a clever “sandwich” approach. The bottom layer contained the necessary styling for the container. Placed above this was the layer responsible for rendering the highlighted text. On top of that I included a text area where the users could input their code.</p>
-<pre><code language="typescript">// user input
-&lt;textarea
-    className={styles.CodeInput}
-    value={codeInput}
-    onChange={(e) => setCodeInput(e.target.value)}
->&lt;/textarea>
+    <h3 class="o-project-challenge__heading">Separation of Functions</h3>
+    <p class="a-text--copy">The solution to this challenge was to write separate functions for the base and hover states of the snippet. Then spread the JSON properties to each function while adding in the dynamic properties.</p>
+    <p class="a-text--copy">In addition to that I also included the color change within the useContext file to be able to check if the color has been changed, and if so, update the property in state, and pass it to the button. This now changes for both the hover and base states for both the main color and secondary color props.</p>
+<pre><code language="typescript">// == useContext File ==
+// color section of update method
+else if (operation === "colorChange") {
+    const newValues = [...prevValues];
+    newValues[index] = newColor;
+    return newValues;
+}
 
-// rendered text
-&lt;CodeBlock
-    code={codeInput}
-    language={codeLang}
-    theme={themeLight ? stack : stackDark}
->&lt;/CodeBlock></code></pre>
-    <p class="a-text--copy">The value of the middle layer was determined by the users input in the top layer, which was dynamically rendered using an onChange method. Finally, I made the top layer text content transparent to the user, resulting in a product that appeared as if the users input was being highlighted in real time.</p>
+// == Color Input ==
+// Handle color change
+const handleColorChange = (newColor) => {
+    updateValues(2, "colorChange", newColor); // Update the color value directly in the inputValue state
+};</code></pre>
 ';
 
 $challenge_03 = '

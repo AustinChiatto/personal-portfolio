@@ -8,11 +8,13 @@ $team_panel_content = '
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">UI & UX</h4>
-        <p class="a-text--copy">Given that this project served as a tool for myself and others, I saw an opportunity to enhance and unify other tools I previously developed, such as the <a class="a-link-primary" href="https://austinchiatto.com/grid-tool.php" title="View Project" target="_blank">Grid Tool</a> and Snippet Editor. This allowed me to leverage the UI components I already created, resulting in a more cohesive and streamlined user experience.</p>
+        <p class="a-text--copy">I wanted to ensure the users pixel art was the star of the show. For this reason I used a dark color pallet and kept the interface as minimalistic as possible. I chose the latter for two reasons:</p>
+        <p class="a-text--copy">Firstly, I wanted the user to have as few barriers to creation as possible. The color selection is based on a sunset and is a simple set of colors to ensure all of the users art matches the rest of the collage, and to promote creativity by limiting the amount of colors.</p>
+        <p class="a-text--copy">Second, as mentioned before I wanted to make the art the star of the show. To do this, both the pixel art creator and the collage view have as little other content as possible.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Developer</h4>
-        <p class="a-text--copy">The Code To Image tool is the second tool I built for this project, following the <a class="a-link-primary" href="https://austinchiatto.com/grid-tool.php" title="View Project" target="_blank">Grid Tool</a>. To maintain consistency and efficiency, I utilized the React components that I developed earlier. As a result, Code To Image was developed using ReactJS and SCSS, ensuring a robust and dynamic application.</p>
+        <p class="a-text--copy">This full stack application was built using a MERN stack. MongoDB, ExpressJS, ReactJS, and NodeJS. This stack has great documentation and extensive resources for me to take advantage of. I had no prior experience with the first half of the MERN stack which was a fun challenge, and this creative project was a great way for me to learn those technologies.</p>
     </article>
 ';
 
@@ -24,60 +26,65 @@ $git_panel_content = '
         <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history.</p>
     </article>
     <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 1.0.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Released project to cohort</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Deployed project to host</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.6.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Deployed tool to live site</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Tested full feature set for issues</p></li>
-        </ul>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 0.5.2</h4>
-        <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added new background options</p></li>
-        </ul>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 0.5.1</h4>
-        <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added ability to edit file name</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Fixed bug that broke page when a language was selected from the drop down.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability to save art to database</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Pushed saved art to collage</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.5.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added language selection button for when auto-detect doesn&apos;t work correctly</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added better thumbnails for customization options</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Fixed bug where text theme did not change on dark mode container style leading to invisible text</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Created MongoDB database</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added user authentication</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 0.0.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy"></p></li>
+            <li class="a-list__item"><p class="a-text--copy"></p></li>
+            <li class="a-list__item"><p class="a-text--copy"></p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.4.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change background styles</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change container styles</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change box-shadow styles</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed Pixel color change</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Collage Page</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Collage structure</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.3.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added live syntax highlighting to code snippets using HighlightJS</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Collage structure</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Pixel component</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added color selection</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Pixel color change</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.2.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added gradient background</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added snippet container base style</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added snippet container label</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added React Router</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Canvas page</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Color Picker component</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Reset & Save button components</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.1.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added editable text area</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added export button</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added login screen</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Built & styled global input & button components</p></li>
         </ul>
     </article>
 ';
@@ -86,12 +93,14 @@ $git_panel_content = '
 // ===========================
 $purpose_panel_content = '
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Simplicity</h4>
-        <p class="a-text--copy">During my time at BCIT, I found myself frequently experimenting with code snippets, using tools like Figma, in an attempt to enhance the appearance and professionalism of my code. I wanted to avoid sharing or presenting unattractive screenshots of my code outside of the editor. Motivated by this, I developed a tool to transform mundane code snippet screenshots into visually appealing representations.</p>
+        <h4 class="m-content-panel__copy-heading">Purpose</h4>
+        <p class="a-text--copy">The purpose of this project was to familiarize myself with the MERN stack technologies. I was previously familiar with ReactJS and NodeJS but MongoDB and ExpressJS were new territories.</p>
+        <p class="a-text--copy">In addition to learning these technologies I wanted to build an application that allowed my BCIT cohort to contribute to as a sort of “class portrait”. I thought this would be a fun way to do so by having each member contribute a piece of art to a larger collage.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">ReactJS Growth</h4>
-        <p class="a-text--copy">I saw this project as an invaluable opportunity to expand my knowledge of React. It served as a platform to solidify my understanding of the fundamentals while simultaneously acquiring new skills and tools, such as <a class="a-link-primary" href="https://reactrouter.com/en/main" title="View Resource" target="_blank">React Router</a>, <a class="a-link-primary" href="https://www.npmjs.com/package/html-to-image" title="View Resource" target="_blank">html-to-img</a>, <a class="a-link-primary" href="https://highlightjs.org/" title="View Resource" target="_blank">HighlightJS</a>, and various others.</p>
+        <h4 class="m-content-panel__copy-heading">MERN Stack</h4>
+        <p class="a-text--copy">The previous projects on my portfolio did not make use of a backend. For that reason I knew it was one of the weaker points in my skill set. To fix that I chose to create this project with MongoDB as the backend.</p>
+        <p class="a-text--copy">I found Mongo to be relatively simple to set up, however, configuring the connection with ExpressJS proved to be quite the challenge.</p>
     </article>
 ';
 
@@ -103,26 +112,24 @@ $technology_panel_content = '
         <p class="a-text--copy">The primary objective of this project was to enhance my knowledge and proficiency in using ReactJS by carefully considering its design and implementation.</p>
     </article>
     <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">ReactJS</h4>
+        <p class="a-text--copy">React allowed me to take advantage of components, states, hooks, and other valuable features to create this application as an single page application, which is something I did not have the chance to do until now.</p>
+    </article>
+    <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">React Router</h4>
-        <p class="a-text--copy">I incorporated the same UI components from my previous React project, the "<a class="a-link-primary" href="https://austinchiatto.com/grid-tool.php" title="View Project" target="_blank">Grid Tool</a>", into this project. This inspired me to develop a dynamic Single Page Application (SPA) that would showcase the various tools and snippets I created during my schooling.</p>
-        <p class="a-text--copy">To develop the single page application, I utilized React Router for efficient page transitions. I was pleasantly surprised by how straightforward it was to implement, thanks to the comprehensive and easy-to-follow documentation provided.</p>
-        <p class="a-text--copy">In Addition, I constructed an intuitive landing page featuring conveniently displayed thumbnails for each tool, offering users a seamless and efficient navigation experience.</p>
+        <p class="a-text--copy">React Router allowed me to change pages within this SPA. It also allowed me to pass the user param from the login page using the useParam Hook.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">HTML-To-Image</h4>
-        <p class="a-text--copy">To ensure the successful functionality of this project, I devised a solution that would allow the user to download a React component as an image. I accomplished this by leveraging a library called <a class="a-link-primary" href="https://www.npmjs.com/package/html-to-image" title="View Resource" target="_blank">html-to-img</a>, that provides a function to convert a DOM node into an image format using HTML canvas.</p>
+        <h4 class="m-content-panel__copy-heading">MongoDB</h4>
+        <p class="a-text--copy">Allowed me to store users and the art created by the users within the application.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">useRef()</h4>
-        <p class="a-text--copy">To convert a React component into an image using html-to-img, I utilized the useRef React Hook. This handy Hook enabled me to easily reference and store the desired component, which I could then pass to the html-to-img function. By passing this function as a prop to the export button, I was able to generate a downloadable image of the component effortlessly.</p>
+        <h4 class="m-content-panel__copy-heading">ExpressJS</h4>
+        <p class="a-text--copy">Helped with connecting the application to MongoDB, user authentication, and pulling the correct data for the live collage.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">JSON</h4>
-        <p class="a-text--copy">I implemented the use of JSON objects to store the style data for each of the user&apos;s customization options. This approach has multiple advantages. First, it helps maintain the readability of my code by keeping the style data separate and organized. Second, it enables me to easily extract only the necessary information for each user.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Sass</h4>
-        <p class="a-text--copy">I chose to incorporate SCSS for the styling of this project to leverage module styling, global mixins, nesting, functions, and other valuable features throughout the entire site as required.</p>
+        <h4 class="m-content-panel__copy-heading">CSS</h4>
+        <p class="a-text--copy">I wanted to use vanilla CSS for this project because Sass nesting is now available within CSS. Currently the browser compatibility is not 100% accepted so I did have to create fall backs incase the user was interacting with this application on an older browser.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">GitHub</h4>

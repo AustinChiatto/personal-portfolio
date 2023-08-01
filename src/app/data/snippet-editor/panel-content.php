@@ -24,60 +24,56 @@ $git_panel_content = '
         <p class="a-text--copy">Starting from the latest release, the following is a log of this projects version history.</p>
     </article>
     <article class="m-content-panel__section">
+        <h4 class="m-content-panel__copy-heading">Version 1.0.0</h4>
+        <ul class="a-list">
+            <li class="a-list__item"><p class="a-text--copy">Deployed site to Crumb.so</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added 1 button snippet</p></li>
+        </ul>
+    </article>
+    <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.6.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Deployed tool to live site</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Tested full feature set for issues</p></li>
-        </ul>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 0.5.2</h4>
-        <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added new background options</p></li>
-        </ul>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Version 0.5.1</h4>
-        <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added ability to edit file name</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Fixed bug that broke page when a language was selected from the drop down.</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added Adaptive Color change for secondary snippet styles</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed hover style issues</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed code output</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.5.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added language selection button for when auto-detect doesn&apos;t work correctly</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added better thumbnails for customization options</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Fixed bug where text theme did not change on dark mode container style leading to invisible text</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change “main” color</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.4.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change background styles</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change container styles</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change box-shadow styles</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added ability for user to change “main” color</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added copy code button functionality</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Fixed font-size property change bug</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.3.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added live syntax highlighting to code snippets using HighlightJS</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added ability for users to change border-radius & font-size properties</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added snippet property change container</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added color change container</p></li>
+            
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.2.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added gradient background</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added snippet container base style</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added snippet container label</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added CSS & HTML outputs</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added Dashboard page to Crumb.so</p></li>
+        <li class="a-list__item"><p class="a-text--copy">Added “Snippet” section to Dashboard that displays snippet collection</p></li>
         </ul>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Version 0.1.0</h4>
         <ul class="a-list">
-            <li class="a-list__item"><p class="a-text--copy">Added editable text area</p></li>
-            <li class="a-list__item"><p class="a-text--copy">Added export button</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added visual representation of snippet</p></li>
+            <li class="a-list__item"><p class="a-text--copy">Added JSON spread of base and hover styles of snippet</p></li>
         </ul>
     </article>
 ';
@@ -86,12 +82,9 @@ $git_panel_content = '
 // ===========================
 $purpose_panel_content = '
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">Simplicity</h4>
-        <p class="a-text--copy">During my time at BCIT, I found myself frequently experimenting with code snippets, using tools like Figma, in an attempt to enhance the appearance and professionalism of my code. I wanted to avoid sharing or presenting unattractive screenshots of my code outside of the editor. Motivated by this, I developed a tool to transform mundane code snippet screenshots into visually appealing representations.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">ReactJS Growth</h4>
-        <p class="a-text--copy">I saw this project as an invaluable opportunity to expand my knowledge of React. It served as a platform to solidify my understanding of the fundamentals while simultaneously acquiring new skills and tools, such as <a class="a-link-primary" href="https://reactrouter.com/en/main" title="View Resource" target="_blank">React Router</a>, <a class="a-link-primary" href="https://www.npmjs.com/package/html-to-image" title="View Resource" target="_blank">html-to-img</a>, <a class="a-link-primary" href="https://highlightjs.org/" title="View Resource" target="_blank">HighlightJS</a>, and various others.</p>
+        <h4 class="m-content-panel__copy-heading">Efficiency & JSON</h4>
+        <p class="a-text--copy">The purpose of this project was two fold. I wanted to make a space for myself and users to come to and find buttons, cards, and other common components to add to a project.</p>
+        <p class="a-text--copy">I also wanted to work more with JSON objects, libraries such as React-Color-Picker, and to continue to grow my skills with ReactJS.</p>
     </article>
 ';
 
@@ -103,22 +96,8 @@ $technology_panel_content = '
         <p class="a-text--copy">The primary objective of this project was to enhance my knowledge and proficiency in using ReactJS by carefully considering its design and implementation.</p>
     </article>
     <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">React Router</h4>
-        <p class="a-text--copy">I incorporated the same UI components from my previous React project, the "<a class="a-link-primary" href="https://austinchiatto.com/grid-tool.php" title="View Project" target="_blank">Grid Tool</a>", into this project. This inspired me to develop a dynamic Single Page Application (SPA) that would showcase the various tools and snippets I created during my schooling.</p>
-        <p class="a-text--copy">To develop the single page application, I utilized React Router for efficient page transitions. I was pleasantly surprised by how straightforward it was to implement, thanks to the comprehensive and easy-to-follow documentation provided.</p>
-        <p class="a-text--copy">In Addition, I constructed an intuitive landing page featuring conveniently displayed thumbnails for each tool, offering users a seamless and efficient navigation experience.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">HTML-To-Image</h4>
-        <p class="a-text--copy">To ensure the successful functionality of this project, I devised a solution that would allow the user to download a React component as an image. I accomplished this by leveraging a library called <a class="a-link-primary" href="https://www.npmjs.com/package/html-to-image" title="View Resource" target="_blank">html-to-img</a>, that provides a function to convert a DOM node into an image format using HTML canvas.</p>
-    </article>
-    <article class="m-content-panel__section">
-        <h4 class="m-content-panel__copy-heading">useRef()</h4>
-        <p class="a-text--copy">To convert a React component into an image using html-to-img, I utilized the useRef React Hook. This handy Hook enabled me to easily reference and store the desired component, which I could then pass to the html-to-img function. By passing this function as a prop to the export button, I was able to generate a downloadable image of the component effortlessly.</p>
-    </article>
-    <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">JSON</h4>
-        <p class="a-text--copy">I implemented the use of JSON objects to store the style data for each of the user&apos;s customization options. This approach has multiple advantages. First, it helps maintain the readability of my code by keeping the style data separate and organized. Second, it enables me to easily extract only the necessary information for each user.</p>
+        <p class="a-text--copy">I implemented the use of JSON objects to store the style data for each of the snippets, both for the base and hover styles. This approach has multiple advantages. First, it helps maintain the readability of my code by keeping the style data separate and organized. Second, it enables me to easily extract only the necessary information for each snippet.</p>
     </article>
     <article class="m-content-panel__section">
         <h4 class="m-content-panel__copy-heading">Sass</h4>

@@ -3,27 +3,27 @@ require_once __DIR__ . "/../init.php";
 
 // page data
 // ===========================
-$page_title = "pixel-art";
-$page_name = "Pixel Art Creator";
+$page_title = "the-heppells";
+$page_name = "The Heppells";
 $page_type = "project-detail";
-$title_tag = "Austin Chiatto | Pixel Art Creator";
-$meta_desc = "Create beautiful pixel art and add it to our, forever growing, live collage.";
-$og_url = "https://austinchiatto.com/pixel-art.php";
-$og_image = "src/assets/images/pixel-art-hero.png";
+$title_tag = "Austin Chiatto | The Heppells Wedding Website";
+$meta_desc = "Neil and Sabrina are getting married!";
+$og_url = "https://austinchiatto.com/the-heppells.php";
+$og_image = "src/assets/images/the-heppells-hero.png";
 
 // page content
 // ===========================
 //hero
 $project_name = $page_name;
-$project_tagline = "Create & Add Pixel Art To Our Live Collage";
-$hero_img_path = "pixel-art-hero.png";
+$project_tagline = "The Heppells";
+$hero_img_path = "the-heppells-hero.png";
 
 // external cta section
-$external_cta_heading = "Explore Art Made By Others!";
+$external_cta_heading = "Sabrina & Neil Are Getting Married!";
 $external_cta_link_01 = "Live Site";
 $external_cta_link_02 = "Source Code";
-$external_cta_live_url = "https://crumb.so";
-$external_cta_documentation_url = "https://github.com/AustinChiatto/crumb/tree/main/src/components/SnippetEditor";
+$external_cta_live_url = "https://neilandsab.com";
+$external_cta_documentation_url = "https://github.com/AustinChiatto/wedding-rsvp-website";
 
 // callout
 $callout_label = "GitHub Readme";
@@ -35,9 +35,9 @@ $project_selection_heading = "Enjoyed " . $project_name . '? <span class="a-text
 
 // panel & card contents
 // ===========================
-require "pixel-art/card-content.php";
-require "pixel-art/panel-content.php";
-require "pixel-art/challenge-content.php";
+require "the-heppells/card-content.php";
+require "the-heppells/panel-content.php";
+require "the-heppells/challenge-content.php";
 
 // card objects
 // ===========================
